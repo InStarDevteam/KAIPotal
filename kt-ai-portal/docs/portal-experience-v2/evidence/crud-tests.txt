@@ -1,0 +1,12 @@
+PASS  홈 포털 업무 버튼 표시
+PASS  포털 업무 첫화면으로 바로 진입
+PASS  업무 팝업 없이 화면 표시
+PASS  제안 등록 후 새로고침 유지 — E2E제안-crudmuf7b7up
+PASS  제안 삭제 후 새로고침 시 미노출
+PASS  카탈로그 직접요청 새로고침 유지 — E2E도구-crudmuf7b7up
+PASS  반출 승인 실행(검토 가능 행) — EXP-2025-002
+PASS  반출 승인 결정 새로고침 유지
+PASS  마이페이지 프로필 저장 새로고침 유지 — expected=010-9999-b7up actual=010-9999-b7up
+PASS  전체 JS 런타임 예외 없음
+
+10/10 checks passed

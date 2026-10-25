@@ -1,0 +1,7 @@
+{
+  "checkedAt": "2026-10-03T04:40:07.805422+00:00",
+  "revision": "kt-ai-portal-demo-requirements-20261003-r3",
+  "errorLogWindowStart": "2026-10-03T04:32:30Z",
+  "cloudRunErrorLogs": 0,
+  "note": "배포 이후부터 확인 시점까지의 ERROR 및 JSON error 로그. 장기 무오류 보장으로 판정하지 않음."
+}

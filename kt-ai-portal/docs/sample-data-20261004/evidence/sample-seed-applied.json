@@ -1,0 +1,153 @@
+{
+  "batch": "kai-customer-sample-20261004-v1",
+  "mode": "apply",
+  "synthetic": true,
+  "tenantId": "1f24427e-02a9-44d2-8bdb-6138e1dec6bf",
+  "tenantName": "국방부 공통",
+  "userId": "cd600a11-8088-4f83-bbe9-ebffe0d2dc70",
+  "existingMembershipUsed": true,
+  "privilegesChanged": false,
+  "existingRowsChanged": false,
+  "plannedRows": 74,
+  "existingRows": 0,
+  "rowsToInsert": 74,
+  "insertedRows": 74,
+  "auditEventsInserted": 1,
+  "tables": {
+    "fc_organizations": {
+      "planned": 2,
+      "existing": 0,
+      "insert": 2
+    },
+    "fc_groups": {
+      "planned": 2,
+      "existing": 0,
+      "insert": 2
+    },
+    "fc_project": {
+      "planned": 3,
+      "existing": 0,
+      "insert": 3
+    },
+    "fc_projects": {
+      "planned": 3,
+      "existing": 0,
+      "insert": 3
+    },
+    "fc_project_member": {
+      "planned": 3,
+      "existing": 0,
+      "insert": 3
+    },
+    "fc_project_members": {
+      "planned": 3,
+      "existing": 0,
+      "insert": 3
+    },
+    "fc_work_requests": {
+      "planned": 7,
+      "existing": 0,
+      "insert": 7
+    },
+    "fc_request_events": {
+      "planned": 7,
+      "existing": 0,
+      "insert": 7
+    },
+    "fc_catalog_item": {
+      "planned": 6,
+      "existing": 0,
+      "insert": 6
+    },
+    "fc_catalog_application": {
+      "planned": 3,
+      "existing": 0,
+      "insert": 3
+    },
+    "fc_credit_account": {
+      "planned": 1,
+      "existing": 0,
+      "insert": 1
+    },
+    "fc_credit_transaction": {
+      "planned": 4,
+      "existing": 0,
+      "insert": 4
+    },
+    "fc_credit_product": {
+      "planned": 3,
+      "existing": 0,
+      "insert": 3
+    },
+    "fc_credit_request": {
+      "planned": 3,
+      "existing": 0,
+      "insert": 3
+    },
+    "fc_transfer_request": {
+      "planned": 4,
+      "existing": 0,
+      "insert": 4
+    },
+    "fc_proposal": {
+      "planned": 4,
+      "existing": 0,
+      "insert": 4
+    },
+    "fc_proposal_review": {
+      "planned": 2,
+      "existing": 0,
+      "insert": 2
+    },
+    "fc_krmf_baseline": {
+      "planned": 1,
+      "existing": 0,
+      "insert": 1
+    },
+    "fc_krmf_control": {
+      "planned": 5,
+      "existing": 0,
+      "insert": 5
+    },
+    "fc_krmf_evidence": {
+      "planned": 1,
+      "existing": 0,
+      "insert": 1
+    },
+    "fc_krmf_action": {
+      "planned": 2,
+      "existing": 0,
+      "insert": 2
+    },
+    "fc_krmf_change": {
+      "planned": 1,
+      "existing": 0,
+      "insert": 1
+    },
+    "fc_krmf_trr_check": {
+      "planned": 2,
+      "existing": 0,
+      "insert": 2
+    },
+    "fc_krmf_eval_record": {
+      "planned": 1,
+      "existing": 0,
+      "insert": 1
+    },
+    "fc_krmf_control_link": {
+      "planned": 1,
+      "existing": 0,
+      "insert": 1
+    }
+  },
+  "sampleProjectId": "f21735f2-e609-516b-b9d1-0bd0c4c23a5a",
+  "sampleCreditAccountId": "8c5e504d-9118-5b49-a934-827b0efd338d",
+  "sampleBaselineId": "58cea8c8-6c0f-5e20-ac45-d1d91f1539a3",
+  "limitations": [
+    "Synthetic fixtures, not official MDR or K-RMF compliance.",
+    "No platform execution, resource telemetry, institutional identity sessions or real file transfers.",
+    "No actual file-storage ledger is fabricated.",
+    "Synthetic credit values belong only to a sample project; existing user/tenant balances are untouched."
+  ],
+  "checkedAt": "2026-10-03T18:52:50.123Z"
+}

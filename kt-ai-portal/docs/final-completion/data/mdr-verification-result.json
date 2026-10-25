@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-09-29T09:30:00.020Z",
+  "status": "PASSED",
+  "database": "일회성 로컬 DB portal_mdr_verify_a907d91919ed(9개 migration 전체 적용, 검증 후 삭제)",
+  "dictionaryRows": 485,
+  "tableCount": 48,
+  "checks": {
+    "a_dictionaryCoverage": {
+      "description": "DATA_DICTIONARY.csv (테이블,컬럼) ↔ information_schema.columns 일치",
+      "total": 485,
+      "issues": []
+    },
+    "b_termWords": {
+      "description": "STANDARD_TERMS 구성단어ID 존재 여부",
+      "total": 58,
+      "issues": []
+    },
+    "c_codeSets": {
+      "description": "STANDARD_CODES 코드셋 ↔ pg_constraint CHECK 일치",
+      "total": 46,
+      "issues": []
+    },
+    "d_dataTypes": {
+      "description": "자료형/길이·정밀도 일치",
+      "total": 485,
+      "issues": []
+    },
+    "e_integrity": {
+      "description": "중복 용어·고아 FK·tenant_id 누락",
+      "duplicateTerms": [],
+      "duplicateWords": [],
+      "orphanFkCount": 0,
+      "tenantMissing": []
+    }
+  },
+  "summary": {
+    "passed": 637,
+    "failed": 0,
+    "skipped": 0
+  }
+}

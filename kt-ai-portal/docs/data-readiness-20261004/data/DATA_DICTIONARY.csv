@@ -1,0 +1,549 @@
+﻿엔티티한글명,엔티티물리명,컬럼한글명(임시),컬럼물리명,정의(임시),표준용어ID,표준단어ID,도메인ID,자료형,길이·정밀도,NULL여부,기본값,PK,FK,코드셋(CHECK enum 값 목록),보안·개인정보구분,소유자,원천(migration 파일명),보존정책(임시),버전,매핑상태
+테넌트,fc_tenants,식별자,id,테넌트의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+테넌트,fc_tenants,코드,code,테넌트의 코드,,,,text,가변,NOT NULL,,,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+테넌트,fc_tenants,명칭,name,테넌트의 명칭,,,,text,가변,NOT NULL,,,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+테넌트,fc_tenants,군구분,branch,테넌트의 군구분,,,,text,가변,NOT NULL,,,,army|navy|airforce|joint|marines,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+테넌트,fc_tenants,상위식별자,parent_id,테넌트의 상위식별자,,,,uuid,가변,NULL 허용,,,fc_tenants(id),,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+테넌트,fc_tenants,상태,status,테넌트의 상태,,,,text,가변,NOT NULL,'active',,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+테넌트,fc_tenants,생성일시,created_at,테넌트의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+테넌트,fc_tenants,버전,version,테넌트의 버전,,,,integer,가변,NOT NULL,1,,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+조직,fc_organizations,식별자,id,조직의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y(복합),,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+조직,fc_organizations,테넌트식별자,tenant_id,조직의 테넌트식별자,,,,uuid,가변,NOT NULL,,Y(복합),"fc_organizations(tenant_id,id)",,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+조직,fc_organizations,코드,code,조직의 코드,,,,text,가변,NOT NULL,,,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+조직,fc_organizations,명칭,name,조직의 명칭,,,,text,가변,NOT NULL,,,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+조직,fc_organizations,상위식별자,parent_id,조직의 상위식별자,,,,uuid,가변,NULL 허용,,,"fc_organizations(tenant_id,id)",,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+조직,fc_organizations,상태,status,조직의 상태,,,,text,가변,NOT NULL,'active',,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+조직,fc_organizations,생성일시,created_at,조직의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+사용자,fc_users,사용자식별자,user_id,사용자의 사용자식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+사용자,fc_users,표시명,display_name,사용자의 표시명,,,,text,가변,NOT NULL,,,,,개인정보,포털,20260915000001_init,영구 보존(임시),1,임시정의
+사용자,fc_users,이메일,email,사용자의 이메일,,,,text,가변,NULL 허용,,,,,개인정보,포털,20260915000001_init,영구 보존(임시),1,임시정의
+사용자,fc_users,상태,status,사용자의 상태,,,,text,가변,NOT NULL,'pending',,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+사용자,fc_users,생성일시,created_at,사용자의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+사용자,fc_users,버전,version,사용자의 버전,,,,integer,가변,NOT NULL,1,,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+외부신원,fc_external_identities,식별자,id,외부신원의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+외부신원,fc_external_identities,사용자식별자,user_id,외부신원의 사용자식별자,,,,uuid,가변,NOT NULL,,,fc_users(user_id),,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+외부신원,fc_external_identities,발급기관,issuer,외부신원의 발급기관,,,,text,가변,NOT NULL,,,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+외부신원,fc_external_identities,외부주체식별자,subject,외부신원의 외부주체식별자,,,,text,가변,NOT NULL,,,,,개인정보,포털,20260915000001_init,영구 보존(임시),1,임시정의
+외부신원,fc_external_identities,검증여부,verified,외부신원의 검증여부,,,,boolean,가변,NOT NULL,false,,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+외부신원,fc_external_identities,생성일시,created_at,외부신원의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+테넌트소속,fc_tenant_memberships,식별자,id,테넌트소속의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y(복합),,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+테넌트소속,fc_tenant_memberships,테넌트식별자,tenant_id,테넌트소속의 테넌트식별자,,,,uuid,가변,NOT NULL,,Y(복합),"fc_tenants(id);fc_organizations(tenant_id,id)",,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+테넌트소속,fc_tenant_memberships,사용자식별자,user_id,테넌트소속의 사용자식별자,,,,uuid,가변,NOT NULL,,,fc_users(user_id),,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+테넌트소속,fc_tenant_memberships,조직식별자,organization_id,테넌트소속의 조직식별자,,,,uuid,가변,NULL 허용,,,"fc_organizations(tenant_id,id)",,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+테넌트소속,fc_tenant_memberships,상태,status,테넌트소속의 상태,,,,text,가변,NOT NULL,'active',,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+테넌트소속,fc_tenant_memberships,유효시작일시,valid_from,테넌트소속의 유효시작일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+테넌트소속,fc_tenant_memberships,유효종료일시,valid_until,테넌트소속의 유효종료일시,,,,timestamptz,가변,NULL 허용,,,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+테넌트소속,fc_tenant_memberships,승인자식별자,approved_by,테넌트소속의 승인자식별자,,,,uuid,가변,NULL 허용,,,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+테넌트소속,fc_tenant_memberships,생성일시,created_at,테넌트소속의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+역할,fc_roles,역할식별자,role_id,역할의 역할식별자,,,,text,가변,NOT NULL,,Y,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+역할,fc_roles,명칭,name,역할의 명칭,,,,text,가변,NOT NULL,,,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+역할,fc_roles,범위,scope,역할의 범위,,,,text,가변,NOT NULL,,,,system|tenant|project,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+역할,fc_roles,정책버전,policy_version,역할의 정책버전,,,,integer,가변,NOT NULL,1,,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+권한,fc_permissions,권한식별자,permission_id,권한의 권한식별자,,,,text,가변,NOT NULL,,Y,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+권한,fc_permissions,설명,description,권한의 설명,,,,text,가변,NULL 허용,,,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+역할권한매핑,fc_role_permissions,역할식별자,role_id,역할권한매핑의 역할식별자,,,,text,가변,NOT NULL,,Y(복합),fc_roles(role_id),,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+역할권한매핑,fc_role_permissions,권한식별자,permission_id,역할권한매핑의 권한식별자,,,,text,가변,NOT NULL,,Y(복합),fc_permissions(permission_id),,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+역할부여,fc_role_assignments,식별자,id,역할부여의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y(복합),,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+역할부여,fc_role_assignments,테넌트식별자,tenant_id,역할부여의 테넌트식별자,,,,uuid,가변,NOT NULL,,Y(복합),"fc_tenant_memberships(tenant_id,id)",,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+역할부여,fc_role_assignments,소속식별자,membership_id,역할부여의 소속식별자,,,,uuid,가변,NOT NULL,,,"fc_tenant_memberships(tenant_id,id)",,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+역할부여,fc_role_assignments,역할식별자,role_id,역할부여의 역할식별자,,,,text,가변,NOT NULL,,,fc_roles(role_id),,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+역할부여,fc_role_assignments,유효시작일시,valid_from,역할부여의 유효시작일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+역할부여,fc_role_assignments,유효종료일시,valid_until,역할부여의 유효종료일시,,,,timestamptz,가변,NULL 허용,,,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+역할부여,fc_role_assignments,위임자식별자,delegated_by,역할부여의 위임자식별자,,,,uuid,가변,NULL 허용,,,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+역할부여,fc_role_assignments,사유,reason,역할부여의 사유,,,,text,가변,NULL 허용,,,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+역할부여,fc_role_assignments,정책버전,policy_version,역할부여의 정책버전,,,,integer,가변,NOT NULL,1,,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+역할부여,fc_role_assignments,생성일시,created_at,역할부여의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260915000001_init,영구 보존(임시),1,임시정의
+감사이벤트,fc_audit_events,이벤트식별자,event_id,감사이벤트의 이벤트식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y,,,일반,포털,20260915000001_init,"감사원장: 무기한 보존(별도 보존지침 확정 전까지, 임시)",1,임시정의
+감사이벤트,fc_audit_events,발생일시,occurred_at,감사이벤트의 발생일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260915000001_init,"감사원장: 무기한 보존(별도 보존지침 확정 전까지, 임시)",1,임시정의
+감사이벤트,fc_audit_events,기록일시,recorded_at,감사이벤트의 기록일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260915000001_init,"감사원장: 무기한 보존(별도 보존지침 확정 전까지, 임시)",1,임시정의
+감사이벤트,fc_audit_events,테넌트식별자,tenant_id,감사이벤트의 테넌트식별자,,,,uuid,가변,NULL 허용,,,,,일반,포털,20260915000001_init,"감사원장: 무기한 보존(별도 보존지침 확정 전까지, 임시)",1,임시정의
+감사이벤트,fc_audit_events,행위자식별자,actor_id,감사이벤트의 행위자식별자,,,,uuid,가변,NULL 허용,,,,,일반,포털,20260915000001_init,"감사원장: 무기한 보존(별도 보존지침 확정 전까지, 임시)",1,임시정의
+감사이벤트,fc_audit_events,행위자유형,actor_type,감사이벤트의 행위자유형,,,,text,가변,NOT NULL,'user',,,,일반,포털,20260915000001_init,"감사원장: 무기한 보존(별도 보존지침 확정 전까지, 임시)",1,임시정의
+감사이벤트,fc_audit_events,발급기관,issuer,감사이벤트의 발급기관,,,,text,가변,NULL 허용,,,,,개인정보,포털,20260915000001_init,"감사원장: 무기한 보존(별도 보존지침 확정 전까지, 임시)",1,임시정의
+감사이벤트,fc_audit_events,외부주체식별자,subject,감사이벤트의 외부주체식별자,,,,text,가변,NULL 허용,,,,,개인정보,포털,20260915000001_init,"감사원장: 무기한 보존(별도 보존지침 확정 전까지, 임시)",1,임시정의
+감사이벤트,fc_audit_events,작업구분,action,감사이벤트의 작업구분,,,,text,가변,NOT NULL,,,,,일반,포털,20260915000001_init,"감사원장: 무기한 보존(별도 보존지침 확정 전까지, 임시)",1,임시정의
+감사이벤트,fc_audit_events,자원유형,resource_type,감사이벤트의 자원유형,,,,text,가변,NULL 허용,,,,,일반,포털,20260915000001_init,"감사원장: 무기한 보존(별도 보존지침 확정 전까지, 임시)",1,임시정의
+감사이벤트,fc_audit_events,자원식별자,resource_id,감사이벤트의 자원식별자,,,,text,가변,NULL 허용,,,,,일반,포털,20260915000001_init,"감사원장: 무기한 보존(별도 보존지침 확정 전까지, 임시)",1,임시정의
+감사이벤트,fc_audit_events,자원버전,resource_version,감사이벤트의 자원버전,,,,text,가변,NULL 허용,,,,,일반,포털,20260915000001_init,"감사원장: 무기한 보존(별도 보존지침 확정 전까지, 임시)",1,임시정의
+감사이벤트,fc_audit_events,처리결과,result,감사이벤트의 처리결과,,,,text,가변,NOT NULL,,,,,일반,포털,20260915000001_init,"감사원장: 무기한 보존(별도 보존지침 확정 전까지, 임시)",1,임시정의
+감사이벤트,fc_audit_events,사유코드,reason_code,감사이벤트의 사유코드,,,,text,가변,NULL 허용,,,,,일반,포털,20260915000001_init,"감사원장: 무기한 보존(별도 보존지침 확정 전까지, 임시)",1,임시정의
+감사이벤트,fc_audit_events,요청식별자,request_id,감사이벤트의 요청식별자,,,,text,가변,NULL 허용,,,,,일반,포털,20260915000001_init,"감사원장: 무기한 보존(별도 보존지침 확정 전까지, 임시)",1,임시정의
+감사이벤트,fc_audit_events,추적식별자,trace_id,감사이벤트의 추적식별자,,,,text,가변,NULL 허용,,,,,일반,포털,20260915000001_init,"감사원장: 무기한 보존(별도 보존지침 확정 전까지, 임시)",1,임시정의
+감사이벤트,fc_audit_events,작업식별자,operation_id,감사이벤트의 작업식별자,,,,text,가변,NULL 허용,,,,,일반,포털,20260915000001_init,"감사원장: 무기한 보존(별도 보존지침 확정 전까지, 임시)",1,임시정의
+감사이벤트,fc_audit_events,정책버전,policy_version,감사이벤트의 정책버전,,,,integer,가변,NULL 허용,,,,,일반,포털,20260915000001_init,"감사원장: 무기한 보존(별도 보존지침 확정 전까지, 임시)",1,임시정의
+감사이벤트,fc_audit_events,변경필드,changed_fields,감사이벤트의 변경필드,,,,jsonb,가변,NULL 허용,,,,,일반,포털,20260915000001_init,"감사원장: 무기한 보존(별도 보존지침 확정 전까지, 임시)",1,임시정의
+감사이벤트,fc_audit_events,무결성다이제스트,integrity_digest,감사이벤트의 무결성다이제스트,,,,text,가변,NULL 허용,,,,,비밀관련,포털,20260915000001_init,"감사원장: 무기한 보존(별도 보존지침 확정 전까지, 임시)",1,임시정의
+아웃박스이벤트,fc_outbox_events,이벤트식별자,event_id,아웃박스이벤트의 이벤트식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y,,,일반,포털,20260915000001_init,처리 완료 후 90일 보존(임시),1,임시정의
+아웃박스이벤트,fc_outbox_events,테넌트식별자,tenant_id,아웃박스이벤트의 테넌트식별자,,,,uuid,가변,NULL 허용,,,,,일반,포털,20260915000001_init,처리 완료 후 90일 보존(임시),1,임시정의
+아웃박스이벤트,fc_outbox_events,이벤트유형,type,아웃박스이벤트의 이벤트유형,,,,text,가변,NOT NULL,,,,,일반,포털,20260915000001_init,처리 완료 후 90일 보존(임시),1,임시정의
+아웃박스이벤트,fc_outbox_events,페이로드,payload,아웃박스이벤트의 페이로드,,,,jsonb,가변,NOT NULL,,,,,일반,포털,20260915000001_init,처리 완료 후 90일 보존(임시),1,임시정의
+아웃박스이벤트,fc_outbox_events,상태,status,아웃박스이벤트의 상태,,,,text,가변,NOT NULL,'pending',,,,일반,포털,20260915000001_init,처리 완료 후 90일 보존(임시),1,임시정의
+아웃박스이벤트,fc_outbox_events,시도횟수,attempts,아웃박스이벤트의 시도횟수,,,,integer,가변,NOT NULL,0,,,,일반,포털,20260915000001_init,처리 완료 후 90일 보존(임시),1,임시정의
+아웃박스이벤트,fc_outbox_events,재시도일시,retry_at,아웃박스이벤트의 재시도일시,,,,timestamptz,가변,NULL 허용,,,,,일반,포털,20260915000001_init,처리 완료 후 90일 보존(임시),1,임시정의
+아웃박스이벤트,fc_outbox_events,임대만료일시,lease_until,아웃박스이벤트의 임대만료일시,,,,timestamptz,가변,NULL 허용,,,,,일반,포털,20260915000001_init,처리 완료 후 90일 보존(임시),1,임시정의
+아웃박스이벤트,fc_outbox_events,점유자식별자,claimed_by,아웃박스이벤트의 점유자식별자,,,,text,가변,NULL 허용,,,,,일반,포털,20260915000001_init,처리 완료 후 90일 보존(임시),1,임시정의
+아웃박스이벤트,fc_outbox_events,생성일시,created_at,아웃박스이벤트의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260915000001_init,처리 완료 후 90일 보존(임시),1,임시정의
+멱등키,fc_idempotency_keys,테넌트식별자,tenant_id,멱등키의 테넌트식별자,,,,uuid,가변,NOT NULL,,Y(복합),,,일반,포털,20260915000001_init,만료일시 경과 후 90일 보존(임시),1,임시정의
+멱등키,fc_idempotency_keys,행위자식별자,actor,멱등키의 행위자식별자,,,,text,가변,NOT NULL,,Y(복합),,,일반,포털,20260915000001_init,만료일시 경과 후 90일 보존(임시),1,임시정의
+멱등키,fc_idempotency_keys,작업구분,action,멱등키의 작업구분,,,,text,가변,NOT NULL,,Y(복합),,,일반,포털,20260915000001_init,만료일시 경과 후 90일 보존(임시),1,임시정의
+멱등키,fc_idempotency_keys,멱등키,key,멱등키의 멱등키,,,,text,가변,NOT NULL,,Y(복합),,,일반,포털,20260915000001_init,만료일시 경과 후 90일 보존(임시),1,임시정의
+멱등키,fc_idempotency_keys,페이로드해시,payload_hash,멱등키의 페이로드해시,,,,text,가변,NOT NULL,,,,,비밀관련,포털,20260915000001_init,만료일시 경과 후 90일 보존(임시),1,임시정의
+멱등키,fc_idempotency_keys,저장결과,result,멱등키의 저장결과,,,,jsonb,가변,NULL 허용,,,,,일반,포털,20260915000001_init,만료일시 경과 후 90일 보존(임시),1,임시정의
+멱등키,fc_idempotency_keys,생성일시,created_at,멱등키의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260915000001_init,만료일시 경과 후 90일 보존(임시),1,임시정의
+멱등키,fc_idempotency_keys,만료일시,expires_at,멱등키의 만료일시,,,,timestamptz,가변,NOT NULL,,,,,일반,포털,20260915000001_init,만료일시 경과 후 90일 보존(임시),1,임시정의
+그룹,fc_groups,식별자,id,그룹의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y(복합),,,일반,포털,20260916000001_org_group_delegation,영구 보존(임시),1,임시정의
+그룹,fc_groups,테넌트식별자,tenant_id,그룹의 테넌트식별자,,,,uuid,가변,NOT NULL,,Y(복합),"fc_tenants(id);fc_groups(tenant_id,id)",,일반,포털,20260916000001_org_group_delegation,영구 보존(임시),1,임시정의
+그룹,fc_groups,코드,code,그룹의 코드,,,,text,가변,NOT NULL,,,,,일반,포털,20260916000001_org_group_delegation,영구 보존(임시),1,임시정의
+그룹,fc_groups,명칭,name,그룹의 명칭,,,,text,가변,NOT NULL,,,,,일반,포털,20260916000001_org_group_delegation,영구 보존(임시),1,임시정의
+그룹,fc_groups,상위식별자,parent_id,그룹의 상위식별자,,,,uuid,가변,NULL 허용,,,"fc_groups(tenant_id,id)",,일반,포털,20260916000001_org_group_delegation,영구 보존(임시),1,임시정의
+그룹,fc_groups,중첩허용여부,allow_nesting,그룹의 중첩허용여부,,,,boolean,가변,NOT NULL,false,,,,일반,포털,20260916000001_org_group_delegation,영구 보존(임시),1,임시정의
+그룹,fc_groups,상태,status,그룹의 상태,,,,text,가변,NOT NULL,'active',,,,일반,포털,20260916000001_org_group_delegation,영구 보존(임시),1,임시정의
+그룹,fc_groups,생성일시,created_at,그룹의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260916000001_org_group_delegation,영구 보존(임시),1,임시정의
+그룹,fc_groups,버전,version,그룹의 버전,,,,integer,가변,NOT NULL,1,,,,일반,포털,20260916000001_org_group_delegation,영구 보존(임시),1,임시정의
+그룹소속,fc_group_memberships,테넌트식별자,tenant_id,그룹소속의 테넌트식별자,,,,uuid,가변,NOT NULL,,Y(복합),"fc_groups(tenant_id,id);fc_tenant_memberships(tenant_id,id)",,일반,포털,20260916000001_org_group_delegation,영구 보존(임시),1,임시정의
+그룹소속,fc_group_memberships,그룹식별자,group_id,그룹소속의 그룹식별자,,,,uuid,가변,NOT NULL,,Y(복합),"fc_groups(tenant_id,id)",,일반,포털,20260916000001_org_group_delegation,영구 보존(임시),1,임시정의
+그룹소속,fc_group_memberships,소속식별자,membership_id,그룹소속의 소속식별자,,,,uuid,가변,NOT NULL,,Y(복합),"fc_tenant_memberships(tenant_id,id)",,일반,포털,20260916000001_org_group_delegation,영구 보존(임시),1,임시정의
+그룹소속,fc_group_memberships,생성일시,created_at,그룹소속의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260916000001_org_group_delegation,영구 보존(임시),1,임시정의
+위임,fc_delegations,식별자,id,위임의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y(복합),,,일반,포털,20260916000001_org_group_delegation,영구 보존(임시),1,임시정의
+위임,fc_delegations,테넌트식별자,tenant_id,위임의 테넌트식별자,,,,uuid,가변,NOT NULL,,Y(복합),"fc_tenant_memberships(tenant_id,id);fc_tenant_memberships(tenant_id,id)",,일반,포털,20260916000001_org_group_delegation,영구 보존(임시),1,임시정의
+위임,fc_delegations,위임자소속식별자,delegator_membership_id,위임의 위임자소속식별자,,,,uuid,가변,NOT NULL,,,"fc_tenant_memberships(tenant_id,id)",,일반,포털,20260916000001_org_group_delegation,영구 보존(임시),1,임시정의
+위임,fc_delegations,수임자소속식별자,delegatee_membership_id,위임의 수임자소속식별자,,,,uuid,가변,NOT NULL,,,"fc_tenant_memberships(tenant_id,id)",,일반,포털,20260916000001_org_group_delegation,영구 보존(임시),1,임시정의
+위임,fc_delegations,역할식별자,role_id,위임의 역할식별자,,,,text,가변,NOT NULL,,,fc_roles(role_id),,일반,포털,20260916000001_org_group_delegation,영구 보존(임시),1,임시정의
+위임,fc_delegations,유효시작일시,valid_from,위임의 유효시작일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260916000001_org_group_delegation,영구 보존(임시),1,임시정의
+위임,fc_delegations,유효종료일시,valid_until,위임의 유효종료일시,,,,timestamptz,가변,NOT NULL,,,,,일반,포털,20260916000001_org_group_delegation,영구 보존(임시),1,임시정의
+위임,fc_delegations,사유,reason,위임의 사유,,,,text,가변,NOT NULL,,,,,일반,포털,20260916000001_org_group_delegation,영구 보존(임시),1,임시정의
+위임,fc_delegations,상태,status,위임의 상태,,,,text,가변,NOT NULL,'active',,,,일반,포털,20260916000001_org_group_delegation,영구 보존(임시),1,임시정의
+위임,fc_delegations,생성일시,created_at,위임의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260916000001_org_group_delegation,영구 보존(임시),1,임시정의
+소속변경이력,fc_membership_changes,식별자,id,소속변경이력의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y(복합),,,일반,포털,20260916000001_org_group_delegation,이력 무기한 보존(임시),1,임시정의
+소속변경이력,fc_membership_changes,테넌트식별자,tenant_id,소속변경이력의 테넌트식별자,,,,uuid,가변,NOT NULL,,Y(복합),"fc_tenant_memberships(tenant_id,id)",,일반,포털,20260916000001_org_group_delegation,이력 무기한 보존(임시),1,임시정의
+소속변경이력,fc_membership_changes,소속식별자,membership_id,소속변경이력의 소속식별자,,,,uuid,가변,NOT NULL,,,"fc_tenant_memberships(tenant_id,id)",,일반,포털,20260916000001_org_group_delegation,이력 무기한 보존(임시),1,임시정의
+소속변경이력,fc_membership_changes,변경유형,change_type,소속변경이력의 변경유형,,,,text,가변,NOT NULL,,,,,일반,포털,20260916000001_org_group_delegation,이력 무기한 보존(임시),1,임시정의
+소속변경이력,fc_membership_changes,변경전범위,before_scope,소속변경이력의 변경전범위,,,,jsonb,가변,NULL 허용,,,,,일반,포털,20260916000001_org_group_delegation,이력 무기한 보존(임시),1,임시정의
+소속변경이력,fc_membership_changes,변경후범위,after_scope,소속변경이력의 변경후범위,,,,jsonb,가변,NULL 허용,,,,,일반,포털,20260916000001_org_group_delegation,이력 무기한 보존(임시),1,임시정의
+소속변경이력,fc_membership_changes,승인자식별자,approved_by,소속변경이력의 승인자식별자,,,,uuid,가변,NULL 허용,,,,,일반,포털,20260916000001_org_group_delegation,이력 무기한 보존(임시),1,임시정의
+소속변경이력,fc_membership_changes,사유,reason,소속변경이력의 사유,,,,text,가변,NULL 허용,,,,,일반,포털,20260916000001_org_group_delegation,이력 무기한 보존(임시),1,임시정의
+소속변경이력,fc_membership_changes,생성일시,created_at,소속변경이력의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260916000001_org_group_delegation,이력 무기한 보존(임시),1,임시정의
+테넌트설정,fc_tenant_settings,테넌트식별자,tenant_id,테넌트설정의 테넌트식별자,,,,uuid,가변,NOT NULL,,Y,fc_tenants(id),,일반,포털,20260918000001_tenant_settings,영구 보존(임시),1,임시정의
+테넌트설정,fc_tenant_settings,버전,version,테넌트설정의 버전,,,,integer,가변,NOT NULL,1,,,,일반,포털,20260918000001_tenant_settings,영구 보존(임시),1,임시정의
+테넌트설정,fc_tenant_settings,브랜딩설정,branding,테넌트설정의 브랜딩설정,,,,jsonb,가변,NOT NULL,,,,,일반,포털,20260918000001_tenant_settings,영구 보존(임시),1,임시정의
+테넌트설정,fc_tenant_settings,메뉴구성,menus,테넌트설정의 메뉴구성,,,,jsonb,가변,NOT NULL,,,,,일반,포털,20260918000001_tenant_settings,영구 보존(임시),1,임시정의
+테넌트설정,fc_tenant_settings,수정자식별자,updated_by,테넌트설정의 수정자식별자,,,,uuid,가변,NOT NULL,,,fc_users(user_id),,일반,포털,20260918000001_tenant_settings,영구 보존(임시),1,임시정의
+테넌트설정,fc_tenant_settings,수정일시,updated_at,테넌트설정의 수정일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260918000001_tenant_settings,영구 보존(임시),1,임시정의
+플랫폼접근정책,fc_platform_access,테넌트식별자,tenant_id,플랫폼접근정책의 테넌트식별자,,,,uuid,가변,NOT NULL,,Y,fc_tenants(id),,일반,포털,20260924000001_platform_access,영구 보존(임시),1,임시정의
+플랫폼접근정책,fc_platform_access,버전,version,플랫폼접근정책의 버전,,,,integer,가변,NOT NULL,1,,,,일반,포털,20260924000001_platform_access,영구 보존(임시),1,임시정의
+플랫폼접근정책,fc_platform_access,플랫폼목록,platforms,플랫폼접근정책의 플랫폼목록,,,,jsonb,가변,NOT NULL,,,,,일반,포털,20260924000001_platform_access,영구 보존(임시),1,임시정의
+플랫폼접근정책,fc_platform_access,사용자승인목록,user_grants,플랫폼접근정책의 사용자승인목록,,,,jsonb,가변,NOT NULL,'{}',,,,일반,포털,20260924000001_platform_access,영구 보존(임시),1,임시정의
+플랫폼접근정책,fc_platform_access,수정자식별자,updated_by,플랫폼접근정책의 수정자식별자,,,,uuid,가변,NOT NULL,,,fc_users(user_id),,일반,포털,20260924000001_platform_access,영구 보존(임시),1,임시정의
+플랫폼접근정책,fc_platform_access,수정일시,updated_at,플랫폼접근정책의 수정일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260924000001_platform_access,영구 보존(임시),1,임시정의
+포털개인설정,fc_portal_preferences,테넌트식별자,tenant_id,포털개인설정의 테넌트식별자,,,,uuid,가변,NOT NULL,,Y(복합),fc_tenants(id),,일반,포털,20260924000001_platform_access,영구 보존(임시),1,임시정의
+포털개인설정,fc_portal_preferences,사용자식별자,user_id,포털개인설정의 사용자식별자,,,,uuid,가변,NOT NULL,,Y(복합),fc_users(user_id),,일반,포털,20260924000001_platform_access,영구 보존(임시),1,임시정의
+포털개인설정,fc_portal_preferences,개인설정,preferences,포털개인설정의 개인설정,,,,jsonb,가변,NOT NULL,,,,,일반,포털,20260924000001_platform_access,영구 보존(임시),1,임시정의
+포털개인설정,fc_portal_preferences,수정일시,updated_at,포털개인설정의 수정일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260924000001_platform_access,영구 보존(임시),1,임시정의
+프로젝트(업무신청),fc_projects,식별자,id,프로젝트(업무신청)의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y,,,일반,포털,20260924000002_work_requests,영구 보존(임시),1,임시정의
+프로젝트(업무신청),fc_projects,테넌트식별자,tenant_id,프로젝트(업무신청)의 테넌트식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260924000002_work_requests,영구 보존(임시),1,임시정의
+프로젝트(업무신청),fc_projects,명칭,name,프로젝트(업무신청)의 명칭,,,,text,가변,NOT NULL,,,,,일반,포털,20260924000002_work_requests,영구 보존(임시),1,임시정의
+프로젝트(업무신청),fc_projects,설명,description,프로젝트(업무신청)의 설명,,,,text,가변,NULL 허용,,,,,일반,포털,20260924000002_work_requests,영구 보존(임시),1,임시정의
+프로젝트(업무신청),fc_projects,상태,status,프로젝트(업무신청)의 상태,,,,text,가변,NOT NULL,'active',,,,일반,포털,20260924000002_work_requests,영구 보존(임시),1,임시정의
+프로젝트(업무신청),fc_projects,소유자식별자,owner_user_id,프로젝트(업무신청)의 소유자식별자,,,,uuid,가변,NOT NULL,,,fc_users(user_id),,일반,포털,20260924000002_work_requests,영구 보존(임시),1,임시정의
+프로젝트(업무신청),fc_projects,버전,version,프로젝트(업무신청)의 버전,,,,integer,가변,NOT NULL,1,,,,일반,포털,20260924000002_work_requests,영구 보존(임시),1,임시정의
+프로젝트(업무신청),fc_projects,생성일시,created_at,프로젝트(업무신청)의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260924000002_work_requests,영구 보존(임시),1,임시정의
+프로젝트(업무신청),fc_projects,수정일시,updated_at,프로젝트(업무신청)의 수정일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260924000002_work_requests,영구 보존(임시),1,임시정의
+프로젝트멤버(업무신청),fc_project_members,프로젝트식별자,project_id,프로젝트멤버(업무신청)의 프로젝트식별자,,,,uuid,가변,NOT NULL,,Y(복합),fc_projects(id),,일반,포털,20260924000002_work_requests,영구 보존(임시),1,임시정의
+프로젝트멤버(업무신청),fc_project_members,테넌트식별자,tenant_id,프로젝트멤버(업무신청)의 테넌트식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260924000002_work_requests,영구 보존(임시),1,임시정의
+프로젝트멤버(업무신청),fc_project_members,사용자식별자,user_id,프로젝트멤버(업무신청)의 사용자식별자,,,,uuid,가변,NOT NULL,,Y(복합),fc_users(user_id),,일반,포털,20260924000002_work_requests,영구 보존(임시),1,임시정의
+프로젝트멤버(업무신청),fc_project_members,멤버역할,member_role,프로젝트멤버(업무신청)의 멤버역할,,,,text,가변,NOT NULL,'member',,,,일반,포털,20260924000002_work_requests,영구 보존(임시),1,임시정의
+프로젝트멤버(업무신청),fc_project_members,가입일시,joined_at,프로젝트멤버(업무신청)의 가입일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260924000002_work_requests,영구 보존(임시),1,임시정의
+업무신청,fc_work_requests,식별자,id,업무신청의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y,,,일반,포털,"20260924000002_work_requests,20260929000010_domain_ledger",영구 보존(임시),1,임시정의
+업무신청,fc_work_requests,테넌트식별자,tenant_id,업무신청의 테넌트식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,"20260924000002_work_requests,20260929000010_domain_ledger",영구 보존(임시),1,임시정의
+업무신청,fc_work_requests,프로젝트식별자,project_id,업무신청의 프로젝트식별자,,,,uuid,가변,NULL 허용,,,fc_projects(id),,일반,포털,"20260924000002_work_requests,20260929000010_domain_ledger",영구 보존(임시),1,임시정의
+업무신청,fc_work_requests,유형,type,업무신청의 유형,,,,text,가변,NOT NULL,,,,,일반,포털,"20260924000002_work_requests,20260929000010_domain_ledger",영구 보존(임시),1,임시정의
+업무신청,fc_work_requests,제목,title,업무신청의 제목,,,,text,가변,NOT NULL,,,,,일반,포털,"20260924000002_work_requests,20260929000010_domain_ledger",영구 보존(임시),1,임시정의
+업무신청,fc_work_requests,페이로드,payload,업무신청의 페이로드,,,,jsonb,가변,NOT NULL,'{}',,,,일반,포털,"20260924000002_work_requests,20260929000010_domain_ledger",영구 보존(임시),1,임시정의
+업무신청,fc_work_requests,신청자식별자,requester_user_id,업무신청의 신청자식별자,,,,uuid,가변,NOT NULL,,,fc_users(user_id),,일반,포털,"20260924000002_work_requests,20260929000010_domain_ledger",영구 보존(임시),1,임시정의
+업무신청,fc_work_requests,상태,status,업무신청의 상태,,,,text,가변,NOT NULL,'requested',,,requested|reviewing|approved|rejected,일반,포털,"20260924000002_work_requests,20260929000010_domain_ledger",영구 보존(임시),1,임시정의
+업무신청,fc_work_requests,버전,version,업무신청의 버전,,,,integer,가변,NOT NULL,1,,,,일반,포털,"20260924000002_work_requests,20260929000010_domain_ledger",영구 보존(임시),1,임시정의
+업무신청,fc_work_requests,결정자식별자,decided_by,업무신청의 결정자식별자,,,,uuid,가변,NULL 허용,,,fc_users(user_id),,일반,포털,"20260924000002_work_requests,20260929000010_domain_ledger",영구 보존(임시),1,임시정의
+업무신청,fc_work_requests,결정일시,decided_at,업무신청의 결정일시,,,,timestamptz,가변,NULL 허용,,,,,일반,포털,"20260924000002_work_requests,20260929000010_domain_ledger",영구 보존(임시),1,임시정의
+업무신청,fc_work_requests,생성일시,created_at,업무신청의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,"20260924000002_work_requests,20260929000010_domain_ledger",영구 보존(임시),1,임시정의
+업무신청,fc_work_requests,수정일시,updated_at,업무신청의 수정일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,"20260924000002_work_requests,20260929000010_domain_ledger",영구 보존(임시),1,임시정의
+업무신청,fc_work_requests,멱등키,idempotency_key,업무신청의 멱등키,,,,uuid,가변,NULL 허용,,,,,일반,포털,"20260924000002_work_requests,20260929000010_domain_ledger",영구 보존(임시),1,임시정의
+신청이벤트,fc_request_events,이벤트식별자,event_id,신청이벤트의 이벤트식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y,,,일반,포털,20260924000002_work_requests,원 신청과 동일 수명(임시),1,임시정의
+신청이벤트,fc_request_events,테넌트식별자,tenant_id,신청이벤트의 테넌트식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260924000002_work_requests,원 신청과 동일 수명(임시),1,임시정의
+신청이벤트,fc_request_events,요청식별자,request_id,신청이벤트의 요청식별자,,,,uuid,가변,NOT NULL,,,fc_work_requests(id),,일반,포털,20260924000002_work_requests,원 신청과 동일 수명(임시),1,임시정의
+신청이벤트,fc_request_events,처리자식별자,actor_user_id,신청이벤트의 처리자식별자,,,,uuid,가변,NULL 허용,,,fc_users(user_id),,일반,포털,20260924000002_work_requests,원 신청과 동일 수명(임시),1,임시정의
+신청이벤트,fc_request_events,작업구분,action,신청이벤트의 작업구분,,,,text,가변,NOT NULL,,,,submitted|decided|commented,일반,포털,20260924000002_work_requests,원 신청과 동일 수명(임시),1,임시정의
+신청이벤트,fc_request_events,비고,note,신청이벤트의 비고,,,,text,가변,NULL 허용,,,,,일반,포털,20260924000002_work_requests,원 신청과 동일 수명(임시),1,임시정의
+신청이벤트,fc_request_events,생성일시,created_at,신청이벤트의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260924000002_work_requests,원 신청과 동일 수명(임시),1,임시정의
+K-RMF기준선,fc_krmf_baseline,식별자,id,K-RMF기준선의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF기준선,fc_krmf_baseline,테넌트식별자,tenant_id,K-RMF기준선의 테넌트식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF기준선,fc_krmf_baseline,명칭,name,K-RMF기준선의 명칭,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF기준선,fc_krmf_baseline,기준선버전(문서),version,K-RMF기준선의 기준선버전(문서),,,,text,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF기준선,fc_krmf_baseline,설명,description,K-RMF기준선의 설명,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF기준선,fc_krmf_baseline,상태,status,K-RMF기준선의 상태,,,,text,가변,NOT NULL,'draft',,,draft|active|archived,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF기준선,fc_krmf_baseline,프로젝트식별자,project_id,K-RMF기준선의 프로젝트식별자,,,,uuid,가변,NULL 허용,,,fc_projects(id),,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF기준선,fc_krmf_baseline,생성자식별자,created_by,K-RMF기준선의 생성자식별자,,,,uuid,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF기준선,fc_krmf_baseline,생성일시,created_at,K-RMF기준선의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF기준선,fc_krmf_baseline,수정자식별자,updated_by,K-RMF기준선의 수정자식별자,,,,uuid,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF기준선,fc_krmf_baseline,수정일시,updated_at,K-RMF기준선의 수정일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF통제,fc_krmf_control,식별자,id,K-RMF통제의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF통제,fc_krmf_control,테넌트식별자,tenant_id,K-RMF통제의 테넌트식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF통제,fc_krmf_control,기준선식별자,baseline_id,K-RMF통제의 기준선식별자,,,,uuid,가변,NOT NULL,,,fc_krmf_baseline(id),,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF통제,fc_krmf_control,통제코드,control_code,K-RMF통제의 통제코드,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF통제,fc_krmf_control,제목,title,K-RMF통제의 제목,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF통제,fc_krmf_control,설명,description,K-RMF통제의 설명,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF통제,fc_krmf_control,적용구분,applicability,K-RMF통제의 적용구분,,,,text,가변,NOT NULL,'applied',,,applied|excluded|alternative,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF통제,fc_krmf_control,대체사유,alternative_reason,K-RMF통제의 대체사유,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF통제,fc_krmf_control,담당자식별자,owner_id,K-RMF통제의 담당자식별자,,,,uuid,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF통제,fc_krmf_control,기한일시,due_date,K-RMF통제의 기한일시,,,,timestamptz,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF통제,fc_krmf_control,상태,status,K-RMF통제의 상태,,,,text,가변,NOT NULL,'not_started',,,not_started|in_progress|evidence_submitted|verified,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF통제,fc_krmf_control,정렬순서,sort_order,K-RMF통제의 정렬순서,,,,integer,가변,NOT NULL,0,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF통제,fc_krmf_control,생성자식별자,created_by,K-RMF통제의 생성자식별자,,,,uuid,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF통제,fc_krmf_control,생성일시,created_at,K-RMF통제의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF통제,fc_krmf_control,수정자식별자,updated_by,K-RMF통제의 수정자식별자,,,,uuid,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF통제,fc_krmf_control,수정일시,updated_at,K-RMF통제의 수정일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF증적,fc_krmf_evidence,식별자,id,K-RMF증적의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF증적,fc_krmf_evidence,테넌트식별자,tenant_id,K-RMF증적의 테넌트식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF증적,fc_krmf_evidence,통제식별자,control_id,K-RMF증적의 통제식별자,,,,uuid,가변,NOT NULL,,,fc_krmf_control(id),,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF증적,fc_krmf_evidence,제목,title,K-RMF증적의 제목,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF증적,fc_krmf_evidence,종류,kind,K-RMF증적의 종류,,,,text,가변,NOT NULL,,,,file|reference,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF증적,fc_krmf_evidence,파일식별자,file_id,K-RMF증적의 파일식별자,,,,uuid,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF증적,fc_krmf_evidence,참조URI,reference_uri,K-RMF증적의 참조URI,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF증적,fc_krmf_evidence,적용범위,scope,K-RMF증적의 적용범위,,,,text,가변,NOT NULL,'project',,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF증적,fc_krmf_evidence,증적버전,version,K-RMF증적의 증적버전,,,,integer,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF증적,fc_krmf_evidence,제출자식별자,submitted_by,K-RMF증적의 제출자식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF증적,fc_krmf_evidence,제출일시,submitted_at,K-RMF증적의 제출일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF증적,fc_krmf_evidence,검토상태,review_status,K-RMF증적의 검토상태,,,,text,가변,NOT NULL,'pending',,,pending|approved|rejected,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF증적,fc_krmf_evidence,검토자식별자,reviewed_by,K-RMF증적의 검토자식별자,,,,uuid,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF증적,fc_krmf_evidence,검토일시,reviewed_at,K-RMF증적의 검토일시,,,,timestamptz,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF증적,fc_krmf_evidence,검토의견,review_comment,K-RMF증적의 검토의견,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF파일,fc_krmf_file,식별자,id,K-RMF파일의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y,,,일반,포털,20260929000001_krmf,평가 인가 확정 후 5년 보존(임시),1,임시정의
+K-RMF파일,fc_krmf_file,테넌트식별자,tenant_id,K-RMF파일의 테넌트식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,평가 인가 확정 후 5년 보존(임시),1,임시정의
+K-RMF파일,fc_krmf_file,증적식별자,evidence_id,K-RMF파일의 증적식별자,,,,uuid,가변,NOT NULL,,,fc_krmf_evidence(id),,일반,포털,20260929000001_krmf,평가 인가 확정 후 5년 보존(임시),1,임시정의
+K-RMF파일,fc_krmf_file,저장파일명,stored_name,K-RMF파일의 저장파일명,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,평가 인가 확정 후 5년 보존(임시),1,임시정의
+K-RMF파일,fc_krmf_file,원본파일명,original_name,K-RMF파일의 원본파일명,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,평가 인가 확정 후 5년 보존(임시),1,임시정의
+K-RMF파일,fc_krmf_file,MIME유형,mime,K-RMF파일의 MIME유형,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,평가 인가 확정 후 5년 보존(임시),1,임시정의
+K-RMF파일,fc_krmf_file,크기바이트,size_bytes,K-RMF파일의 크기바이트,,,,bigint,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,평가 인가 확정 후 5년 보존(임시),1,임시정의
+K-RMF파일,fc_krmf_file,SHA256해시,sha256,K-RMF파일의 SHA256해시,,,,text,가변,NOT NULL,,,,,비밀관련,포털,20260929000001_krmf,평가 인가 확정 후 5년 보존(임시),1,임시정의
+K-RMF파일,fc_krmf_file,생성자식별자,created_by,K-RMF파일의 생성자식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,평가 인가 확정 후 5년 보존(임시),1,임시정의
+K-RMF파일,fc_krmf_file,생성일시,created_at,K-RMF파일의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000001_krmf,평가 인가 확정 후 5년 보존(임시),1,임시정의
+K-RMF조치,fc_krmf_action,식별자,id,K-RMF조치의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF조치,fc_krmf_action,테넌트식별자,tenant_id,K-RMF조치의 테넌트식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF조치,fc_krmf_action,통제식별자,control_id,K-RMF조치의 통제식별자,,,,uuid,가변,NOT NULL,,,fc_krmf_control(id),,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF조치,fc_krmf_action,제목,title,K-RMF조치의 제목,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF조치,fc_krmf_action,원인,cause,K-RMF조치의 원인,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF조치,fc_krmf_action,영향도,impact,K-RMF조치의 영향도,,,,text,가변,NOT NULL,'medium',,,high|medium|low,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF조치,fc_krmf_action,담당자식별자,owner_id,K-RMF조치의 담당자식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF조치,fc_krmf_action,기한일시,due_date,K-RMF조치의 기한일시,,,,timestamptz,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF조치,fc_krmf_action,상태,status,K-RMF조치의 상태,,,,text,가변,NOT NULL,'open',,,open|in_progress|resolved|reconfirmed,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF조치,fc_krmf_action,조치결과,resolution,K-RMF조치의 조치결과,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF조치,fc_krmf_action,재확인자식별자,reconfirmed_by,K-RMF조치의 재확인자식별자,,,,uuid,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF조치,fc_krmf_action,재확인일시,reconfirmed_at,K-RMF조치의 재확인일시,,,,timestamptz,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF조치,fc_krmf_action,생성자식별자,created_by,K-RMF조치의 생성자식별자,,,,uuid,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF조치,fc_krmf_action,생성일시,created_at,K-RMF조치의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF조치,fc_krmf_action,수정자식별자,updated_by,K-RMF조치의 수정자식별자,,,,uuid,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF조치,fc_krmf_action,수정일시,updated_at,K-RMF조치의 수정일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF변경,fc_krmf_change,식별자,id,K-RMF변경의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF변경,fc_krmf_change,테넌트식별자,tenant_id,K-RMF변경의 테넌트식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF변경,fc_krmf_change,프로젝트식별자,project_id,K-RMF변경의 프로젝트식별자,,,,uuid,가변,NULL 허용,,,fc_projects(id),,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF변경,fc_krmf_change,제목,title,K-RMF변경의 제목,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF변경,fc_krmf_change,변경유형,change_type,K-RMF변경의 변경유형,,,,text,가변,NOT NULL,,,,policy|config,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF변경,fc_krmf_change,설명,description,K-RMF변경의 설명,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF변경,fc_krmf_change,영향통제식별자목록,affected_control_ids,K-RMF변경의 영향통제식별자목록,,,,jsonb,가변,NOT NULL,'[]',,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF변경,fc_krmf_change,재평가필요여부,reassess_required,K-RMF변경의 재평가필요여부,,,,boolean,가변,NOT NULL,false,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF변경,fc_krmf_change,재평가사유,reassess_reason,K-RMF변경의 재평가사유,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF변경,fc_krmf_change,상태,status,K-RMF변경의 상태,,,,text,가변,NOT NULL,'recorded',,,recorded|under_review|reassessed,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF변경,fc_krmf_change,생성자식별자,created_by,K-RMF변경의 생성자식별자,,,,uuid,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF변경,fc_krmf_change,생성일시,created_at,K-RMF변경의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF변경,fc_krmf_change,수정자식별자,updated_by,K-RMF변경의 수정자식별자,,,,uuid,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF변경,fc_krmf_change,수정일시,updated_at,K-RMF변경의 수정일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF시험준비항목,fc_krmf_trr_check,식별자,id,K-RMF시험준비항목의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF시험준비항목,fc_krmf_trr_check,테넌트식별자,tenant_id,K-RMF시험준비항목의 테넌트식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF시험준비항목,fc_krmf_trr_check,프로젝트식별자,project_id,K-RMF시험준비항목의 프로젝트식별자,,,,uuid,가변,NOT NULL,,,fc_projects(id),,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF시험준비항목,fc_krmf_trr_check,항목코드,item_code,K-RMF시험준비항목의 항목코드,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF시험준비항목,fc_krmf_trr_check,제목,title,K-RMF시험준비항목의 제목,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF시험준비항목,fc_krmf_trr_check,시험기준,test_criteria,K-RMF시험준비항목의 시험기준,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF시험준비항목,fc_krmf_trr_check,시험데이터,test_data,K-RMF시험준비항목의 시험데이터,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF시험준비항목,fc_krmf_trr_check,증적준비여부,evidence_ready,K-RMF시험준비항목의 증적준비여부,,,,boolean,가변,NOT NULL,false,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF시험준비항목,fc_krmf_trr_check,상태,status,K-RMF시험준비항목의 상태,,,,text,가변,NOT NULL,'not_ready',,,not_ready|ready|na,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF시험준비항목,fc_krmf_trr_check,비고,note,K-RMF시험준비항목의 비고,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF시험준비항목,fc_krmf_trr_check,생성자식별자,created_by,K-RMF시험준비항목의 생성자식별자,,,,uuid,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF시험준비항목,fc_krmf_trr_check,생성일시,created_at,K-RMF시험준비항목의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF시험준비항목,fc_krmf_trr_check,수정자식별자,updated_by,K-RMF시험준비항목의 수정자식별자,,,,uuid,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF시험준비항목,fc_krmf_trr_check,수정일시,updated_at,K-RMF시험준비항목의 수정일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF평가기록,fc_krmf_eval_record,식별자,id,K-RMF평가기록의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF평가기록,fc_krmf_eval_record,테넌트식별자,tenant_id,K-RMF평가기록의 테넌트식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF평가기록,fc_krmf_eval_record,프로젝트식별자,project_id,K-RMF평가기록의 프로젝트식별자,,,,uuid,가변,NULL 허용,,,fc_projects(id),,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF평가기록,fc_krmf_eval_record,종류,kind,K-RMF평가기록의 종류,,,,text,가변,NOT NULL,,,,submission|query|answer|supplement|risk_acceptance|authority_confirmation,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF평가기록,fc_krmf_eval_record,제목,title,K-RMF평가기록의 제목,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF평가기록,fc_krmf_eval_record,본문,body,K-RMF평가기록의 본문,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF평가기록,fc_krmf_eval_record,잔여위험,residual_risk,K-RMF평가기록의 잔여위험,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF평가기록,fc_krmf_eval_record,출처구분,source,K-RMF평가기록의 출처구분,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF평가기록,fc_krmf_eval_record,상태,status,K-RMF평가기록의 상태,,,,text,가변,NOT NULL,'open',,,open|answered|closed,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF평가기록,fc_krmf_eval_record,질의자식별자,asked_by,K-RMF평가기록의 질의자식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF평가기록,fc_krmf_eval_record,질의일시,asked_at,K-RMF평가기록의 질의일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF평가기록,fc_krmf_eval_record,응답자식별자,answered_by,K-RMF평가기록의 응답자식별자,,,,uuid,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF평가기록,fc_krmf_eval_record,응답일시,answered_at,K-RMF평가기록의 응답일시,,,,timestamptz,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF평가기록,fc_krmf_eval_record,기록자식별자,recorded_by,K-RMF평가기록의 기록자식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF평가기록,fc_krmf_eval_record,기록일시,recorded_at,K-RMF평가기록의 기록일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF통제연결,fc_krmf_control_link,식별자,id,K-RMF통제연결의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF통제연결,fc_krmf_control_link,테넌트식별자,tenant_id,K-RMF통제연결의 테넌트식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF통제연결,fc_krmf_control_link,통제식별자,control_id,K-RMF통제연결의 통제식별자,,,,uuid,가변,NOT NULL,,,fc_krmf_control(id),,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF통제연결,fc_krmf_control_link,연결유형,link_type,K-RMF통제연결의 연결유형,,,,text,가변,NOT NULL,,,,requirement|implementation|test|defect,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF통제연결,fc_krmf_control_link,참조식별자,ref_id,K-RMF통제연결의 참조식별자,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF통제연결,fc_krmf_control_link,참조명,ref_title,K-RMF통제연결의 참조명,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF통제연결,fc_krmf_control_link,상태,status,K-RMF통제연결의 상태,,,,text,가변,NOT NULL,'linked',,,linked|unresolved,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+K-RMF통제연결,fc_krmf_control_link,생성일시,created_at,K-RMF통제연결의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000001_krmf,영구 보존(임시),1,임시정의
+크레딧상품,fc_credit_product,식별자,id,크레딧상품의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧상품,fc_credit_product,테넌트식별자,tenant_id,크레딧상품의 테넌트식별자,,,,uuid,가변,NOT NULL,,,fc_tenants(id),,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧상품,fc_credit_product,코드,code,크레딧상품의 코드,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧상품,fc_credit_product,명칭,name,크레딧상품의 명칭,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧상품,fc_credit_product,단위,unit,크레딧상품의 단위,,,,text,가변,NOT NULL,,,,cpu-hour|gpu-hour|storage-gb-day,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧상품,fc_credit_product,단가,unit_price,크레딧상품의 단가,,,,numeric,"20,4",NOT NULL,,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧상품,fc_credit_product,통화코드,currency,크레딧상품의 통화코드,,,,text,가변,NOT NULL,'KRW',,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧상품,fc_credit_product,유효시작일시,valid_from,크레딧상품의 유효시작일시,,,,timestamptz,가변,NOT NULL,,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧상품,fc_credit_product,유효종료일시,valid_to,크레딧상품의 유효종료일시,,,,timestamptz,가변,NULL 허용,,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧상품,fc_credit_product,활성여부,active,크레딧상품의 활성여부,,,,boolean,가변,NOT NULL,true,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧상품,fc_credit_product,생성자식별자,created_by,크레딧상품의 생성자식별자,,,,uuid,가변,NOT NULL,,,fc_users(user_id),,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧상품,fc_credit_product,생성일시,created_at,크레딧상품의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧상품,fc_credit_product,수정자식별자,updated_by,크레딧상품의 수정자식별자,,,,uuid,가변,NOT NULL,,,fc_users(user_id),,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧상품,fc_credit_product,수정일시,updated_at,크레딧상품의 수정일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧계정,fc_credit_account,식별자,id,크레딧계정의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧계정,fc_credit_account,테넌트식별자,tenant_id,크레딧계정의 테넌트식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧계정,fc_credit_account,소유자유형,owner_type,크레딧계정의 소유자유형,,,,text,가변,NOT NULL,,,,user|project|tenant,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧계정,fc_credit_account,담당자식별자,owner_id,크레딧계정의 담당자식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧계정,fc_credit_account,잔액,balance,크레딧계정의 잔액,,,,numeric,"20,4",NOT NULL,0,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧계정,fc_credit_account,버전,version,크레딧계정의 버전,,,,integer,가변,NOT NULL,1,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧계정,fc_credit_account,생성자식별자,created_by,크레딧계정의 생성자식별자,,,,uuid,가변,NOT NULL,,,fc_users(user_id),,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧계정,fc_credit_account,생성일시,created_at,크레딧계정의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧계정,fc_credit_account,수정자식별자,updated_by,크레딧계정의 수정자식별자,,,,uuid,가변,NOT NULL,,,fc_users(user_id),,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧계정,fc_credit_account,수정일시,updated_at,크레딧계정의 수정일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧거래,fc_credit_transaction,식별자,id,크레딧거래의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧거래,fc_credit_transaction,테넌트식별자,tenant_id,크레딧거래의 테넌트식별자,,,,uuid,가변,NOT NULL,,,"fc_credit_account(tenant_id,id)",,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧거래,fc_credit_transaction,계정식별자,account_id,크레딧거래의 계정식별자,,,,uuid,가변,NOT NULL,,,"fc_credit_account(tenant_id,id)",,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧거래,fc_credit_transaction,거래유형,type,크레딧거래의 거래유형,,,,text,가변,NOT NULL,,,,grant|charge|deduct|adjust,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧거래,fc_credit_transaction,금액,amount,크레딧거래의 금액,,,,numeric,"20,4",NOT NULL,,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧거래,fc_credit_transaction,단가스냅샷,unit_price_snapshot,크레딧거래의 단가스냅샷,,,,numeric,"20,4",NULL 허용,,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧거래,fc_credit_transaction,수량,quantity,크레딧거래의 수량,,,,numeric,"20,4",NULL 허용,,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧거래,fc_credit_transaction,사유,reason,크레딧거래의 사유,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧거래,fc_credit_transaction,참조유형,ref_type,크레딧거래의 참조유형,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧거래,fc_credit_transaction,참조식별자,ref_id,크레딧거래의 참조식별자,,,,uuid,가변,NULL 허용,,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧거래,fc_credit_transaction,멱등키,idempotency_key,크레딧거래의 멱등키,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧거래,fc_credit_transaction,생성자식별자,created_by,크레딧거래의 생성자식별자,,,,uuid,가변,NOT NULL,,,fc_users(user_id),,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧거래,fc_credit_transaction,생성일시,created_at,크레딧거래의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧신청,fc_credit_request,식별자,id,크레딧신청의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧신청,fc_credit_request,테넌트식별자,tenant_id,크레딧신청의 테넌트식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧신청,fc_credit_request,신청유형,type,크레딧신청의 신청유형,,,,text,가변,NOT NULL,,,,initial_grant|charge|adjustment,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧신청,fc_credit_request,소유자유형,owner_type,크레딧신청의 소유자유형,,,,text,가변,NOT NULL,,,,user|project|tenant,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧신청,fc_credit_request,담당자식별자,owner_id,크레딧신청의 담당자식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧신청,fc_credit_request,금액,amount,크레딧신청의 금액,,,,numeric,"20,4",NOT NULL,,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧신청,fc_credit_request,사유,reason,크레딧신청의 사유,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧신청,fc_credit_request,상태,status,크레딧신청의 상태,,,,text,가변,NOT NULL,'requested',,,requested|approved|rejected|cancelled,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧신청,fc_credit_request,신청자식별자,requested_by,크레딧신청의 신청자식별자,,,,uuid,가변,NOT NULL,,,fc_users(user_id),,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧신청,fc_credit_request,신청일시,requested_at,크레딧신청의 신청일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧신청,fc_credit_request,결정자식별자,decided_by,크레딧신청의 결정자식별자,,,,uuid,가변,NULL 허용,,,fc_users(user_id),,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧신청,fc_credit_request,결정일시,decided_at,크레딧신청의 결정일시,,,,timestamptz,가변,NULL 허용,,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧신청,fc_credit_request,결정사유,decision_reason,크레딧신청의 결정사유,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧신청,fc_credit_request,멱등키,idempotency_key,크레딧신청의 멱등키,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+크레딧신청,fc_credit_request,버전,version,크레딧신청의 버전,,,,integer,가변,NOT NULL,1,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+반입반출신청,fc_transfer_request,식별자,id,반입반출신청의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+반입반출신청,fc_transfer_request,테넌트식별자,tenant_id,반입반출신청의 테넌트식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+반입반출신청,fc_transfer_request,종류,kind,반입반출신청의 종류,,,,text,가변,NOT NULL,,,,import|export,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+반입반출신청,fc_transfer_request,대상유형,subject_type,반입반출신청의 대상유형,,,,text,가변,NOT NULL,,,,server|artifact,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+반입반출신청,fc_transfer_request,제목,title,반입반출신청의 제목,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+반입반출신청,fc_transfer_request,목적,purpose,반입반출신청의 목적,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+반입반출신청,fc_transfer_request,보안등급,security_grade,반입반출신청의 보안등급,,,,text,가변,NOT NULL,,,,public|internal|confidential|secret,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+반입반출신청,fc_transfer_request,공개동의여부,public_consent,반입반출신청의 공개동의여부,,,,boolean,가변,NOT NULL,false,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+반입반출신청,fc_transfer_request,공개범위,public_scope,반입반출신청의 공개범위,,,,text,가변,NOT NULL,'none',,,none|tenant|all,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+반입반출신청,fc_transfer_request,사용허가내용,usage_permission,반입반출신청의 사용허가내용,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+반입반출신청,fc_transfer_request,상태,status,반입반출신청의 상태,,,,text,가변,NOT NULL,'requested',,,requested|in_review|approved|rejected|supplement_requested|cancelled,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+반입반출신청,fc_transfer_request,신청자식별자,requested_by,반입반출신청의 신청자식별자,,,,uuid,가변,NOT NULL,,,fc_users(user_id),,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+반입반출신청,fc_transfer_request,신청일시,requested_at,반입반출신청의 신청일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+반입반출신청,fc_transfer_request,결정자식별자,decided_by,반입반출신청의 결정자식별자,,,,uuid,가변,NULL 허용,,,fc_users(user_id),,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+반입반출신청,fc_transfer_request,결정일시,decided_at,반입반출신청의 결정일시,,,,timestamptz,가변,NULL 허용,,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+반입반출신청,fc_transfer_request,결정사유,decision_reason,반입반출신청의 결정사유,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+반입반출신청,fc_transfer_request,승인파일버전,approved_file_version,반입반출신청의 승인파일버전,,,,integer,가변,NULL 허용,,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+반입반출신청,fc_transfer_request,멱등키,idempotency_key,반입반출신청의 멱등키,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+반입반출신청,fc_transfer_request,버전,version,반입반출신청의 버전,,,,integer,가변,NOT NULL,1,,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+반입반출신청,fc_transfer_request,생성일시,created_at,반입반출신청의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+반입반출신청,fc_transfer_request,수정일시,updated_at,반입반출신청의 수정일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000010_domain_ledger,영구 보존(임시),1,임시정의
+반입반출파일,fc_transfer_file,식별자,id,반입반출파일의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y,,,일반,포털,20260929000010_domain_ledger,반출 승인 완료 후 5년 보존(임시),1,임시정의
+반입반출파일,fc_transfer_file,테넌트식별자,tenant_id,반입반출파일의 테넌트식별자,,,,uuid,가변,NOT NULL,,,"fc_transfer_request(tenant_id,id)",,일반,포털,20260929000010_domain_ledger,반출 승인 완료 후 5년 보존(임시),1,임시정의
+반입반출파일,fc_transfer_file,요청식별자,request_id,반입반출파일의 요청식별자,,,,uuid,가변,NOT NULL,,,"fc_transfer_request(tenant_id,id)",,일반,포털,20260929000010_domain_ledger,반출 승인 완료 후 5년 보존(임시),1,임시정의
+반입반출파일,fc_transfer_file,저장파일명,stored_name,반입반출파일의 저장파일명,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000010_domain_ledger,반출 승인 완료 후 5년 보존(임시),1,임시정의
+반입반출파일,fc_transfer_file,원본파일명,original_name,반입반출파일의 원본파일명,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000010_domain_ledger,반출 승인 완료 후 5년 보존(임시),1,임시정의
+반입반출파일,fc_transfer_file,MIME유형,mime,반입반출파일의 MIME유형,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000010_domain_ledger,반출 승인 완료 후 5년 보존(임시),1,임시정의
+반입반출파일,fc_transfer_file,크기바이트,size_bytes,반입반출파일의 크기바이트,,,,bigint,가변,NOT NULL,,,,,일반,포털,20260929000010_domain_ledger,반출 승인 완료 후 5년 보존(임시),1,임시정의
+반입반출파일,fc_transfer_file,SHA256해시,sha256,반입반출파일의 SHA256해시,,,,text,가변,NOT NULL,,,,,비밀관련,포털,20260929000010_domain_ledger,반출 승인 완료 후 5년 보존(임시),1,임시정의
+반입반출파일,fc_transfer_file,버전,version,반입반출파일의 버전,,,,integer,가변,NOT NULL,,,,,일반,포털,20260929000010_domain_ledger,반출 승인 완료 후 5년 보존(임시),1,임시정의
+반입반출파일,fc_transfer_file,생성자식별자,created_by,반입반출파일의 생성자식별자,,,,uuid,가변,NOT NULL,,,fc_users(user_id),,일반,포털,20260929000010_domain_ledger,반출 승인 완료 후 5년 보존(임시),1,임시정의
+반입반출파일,fc_transfer_file,생성일시,created_at,반입반출파일의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000010_domain_ledger,반출 승인 완료 후 5년 보존(임시),1,임시정의
+프로젝트,fc_project,식별자,id,프로젝트의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+프로젝트,fc_project,테넌트식별자,tenant_id,프로젝트의 테넌트식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+프로젝트,fc_project,명칭,name,프로젝트의 명칭,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+프로젝트,fc_project,설명,description,프로젝트의 설명,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+프로젝트,fc_project,목적,purpose,프로젝트의 목적,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+프로젝트,fc_project,상태,status,프로젝트의 상태,,,,text,가변,NOT NULL,'active',,,active|suspended|closing|closed,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+프로젝트,fc_project,담당자식별자,owner_id,프로젝트의 담당자식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+프로젝트,fc_project,시작일시,start_at,프로젝트의 시작일시,,,,timestamptz,가변,NULL 허용,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+프로젝트,fc_project,종료일시,end_at,프로젝트의 종료일시,,,,timestamptz,가변,NULL 허용,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+프로젝트,fc_project,가시성,visibility,프로젝트의 가시성,,,,text,가변,NOT NULL,'public',,,public|member,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+프로젝트,fc_project,버전,version,프로젝트의 버전,,,,integer,가변,NOT NULL,1,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+프로젝트,fc_project,멱등키,idempotency_key,프로젝트의 멱등키,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+프로젝트,fc_project,생성자식별자,created_by,프로젝트의 생성자식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+프로젝트,fc_project,수정자식별자,updated_by,프로젝트의 수정자식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+프로젝트,fc_project,생성일시,created_at,프로젝트의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+프로젝트,fc_project,수정일시,updated_at,프로젝트의 수정일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+프로젝트멤버,fc_project_member,프로젝트식별자,project_id,프로젝트멤버의 프로젝트식별자,,,,uuid,가변,NOT NULL,,Y(복합),fc_project(id),,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+프로젝트멤버,fc_project_member,테넌트식별자,tenant_id,프로젝트멤버의 테넌트식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+프로젝트멤버,fc_project_member,사용자식별자,user_id,프로젝트멤버의 사용자식별자,,,,uuid,가변,NOT NULL,,Y(복합),,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+프로젝트멤버,fc_project_member,멤버역할,role,프로젝트멤버의 멤버역할,,,,text,가변,NOT NULL,'member',,,manager|member|viewer,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+프로젝트멤버,fc_project_member,가입일시,joined_at,프로젝트멤버의 가입일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+프로젝트초대,fc_project_invite,식별자,id,프로젝트초대의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+프로젝트초대,fc_project_invite,테넌트식별자,tenant_id,프로젝트초대의 테넌트식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+프로젝트초대,fc_project_invite,프로젝트식별자,project_id,프로젝트초대의 프로젝트식별자,,,,uuid,가변,NOT NULL,,,fc_project(id),,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+프로젝트초대,fc_project_invite,초대대상식별자,invitee_id,프로젝트초대의 초대대상식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+프로젝트초대,fc_project_invite,멤버역할,role,프로젝트초대의 멤버역할,,,,text,가변,NOT NULL,'member',,,manager|member|viewer,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+프로젝트초대,fc_project_invite,상태,status,프로젝트초대의 상태,,,,text,가변,NOT NULL,'invited',,,invited|accepted|declined|expired,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+프로젝트초대,fc_project_invite,초대자식별자,invited_by,프로젝트초대의 초대자식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+프로젝트초대,fc_project_invite,초대일시,invited_at,프로젝트초대의 초대일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+프로젝트초대,fc_project_invite,응답일시,responded_at,프로젝트초대의 응답일시,,,,timestamptz,가변,NULL 허용,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+제안,fc_proposal,식별자,id,제안의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+제안,fc_proposal,테넌트식별자,tenant_id,제안의 테넌트식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+제안,fc_proposal,제안유형,type,제안의 제안유형,,,,text,가변,NOT NULL,,,,feature|improvement|bug|operation,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+제안,fc_proposal,제목,title,제안의 제목,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+제안,fc_proposal,필요성,necessity,제안의 필요성,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+제안,fc_proposal,활용계획,utilization_plan,제안의 활용계획,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+제안,fc_proposal,가시성,visibility,제안의 가시성,,,,text,가변,NOT NULL,'tenant',,,public|tenant|private,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+제안,fc_proposal,상태,status,제안의 상태,,,,text,가변,NOT NULL,'submitted',,,submitted|under_review|answered|notice,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+제안,fc_proposal,작성자식별자,author_id,제안의 작성자식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+제안,fc_proposal,첨부URI,attachment_uri,제안의 첨부URI,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+제안,fc_proposal,조회수,view_count,제안의 조회수,,,,integer,가변,NOT NULL,0,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+제안,fc_proposal,버전,version,제안의 버전,,,,integer,가변,NOT NULL,1,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+제안,fc_proposal,멱등키,idempotency_key,제안의 멱등키,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+제안,fc_proposal,생성자식별자,created_by,제안의 생성자식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+제안,fc_proposal,수정자식별자,updated_by,제안의 수정자식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+제안,fc_proposal,생성일시,created_at,제안의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+제안,fc_proposal,수정일시,updated_at,제안의 수정일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+제안공감,fc_proposal_sympathy,제안식별자,proposal_id,제안공감의 제안식별자,,,,uuid,가변,NOT NULL,,Y(복합),fc_proposal(id),,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+제안공감,fc_proposal_sympathy,테넌트식별자,tenant_id,제안공감의 테넌트식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+제안공감,fc_proposal_sympathy,사용자식별자,user_id,제안공감의 사용자식별자,,,,uuid,가변,NOT NULL,,Y(복합),,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+제안공감,fc_proposal_sympathy,생성일시,created_at,제안공감의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+제안검토,fc_proposal_review,식별자,id,제안검토의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+제안검토,fc_proposal_review,테넌트식별자,tenant_id,제안검토의 테넌트식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+제안검토,fc_proposal_review,제안식별자,proposal_id,제안검토의 제안식별자,,,,uuid,가변,NOT NULL,,,fc_proposal(id),,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+제안검토,fc_proposal_review,검토자식별자,reviewer_id,제안검토의 검토자식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+제안검토,fc_proposal_review,결정구분,decision,제안검토의 결정구분,,,,text,가변,NOT NULL,,,,answer|notice|supplement,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+제안검토,fc_proposal_review,본문,body,제안검토의 본문,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+제안검토,fc_proposal_review,첨부URI,attachment_uri,제안검토의 첨부URI,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+제안검토,fc_proposal_review,생성일시,created_at,제안검토의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+카탈로그항목,fc_catalog_item,식별자,id,카탈로그항목의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+카탈로그항목,fc_catalog_item,테넌트식별자,tenant_id,카탈로그항목의 테넌트식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+카탈로그항목,fc_catalog_item,종류,kind,카탈로그항목의 종류,,,,text,가변,NOT NULL,,,,tool|service|dataset|model,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+카탈로그항목,fc_catalog_item,분류,category,카탈로그항목의 분류,,,,text,가변,NOT NULL,,,,analysis|development|data|visualization|labeling,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+카탈로그항목,fc_catalog_item,명칭,name,카탈로그항목의 명칭,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+카탈로그항목,fc_catalog_item,요약,summary,카탈로그항목의 요약,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+카탈로그항목,fc_catalog_item,설명,description,카탈로그항목의 설명,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+카탈로그항목,fc_catalog_item,제공자,provider,카탈로그항목의 제공자,,,,text,가변,NOT NULL,'portal',,,portal|external,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+카탈로그항목,fc_catalog_item,접근유형,access_type,카탈로그항목의 접근유형,,,,text,가변,NOT NULL,'apply',,,apply|direct_link,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+카탈로그항목,fc_catalog_item,연결URL,link_url,카탈로그항목의 연결URL,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+카탈로그항목,fc_catalog_item,활성여부,active,카탈로그항목의 활성여부,,,,boolean,가변,NOT NULL,true,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+카탈로그항목,fc_catalog_item,정렬순서,sort_order,카탈로그항목의 정렬순서,,,,integer,가변,NOT NULL,0,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+카탈로그항목,fc_catalog_item,생성자식별자,created_by,카탈로그항목의 생성자식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+카탈로그항목,fc_catalog_item,수정자식별자,updated_by,카탈로그항목의 수정자식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+카탈로그항목,fc_catalog_item,생성일시,created_at,카탈로그항목의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+카탈로그항목,fc_catalog_item,수정일시,updated_at,카탈로그항목의 수정일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+카탈로그신청,fc_catalog_application,식별자,id,카탈로그신청의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+카탈로그신청,fc_catalog_application,테넌트식별자,tenant_id,카탈로그신청의 테넌트식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+카탈로그신청,fc_catalog_application,항목식별자,item_id,카탈로그신청의 항목식별자,,,,uuid,가변,NOT NULL,,,fc_catalog_item(id),,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+카탈로그신청,fc_catalog_application,프로젝트식별자,project_id,카탈로그신청의 프로젝트식별자,,,,uuid,가변,NULL 허용,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+카탈로그신청,fc_catalog_application,사유,reason,카탈로그신청의 사유,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+카탈로그신청,fc_catalog_application,상태,status,카탈로그신청의 상태,,,,text,가변,NOT NULL,'requested',,,requested|approved|rejected|cancelled,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+카탈로그신청,fc_catalog_application,실행상태,execution_status,카탈로그신청의 실행상태,,,,text,가변,NOT NULL,'pending_platform',,,pending_platform|provisioning|failed,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+카탈로그신청,fc_catalog_application,멱등키,idempotency_key,카탈로그신청의 멱등키,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+카탈로그신청,fc_catalog_application,업무신청식별자,work_request_id,카탈로그신청의 업무신청식별자,,,,uuid,가변,NULL 허용,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+카탈로그신청,fc_catalog_application,신청자식별자,requested_by,카탈로그신청의 신청자식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+카탈로그신청,fc_catalog_application,결정자식별자,decided_by,카탈로그신청의 결정자식별자,,,,uuid,가변,NULL 허용,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+카탈로그신청,fc_catalog_application,결정일시,decided_at,카탈로그신청의 결정일시,,,,timestamptz,가변,NULL 허용,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+카탈로그신청,fc_catalog_application,버전,version,카탈로그신청의 버전,,,,integer,가변,NOT NULL,1,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+카탈로그신청,fc_catalog_application,생성일시,created_at,카탈로그신청의 생성일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+카탈로그신청,fc_catalog_application,수정일시,updated_at,카탈로그신청의 수정일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+포털공통설정,fc_portal_setting,테넌트식별자,tenant_id,포털공통설정의 테넌트식별자,,,,uuid,가변,NOT NULL,,Y(복합),,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+포털공통설정,fc_portal_setting,분류,category,포털공통설정의 분류,,,,text,가변,NOT NULL,,Y(복합),,common|security|resource|operation,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+포털공통설정,fc_portal_setting,설정키,key,포털공통설정의 설정키,,,,text,가변,NOT NULL,,Y(복합),,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+포털공통설정,fc_portal_setting,설정값,value,포털공통설정의 설정값,,,,jsonb,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+포털공통설정,fc_portal_setting,값유형,value_type,포털공통설정의 값유형,,,,text,가변,NOT NULL,,,,string|number|boolean|json,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+포털공통설정,fc_portal_setting,설명,description,포털공통설정의 설명,,,,text,가변,NULL 허용,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+포털공통설정,fc_portal_setting,수정자식별자,updated_by,포털공통설정의 수정자식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+포털공통설정,fc_portal_setting,수정일시,updated_at,포털공통설정의 수정일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+포털공통설정,fc_portal_setting,버전,version,포털공통설정의 버전,,,,integer,가변,NOT NULL,1,,,,일반,포털,20260929000020_domains,영구 보존(임시),1,임시정의
+포털공통설정이력,fc_portal_setting_history,식별자,id,포털공통설정이력의 식별자,,,,uuid,가변,NOT NULL,gen_random_uuid(),Y,,,일반,포털,20260929000020_domains,이력 무기한 보존(임시),1,임시정의
+포털공통설정이력,fc_portal_setting_history,테넌트식별자,tenant_id,포털공통설정이력의 테넌트식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,이력 무기한 보존(임시),1,임시정의
+포털공통설정이력,fc_portal_setting_history,분류,category,포털공통설정이력의 분류,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,이력 무기한 보존(임시),1,임시정의
+포털공통설정이력,fc_portal_setting_history,키,key,포털공통설정이력의 키,,,,text,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,이력 무기한 보존(임시),1,임시정의
+포털공통설정이력,fc_portal_setting_history,이전값,old_value,포털공통설정이력의 이전값,,,,jsonb,가변,NULL 허용,,,,,일반,포털,20260929000020_domains,이력 무기한 보존(임시),1,임시정의
+포털공통설정이력,fc_portal_setting_history,이후값,new_value,포털공통설정이력의 이후값,,,,jsonb,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,이력 무기한 보존(임시),1,임시정의
+포털공통설정이력,fc_portal_setting_history,변경자식별자,changed_by,포털공통설정이력의 변경자식별자,,,,uuid,가변,NOT NULL,,,,,일반,포털,20260929000020_domains,이력 무기한 보존(임시),1,임시정의
+포털공통설정이력,fc_portal_setting_history,변경일시,changed_at,포털공통설정이력의 변경일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20260929000020_domains,이력 무기한 보존(임시),1,임시정의
+사용자프로필,fc_user_profiles,테넌트식별자,tenant_id,사용자프로필의 테넌트식별자,,,,uuid,가변,NOT NULL,,Y(복합),fc_tenants(id),,일반,포털,20261001000010_user_profile,영구 보존(임시),1,임시정의
+사용자프로필,fc_user_profiles,사용자식별자,user_id,사용자프로필의 사용자식별자,,,,uuid,가변,NOT NULL,,Y(복합),fc_users(user_id),,일반,포털,20261001000010_user_profile,영구 보존(임시),1,임시정의
+사용자프로필,fc_user_profiles,프로필정보,profile,사용자프로필의 프로필정보,,,,jsonb,가변,NOT NULL,'{}',,,,개인정보,포털,20261001000010_user_profile,영구 보존(임시),1,임시정의
+사용자프로필,fc_user_profiles,버전,version,사용자프로필의 버전,,,,integer,가변,NOT NULL,1,,,,일반,포털,20261001000010_user_profile,영구 보존(임시),1,임시정의
+사용자프로필,fc_user_profiles,수정일시,updated_at,사용자프로필의 수정일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20261001000010_user_profile,영구 보존(임시),1,임시정의
+메타데이터사전버전,fc_metadata_releases,사전버전식별자,release_id,메타데이터사전버전의 사전버전식별자,,,,uuid,가변,NOT NULL,,Y,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터사전버전,fc_metadata_releases,버전,version,메타데이터사전버전의 버전,,,,text,가변,NOT NULL,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터사전버전,fc_metadata_releases,원천유형,source_type,메타데이터사전버전의 원천유형,,,,text,가변,NOT NULL,'project_draft',,,project_draft|institution,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터사전버전,fc_metadata_releases,원천URI,source_uri,메타데이터사전버전의 원천URI,,,,text,가변,NOT NULL,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터사전버전,fc_metadata_releases,원천해시,source_hash,메타데이터사전버전의 원천해시,,,,text,가변,NOT NULL,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터사전버전,fc_metadata_releases,매핑상태,mapping_status,메타데이터사전버전의 매핑상태,,,,text,가변,NOT NULL,'provisional',,,provisional|confirmed,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터사전버전,fc_metadata_releases,기관표준버전,institution_version,메타데이터사전버전의 기관표준버전,,,,text,가변,NULL 허용,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터사전버전,fc_metadata_releases,기관표준출처,institution_source,메타데이터사전버전의 기관표준출처,,,,text,가변,NULL 허용,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터사전버전,fc_metadata_releases,테이블수,table_count,메타데이터사전버전의 테이블수,,,,integer,가변,NOT NULL,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터사전버전,fc_metadata_releases,컬럼수,column_count,메타데이터사전버전의 컬럼수,,,,integer,가변,NOT NULL,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터사전버전,fc_metadata_releases,적재일시,imported_at,메타데이터사전버전의 적재일시,,,,timestamptz,가변,NOT NULL,now(),,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터표준도메인,fc_metadata_domains,사전버전식별자,release_id,메타데이터표준도메인의 사전버전식별자,,,,uuid,가변,NOT NULL,,Y(복합),fc_metadata_releases(release_id),,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터표준도메인,fc_metadata_domains,도메인식별자,domain_id,메타데이터표준도메인의 도메인식별자,,,,text,가변,NOT NULL,,Y(복합),,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터표준도메인,fc_metadata_domains,논리명,logical_name,메타데이터표준도메인의 논리명,,,,text,가변,NOT NULL,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터표준도메인,fc_metadata_domains,자료형,data_type,메타데이터표준도메인의 자료형,,,,text,가변,NOT NULL,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터표준도메인,fc_metadata_domains,길이정밀도,precision,메타데이터표준도메인의 길이정밀도,,,,text,가변,NULL 허용,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터표준도메인,fc_metadata_domains,정의,definition,메타데이터표준도메인의 정의,,,,text,가변,NOT NULL,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터표준도메인,fc_metadata_domains,기관도메인식별자,institution_domain_id,메타데이터표준도메인의 기관도메인식별자,,,,text,가변,NULL 허용,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터표준단어,fc_metadata_words,사전버전식별자,release_id,메타데이터표준단어의 사전버전식별자,,,,uuid,가변,NOT NULL,,Y(복합),fc_metadata_releases(release_id),,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터표준단어,fc_metadata_words,단어식별자,word_id,메타데이터표준단어의 단어식별자,,,,text,가변,NOT NULL,,Y(복합),,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터표준단어,fc_metadata_words,논리명,logical_name,메타데이터표준단어의 논리명,,,,text,가변,NOT NULL,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터표준단어,fc_metadata_words,영문명,english_name,메타데이터표준단어의 영문명,,,,text,가변,NOT NULL,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터표준단어,fc_metadata_words,약어,abbreviation,메타데이터표준단어의 약어,,,,text,가변,NOT NULL,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터표준단어,fc_metadata_words,정의,definition,메타데이터표준단어의 정의,,,,text,가변,NOT NULL,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터표준단어,fc_metadata_words,기관단어식별자,institution_word_id,메타데이터표준단어의 기관단어식별자,,,,text,가변,NULL 허용,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터표준용어,fc_metadata_terms,사전버전식별자,release_id,메타데이터표준용어의 사전버전식별자,,,,uuid,가변,NOT NULL,,Y(복합),fc_metadata_releases(release_id),,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터표준용어,fc_metadata_terms,용어식별자,term_id,메타데이터표준용어의 용어식별자,,,,text,가변,NOT NULL,,Y(복합),,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터표준용어,fc_metadata_terms,논리명,logical_name,메타데이터표준용어의 논리명,,,,text,가변,NOT NULL,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터표준용어,fc_metadata_terms,영문명,english_name,메타데이터표준용어의 영문명,,,,text,가변,NOT NULL,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터표준용어,fc_metadata_terms,구성단어식별자목록,word_ids,메타데이터표준용어의 구성단어식별자목록,,,,jsonb,가변,NOT NULL,'[]',,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터표준용어,fc_metadata_terms,정의,definition,메타데이터표준용어의 정의,,,,text,가변,NOT NULL,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터표준용어,fc_metadata_terms,기관용어식별자,institution_term_id,메타데이터표준용어의 기관용어식별자,,,,text,가변,NULL 허용,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터표준코드,fc_metadata_codes,사전버전식별자,release_id,메타데이터표준코드의 사전버전식별자,,,,uuid,가변,NOT NULL,,Y(복합),fc_metadata_releases(release_id),,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터표준코드,fc_metadata_codes,코드그룹,code_group,메타데이터표준코드의 코드그룹,,,,text,가변,NOT NULL,,Y(복합),,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터표준코드,fc_metadata_codes,코드값,code_value,메타데이터표준코드의 코드값,,,,text,가변,NOT NULL,,Y(복합),,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터표준코드,fc_metadata_codes,논리명,logical_name,메타데이터표준코드의 논리명,,,,text,가변,NOT NULL,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터표준코드,fc_metadata_codes,정의,definition,메타데이터표준코드의 정의,,,,text,가변,NOT NULL,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터표준코드,fc_metadata_codes,적용대상,applies_to,메타데이터표준코드의 적용대상,,,,text,가변,NOT NULL,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터표준코드,fc_metadata_codes,기관코드식별자,institution_code_id,메타데이터표준코드의 기관코드식별자,,,,text,가변,NULL 허용,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터컬럼매핑,fc_metadata_columns,사전버전식별자,release_id,메타데이터컬럼매핑의 사전버전식별자,,,,uuid,가변,NOT NULL,,Y(복합),"fc_metadata_releases(release_id);fc_metadata_domains(release_id,domain_id);fc_metadata_terms(release_id,term_id)",,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터컬럼매핑,fc_metadata_columns,스키마명,schema_name,메타데이터컬럼매핑의 스키마명,,,,text,가변,NOT NULL,,Y(복합),,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터컬럼매핑,fc_metadata_columns,테이블명,table_name,메타데이터컬럼매핑의 테이블명,,,,text,가변,NOT NULL,,Y(복합),,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터컬럼매핑,fc_metadata_columns,컬럼명,column_name,메타데이터컬럼매핑의 컬럼명,,,,text,가변,NOT NULL,,Y(복합),,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터컬럼매핑,fc_metadata_columns,논리명,logical_name,메타데이터컬럼매핑의 논리명,,,,text,가변,NOT NULL,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터컬럼매핑,fc_metadata_columns,정의,definition,메타데이터컬럼매핑의 정의,,,,text,가변,NOT NULL,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터컬럼매핑,fc_metadata_columns,용어식별자,term_id,메타데이터컬럼매핑의 용어식별자,,,,text,가변,NULL 허용,,,"fc_metadata_terms(release_id,term_id)",,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터컬럼매핑,fc_metadata_columns,도메인식별자,domain_id,메타데이터컬럼매핑의 도메인식별자,,,,text,가변,NOT NULL,,,"fc_metadata_domains(release_id,domain_id)",,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터컬럼매핑,fc_metadata_columns,자료형,data_type,메타데이터컬럼매핑의 자료형,,,,text,가변,NOT NULL,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터컬럼매핑,fc_metadata_columns,NULL허용여부,is_nullable,메타데이터컬럼매핑의 NULL허용여부,,,,boolean,가변,NOT NULL,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터컬럼매핑,fc_metadata_columns,기본키여부,is_primary_key,메타데이터컬럼매핑의 기본키여부,,,,boolean,가변,NOT NULL,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터컬럼매핑,fc_metadata_columns,기본값표현식,default_expression,메타데이터컬럼매핑의 기본값표현식,,,,text,가변,NULL 허용,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터컬럼매핑,fc_metadata_columns,참조관계,references,메타데이터컬럼매핑의 참조관계,,,,jsonb,가변,NOT NULL,'[]',,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터컬럼매핑,fc_metadata_columns,제약조건,constraints,메타데이터컬럼매핑의 제약조건,,,,jsonb,가변,NOT NULL,'[]',,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터컬럼매핑,fc_metadata_columns,보안개인정보분류,sensitivity,메타데이터컬럼매핑의 보안개인정보분류,,,,text,가변,NOT NULL,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터컬럼매핑,fc_metadata_columns,보존정책,retention_policy,메타데이터컬럼매핑의 보존정책,,,,text,가변,NOT NULL,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터컬럼매핑,fc_metadata_columns,원천마이그레이션,source_migration,메타데이터컬럼매핑의 원천마이그레이션,,,,text,가변,NOT NULL,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터컬럼매핑,fc_metadata_columns,매핑상태,mapping_status,메타데이터컬럼매핑의 매핑상태,,,,text,가변,NOT NULL,'provisional',,,provisional|confirmed,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의
+메타데이터컬럼매핑,fc_metadata_columns,기관용어식별자,institution_term_id,메타데이터컬럼매핑의 기관용어식별자,,,,text,가변,NULL 허용,,,,,일반,포털,20261004000001_metadata_dictionary,영구 보존(임시),1,임시정의

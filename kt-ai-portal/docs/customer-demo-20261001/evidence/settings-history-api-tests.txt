@@ -1,0 +1,8 @@
+PASS real save appends immutable before/after and actor/time history
+PASS general users cannot read settings history
+PASS tenant filter and actual RLS isolate history
+PASS conflicting save does not append a successful history row
+PASS secrets absent from save, list, and history JSON including nested fields
+PASS category filtering and deterministic bounded pagination
+PASS string values resembling JSON retain their declared type
+Settings history: 7/7 scenarios passed

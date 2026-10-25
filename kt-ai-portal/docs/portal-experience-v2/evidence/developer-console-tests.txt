@@ -1,0 +1,8 @@
+PASS catalog preserves 40 contracts and removes requirement labels
+PASS sample contract validates successfully without claiming external connection
+PASS invalid request is rejected and a missing sample response field fails
+PASS history survives reload and CSV identifies sample results
+PASS contract export carries draft schemas and no requirement IDs
+PASS VDI filter opens the two proposed VDI interfaces
+PASS mobile console fits viewport without horizontal overflow
+PASS no browser runtime errors

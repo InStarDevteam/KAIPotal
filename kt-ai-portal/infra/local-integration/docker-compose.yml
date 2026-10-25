@@ -1,0 +1,25 @@
+# local-integration 프로파일: 로컬 PostgreSQL 16 (개발/통합시험 전용)
+#
+# 주의: 이 파일의 자격증명은 로컬 개발 전용이다. 운영/스테이징에서는
+# Secret Manager 참조를 사용하고 평문 비밀번호를 커밋하지 않는다(지시서 §0-6).
+# Keycloak/OpenSearch 노드는 P1 후속 커밋에서 추가한다.
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: kai-portal-pg-local
+    environment:
+      POSTGRES_USER: portal_admin
+      POSTGRES_PASSWORD: local-dev-only
+      POSTGRES_DB: portal_business
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U portal_admin -d portal_business"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+
+volumes:
+  pgdata:

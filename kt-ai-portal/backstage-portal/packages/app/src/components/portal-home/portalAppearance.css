@@ -1,0 +1,354 @@
+/* Shared design language. Every concept uses the same information hierarchy,
+   controls and reading surfaces; only the visual treatment changes. */
+.portal-appearance {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR',
+    Arial, sans-serif;
+  color: var(--portal-text);
+  background: var(--portal-bg);
+  font-size: calc(15px * var(--portal-font-scale, 1));
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.portal-appearance .portal-shell-experience {
+  color: var(--portal-text);
+  background: var(--portal-bg);
+}
+.portal-appearance .portal-shell-experience > header {
+  min-height: 76px;
+  height: auto;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: var(--portal-header-text);
+  background: var(--portal-header);
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--portal-header-text) 12%, transparent);
+  box-shadow: 0 6px 24px #0b273b08;
+}
+.portal-appearance .portal-shell-experience > header a,
+.portal-appearance .portal-shell-experience > header button,
+.portal-appearance .portal-shell-experience > header [role='button'],
+.portal-appearance .portal-shell-experience > header input,
+.portal-appearance .portal-shell-experience > header svg {
+  color: var(--portal-header-text);
+}
+.portal-appearance .portal-shell-experience > header .brand-kai {
+  color: var(--portal-header-text);
+}
+.portal-appearance .portal-shell-experience > header .brand-subtitle {
+  color: var(--portal-header-muted);
+  font-size: calc(10px * var(--portal-font-scale, 1));
+  letter-spacing: 0.03em;
+}
+.portal-appearance
+  .portal-shell-experience
+  > header
+  [data-testid='tenant-picker'] {
+  border-radius: 9px;
+  background: color-mix(in srgb, var(--portal-header-text) 7%, transparent);
+}
+.portal-appearance .portal-shell-experience > header fieldset {
+  border-color: color-mix(in srgb, var(--portal-header-text) 26%, transparent);
+}
+.portal-appearance .portal-shell-experience > header input::placeholder {
+  color: var(--portal-header-muted);
+  opacity: 1;
+}
+.portal-appearance .profile-avatar {
+  color: var(--portal-header-text);
+  border-color: var(--portal-header);
+  background: color-mix(
+    in srgb,
+    var(--portal-primary) 75%,
+    var(--portal-header)
+  );
+  box-shadow: 0 0 0 1px
+    color-mix(in srgb, var(--portal-header-text) 30%, transparent);
+}
+.portal-appearance [data-design='canvas'] .profile-avatar {
+  color: white;
+}
+.portal-appearance .header-work-button {
+  font-size: calc(13px * var(--portal-font-scale, 1));
+}
+.portal-appearance .header-work-button svg {
+  width: 18px;
+  height: 18px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+.portal-appearance .header-work-button .header-work-prefix {
+  margin-left: 0;
+  color: inherit;
+}
+.portal-appearance #portal-main:not(.shell-home) {
+  padding-top: 32px;
+}
+.portal-appearance #portal-main > div {
+  max-width: 1440px;
+}
+.portal-appearance #portal-main :where(h1, h2, h3, h4, h5, h6) {
+  letter-spacing: -0.025em;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.portal-appearance #portal-main :where(input, textarea, select) {
+  font-size: calc(14px * var(--portal-font-scale, 1));
+}
+.portal-appearance #portal-main [role='tab'] {
+  font-size: calc(14px * var(--portal-font-scale, 1));
+  padding: 12px 20px;
+}
+.portal-appearance #portal-main th,
+.portal-appearance #portal-main td {
+  font-size: calc(14px * var(--portal-font-scale, 1));
+  color: var(--portal-text);
+  border-color: var(--portal-line);
+}
+.portal-appearance #portal-main thead th {
+  font-size: calc(13px * var(--portal-font-scale, 1));
+  color: var(--portal-muted);
+  background: var(--portal-primary-soft);
+}
+.portal-appearance #portal-main .MuiTypography-colorTextSecondary {
+  color: var(--portal-muted);
+}
+.portal-appearance
+  :where(a, button, [role='button'], input, textarea, select):focus-visible,
+html[data-portal-design]
+  :where(.portal-launcher-paper, .portal-profile-paper)
+  :where(a, button):focus-visible {
+  outline: 3px solid var(--portal-accent);
+  outline-offset: 3px;
+}
+.portal-appearance > div > header a:focus-visible,
+.portal-appearance
+  .portal-shell-experience
+  > header
+  :where(button, [role='button']):focus-visible {
+  outline-color: var(--portal-header-text);
+}
+.portal-appearance .work-primary {
+  background: var(--portal-primary);
+}
+.portal-appearance .work-refresh {
+  color: var(--portal-primary) !important;
+  border-color: var(--portal-line);
+}
+.portal-appearance .work-metric,
+.portal-appearance .work-panel {
+  background: var(--portal-surface);
+  border-color: var(--portal-line);
+  border-radius: 18px;
+  box-shadow: 0 3px 18px #17293b04;
+}
+.portal-appearance .work-metric > strong {
+  color: var(--portal-text);
+  font-weight: 700;
+}
+.portal-appearance .work-project-card {
+  background: linear-gradient(
+    140deg,
+    var(--portal-primary-soft),
+    var(--portal-surface) 80%
+  );
+  border-color: var(--portal-line);
+  border-radius: 16px;
+}
+.portal-appearance .work-project-card:hover {
+  border-color: var(--portal-primary);
+}
+.portal-appearance .work-project-card h3 {
+  color: var(--portal-text);
+  line-height: 1.5;
+}
+.portal-appearance .project-card-top > span {
+  background: var(--portal-primary-soft);
+  color: var(--portal-primary);
+}
+.portal-appearance .work-section-tag,
+.portal-appearance .work-eyebrow,
+.portal-appearance .work-topline,
+.portal-appearance .work-panel-note {
+  color: var(--portal-muted);
+}
+.portal-appearance .work-heading {
+  padding: 24px 28px;
+  border-radius: 20px;
+  border: 1px solid var(--portal-line);
+  background: linear-gradient(
+    115deg,
+    var(--portal-surface),
+    var(--portal-primary-soft)
+  );
+  margin-bottom: 22px;
+}
+.portal-appearance .work-heading p {
+  max-width: 640px;
+  line-height: 1.7;
+  color: var(--portal-muted);
+}
+.portal-appearance .work-count {
+  background: var(--portal-primary-soft);
+  color: var(--portal-primary);
+}
+.portal-appearance .work-menu-card {
+  border-color: var(--portal-line);
+  background: var(--portal-surface);
+  border-radius: 18px;
+}
+.portal-appearance .work-search {
+  background: var(--portal-bg);
+  border-color: var(--portal-line);
+}
+.portal-appearance .work-search input {
+  color: var(--portal-text);
+}
+.portal-appearance .my-page-nav button[aria-selected='true'] {
+  color: var(--portal-primary);
+  background: var(--portal-primary-soft);
+}
+.portal-appearance .my-page-nav button:hover {
+  background: var(--portal-bg);
+}
+.portal-appearance .work-queue-filters button[aria-pressed='true'] {
+  background: var(--portal-primary);
+}
+/* Portals render outside the appearance wrapper. Their variables are also
+   published on html by the provider and their typography comes from MUI. */
+html[data-portal-design] .portal-launcher-paper {
+  background: var(--portal-bg) !important;
+  border-color: var(--portal-line);
+  color: var(--portal-text);
+  box-shadow: 0 24px 70px #10273b26 !important;
+}
+html[data-portal-design] .portal-profile-paper,
+html[data-portal-design] .launcher-platform-section,
+html[data-portal-design] .launcher-work-section {
+  background: var(--portal-surface);
+  color: var(--portal-text);
+}
+html[data-portal-design] .portal-profile-paper a,
+html[data-portal-design] .launcher-apps button,
+html[data-portal-design] .launcher-work-grid a {
+  color: var(--portal-text);
+  font-size: calc(13px * var(--portal-font-scale, 1));
+}
+html[data-portal-design] .portal-profile-paper p,
+html[data-portal-design] .launcher-footnote,
+html[data-portal-design] .launcher-platform-section > p,
+html[data-portal-design] .launcher-work-section > p {
+  color: var(--portal-muted);
+}
+html[data-portal-design] .launcher-apps button:hover,
+html[data-portal-design] .launcher-work-grid a:hover,
+html[data-portal-design] .portal-profile-paper a:hover {
+  background: var(--portal-primary-soft);
+}
+html[data-portal-design] .work-app-icon {
+  color: var(--portal-primary);
+  background: var(--portal-primary-soft);
+  border: 1px solid var(--portal-line);
+  border-radius: 12px;
+}
+html[data-portal-design] .launcher-heading h2 {
+  font-size: calc(18px * var(--portal-font-scale, 1));
+}
+html[data-portal-design] .launcher-apps small,
+html[data-portal-design] .launcher-footnote {
+  font-size: calc(12px * var(--portal-font-scale, 1));
+  line-height: 1.6;
+}
+@media (max-width: 767px) {
+  .portal-appearance .portal-shell-experience > header {
+    min-height: 68px;
+    padding: 10px 10px;
+    gap: 4px;
+  }
+  .portal-appearance #portal-main:not(.shell-home) {
+    padding: 20px 12px 36px;
+  }
+  .portal-appearance .work-heading {
+    padding: 22px 20px;
+    align-items: flex-start;
+  }
+  .portal-appearance .work-heading-actions {
+    width: 100%;
+  }
+  .portal-appearance .header-work-button {
+    font-size: calc(12px * var(--portal-font-scale, 1));
+  }
+  .portal-appearance .header-work-button svg {
+    margin-left: 3px;
+    width: 14px;
+  }
+}
+@media (max-width: 359px) {
+  .portal-appearance .portal-shell-experience > header {
+    padding-left: 8px;
+    padding-right: 8px;
+    gap: 3px;
+  }
+  .portal-appearance .portal-shell-experience > header > button {
+    padding: 8px !important;
+    min-width: 44px;
+  }
+  .portal-appearance
+    .portal-shell-experience
+    > header
+    > :is(button, a)[aria-label='통합검색'] {
+    display: none;
+  }
+  .portal-appearance .header-work-button {
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .portal-appearance .header-work-prefix,
+  .portal-appearance .header-work-button svg {
+    display: none;
+  }
+  .portal-appearance .portal-shell-experience > header .brand-kai {
+    font-size: 20px;
+  }
+  .portal-appearance .profile-avatar {
+    width: 29px;
+    height: 29px;
+    font-size: 10px;
+  }
+  .portal-appearance
+    .portal-shell-experience
+    > header
+    [data-testid='tenant-picker'] {
+    max-width: 70px;
+    min-width: 70px;
+    margin-left: 0;
+  }
+  .portal-appearance
+    .portal-shell-experience
+    > header
+    [data-testid='tenant-picker']
+    [role='button'] {
+    font-size: calc(12px * var(--portal-font-scale, 1));
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .portal-appearance .portal-shell-experience > header:has(img) > a[title] {
+    display: none;
+  }
+  .portal-appearance .apps-launcher-button {
+    padding: 8px !important;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .portal-appearance *,
+  .portal-appearance *::before,
+  .portal-appearance *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

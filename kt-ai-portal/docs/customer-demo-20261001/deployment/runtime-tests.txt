@@ -1,0 +1,7 @@
+PASS suspended account denied tenant selection
+PASS unverified identity denied
+PASS audit failure rolls back settings update
+PASS audit failure rolls back role assignment
+PASS runtime cannot edit audit ledger
+PASS runtime cannot delete audit ledger
+52 runtime integration checks passed (real PostgreSQL, disposable DB)

@@ -1,0 +1,16 @@
+PASS login exposes 4 choices and rejects wrong code
+PASS selected design opens after authentication, reload preserves it
+PASS all 4 homes have 4 services and no visible sidebar
+PASS launcher provides four icons and role-filtered portal functions
+PASS unconfigured platform shows honest handoff, not simulated success
+PASS personal order and favorite persist after reload
+PASS general users cannot open admin routes directly
+PASS admin API catalog retains 40 interfaces without RFP codes
+PASS API sample validates edited JSON, error paths and persists history
+PASS API history and full specification download
+PASS superuser can assign tenant admin with explicit reason
+PASS tenant picker includes marine corps and platform policy persists
+PASS all homes and developer console fit mobile/tablet/desktop
+PASS active page routes and tabs render without requirement IDs
+PASS logout clears preview identity and returns to login
+16 experience scenarios passed

@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "creationTimestamp": "2026-10-03T04:32:30.214835Z"
+  },
+  "status": {
+    "conditions": [
+      {
+        "lastTransitionTime": "2026-10-03T04:33:06.060271Z",
+        "message": "Deploying revision succeeded in 35.84s.",
+        "status": "True",
+        "type": "Ready"
+      },
+      {
+        "lastTransitionTime": "2026-10-03T04:33:04.749900Z",
+        "severity": "Info",
+        "status": "True",
+        "type": "Active"
+      },
+      {
+        "lastTransitionTime": "2026-10-03T04:33:04.647920Z",
+        "message": "Containers became healthy in 12.13s.",
+        "status": "True",
+        "type": "ContainerHealthy"
+      },
+      {
+        "lastTransitionTime": "2026-10-03T04:32:49.346839Z",
+        "message": "Container image import completed in 18.66s.",
+        "status": "True",
+        "type": "ContainerReady"
+      },
+      {
+        "lastTransitionTime": "2026-10-03T04:33:06.028300Z",
+        "message": "Min instances provisioned successfully  in 497500h33m6.03s.",
+        "status": "True",
+        "type": "MinInstancesProvisioned"
+      },
+      {
+        "lastTransitionTime": "2026-10-03T04:32:52.014015Z",
+        "message": "Provisioning imported containers completed in 2.66s. Checking container health. This will wait for up to 4m for the configured startup probe, including an initial delay of 0s.",
+        "status": "True",
+        "type": "ResourcesAvailable"
+      }
+    ],
+    "imageDigest": "asia-northeast3-docker.pkg.dev/kai-platform-d0ae0/kt-ai-portal/kt-ai-portal-demo@sha256:21c5d3d78224d0cc72389ff9c645602c9b2d98c9ebaa4d72377bb0ccec844c7b"
+  }
+}

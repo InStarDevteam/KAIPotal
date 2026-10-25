@@ -1,0 +1,64 @@
+.credit-form-row {
+  display: grid;
+  align-items: start;
+  gap: 16px;
+  padding-top: 8px;
+}
+.credit-request-form {
+  grid-template-columns: 160px 190px minmax(220px, 1fr) 88px;
+  margin-bottom: 24px;
+}
+.credit-adjust-form {
+  grid-template-columns: 190px minmax(220px, 1fr) 104px;
+}
+.credit-form-row > * {
+  min-width: 0;
+}
+#portal-main .credit-form-row > button {
+  min-height: 40px;
+  white-space: nowrap;
+}
+#portal-main .credit-form-row p {
+  margin: 6px 0 0;
+  line-height: 1.55;
+}
+#portal-main .credit-form-heading {
+  margin-bottom: 10px;
+  color: #293b4b;
+  font-weight: 600;
+}
+#portal-main .credit-empty-state {
+  background: #f7f9fc;
+  color: #536477;
+  border: 1px dashed #d7e0e9;
+  border-radius: 8px;
+  align-items: center;
+}
+#portal-main .credit-empty-state svg {
+  color: #6e8799;
+}
+@media (max-width: 1100px) {
+  .credit-request-form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .credit-request-form .credit-reason-field {
+    grid-column: 1 / -1;
+  }
+  #portal-main .credit-request-form > button {
+    justify-self: start;
+    min-width: 100px;
+  }
+}
+@media (max-width: 640px) {
+  .credit-request-form,
+  .credit-adjust-form {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+  .credit-request-form .credit-reason-field {
+    grid-column: auto;
+  }
+  #portal-main .credit-form-row > button {
+    justify-self: stretch;
+  }
+}

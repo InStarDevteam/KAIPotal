@@ -1,0 +1,22 @@
+{
+  "checks": [
+    "production API mode retains four login/home designs independently of mock mode",
+    "authorized multi-tenant selector opens and switches real API scope",
+    "work overview loads actual ledgers without aggregation failure",
+    "all active authorized pages render without JS errors or requirement IDs",
+    "scoped developer catalog excludes invented pilot API contracts",
+    "single-tenant user can inspect selection without granting unauthorized tenants",
+    "defense profile saves to actual DB and restores after reload",
+    "external profile removes military-only fields and persists distinction",
+    "profile API rejects stale writes, identity fields and cross-user access",
+    "active sessions never present sample records or simulated revocation in server mode",
+    "personal projects use actual membership and readable cards, not narrow resource tables",
+    "ordinary user can read own real activity without audit-admin permission",
+    "work environment request is persisted through UI and reviewed through real API",
+    "six account classes open the correct work landing from actual server permissions",
+    "mobile profile, projects and four designs have no horizontal page overflow"
+  ],
+  "errors": [],
+  "apiErrors": [],
+  "dataMode": "actual BFF + disposable local PostgreSQL; test auth only"
+}

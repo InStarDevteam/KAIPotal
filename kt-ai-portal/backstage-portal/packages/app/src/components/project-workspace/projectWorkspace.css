@@ -1,0 +1,53 @@
+.project-workspace-page {
+  padding: 24px;
+}
+.project-workspace-page > .MuiTypography-h4 {
+  font-weight: 750;
+  color: #18273e;
+  letter-spacing: -0.7px;
+}
+.project-workspace-page > .MuiTypography-body1 {
+  max-width: 760px;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+.project-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.project-table .MuiTable-root {
+  min-width: 820px;
+}
+.project-table .project-name-link {
+  padding: 3px 0;
+  min-width: 0;
+  font-size: calc(14px * var(--portal-font-scale, 1));
+  font-weight: 700;
+  text-align: left;
+  justify-content: flex-start;
+  text-transform: none;
+}
+.project-description-preview {
+  max-width: 340px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.workspace-step-summary {
+  padding: 16px 20px;
+  background: #f4f7fb;
+  border: 1px solid #dce3ec;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .project-workspace-page {
+    padding: 12px 8px;
+  }
+  .project-toolbar > .MuiTypography-root {
+    width: 100%;
+  }
+}

@@ -1,0 +1,1070 @@
+{
+  "phase": "local-readonly-transport",
+  "uiOrigin": "http://127.0.0.1:3011",
+  "candidateApiOrigin": "https://kt-ai-portal-demo-e2ik6gboua-du.a.run.app",
+  "startedAt": "2026-10-11T07:12:27.163Z",
+  "mockedApiResponses": false,
+  "businessWritesAllowed": false,
+  "capturesMasked": true,
+  "adminAppearanceRequested": false,
+  "personalAppearanceRequested": false,
+  "checks": [
+    {
+      "name": "login 1440px exposes four choices without Google login",
+      "passed": true
+    },
+    {
+      "name": "login 390px exposes four choices without Google login",
+      "passed": true
+    },
+    {
+      "name": "login 320px exposes four choices without Google login",
+      "passed": true
+    },
+    {
+      "name": "captures actual authenticated preferences before any appearance change",
+      "passed": true
+    },
+    {
+      "name": "Aurora homepage 1440px",
+      "passed": true
+    },
+    {
+      "name": "Aurora homepage 390px",
+      "passed": true
+    },
+    {
+      "name": "Aurora homepage 320px",
+      "passed": true
+    },
+    {
+      "name": "Aurora launcher inherits global appearance outside route wrapper",
+      "passed": true
+    },
+    {
+      "name": "Aurora /portal-work 1440px keeps the same concept and fits",
+      "passed": true
+    },
+    {
+      "name": "Aurora /portal-work 390px keeps the same concept and fits",
+      "passed": true
+    },
+    {
+      "name": "Aurora /portal-work 320px keeps the same concept and fits",
+      "passed": false,
+      "failureClass": "AssertionError"
+    },
+    {
+      "name": "Aurora /project-workspace 1440px keeps the same concept and fits",
+      "passed": true
+    },
+    {
+      "name": "Aurora /project-workspace 390px keeps the same concept and fits",
+      "passed": true
+    },
+    {
+      "name": "Aurora /project-workspace 320px keeps the same concept and fits",
+      "passed": false,
+      "failureClass": "AssertionError"
+    },
+    {
+      "name": "Aurora /my-page 1440px keeps the same concept and fits",
+      "passed": true
+    },
+    {
+      "name": "Aurora /my-page 390px keeps the same concept and fits",
+      "passed": true
+    },
+    {
+      "name": "Aurora /my-page 320px keeps the same concept and fits",
+      "passed": false,
+      "failureClass": "AssertionError"
+    },
+    {
+      "name": "Focus homepage 1440px",
+      "passed": true
+    },
+    {
+      "name": "Focus homepage 390px",
+      "passed": true
+    },
+    {
+      "name": "Focus homepage 320px",
+      "passed": true
+    },
+    {
+      "name": "Focus launcher inherits global appearance outside route wrapper",
+      "passed": true
+    },
+    {
+      "name": "Focus /portal-work 1440px keeps the same concept and fits",
+      "passed": true
+    },
+    {
+      "name": "Focus /portal-work 390px keeps the same concept and fits",
+      "passed": true
+    },
+    {
+      "name": "Focus /portal-work 320px keeps the same concept and fits",
+      "passed": false,
+      "failureClass": "AssertionError"
+    },
+    {
+      "name": "Focus /project-workspace 1440px keeps the same concept and fits",
+      "passed": true
+    },
+    {
+      "name": "Focus /project-workspace 390px keeps the same concept and fits",
+      "passed": true
+    },
+    {
+      "name": "Focus /project-workspace 320px keeps the same concept and fits",
+      "passed": false,
+      "failureClass": "AssertionError"
+    },
+    {
+      "name": "Focus /my-page 1440px keeps the same concept and fits",
+      "passed": true
+    },
+    {
+      "name": "Focus /my-page 390px keeps the same concept and fits",
+      "passed": true
+    },
+    {
+      "name": "Focus /my-page 320px keeps the same concept and fits",
+      "passed": false,
+      "failureClass": "AssertionError"
+    },
+    {
+      "name": "Orbit homepage 1440px",
+      "passed": true
+    },
+    {
+      "name": "Orbit homepage 390px",
+      "passed": true
+    },
+    {
+      "name": "Orbit homepage 320px",
+      "passed": true
+    },
+    {
+      "name": "Orbit launcher inherits global appearance outside route wrapper",
+      "passed": true
+    },
+    {
+      "name": "Orbit /portal-work 1440px keeps the same concept and fits",
+      "passed": true
+    },
+    {
+      "name": "Orbit /portal-work 390px keeps the same concept and fits",
+      "passed": true
+    },
+    {
+      "name": "Orbit /portal-work 320px keeps the same concept and fits",
+      "passed": false,
+      "failureClass": "AssertionError"
+    },
+    {
+      "name": "Orbit /project-workspace 1440px keeps the same concept and fits",
+      "passed": true
+    },
+    {
+      "name": "Orbit /project-workspace 390px keeps the same concept and fits",
+      "passed": true
+    },
+    {
+      "name": "Orbit /project-workspace 320px keeps the same concept and fits",
+      "passed": false,
+      "failureClass": "AssertionError"
+    },
+    {
+      "name": "Orbit /my-page 1440px keeps the same concept and fits",
+      "passed": true
+    },
+    {
+      "name": "Orbit /my-page 390px keeps the same concept and fits",
+      "passed": true
+    },
+    {
+      "name": "Orbit /my-page 320px keeps the same concept and fits",
+      "passed": false,
+      "failureClass": "AssertionError"
+    },
+    {
+      "name": "Canvas homepage 1440px",
+      "passed": true
+    },
+    {
+      "name": "Canvas homepage 390px",
+      "passed": true
+    },
+    {
+      "name": "Canvas homepage 320px",
+      "passed": true
+    },
+    {
+      "name": "Canvas launcher inherits global appearance outside route wrapper",
+      "passed": true
+    },
+    {
+      "name": "Canvas /portal-work 1440px keeps the same concept and fits",
+      "passed": true
+    },
+    {
+      "name": "Canvas /portal-work 390px keeps the same concept and fits",
+      "passed": true
+    },
+    {
+      "name": "Canvas /portal-work 320px keeps the same concept and fits",
+      "passed": false,
+      "failureClass": "AssertionError"
+    },
+    {
+      "name": "Canvas /project-workspace 1440px keeps the same concept and fits",
+      "passed": true
+    },
+    {
+      "name": "Canvas /project-workspace 390px keeps the same concept and fits",
+      "passed": true
+    },
+    {
+      "name": "Canvas /project-workspace 320px keeps the same concept and fits",
+      "passed": false,
+      "failureClass": "AssertionError"
+    },
+    {
+      "name": "Canvas /my-page 1440px keeps the same concept and fits",
+      "passed": true
+    },
+    {
+      "name": "Canvas /my-page 390px keeps the same concept and fits",
+      "passed": true
+    },
+    {
+      "name": "Canvas /my-page 320px keeps the same concept and fits",
+      "passed": false,
+      "failureClass": "AssertionError"
+    }
+  ],
+  "screenshots": [
+    "login-1440.png",
+    "login-390.png",
+    "login-320.png",
+    "home-aurora-1440.png",
+    "home-aurora-390.png",
+    "home-aurora-320.png",
+    "launcher-aurora.png",
+    "aurora-portal-work-1440.png",
+    "aurora-portal-work-390.png",
+    "failure-11.png",
+    "aurora-project-workspace-1440.png",
+    "aurora-project-workspace-390.png",
+    "failure-14.png",
+    "aurora-my-page-1440.png",
+    "aurora-my-page-390.png",
+    "failure-17.png",
+    "home-focus-1440.png",
+    "home-focus-390.png",
+    "home-focus-320.png",
+    "launcher-focus.png",
+    "focus-portal-work-1440.png",
+    "focus-portal-work-390.png",
+    "failure-24.png",
+    "focus-project-workspace-1440.png",
+    "focus-project-workspace-390.png",
+    "failure-27.png",
+    "focus-my-page-1440.png",
+    "focus-my-page-390.png",
+    "failure-30.png",
+    "home-orbit-1440.png",
+    "home-orbit-390.png",
+    "home-orbit-320.png",
+    "launcher-orbit.png",
+    "orbit-portal-work-1440.png",
+    "orbit-portal-work-390.png",
+    "failure-37.png",
+    "orbit-project-workspace-1440.png",
+    "orbit-project-workspace-390.png",
+    "failure-40.png",
+    "orbit-my-page-1440.png",
+    "orbit-my-page-390.png",
+    "failure-43.png",
+    "home-canvas-1440.png",
+    "home-canvas-390.png",
+    "home-canvas-320.png",
+    "launcher-canvas.png",
+    "canvas-portal-work-1440.png",
+    "canvas-portal-work-390.png",
+    "failure-50.png",
+    "canvas-project-workspace-1440.png",
+    "canvas-project-workspace-390.png",
+    "failure-53.png",
+    "canvas-my-page-1440.png",
+    "canvas-my-page-390.png",
+    "failure-56.png"
+  ],
+  "responses": [
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/work/overview",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/projects",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me/profile",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/work/overview",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/projects",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me/profile",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/work/overview",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/projects",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me/profile",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/work/overview",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/projects",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me/profile",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    }
+  ],
+  "blockedWrites": [],
+  "pageErrors": [],
+  "networkFailures": [],
+  "serverFailures": [],
+  "restoration": {
+    "personal": "not-required",
+    "tenant": "not-required"
+  },
+  "completedAt": "2026-10-11T07:12:50.434Z",
+  "durationSeconds": 23,
+  "passed": false,
+  "summary": {
+    "checks": 56,
+    "passed": 44,
+    "failed": 12,
+    "screenshots": 55
+  }
+}

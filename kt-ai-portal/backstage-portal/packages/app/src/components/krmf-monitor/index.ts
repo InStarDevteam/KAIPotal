@@ -1,0 +1,1 @@
+export { KrmfMonitorPage } from './KrmfMonitorPage';

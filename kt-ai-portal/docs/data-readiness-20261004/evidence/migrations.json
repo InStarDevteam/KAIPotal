@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-10-03T18:51:20.665Z",
+  "batch": 6,
+  "applied": [
+    "20261004000001_metadata_dictionary.js"
+  ],
+  "tableCount": 57,
+  "metadataPrivileges": [
+    {
+      "relname": "fc_metadata_releases",
+      "can_read": true,
+      "can_write": false
+    },
+    {
+      "relname": "fc_metadata_domains",
+      "can_read": true,
+      "can_write": false
+    },
+    {
+      "relname": "fc_metadata_words",
+      "can_read": true,
+      "can_write": false
+    },
+    {
+      "relname": "fc_metadata_terms",
+      "can_read": true,
+      "can_write": false
+    },
+    {
+      "relname": "fc_metadata_codes",
+      "can_read": true,
+      "can_write": false
+    },
+    {
+      "relname": "fc_metadata_columns",
+      "can_read": true,
+      "can_write": false
+    }
+  ],
+  "verificationCorrection": "Catalog inventory filtered to table relkind; indexes are not tables."
+}

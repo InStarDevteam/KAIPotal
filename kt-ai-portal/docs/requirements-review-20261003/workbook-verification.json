@@ -1,0 +1,19 @@
+{
+  "sourceRows": 531,
+  "uniqueFpIds": 531,
+  "requirements": 21,
+  "gaps": 15,
+  "uxItems": 14,
+  "teamAgendas": 12,
+  "sheets": [
+    "검토안내",
+    "요구영역21",
+    "미비사항15",
+    "UIUX14",
+    "팀협의12",
+    "FP원문531",
+    "FP검토연결531"
+  ],
+  "individualFpFulfillmentReassessed": false,
+  "externalTeamAgreements": 0
+}

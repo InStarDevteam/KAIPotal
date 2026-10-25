@@ -1,0 +1,11 @@
+# Local, isolated customer design review. No production identity or platform credentials.
+app:
+  baseUrl: http://localhost:3000
+  previewAuthEnabled: true
+  previewAccessCode: demo1234
+  designReviewEnabled: true
+  proposalCapture:
+    enabled: true
+    allowedRoles: general-user,project-manager,branch-admin,portal-admin,security-manager,security-auditor
+backend:
+  baseUrl: http://localhost:7007

@@ -1,0 +1,83 @@
+{
+  "base": "https://portal-review---kt-ai-portal-demo-e2ik6gboua-du.a.run.app",
+  "write": false,
+  "at": "2026-10-03T19:01:08.115Z",
+  "checks": [
+    "database health and unauthenticated rejection",
+    "actual guest authentication and server membership",
+    "all aggregate sections readable without partial failure",
+    "current BFF read paths including profile and settings history",
+    "K-RMF storage capability reports unconfigured durable storage",
+    "unknown tenant is rejected by real server authorization",
+    "sample projects and workspace requests preserve real membership and pending execution",
+    "sample catalog and proposals are readable with portal-only approval states",
+    "sample transfers have no fabricated files or completed transmission"
+  ],
+  "artifacts": {},
+  "roles": [
+    "portal-admin"
+  ],
+  "tenantCount": 1,
+  "actorId": "cd600a11-8088-4f83-bbe9-ebffe0d2dc70",
+  "sections": {
+    "myProjects": "ready",
+    "myRequests": "ready",
+    "approvalQueue": "ready",
+    "recentAudit": "ready"
+  },
+  "emptyStates": [
+    "Personal credit account has not been opened"
+  ],
+  "integrationTargets": [
+    {
+      "id": "ai",
+      "configured": false
+    },
+    {
+      "id": "data",
+      "configured": false
+    },
+    {
+      "id": "cloud",
+      "configured": false
+    },
+    {
+      "id": "vdi",
+      "configured": false
+    },
+    {
+      "id": "identity",
+      "configured": false
+    },
+    {
+      "id": "security",
+      "configured": false
+    },
+    {
+      "id": "portal",
+      "configured": false
+    },
+    {
+      "id": "external",
+      "configured": false
+    }
+  ],
+  "readPathCount": 17,
+  "fileStorageConfigured": false,
+  "samples": {
+    "batch": "kai-customer-sample-20261004-v1",
+    "readOnly": true,
+    "projectId": "f21735f2-e609-516b-b9d1-0bd0c4c23a5a",
+    "baselineId": "58cea8c8-6c0f-5e20-ac45-d1d91f1539a3",
+    "creditAccountId": "8c5e504d-9118-5b49-a934-827b0efd338d",
+    "projects": 3,
+    "workspaceRequests": 7,
+    "catalogItems": 6,
+    "catalogApplications": 3,
+    "proposals": 4,
+    "transfers": 4,
+    "fabricatedFiles": 0
+  },
+  "status": "FAIL",
+  "error": "GET /credits/accounts/8c5e504d-9118-5b49-a934-827b0efd338d/transactions?page=1&pageSize=2: 500 internal_error"
+}

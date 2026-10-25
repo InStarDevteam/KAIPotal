@@ -1,0 +1,57 @@
+{
+  "phase": "local-readonly",
+  "uiOrigin": "http://127.0.0.1:3011",
+  "candidateApiOrigin": null,
+  "startedAt": "2026-10-11T07:11:13.860Z",
+  "mockedApiResponses": false,
+  "businessWritesAllowed": false,
+  "capturesMasked": true,
+  "adminAppearanceRequested": false,
+  "personalAppearanceRequested": false,
+  "checks": [
+    {
+      "name": "login 1440px exposes four choices without Google login",
+      "passed": true
+    },
+    {
+      "name": "login 390px exposes four choices without Google login",
+      "passed": true
+    },
+    {
+      "name": "login 320px exposes four choices without Google login",
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    "login-1440.png",
+    "login-390.png",
+    "login-320.png"
+  ],
+  "responses": [
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 404
+    }
+  ],
+  "blockedWrites": [],
+  "pageErrors": [],
+  "networkFailures": [],
+  "serverFailures": [],
+  "restoration": {
+    "personal": "not-required",
+    "tenant": "not-required"
+  },
+  "fatalFailure": {
+    "name": "TimeoutError"
+  },
+  "completedAt": "2026-10-11T07:12:14.947Z",
+  "durationSeconds": 61,
+  "passed": false,
+  "summary": {
+    "checks": 3,
+    "passed": 3,
+    "failed": 0,
+    "screenshots": 3
+  }
+}

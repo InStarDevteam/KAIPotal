@@ -1,0 +1,1418 @@
+[
+  {
+    "design": "aurora",
+    "viewportWidth": 1440,
+    "scrollWidth": 1440,
+    "scrollHeight": 1010,
+    "googleUi": false,
+    "code": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "14px",
+      "rect": {
+        "x": 926.34375,
+        "y": 326.859375,
+        "width": 358,
+        "height": 48.625
+      },
+      "classes": "MuiInputBase-input-56 MuiOutlinedInput-input-43 MuiInputBase-inputAdornedEnd-61 MuiOutlinedInput-inputAdornedEnd-47"
+    },
+    "action": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(16, 45, 67)",
+      "font": "14px",
+      "rect": {
+        "x": 926.34375,
+        "y": 420.078125,
+        "width": 406,
+        "height": 51
+      },
+      "classes": "MuiButtonBase-root-78 MuiButton-root-83 MuiButton-contained-91 login-primary MuiButton-containedPrimary-92 MuiButton-fullWidth-104"
+    },
+    "title": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "33px",
+      "rect": {
+        "x": 926.34375,
+        "y": 197.34375,
+        "width": 406,
+        "height": 46.1875
+      },
+      "classes": ""
+    },
+    "brand": {
+      "color": "rgb(244, 250, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "15px",
+      "rect": {
+        "x": 133.1875,
+        "y": 30.203125,
+        "width": 167.28125,
+        "height": 32.59375
+      },
+      "classes": "login-brand-description"
+    },
+    "intro": {
+      "color": "rgb(86, 107, 125)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "13px",
+      "rect": {
+        "x": 926.34375,
+        "y": 252.53125,
+        "width": 406,
+        "height": 23.390625
+      },
+      "classes": "login-intro"
+    },
+    "panel": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "15px",
+      "rect": {
+        "x": 889.34375,
+        "y": 134,
+        "width": 480,
+        "height": 744.84375
+      },
+      "classes": "login-form-wrap"
+    },
+    "note": {
+      "color": "rgb(93, 113, 129)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "11px",
+      "rect": {
+        "x": 926.34375,
+        "y": 385.484375,
+        "width": 406,
+        "height": 17.59375
+      },
+      "classes": "login-code-note"
+    },
+    "options": [
+      {
+        "name": "01 Aurora 메인으로 입장",
+        "disabled": false,
+        "width": 198,
+        "height": 110.984375
+      },
+      {
+        "name": "02 Focus 메인으로 입장",
+        "disabled": false,
+        "width": 198,
+        "height": 110.984375
+      },
+      {
+        "name": "03 Orbit 메인으로 입장",
+        "disabled": false,
+        "width": 198,
+        "height": 110.984375
+      },
+      {
+        "name": "04 Canvas 메인으로 입장",
+        "disabled": false,
+        "width": 198,
+        "height": 110.984375
+      }
+    ],
+    "errors": []
+  },
+  {
+    "design": "focus",
+    "viewportWidth": 1440,
+    "scrollWidth": 1440,
+    "scrollHeight": 1010,
+    "googleUi": false,
+    "code": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "14px",
+      "rect": {
+        "x": 926.34375,
+        "y": 326.859375,
+        "width": 358,
+        "height": 48.625
+      },
+      "classes": "MuiInputBase-input-56 MuiOutlinedInput-input-43 MuiInputBase-inputAdornedEnd-61 MuiOutlinedInput-inputAdornedEnd-47"
+    },
+    "action": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(18, 61, 56)",
+      "font": "14px",
+      "rect": {
+        "x": 926.34375,
+        "y": 420.078125,
+        "width": 406,
+        "height": 51
+      },
+      "classes": "MuiButtonBase-root-78 MuiButton-root-83 MuiButton-contained-91 login-primary MuiButton-containedPrimary-92 MuiButton-fullWidth-104"
+    },
+    "title": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "33px",
+      "rect": {
+        "x": 926.34375,
+        "y": 197.34375,
+        "width": 406,
+        "height": 46.1875
+      },
+      "classes": ""
+    },
+    "brand": {
+      "color": "rgb(244, 250, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "15px",
+      "rect": {
+        "x": 133.1875,
+        "y": 30.203125,
+        "width": 167.28125,
+        "height": 32.59375
+      },
+      "classes": "login-brand-description"
+    },
+    "intro": {
+      "color": "rgb(86, 107, 125)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "13px",
+      "rect": {
+        "x": 926.34375,
+        "y": 252.53125,
+        "width": 406,
+        "height": 23.390625
+      },
+      "classes": "login-intro"
+    },
+    "panel": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "15px",
+      "rect": {
+        "x": 889.34375,
+        "y": 134,
+        "width": 480,
+        "height": 744.84375
+      },
+      "classes": "login-form-wrap"
+    },
+    "note": {
+      "color": "rgb(93, 113, 129)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "11px",
+      "rect": {
+        "x": 926.34375,
+        "y": 385.484375,
+        "width": 406,
+        "height": 17.59375
+      },
+      "classes": "login-code-note"
+    },
+    "options": [
+      {
+        "name": "01 Aurora 메인으로 입장",
+        "disabled": false,
+        "width": 198,
+        "height": 110.984375
+      },
+      {
+        "name": "02 Focus 메인으로 입장",
+        "disabled": false,
+        "width": 198,
+        "height": 110.984375
+      },
+      {
+        "name": "03 Orbit 메인으로 입장",
+        "disabled": false,
+        "width": 198,
+        "height": 110.984375
+      },
+      {
+        "name": "04 Canvas 메인으로 입장",
+        "disabled": false,
+        "width": 198,
+        "height": 110.984375
+      }
+    ],
+    "errors": []
+  },
+  {
+    "design": "orbit",
+    "viewportWidth": 1440,
+    "scrollWidth": 1440,
+    "scrollHeight": 1010,
+    "googleUi": false,
+    "code": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "14px",
+      "rect": {
+        "x": 926.34375,
+        "y": 326.859375,
+        "width": 358,
+        "height": 48.625
+      },
+      "classes": "MuiInputBase-input-56 MuiOutlinedInput-input-43 MuiInputBase-inputAdornedEnd-61 MuiOutlinedInput-inputAdornedEnd-47"
+    },
+    "action": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(60, 50, 35)",
+      "font": "14px",
+      "rect": {
+        "x": 926.34375,
+        "y": 420.078125,
+        "width": 406,
+        "height": 51
+      },
+      "classes": "MuiButtonBase-root-78 MuiButton-root-83 MuiButton-contained-91 login-primary MuiButton-containedPrimary-92 MuiButton-fullWidth-104"
+    },
+    "title": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "33px",
+      "rect": {
+        "x": 926.34375,
+        "y": 197.34375,
+        "width": 406,
+        "height": 46.1875
+      },
+      "classes": ""
+    },
+    "brand": {
+      "color": "rgb(244, 250, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "15px",
+      "rect": {
+        "x": 133.1875,
+        "y": 30.203125,
+        "width": 167.28125,
+        "height": 32.59375
+      },
+      "classes": "login-brand-description"
+    },
+    "intro": {
+      "color": "rgb(86, 107, 125)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "13px",
+      "rect": {
+        "x": 926.34375,
+        "y": 252.53125,
+        "width": 406,
+        "height": 23.390625
+      },
+      "classes": "login-intro"
+    },
+    "panel": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "15px",
+      "rect": {
+        "x": 889.34375,
+        "y": 134,
+        "width": 480,
+        "height": 744.84375
+      },
+      "classes": "login-form-wrap"
+    },
+    "note": {
+      "color": "rgb(93, 113, 129)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "11px",
+      "rect": {
+        "x": 926.34375,
+        "y": 385.484375,
+        "width": 406,
+        "height": 17.59375
+      },
+      "classes": "login-code-note"
+    },
+    "options": [
+      {
+        "name": "01 Aurora 메인으로 입장",
+        "disabled": false,
+        "width": 198,
+        "height": 110.984375
+      },
+      {
+        "name": "02 Focus 메인으로 입장",
+        "disabled": false,
+        "width": 198,
+        "height": 110.984375
+      },
+      {
+        "name": "03 Orbit 메인으로 입장",
+        "disabled": false,
+        "width": 198,
+        "height": 110.984375
+      },
+      {
+        "name": "04 Canvas 메인으로 입장",
+        "disabled": false,
+        "width": 198,
+        "height": 110.984375
+      }
+    ],
+    "errors": []
+  },
+  {
+    "design": "canvas",
+    "viewportWidth": 1440,
+    "scrollWidth": 1440,
+    "scrollHeight": 1010,
+    "googleUi": false,
+    "code": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "14px",
+      "rect": {
+        "x": 926.34375,
+        "y": 326.859375,
+        "width": 358,
+        "height": 48.625
+      },
+      "classes": "MuiInputBase-input-56 MuiOutlinedInput-input-43 MuiInputBase-inputAdornedEnd-61 MuiOutlinedInput-inputAdornedEnd-47"
+    },
+    "action": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(36, 68, 55)",
+      "font": "14px",
+      "rect": {
+        "x": 926.34375,
+        "y": 420.078125,
+        "width": 406,
+        "height": 51
+      },
+      "classes": "MuiButtonBase-root-78 MuiButton-root-83 MuiButton-contained-91 login-primary MuiButton-containedPrimary-92 MuiButton-fullWidth-104"
+    },
+    "title": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "33px",
+      "rect": {
+        "x": 926.34375,
+        "y": 197.34375,
+        "width": 406,
+        "height": 46.1875
+      },
+      "classes": ""
+    },
+    "brand": {
+      "color": "rgb(244, 250, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "15px",
+      "rect": {
+        "x": 133.1875,
+        "y": 30.203125,
+        "width": 167.28125,
+        "height": 32.59375
+      },
+      "classes": "login-brand-description"
+    },
+    "intro": {
+      "color": "rgb(86, 107, 125)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "13px",
+      "rect": {
+        "x": 926.34375,
+        "y": 252.53125,
+        "width": 406,
+        "height": 23.390625
+      },
+      "classes": "login-intro"
+    },
+    "panel": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "15px",
+      "rect": {
+        "x": 889.34375,
+        "y": 134,
+        "width": 480,
+        "height": 744.84375
+      },
+      "classes": "login-form-wrap"
+    },
+    "note": {
+      "color": "rgb(93, 113, 129)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "11px",
+      "rect": {
+        "x": 926.34375,
+        "y": 385.484375,
+        "width": 406,
+        "height": 17.59375
+      },
+      "classes": "login-code-note"
+    },
+    "options": [
+      {
+        "name": "01 Aurora 메인으로 입장",
+        "disabled": false,
+        "width": 198,
+        "height": 110.984375
+      },
+      {
+        "name": "02 Focus 메인으로 입장",
+        "disabled": false,
+        "width": 198,
+        "height": 110.984375
+      },
+      {
+        "name": "03 Orbit 메인으로 입장",
+        "disabled": false,
+        "width": 198,
+        "height": 110.984375
+      },
+      {
+        "name": "04 Canvas 메인으로 입장",
+        "disabled": false,
+        "width": 198,
+        "height": 110.984375
+      }
+    ],
+    "errors": []
+  },
+  {
+    "design": "aurora",
+    "viewportWidth": 390,
+    "scrollWidth": 390,
+    "scrollHeight": 1154,
+    "googleUi": false,
+    "code": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "16px",
+      "rect": {
+        "x": 40,
+        "y": 503.375,
+        "width": 262,
+        "height": 49
+      },
+      "classes": "MuiInputBase-input-56 MuiOutlinedInput-input-43 MuiInputBase-inputAdornedEnd-61 MuiOutlinedInput-inputAdornedEnd-47"
+    },
+    "action": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(16, 45, 67)",
+      "font": "14px",
+      "rect": {
+        "x": 40,
+        "y": 595.375,
+        "width": 310,
+        "height": 51
+      },
+      "classes": "MuiButtonBase-root-78 MuiButton-root-83 MuiButton-contained-91 login-primary MuiButton-containedPrimary-92 MuiButton-fullWidth-104"
+    },
+    "title": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "27px",
+      "rect": {
+        "x": 40,
+        "y": 389.1875,
+        "width": 310,
+        "height": 37.796875
+      },
+      "classes": ""
+    },
+    "brand": {
+      "color": "rgb(244, 250, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "11px",
+      "rect": {
+        "x": 77.515625,
+        "y": 25.65625,
+        "width": 112.96875,
+        "height": 25.6875
+      },
+      "classes": "login-brand-description"
+    },
+    "intro": {
+      "color": "rgb(86, 107, 125)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "12px",
+      "rect": {
+        "x": 40,
+        "y": 435.984375,
+        "width": 310,
+        "height": 21.59375
+      },
+      "classes": "login-intro"
+    },
+    "panel": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "15px",
+      "rect": {
+        "x": 18,
+        "y": 338,
+        "width": 354,
+        "height": 684.828125
+      },
+      "classes": "login-form-wrap"
+    },
+    "note": {
+      "color": "rgb(93, 113, 129)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "10px",
+      "rect": {
+        "x": 40,
+        "y": 562.375,
+        "width": 310,
+        "height": 16
+      },
+      "classes": "login-code-note"
+    },
+    "options": [
+      {
+        "name": "01 Aurora 메인으로 입장",
+        "disabled": false,
+        "width": 150.5,
+        "height": 103.828125
+      },
+      {
+        "name": "02 Focus 메인으로 입장",
+        "disabled": false,
+        "width": 150.5,
+        "height": 103.828125
+      },
+      {
+        "name": "03 Orbit 메인으로 입장",
+        "disabled": false,
+        "width": 150.5,
+        "height": 103.828125
+      },
+      {
+        "name": "04 Canvas 메인으로 입장",
+        "disabled": false,
+        "width": 150.5,
+        "height": 103.828125
+      }
+    ],
+    "errors": []
+  },
+  {
+    "design": "focus",
+    "viewportWidth": 390,
+    "scrollWidth": 390,
+    "scrollHeight": 1154,
+    "googleUi": false,
+    "code": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "16px",
+      "rect": {
+        "x": 40,
+        "y": 503.375,
+        "width": 262,
+        "height": 49
+      },
+      "classes": "MuiInputBase-input-56 MuiOutlinedInput-input-43 MuiInputBase-inputAdornedEnd-61 MuiOutlinedInput-inputAdornedEnd-47"
+    },
+    "action": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(18, 61, 56)",
+      "font": "14px",
+      "rect": {
+        "x": 40,
+        "y": 595.375,
+        "width": 310,
+        "height": 51
+      },
+      "classes": "MuiButtonBase-root-78 MuiButton-root-83 MuiButton-contained-91 login-primary MuiButton-containedPrimary-92 MuiButton-fullWidth-104"
+    },
+    "title": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "27px",
+      "rect": {
+        "x": 40,
+        "y": 389.1875,
+        "width": 310,
+        "height": 37.796875
+      },
+      "classes": ""
+    },
+    "brand": {
+      "color": "rgb(244, 250, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "11px",
+      "rect": {
+        "x": 77.515625,
+        "y": 25.65625,
+        "width": 112.96875,
+        "height": 25.6875
+      },
+      "classes": "login-brand-description"
+    },
+    "intro": {
+      "color": "rgb(86, 107, 125)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "12px",
+      "rect": {
+        "x": 40,
+        "y": 435.984375,
+        "width": 310,
+        "height": 21.59375
+      },
+      "classes": "login-intro"
+    },
+    "panel": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "15px",
+      "rect": {
+        "x": 18,
+        "y": 338,
+        "width": 354,
+        "height": 684.828125
+      },
+      "classes": "login-form-wrap"
+    },
+    "note": {
+      "color": "rgb(93, 113, 129)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "10px",
+      "rect": {
+        "x": 40,
+        "y": 562.375,
+        "width": 310,
+        "height": 16
+      },
+      "classes": "login-code-note"
+    },
+    "options": [
+      {
+        "name": "01 Aurora 메인으로 입장",
+        "disabled": false,
+        "width": 150.5,
+        "height": 103.828125
+      },
+      {
+        "name": "02 Focus 메인으로 입장",
+        "disabled": false,
+        "width": 150.5,
+        "height": 103.828125
+      },
+      {
+        "name": "03 Orbit 메인으로 입장",
+        "disabled": false,
+        "width": 150.5,
+        "height": 103.828125
+      },
+      {
+        "name": "04 Canvas 메인으로 입장",
+        "disabled": false,
+        "width": 150.5,
+        "height": 103.828125
+      }
+    ],
+    "errors": []
+  },
+  {
+    "design": "orbit",
+    "viewportWidth": 390,
+    "scrollWidth": 390,
+    "scrollHeight": 1154,
+    "googleUi": false,
+    "code": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "16px",
+      "rect": {
+        "x": 40,
+        "y": 503.375,
+        "width": 262,
+        "height": 49
+      },
+      "classes": "MuiInputBase-input-56 MuiOutlinedInput-input-43 MuiInputBase-inputAdornedEnd-61 MuiOutlinedInput-inputAdornedEnd-47"
+    },
+    "action": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(60, 50, 35)",
+      "font": "14px",
+      "rect": {
+        "x": 40,
+        "y": 595.375,
+        "width": 310,
+        "height": 51
+      },
+      "classes": "MuiButtonBase-root-78 MuiButton-root-83 MuiButton-contained-91 login-primary MuiButton-containedPrimary-92 MuiButton-fullWidth-104"
+    },
+    "title": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "27px",
+      "rect": {
+        "x": 40,
+        "y": 389.1875,
+        "width": 310,
+        "height": 37.796875
+      },
+      "classes": ""
+    },
+    "brand": {
+      "color": "rgb(244, 250, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "11px",
+      "rect": {
+        "x": 77.515625,
+        "y": 25.65625,
+        "width": 112.96875,
+        "height": 25.6875
+      },
+      "classes": "login-brand-description"
+    },
+    "intro": {
+      "color": "rgb(86, 107, 125)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "12px",
+      "rect": {
+        "x": 40,
+        "y": 435.984375,
+        "width": 310,
+        "height": 21.59375
+      },
+      "classes": "login-intro"
+    },
+    "panel": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "15px",
+      "rect": {
+        "x": 18,
+        "y": 338,
+        "width": 354,
+        "height": 684.828125
+      },
+      "classes": "login-form-wrap"
+    },
+    "note": {
+      "color": "rgb(93, 113, 129)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "10px",
+      "rect": {
+        "x": 40,
+        "y": 562.375,
+        "width": 310,
+        "height": 16
+      },
+      "classes": "login-code-note"
+    },
+    "options": [
+      {
+        "name": "01 Aurora 메인으로 입장",
+        "disabled": false,
+        "width": 150.5,
+        "height": 103.828125
+      },
+      {
+        "name": "02 Focus 메인으로 입장",
+        "disabled": false,
+        "width": 150.5,
+        "height": 103.828125
+      },
+      {
+        "name": "03 Orbit 메인으로 입장",
+        "disabled": false,
+        "width": 150.5,
+        "height": 103.828125
+      },
+      {
+        "name": "04 Canvas 메인으로 입장",
+        "disabled": false,
+        "width": 150.5,
+        "height": 103.828125
+      }
+    ],
+    "errors": []
+  },
+  {
+    "design": "canvas",
+    "viewportWidth": 390,
+    "scrollWidth": 390,
+    "scrollHeight": 1154,
+    "googleUi": false,
+    "code": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "16px",
+      "rect": {
+        "x": 40,
+        "y": 503.375,
+        "width": 262,
+        "height": 49
+      },
+      "classes": "MuiInputBase-input-56 MuiOutlinedInput-input-43 MuiInputBase-inputAdornedEnd-61 MuiOutlinedInput-inputAdornedEnd-47"
+    },
+    "action": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(36, 68, 55)",
+      "font": "14px",
+      "rect": {
+        "x": 40,
+        "y": 595.375,
+        "width": 310,
+        "height": 51
+      },
+      "classes": "MuiButtonBase-root-78 MuiButton-root-83 MuiButton-contained-91 login-primary MuiButton-containedPrimary-92 MuiButton-fullWidth-104"
+    },
+    "title": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "27px",
+      "rect": {
+        "x": 40,
+        "y": 389.1875,
+        "width": 310,
+        "height": 37.796875
+      },
+      "classes": ""
+    },
+    "brand": {
+      "color": "rgb(244, 250, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "11px",
+      "rect": {
+        "x": 77.515625,
+        "y": 25.65625,
+        "width": 112.96875,
+        "height": 25.6875
+      },
+      "classes": "login-brand-description"
+    },
+    "intro": {
+      "color": "rgb(86, 107, 125)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "12px",
+      "rect": {
+        "x": 40,
+        "y": 435.984375,
+        "width": 310,
+        "height": 21.59375
+      },
+      "classes": "login-intro"
+    },
+    "panel": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "15px",
+      "rect": {
+        "x": 18,
+        "y": 338,
+        "width": 354,
+        "height": 684.828125
+      },
+      "classes": "login-form-wrap"
+    },
+    "note": {
+      "color": "rgb(93, 113, 129)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "10px",
+      "rect": {
+        "x": 40,
+        "y": 562.375,
+        "width": 310,
+        "height": 16
+      },
+      "classes": "login-code-note"
+    },
+    "options": [
+      {
+        "name": "01 Aurora 메인으로 입장",
+        "disabled": false,
+        "width": 150.5,
+        "height": 103.828125
+      },
+      {
+        "name": "02 Focus 메인으로 입장",
+        "disabled": false,
+        "width": 150.5,
+        "height": 103.828125
+      },
+      {
+        "name": "03 Orbit 메인으로 입장",
+        "disabled": false,
+        "width": 150.5,
+        "height": 103.828125
+      },
+      {
+        "name": "04 Canvas 메인으로 입장",
+        "disabled": false,
+        "width": 150.5,
+        "height": 103.828125
+      }
+    ],
+    "errors": []
+  },
+  {
+    "design": "aurora",
+    "viewportWidth": 320,
+    "scrollWidth": 320,
+    "scrollHeight": 1150,
+    "googleUi": false,
+    "code": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "16px",
+      "rect": {
+        "x": 31,
+        "y": 499.171875,
+        "width": 210,
+        "height": 49
+      },
+      "classes": "MuiInputBase-input-56 MuiOutlinedInput-input-43 MuiInputBase-inputAdornedEnd-61 MuiOutlinedInput-inputAdornedEnd-47"
+    },
+    "action": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(16, 45, 67)",
+      "font": "14px",
+      "rect": {
+        "x": 31,
+        "y": 591.171875,
+        "width": 258,
+        "height": 51
+      },
+      "classes": "MuiButtonBase-root-78 MuiButton-root-83 MuiButton-contained-91 login-primary MuiButton-containedPrimary-92 MuiButton-fullWidth-104"
+    },
+    "title": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "24px",
+      "rect": {
+        "x": 31,
+        "y": 389.1875,
+        "width": 258,
+        "height": 33.59375
+      },
+      "classes": ""
+    },
+    "brand": {
+      "color": "rgb(244, 250, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "11px",
+      "rect": {
+        "x": 73.515625,
+        "y": 25.65625,
+        "width": 112.96875,
+        "height": 25.6875
+      },
+      "classes": "login-brand-description"
+    },
+    "intro": {
+      "color": "rgb(86, 107, 125)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "12px",
+      "rect": {
+        "x": 31,
+        "y": 431.78125,
+        "width": 258,
+        "height": 21.59375
+      },
+      "classes": "login-intro"
+    },
+    "panel": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "15px",
+      "rect": {
+        "x": 14,
+        "y": 338,
+        "width": 292,
+        "height": 680.625
+      },
+      "classes": "login-form-wrap"
+    },
+    "note": {
+      "color": "rgb(93, 113, 129)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "10px",
+      "rect": {
+        "x": 31,
+        "y": 558.171875,
+        "width": 258,
+        "height": 16
+      },
+      "classes": "login-code-note"
+    },
+    "options": [
+      {
+        "name": "01 Aurora 메인으로 입장",
+        "disabled": false,
+        "width": 124.5,
+        "height": 103.828125
+      },
+      {
+        "name": "02 Focus 메인으로 입장",
+        "disabled": false,
+        "width": 124.5,
+        "height": 103.828125
+      },
+      {
+        "name": "03 Orbit 메인으로 입장",
+        "disabled": false,
+        "width": 124.5,
+        "height": 103.828125
+      },
+      {
+        "name": "04 Canvas 메인으로 입장",
+        "disabled": false,
+        "width": 124.5,
+        "height": 103.828125
+      }
+    ],
+    "errors": []
+  },
+  {
+    "design": "focus",
+    "viewportWidth": 320,
+    "scrollWidth": 320,
+    "scrollHeight": 1150,
+    "googleUi": false,
+    "code": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "16px",
+      "rect": {
+        "x": 31,
+        "y": 499.171875,
+        "width": 210,
+        "height": 49
+      },
+      "classes": "MuiInputBase-input-56 MuiOutlinedInput-input-43 MuiInputBase-inputAdornedEnd-61 MuiOutlinedInput-inputAdornedEnd-47"
+    },
+    "action": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(18, 61, 56)",
+      "font": "14px",
+      "rect": {
+        "x": 31,
+        "y": 591.171875,
+        "width": 258,
+        "height": 51
+      },
+      "classes": "MuiButtonBase-root-78 MuiButton-root-83 MuiButton-contained-91 login-primary MuiButton-containedPrimary-92 MuiButton-fullWidth-104"
+    },
+    "title": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "24px",
+      "rect": {
+        "x": 31,
+        "y": 389.1875,
+        "width": 258,
+        "height": 33.59375
+      },
+      "classes": ""
+    },
+    "brand": {
+      "color": "rgb(244, 250, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "11px",
+      "rect": {
+        "x": 73.515625,
+        "y": 25.65625,
+        "width": 112.96875,
+        "height": 25.6875
+      },
+      "classes": "login-brand-description"
+    },
+    "intro": {
+      "color": "rgb(86, 107, 125)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "12px",
+      "rect": {
+        "x": 31,
+        "y": 431.78125,
+        "width": 258,
+        "height": 21.59375
+      },
+      "classes": "login-intro"
+    },
+    "panel": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "15px",
+      "rect": {
+        "x": 14,
+        "y": 338,
+        "width": 292,
+        "height": 680.625
+      },
+      "classes": "login-form-wrap"
+    },
+    "note": {
+      "color": "rgb(93, 113, 129)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "10px",
+      "rect": {
+        "x": 31,
+        "y": 558.171875,
+        "width": 258,
+        "height": 16
+      },
+      "classes": "login-code-note"
+    },
+    "options": [
+      {
+        "name": "01 Aurora 메인으로 입장",
+        "disabled": false,
+        "width": 124.5,
+        "height": 103.828125
+      },
+      {
+        "name": "02 Focus 메인으로 입장",
+        "disabled": false,
+        "width": 124.5,
+        "height": 103.828125
+      },
+      {
+        "name": "03 Orbit 메인으로 입장",
+        "disabled": false,
+        "width": 124.5,
+        "height": 103.828125
+      },
+      {
+        "name": "04 Canvas 메인으로 입장",
+        "disabled": false,
+        "width": 124.5,
+        "height": 103.828125
+      }
+    ],
+    "errors": []
+  },
+  {
+    "design": "orbit",
+    "viewportWidth": 320,
+    "scrollWidth": 320,
+    "scrollHeight": 1150,
+    "googleUi": false,
+    "code": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "16px",
+      "rect": {
+        "x": 31,
+        "y": 499.171875,
+        "width": 210,
+        "height": 49
+      },
+      "classes": "MuiInputBase-input-56 MuiOutlinedInput-input-43 MuiInputBase-inputAdornedEnd-61 MuiOutlinedInput-inputAdornedEnd-47"
+    },
+    "action": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(60, 50, 35)",
+      "font": "14px",
+      "rect": {
+        "x": 31,
+        "y": 591.171875,
+        "width": 258,
+        "height": 51
+      },
+      "classes": "MuiButtonBase-root-78 MuiButton-root-83 MuiButton-contained-91 login-primary MuiButton-containedPrimary-92 MuiButton-fullWidth-104"
+    },
+    "title": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "24px",
+      "rect": {
+        "x": 31,
+        "y": 389.1875,
+        "width": 258,
+        "height": 33.59375
+      },
+      "classes": ""
+    },
+    "brand": {
+      "color": "rgb(244, 250, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "11px",
+      "rect": {
+        "x": 73.515625,
+        "y": 25.65625,
+        "width": 112.96875,
+        "height": 25.6875
+      },
+      "classes": "login-brand-description"
+    },
+    "intro": {
+      "color": "rgb(86, 107, 125)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "12px",
+      "rect": {
+        "x": 31,
+        "y": 431.78125,
+        "width": 258,
+        "height": 21.59375
+      },
+      "classes": "login-intro"
+    },
+    "panel": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "15px",
+      "rect": {
+        "x": 14,
+        "y": 338,
+        "width": 292,
+        "height": 680.625
+      },
+      "classes": "login-form-wrap"
+    },
+    "note": {
+      "color": "rgb(93, 113, 129)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "10px",
+      "rect": {
+        "x": 31,
+        "y": 558.171875,
+        "width": 258,
+        "height": 16
+      },
+      "classes": "login-code-note"
+    },
+    "options": [
+      {
+        "name": "01 Aurora 메인으로 입장",
+        "disabled": false,
+        "width": 124.5,
+        "height": 103.828125
+      },
+      {
+        "name": "02 Focus 메인으로 입장",
+        "disabled": false,
+        "width": 124.5,
+        "height": 103.828125
+      },
+      {
+        "name": "03 Orbit 메인으로 입장",
+        "disabled": false,
+        "width": 124.5,
+        "height": 103.828125
+      },
+      {
+        "name": "04 Canvas 메인으로 입장",
+        "disabled": false,
+        "width": 124.5,
+        "height": 103.828125
+      }
+    ],
+    "errors": []
+  },
+  {
+    "design": "canvas",
+    "viewportWidth": 320,
+    "scrollWidth": 320,
+    "scrollHeight": 1150,
+    "googleUi": false,
+    "code": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "16px",
+      "rect": {
+        "x": 31,
+        "y": 499.171875,
+        "width": 210,
+        "height": 49
+      },
+      "classes": "MuiInputBase-input-56 MuiOutlinedInput-input-43 MuiInputBase-inputAdornedEnd-61 MuiOutlinedInput-inputAdornedEnd-47"
+    },
+    "action": {
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(36, 68, 55)",
+      "font": "14px",
+      "rect": {
+        "x": 31,
+        "y": 591.171875,
+        "width": 258,
+        "height": 51
+      },
+      "classes": "MuiButtonBase-root-78 MuiButton-root-83 MuiButton-contained-91 login-primary MuiButton-containedPrimary-92 MuiButton-fullWidth-104"
+    },
+    "title": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "24px",
+      "rect": {
+        "x": 31,
+        "y": 389.1875,
+        "width": 258,
+        "height": 33.59375
+      },
+      "classes": ""
+    },
+    "brand": {
+      "color": "rgb(244, 250, 255)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "11px",
+      "rect": {
+        "x": 73.515625,
+        "y": 25.65625,
+        "width": 112.96875,
+        "height": 25.6875
+      },
+      "classes": "login-brand-description"
+    },
+    "intro": {
+      "color": "rgb(86, 107, 125)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "12px",
+      "rect": {
+        "x": 31,
+        "y": 431.78125,
+        "width": 258,
+        "height": 21.59375
+      },
+      "classes": "login-intro"
+    },
+    "panel": {
+      "color": "rgb(19, 39, 56)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "15px",
+      "rect": {
+        "x": 14,
+        "y": 338,
+        "width": 292,
+        "height": 680.625
+      },
+      "classes": "login-form-wrap"
+    },
+    "note": {
+      "color": "rgb(93, 113, 129)",
+      "background": "rgba(0, 0, 0, 0)",
+      "font": "10px",
+      "rect": {
+        "x": 31,
+        "y": 558.171875,
+        "width": 258,
+        "height": 16
+      },
+      "classes": "login-code-note"
+    },
+    "options": [
+      {
+        "name": "01 Aurora 메인으로 입장",
+        "disabled": false,
+        "width": 124.5,
+        "height": 103.828125
+      },
+      {
+        "name": "02 Focus 메인으로 입장",
+        "disabled": false,
+        "width": 124.5,
+        "height": 103.828125
+      },
+      {
+        "name": "03 Orbit 메인으로 입장",
+        "disabled": false,
+        "width": 124.5,
+        "height": 103.828125
+      },
+      {
+        "name": "04 Canvas 메인으로 입장",
+        "disabled": false,
+        "width": 124.5,
+        "height": 103.828125
+      }
+    ],
+    "errors": []
+  }
+]

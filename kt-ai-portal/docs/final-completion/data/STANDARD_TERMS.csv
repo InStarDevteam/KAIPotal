@@ -1,0 +1,59 @@
+﻿용어ID(임시),한글용어명,영문명,구성단어ID(임시),정의(임시),매핑상태
+TMP-T-001,반출신청,export request,TMP-W-007+TMP-W-001,반출을 위한 신청,임시정의
+TMP-T-002,반입신청,import request,TMP-W-008+TMP-W-001,반입을 위한 신청,임시정의
+TMP-T-003,크레딧계정,credit account,TMP-W-006+TMP-W-029,크레딧 잔액 계정,임시정의
+TMP-T-004,크레딧거래,credit transaction,TMP-W-006+TMP-W-030,크레딧 증감 거래,임시정의
+TMP-T-005,크레딧상품,credit product,TMP-W-006+TMP-W-031,크레딧 단가 상품,임시정의
+TMP-T-006,크레딧신청,credit request,TMP-W-006+TMP-W-001,크레딧 부여·충전 신청,임시정의
+TMP-T-007,크레딧잔액,credit balance,TMP-W-006+TMP-W-048,계정별 크레딧 잔액,임시정의
+TMP-T-008,통제코드,control code,TMP-W-005+TMP-W-019,통제 항목의 코드,임시정의
+TMP-T-009,증적파일,evidence file,TMP-W-004+TMP-W-028,증적으로 제출된 파일,임시정의
+TMP-T-010,반출파일,export file,TMP-W-007+TMP-W-028,반출 대상 파일,임시정의
+TMP-T-011,승인일시,approval datetime,TMP-W-002+TMP-W-022,승인이 결정된 일시,임시정의
+TMP-T-012,신청일시,request datetime,TMP-W-001+TMP-W-022,신청이 접수된 일시,임시정의
+TMP-T-013,생성일시,creation datetime,TMP-W-062+TMP-W-022,레코드가 생성된 일시,임시정의
+TMP-T-014,수정일시,modification datetime,TMP-W-063+TMP-W-022,레코드가 수정된 일시,임시정의
+TMP-T-015,만료일시,expiration datetime,TMP-W-060+TMP-W-022,유효기간이 끝나는 일시,임시정의
+TMP-T-016,유효시작일시,valid start datetime,TMP-W-061+TMP-W-058+TMP-W-022,유효 기간의 시작 일시,임시정의
+TMP-T-017,유효종료일시,valid end datetime,TMP-W-061+TMP-W-059+TMP-W-022,유효 기간의 종료 일시,임시정의
+TMP-T-018,테넌트식별자,tenant identifier,TMP-W-003+TMP-W-023,테넌트의 고유 식별자,임시정의
+TMP-T-019,사용자식별자,user identifier,TMP-W-010+TMP-W-023,사용자의 고유 식별자,임시정의
+TMP-T-020,프로젝트식별자,project identifier,TMP-W-009+TMP-W-023,프로젝트의 고유 식별자,임시정의
+TMP-T-021,조직식별자,organization identifier,TMP-W-035+TMP-W-023,조직의 고유 식별자,임시정의
+TMP-T-022,그룹식별자,group identifier,TMP-W-034+TMP-W-023,그룹의 고유 식별자,임시정의
+TMP-T-023,역할식별자,role identifier,TMP-W-012+TMP-W-023,역할의 고유 식별자,임시정의
+TMP-T-024,권한식별자,permission identifier,TMP-W-013+TMP-W-023,권한의 고유 식별자,임시정의
+TMP-T-025,파일식별자,file identifier,TMP-W-028+TMP-W-023,파일의 고유 식별자,임시정의
+TMP-T-026,계정식별자,account identifier,TMP-W-029+TMP-W-023,계정의 고유 식별자,임시정의
+TMP-T-027,신청자식별자,requester identifier,TMP-W-001+TMP-W-010+TMP-W-023,신청을 수행한 사용자 식별자,임시정의
+TMP-T-028,승인자식별자,approver identifier,TMP-W-002+TMP-W-010+TMP-W-023,승인을 수행한 사용자 식별자,임시정의
+TMP-T-029,결정사유,decision reason,TMP-W-078+TMP-W-025,결정의 근거,임시정의
+TMP-T-030,변경사유,change reason,TMP-W-017+TMP-W-025,변경의 근거,임시정의
+TMP-T-031,검토상태,review status,TMP-W-038+TMP-W-021,검토 진행 상태,임시정의
+TMP-T-032,감사이벤트,audit event,TMP-W-014+TMP-W-044,감사 대상 행위의 기록,임시정의
+TMP-T-033,시험항목,test item,TMP-W-084+TMP-W-077,시험 준비 대상 항목,임시정의
+TMP-T-034,보안등급,security grade,TMP-W-049+TMP-W-050,자료의 보안 수준,임시정의
+TMP-T-035,공개범위,disclosure scope,TMP-W-080+TMP-W-052,공개 허용 범위,임시정의
+TMP-T-036,공개동의여부,disclosure consent flag,TMP-W-080+TMP-W-081+TMP-W-085,공개에 대한 동의 여부,임시정의
+TMP-T-037,사용여부,use flag,TMP-W-056+TMP-W-085,사용 가능 여부,임시정의
+TMP-T-038,활성여부,active flag,TMP-W-021+TMP-W-085,활성 상태 여부,임시정의
+TMP-T-039,처리결과,handling result,TMP-W-079+TMP-W-057,작업의 처리 결과,임시정의
+TMP-T-040,멤버역할,member role,TMP-W-086+TMP-W-012,프로젝트 내 멤버 역할,임시정의
+TMP-T-041,카탈로그항목,catalog item,TMP-W-039+TMP-W-077,카탈로그의 개별 항목,임시정의
+TMP-T-042,제안유형,proposal type,TMP-W-037+TMP-W-053,제안의 분류,임시정의
+TMP-T-043,접근유형,access type,TMP-W-082+TMP-W-053,접근 방식 분류,임시정의
+TMP-T-044,실행상태,execution status,TMP-W-083+TMP-W-021,실행 진행 상태,임시정의
+TMP-T-045,설정분류,setting category,TMP-W-036+TMP-W-054,설정의 분류,임시정의
+TMP-T-046,설정값,setting value,TMP-W-036+TMP-W-087,설정의 값,임시정의
+TMP-T-047,검증여부,verification flag,TMP-W-070+TMP-W-085,검증 완료 여부,임시정의
+TMP-T-048,조회수,view count,TMP-W-073+TMP-W-046,조회한 횟수,임시정의
+TMP-T-049,단가스냅샷,unit price snapshot,TMP-W-047+TMP-W-088,거래 시점의 단가 복사본,임시정의
+TMP-T-050,영향도,impact level,TMP-W-090,피해 영향의 정도,임시정의
+TMP-T-051,잔여위험,residual risk,TMP-W-091,조치 후 남은 위험,임시정의
+TMP-T-052,시험기준,test criteria,TMP-W-084+TMP-W-092,시험 수행의 판정 기준,임시정의
+TMP-T-053,연결유형,link type,TMP-W-042+TMP-W-053,통제 연결의 유형,임시정의
+TMP-T-054,참조식별자,reference identifier,TMP-W-093+TMP-W-023,참조 대상의 식별자,임시정의
+TMP-T-055,멱등키,idempotency key,TMP-W-023,중복 처리 방지용 클라이언트 키,임시정의
+TMP-T-056,초대일시,invite datetime,TMP-W-041+TMP-W-022,초대를 발송한 일시,임시정의
+TMP-T-057,응답일시,response datetime,TMP-W-096+TMP-W-022,초대에 응답한 일시,임시정의
+TMP-T-058,가입일시,join datetime,TMP-W-095+TMP-W-022,멤버 가입 일시,임시정의

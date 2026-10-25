@@ -1,0 +1,62 @@
+{
+  "generatedAt": "2026-10-03T19:00:26.583258+00:00",
+  "unit": {
+    "app": 283,
+    "backend": 176,
+    "total": 459,
+    "failed": 0
+  },
+  "actualLocalPostgreSQLBffScenarios": {
+    "domains": 50,
+    "work": 22,
+    "runtime": 52,
+    "settings": 7,
+    "roles": 5,
+    "samples": 23,
+    "metadata": 26,
+    "total": 185,
+    "failed": 0
+  },
+  "dictionaryValidation": {
+    "checks": 2989,
+    "failed": 0,
+    "negativeTamperCases": 6
+  },
+  "compiler": "PASS",
+  "lint": {
+    "errors": 0,
+    "appWarnings": 24,
+    "backendWarnings": 5
+  },
+  "productionReleaseVerification": {
+    "candidate": {
+      "browser": {
+        "passed": 59,
+        "failed": 0,
+        "apiResponses": 565,
+        "serverFailures": 0,
+        "pageErrors": 0,
+        "networkFailures": 0,
+        "attemptedBusinessWrites": 0
+      },
+      "apiPassed": 14,
+      "apiStatus": "PASS",
+      "browserFinishedAt": "2026-10-03T19:04:53.450Z"
+    },
+    "live": {
+      "browser": {
+        "passed": 59,
+        "failed": 0,
+        "apiResponses": 565,
+        "serverFailures": 0,
+        "pageErrors": 0,
+        "networkFailures": 0,
+        "attemptedBusinessWrites": 0
+      },
+      "apiPassed": 14,
+      "apiStatus": "PASS",
+      "browserFinishedAt": "2026-10-03T19:08:35.253Z"
+    }
+  },
+  "status": "PASS"
+}

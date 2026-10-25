@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-03T18:59:51.274599+00:00",
+  "temporarySqlUserDeleted": true,
+  "privateTemporaryFilesRemoved": [
+    "kai-20261004-db-private.json",
+    "kai-20261004-service-private.json"
+  ],
+  "existingDatabasePasswordsChanged": false,
+  "privateBackupPreserved": true,
+  "proxyStopped": true
+}

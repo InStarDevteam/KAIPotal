@@ -1,0 +1,31 @@
+route,화면명,메뉴ID,탭/섹션,액션,필요권한,데이터원천,API경로,DB저장,기존테스트,분류,비고
+/,통합 대시보드,portal-dashboard,히어로/검색,"검색 실행(→/integrated-search?q=)",portal.view,mock:mockDashboardData.ts,-,아니오,App.test.tsx,교체,위젯 집계를 서버 scope 실집계로 교체 필요
+/,통합 대시보드,portal-dashboard,현황 카드,KPI 카드 링크 이동,portal.view,mock:mockDashboardData.ts,-,아니오,-,보존,데이터 실서버 교체 필요(P1~P4)
+/integrated-search,통합검색,integrated-search,검색/필터,검색 실행·필터 적용,catalog.view,api:/api/proxy/search(P0에서 제거됨),-,아니오,searchFiltering.test.ts,교체,"P0: mock fallback 제거·미연결 표시 적용, BFF 검색 API는 P4 구현"
+/service-catalog,서비스/도구 카탈로그,service-catalog,카탈로그,도구 선택·상세 조회,catalog.view,mock:mockServiceCatalogData.ts,-,아니오,-,교체,도구 inventory 23개 기준 보존·원천 연계 P4
+/service-catalog,서비스/도구 카탈로그,service-catalog,직접 신청,신청 폼 제출,catalog.view,mock:mockServiceCatalogData.ts,-,아니오,-,교체,실제 신청 API·승인 연결 필요(P3)
+/project-workspace,프로젝트/워크스페이스,project-workspace,프로젝트 목록/상세,프로젝트 생성 신청,project.request,mock:mockProjects.ts,-,아니오,-,교체,실제 CRUD·승인·활동이력 P3
+/project-workspace,프로젝트/워크스페이스,project-workspace,작업환경 Wizard,7단계 신청 제출,project.request,mock:mockProjects.ts,-,아니오,-,교체,SFR-007/008·상태전이·원천 job 연계 P3/P4
+/project-workspace,프로젝트/워크스페이스,project-workspace,실증·데이터 준비,합성/시뮬레이터 생성 요청,project.request,mock:mockPilotProjects.ts,-,아니오,-,교체,TER-008·원천 job ID 연계 P4
+/credit-manager,크레딧 관리,credit-manager,잔액/이력/단가,충전 신청·알림 설정,credit.view,mock:mockCredits.ts,-,아니오,-,교체,원장(ledger)·예약/확정/환불 P3
+/export-approval,반입·반출 승인,export-approval,신청/목록/상세,반출 신청 제출,export.request,mock:mockExportRequests.ts,-,아니오,-,교체,검역·승인선·전송 증거 P3
+/export-approval,반입·반출 승인,export-approval,승인 처리,승인/반려 버튼,export.review,mock:mockExportRequests.ts,-,아니오,-,교체,자기승인 금지·서버 상태전이 P3
+/my-page,마이페이지,my-page,프로필/세션/보안,비밀번호 변경·이메일 확인,로그인 사용자,mock:mockMyPageData.ts,-,아니오,-,교체,IdP capability 연계·지원범위 표시 P2
+/my-page,마이페이지,my-page,API 키,키 발급/회수,로그인 사용자,mock:mockMyPageData.ts,-,아니오,-,교체,hash 저장·일회 노출·만료 P2
+/proposal-board,제안 게시판,proposal-board,목록/작성/상세,제안 등록·검토 상태 변경,portal.view,mock:mockProposalData.ts,-,아니오,-,교체,실제 게시판 CRUD·댓글·첨부검사 P3
+/admin-console,관리자 콘솔,admin-console,사용자 등록/관리,사용자 승인/반려/중지,user.manage,mock:mockAdminData.ts,-,아니오,-,교체,실제 계정 생애주기·감사 P2
+/admin-console,관리자 콘솔,admin-console,권한/역할,역할 권한 편집·저장,rbac.manage,mock:mockAdminData.ts,-,아니오,rolePolicies.test.ts,교체,서버 RBAC 저장·정책 버전 P2
+/admin-console,관리자 콘솔,admin-console,메뉴 관리,메뉴 활성/숨김/순서 저장,menu.manage,mock:mockAdminData.ts,-,아니오,portalMenuDefinitions.test.ts,교체,현재 저장 비활성·게시/롤백 P2
+/admin-console,관리자 콘솔,admin-console,로그인/비밀번호 정책,정책 저장,settings.manage,mock:mockAdminData.ts,-,아니오,-,교체,IdP 반영 결과와 저장 구분 P2
+/admin-console,관리자 콘솔,admin-console,감사 로그,조회·CSV 다운로드,audit.view,mock:mockAdminData.ts,-,아니오,-,교체,서버 감사 원장·보내기 권한 분리 P5
+/environment-settings,환경설정,environment-settings,시스템 파라미터/보안/자원정책,설정 저장,settings.manage,mock:mockEnvironmentSettingsData.ts,-,아니오,-,교체,version/적용상태/롤백 P2
+/tenant-management,육해공군 관리,tenant-management,테넌트/쿼터/위임,쿼터 변경 신청·승인,tenant.manage,mock:mockTenantManagementData.ts,-,아니오,-,교체,tenant 경계·복합FK·위임 범위 P1/P2
+/krmf-evidence,K-RMF 이행·증적관리,krmf-evidence,대시보드/통제/증빙,증적 제출·검토,krmf.view,mock:mockKrmfEvidence.ts,-,아니오,krmfData.test.ts,교체,기준판 import·버전·집계 정합성 P5
+/krmf-evidence,K-RMF 이행·증적관리,krmf-evidence,평가/운영전환/변경영향,평가 지원·변경영향 등록,krmf.view,mock:mockKrmfEvidence.ts,-,아니오,krmfData.test.ts,교체,인가 판정 자동화 금지·결정권자 기록 P5
+/requirement-coverage,요구사항 대응현황,requirement-coverage,전체 탭,조회·CSV 다운로드,requirement.view,mock:mockRequirementCoverageData.ts,-,아니오,-,개발전용,개발지원 화면·일반 흐름 밖 별도 권한 유지
+/requirement-progress,요구사항 진도,requirement-progress,전체 탭,조회·필터,requirement.view,mock:mockRequirementProgressData.ts,-,아니오,-,개발전용,개발지원 화면
+/platform-api-integration,플랫폼 API 연계현황,platform-api-integration,전체,조회,integration.view,mock:mockPlatformApiIntegrationData.ts,-,아니오,-,개발전용,계약 후보 표시 → API_CONTRACT_REGISTER.csv로 추적
+/workflow-scenarios,업무흐름/연계 시나리오,workflow-scenarios,전체,조회,integration.view,mock:mockWorkflowScenarioData.ts,-,아니오,-,개발전용,개발지원 화면
+/role-menu-preview,권한별 메뉴 미리보기,role-menu-preview,전체,역할 전환 미리보기,menu.manage,정적 정책(rolePolicies),-,아니오,portalMenuDefinitions.test.ts,개발전용,읽기전용 정책 평가 결과 표시로 유지·impersonation 금지
+# 불일치: 없음 — 17개 라우트와 13개 메뉴가 상호 대응됨(개발지원 5개 화면 포함)
+# permission ID 22개 목록은 backstage-portal/packages/app/src/components/authz/rolePolicies.ts 참조

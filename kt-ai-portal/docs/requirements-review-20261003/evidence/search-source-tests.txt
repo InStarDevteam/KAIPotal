@@ -1,0 +1,192 @@
+  console.error
+    Warning: findDOMNode is deprecated and will be removed in the next major release. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node
+        at button
+        at ButtonBase (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/ButtonBase/ButtonBase.js:94:22)
+        at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+        at IconButton (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/IconButton/IconButton.js:131:27)
+        at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+        at div
+        at div
+        at InputBase (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/InputBase/InputBase.js:219:30)
+        at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+        at Input (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Input/Input.js:137:32)
+        at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+        at div
+        at FormControl (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/FormControl/FormControl.js:90:24)
+        at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+        at TextField (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/TextField/TextField.js:86:28)
+        at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+        at div
+        at Autocomplete (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/lab/Autocomplete/Autocomplete.js:310:35)
+        at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+        at form
+        at Paper (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Paper/Paper.js:55:23)
+        at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+        at SearchBox (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/packages/app/src/components/integrated-search/SearchBox.tsx:25:22)
+        at div
+        at Grid (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Grid/Grid.js:243:35)
+        at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+        at div
+        at Grid (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Grid/Grid.js:243:35)
+        at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+        at div
+        at IntegratedSearchPage (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/packages/app/src/components/integrated-search/IntegratedSearchPage.tsx:39:69)
+        at Harness (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/packages/app/src/components/integrated-search/IntegratedSearchPage.test.tsx:55:54)
+        at Router (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/react-router/dist/umd/react-router.development.js:1102:25)
+        at MemoryRouter (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/react-router/dist/umd/react-router.development.js:1008:15)
+
+      82 | });
+      83 | it('empty entry reports an input hint and real source availability without a failed search', async () => {
+    > 84 |   render(view());
+         |         ^
+      85 |   await screen.findByText('검색 서비스 연결됨');
+      86 |   expect(screen.getByText('데이터셋')).toBeVisible();
+      87 |   expect(screen.getByRole('status')).toHaveTextContent(
+
+      at printWarning (../../../node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (../../../node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.findDOMNode (../../../node_modules/react-dom/cjs/react-dom.development.js:29666:7)
+      at ../../../node_modules/@material-ui/core/utils/useIsFocusVisible.js:151:25
+      at setRef (../../../node_modules/@material-ui/core/utils/setRef.js:11:5)
+      at ../../../node_modules/@material-ui/core/utils/useForkRef.js:28:27
+      at setRef (../../../node_modules/@material-ui/core/utils/setRef.js:11:5)
+      at ../../../node_modules/@material-ui/core/utils/useForkRef.js:29:27
+      at commitAttachRef (../../../node_modules/react-dom/cjs/react-dom.development.js:23689:18)
+      at commitLayoutEffectOnFiber (../../../node_modules/react-dom/cjs/react-dom.development.js:23542:9)
+      at commitLayoutMountEffects_complete (../../../node_modules/react-dom/cjs/react-dom.development.js:24727:9)
+      at commitLayoutEffects_begin (../../../node_modules/react-dom/cjs/react-dom.development.js:24713:7)
+      at commitLayoutEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:24651:3)
+      at commitRootImpl (../../../node_modules/react-dom/cjs/react-dom.development.js:26862:5)
+      at commitRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:26721:5)
+      at finishConcurrentRender (../../../node_modules/react-dom/cjs/react-dom.development.js:26020:9)
+      at performConcurrentWorkOnRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:25848:7)
+      at flushActQueue (../../../node_modules/react/cjs/react.development.js:2667:24)
+      at act (../../../node_modules/react/cjs/react.development.js:2582:11)
+      at ../../../node_modules/@testing-library/react/dist/act-compat.js:47:25
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:180:24)
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:271:10)
+      at Object.<anonymous> (components/integrated-search/IntegratedSearchPage.test.tsx:84:9)
+
+  console.warn
+    ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+
+      82 | });
+      83 | it('empty entry reports an input hint and real source availability without a failed search', async () => {
+    > 84 |   render(view());
+         |         ^
+      85 |   await screen.findByText('검색 서비스 연결됨');
+      86 |   expect(screen.getByText('데이터셋')).toBeVisible();
+      87 |   expect(screen.getByRole('status')).toHaveTextContent(
+
+      at warn (../../../node_modules/react-router/dist/umd/react-router.development.js:953:15)
+      at warnOnce (../../../node_modules/react-router/dist/umd/react-router.development.js:956:47)
+      at logDeprecation (../../../node_modules/react-router/dist/umd/react-router.development.js:959:7)
+      at logV6DeprecationWarnings (../../../node_modules/react-router/dist/umd/react-router.development.js:1123:38)
+      at commitHookEffectListMount (../../../node_modules/react-dom/cjs/react-dom.development.js:23189:26)
+      at commitPassiveMountOnFiber (../../../node_modules/react-dom/cjs/react-dom.development.js:24970:11)
+      at commitPassiveMountEffects_complete (../../../node_modules/react-dom/cjs/react-dom.development.js:24930:9)
+      at commitPassiveMountEffects_begin (../../../node_modules/react-dom/cjs/react-dom.development.js:24917:7)
+      at commitPassiveMountEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:24905:3)
+      at flushPassiveEffectsImpl (../../../node_modules/react-dom/cjs/react-dom.development.js:27078:3)
+      at flushPassiveEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:27023:14)
+      at performSyncWorkOnRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:26115:3)
+      at flushSyncCallbacks (../../../node_modules/react-dom/cjs/react-dom.development.js:12042:22)
+      at commitRootImpl (../../../node_modules/react-dom/cjs/react-dom.development.js:26998:3)
+      at commitRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:26721:5)
+      at finishConcurrentRender (../../../node_modules/react-dom/cjs/react-dom.development.js:26020:9)
+      at performConcurrentWorkOnRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:25848:7)
+      at flushActQueue (../../../node_modules/react/cjs/react.development.js:2667:24)
+      at act (../../../node_modules/react/cjs/react.development.js:2582:11)
+      at ../../../node_modules/@testing-library/react/dist/act-compat.js:47:25
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:180:24)
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:271:10)
+      at Object.<anonymous> (components/integrated-search/IntegratedSearchPage.test.tsx:84:9)
+
+  console.warn
+    ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+      82 | });
+      83 | it('empty entry reports an input hint and real source availability without a failed search', async () => {
+    > 84 |   render(view());
+         |         ^
+      85 |   await screen.findByText('검색 서비스 연결됨');
+      86 |   expect(screen.getByText('데이터셋')).toBeVisible();
+      87 |   expect(screen.getByRole('status')).toHaveTextContent(
+
+      at warn (../../../node_modules/react-router/dist/umd/react-router.development.js:953:15)
+      at warnOnce (../../../node_modules/react-router/dist/umd/react-router.development.js:956:47)
+      at logDeprecation (../../../node_modules/react-router/dist/umd/react-router.development.js:962:7)
+      at logV6DeprecationWarnings (../../../node_modules/react-router/dist/umd/react-router.development.js:1123:38)
+      at commitHookEffectListMount (../../../node_modules/react-dom/cjs/react-dom.development.js:23189:26)
+      at commitPassiveMountOnFiber (../../../node_modules/react-dom/cjs/react-dom.development.js:24970:11)
+      at commitPassiveMountEffects_complete (../../../node_modules/react-dom/cjs/react-dom.development.js:24930:9)
+      at commitPassiveMountEffects_begin (../../../node_modules/react-dom/cjs/react-dom.development.js:24917:7)
+      at commitPassiveMountEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:24905:3)
+      at flushPassiveEffectsImpl (../../../node_modules/react-dom/cjs/react-dom.development.js:27078:3)
+      at flushPassiveEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:27023:14)
+      at performSyncWorkOnRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:26115:3)
+      at flushSyncCallbacks (../../../node_modules/react-dom/cjs/react-dom.development.js:12042:22)
+      at commitRootImpl (../../../node_modules/react-dom/cjs/react-dom.development.js:26998:3)
+      at commitRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:26721:5)
+      at finishConcurrentRender (../../../node_modules/react-dom/cjs/react-dom.development.js:26020:9)
+      at performConcurrentWorkOnRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:25848:7)
+      at flushActQueue (../../../node_modules/react/cjs/react.development.js:2667:24)
+      at act (../../../node_modules/react/cjs/react.development.js:2582:11)
+      at ../../../node_modules/@testing-library/react/dist/act-compat.js:47:25
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:180:24)
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:271:10)
+      at Object.<anonymous> (components/integrated-search/IntegratedSearchPage.test.tsx:84:9)
+
+  console.error
+    Warning: validateDOMNesting(...): <div> cannot appear as a descendant of <p>.
+        at div
+        at Chip (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Chip/Chip.js:325:26)
+        at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+        at p
+        at Typography (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Typography/Typography.js:173:28)
+        at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+        at div
+        at div
+        at Paper (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Paper/Paper.js:55:23)
+        at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+        at SearchIndexStatusBar (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/packages/app/src/components/integrated-search/SearchIndexStatusBar.tsx:20:33)
+        at div
+        at Grid (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Grid/Grid.js:243:35)
+        at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+        at div
+        at Grid (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Grid/Grid.js:243:35)
+        at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+        at div
+        at IntegratedSearchPage (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/packages/app/src/components/integrated-search/IntegratedSearchPage.tsx:39:69)
+        at Harness (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/packages/app/src/components/integrated-search/IntegratedSearchPage.test.tsx:55:54)
+        at Router (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/react-router/dist/umd/react-router.development.js:1102:25)
+        at MemoryRouter (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/react-router/dist/umd/react-router.development.js:1008:15)
+
+      at printWarning (../../../node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (../../../node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at validateDOMNesting (../../../node_modules/react-dom/cjs/react-dom.development.js:10849:7)
+      at createInstance (../../../node_modules/react-dom/cjs/react-dom.development.js:10930:5)
+      at completeWork (../../../node_modules/react-dom/cjs/react-dom.development.js:22226:28)
+      at completeUnitOfWork (../../../node_modules/react-dom/cjs/react-dom.development.js:26632:16)
+      at performUnitOfWork (../../../node_modules/react-dom/cjs/react-dom.development.js:26607:5)
+      at workLoopSync (../../../node_modules/react-dom/cjs/react-dom.development.js:26505:5)
+      at renderRootSync (../../../node_modules/react-dom/cjs/react-dom.development.js:26473:7)
+      at performConcurrentWorkOnRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:25777:74)
+      at workLoop (../../../node_modules/scheduler/cjs/scheduler.development.js:266:34)
+      at flushWork (../../../node_modules/scheduler/cjs/scheduler.development.js:239:14)
+      at performWorkUntilDeadline (../../../node_modules/scheduler/cjs/scheduler.development.js:533:21)
+      at Timeout.task [as _onTimeout] (../../../node_modules/jsdom/lib/jsdom/browser/Window.js:605:19)
+
+PASS src/components/integrated-search/IntegratedSearchPage.test.tsx
+  ✓ empty entry reports an input hint and real source availability without a failed search (121 ms)
+  ✓ a new query on the same route updates the input and actual request (94 ms)
+  ✓ server pagination is reachable, persists in URL and survives browser back (186 ms)
+  ✓ validation cannot be overwritten by a late valid search response (41 ms)
+  ✓ switching tenant discards the old tenant pending result (21 ms)
+  ✓ source metadata failures can be retried independently (56 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       6 passed, 6 total
+Snapshots:   0 total
+Time:        0.911 s, estimated 1 s
+Ran all test suites matching IntegratedSearchPage.test.tsx.

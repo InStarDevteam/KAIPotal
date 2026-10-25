@@ -1,0 +1,21 @@
+2026-10-01 local verification. Tests use synthetic data.
+
+App units
+
+Test Suites: 41 passed, 41 total
+Tests:       250 passed, 250 total
+Snapshots:   0 total
+Time:        6.162 s, estimated 8 s
+Ran all test suites.
+
+Backend units
+
+Test Suites: 12 passed, 12 total
+Tests:       164 passed, 164 total
+Snapshots:   0 total
+Time:        0.31 s, estimated 1 s
+Ran all test suites.
+
+TypeScript: yarn tsc --noEmit: exit 0.
+App build and backend build: exit 0.
+Lint: app 0 errors/24 warnings; backend 0 errors/5 warnings.

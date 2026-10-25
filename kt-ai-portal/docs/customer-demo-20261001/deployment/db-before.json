@@ -1,0 +1,392 @@
+{
+  "migrations": [
+    {
+      "name": "20260915000001_init.js",
+      "batch": 1
+    },
+    {
+      "name": "20260916000001_org_group_delegation.js",
+      "batch": 1
+    },
+    {
+      "name": "20260916000003_audit_append_policy.js",
+      "batch": 2
+    },
+    {
+      "name": "20260918000001_tenant_settings.js",
+      "batch": 3
+    },
+    {
+      "name": "20260924000001_platform_access.js",
+      "batch": 3
+    },
+    {
+      "name": "20260924000002_work_requests.js",
+      "batch": 3
+    },
+    {
+      "name": "20260929000001_krmf.js",
+      "batch": 4
+    },
+    {
+      "name": "20260929000010_domain_ledger.js",
+      "batch": 4
+    },
+    {
+      "name": "20260929000020_domains.js",
+      "batch": 4
+    }
+  ],
+  "tables": [
+    {
+      "relname": "fc_audit_events",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": false,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_catalog_application",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_catalog_item",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_credit_account",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_credit_product",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_credit_request",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_credit_transaction",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_delegations",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_external_identities",
+      "owner": "portal_migrator",
+      "rls": false,
+      "force_rls": false,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_group_memberships",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_groups",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_idempotency_keys",
+      "owner": "portal_migrator",
+      "rls": false,
+      "force_rls": false,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_knex_migrations",
+      "owner": "portal_migrator",
+      "rls": false,
+      "force_rls": false,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_knex_migrations_lock",
+      "owner": "portal_migrator",
+      "rls": false,
+      "force_rls": false,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_krmf_action",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_krmf_baseline",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_krmf_change",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_krmf_control",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_krmf_control_link",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_krmf_eval_record",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_krmf_evidence",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_krmf_file",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_krmf_trr_check",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_membership_changes",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_organizations",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_outbox_events",
+      "owner": "portal_migrator",
+      "rls": false,
+      "force_rls": false,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_permissions",
+      "owner": "portal_migrator",
+      "rls": false,
+      "force_rls": false,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_platform_access",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_portal_preferences",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_portal_setting",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_portal_setting_history",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_project",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_project_invite",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_project_member",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_project_members",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": false
+    },
+    {
+      "relname": "fc_projects",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": false
+    },
+    {
+      "relname": "fc_proposal",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_proposal_review",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_proposal_sympathy",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_request_events",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": false
+    },
+    {
+      "relname": "fc_role_assignments",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_role_permissions",
+      "owner": "portal_migrator",
+      "rls": false,
+      "force_rls": false,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_roles",
+      "owner": "portal_migrator",
+      "rls": false,
+      "force_rls": false,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_tenant_memberships",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_tenant_settings",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_tenants",
+      "owner": "portal_migrator",
+      "rls": false,
+      "force_rls": false,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_transfer_file",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_transfer_request",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_users",
+      "owner": "portal_migrator",
+      "rls": false,
+      "force_rls": false,
+      "runtime_select": true
+    },
+    {
+      "relname": "fc_work_requests",
+      "owner": "portal_migrator",
+      "rls": true,
+      "force_rls": true,
+      "runtime_select": false
+    }
+  ]
+}

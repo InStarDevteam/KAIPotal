@@ -1,0 +1,151 @@
+.appearance-settings > [role='alert'] {
+  margin-bottom: 18px;
+}
+.appearance-tenant-default {
+  border: 1px solid var(--portal-border, #dce3ec);
+  border-radius: 14px;
+  padding: 20px;
+  background: var(--portal-primary-soft, #f5f7fb);
+  margin-bottom: 28px;
+}
+.appearance-tenant-default > span,
+.appearance-tenant-default > strong {
+  display: block;
+}
+.appearance-tenant-default > span {
+  font-size: calc(12px * var(--portal-font-scale, 1));
+  color: var(--portal-text-secondary, #627184);
+  margin-bottom: 8px;
+}
+.appearance-tenant-default > strong {
+  font-size: calc(17px * var(--portal-font-scale, 1));
+}
+.appearance-tenant-default > p {
+  font-size: calc(13px * var(--portal-font-scale, 1));
+  line-height: 1.7;
+  color: var(--portal-text-secondary, #627184);
+  margin: 9px 0 0;
+}
+.appearance-design-fieldset {
+  padding: 0;
+  margin: 0 0 28px;
+  border: 0;
+  min-width: 0;
+}
+.appearance-design-fieldset legend {
+  font-size: calc(16px * var(--portal-font-scale, 1));
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+.appearance-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.appearance-option {
+  font: inherit;
+  text-align: left;
+  padding: 16px;
+  border: 1px solid var(--portal-border, #dce3ec);
+  border-radius: 14px;
+  background: var(--portal-surface, #fff);
+  color: var(--portal-text, #182838);
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  gap: 4px 16px;
+  transition: border-color 180ms, box-shadow 180ms;
+}
+.appearance-option:hover:not(:disabled) {
+  border-color: var(--portal-primary, #39467a);
+}
+.appearance-option[aria-pressed='true'] {
+  border-color: var(--portal-primary, #39467a);
+  box-shadow: 0 0 0 1px var(--portal-primary, #39467a);
+}
+.appearance-option:focus-visible {
+  outline: 2px solid var(--portal-primary, #39467a);
+  outline-offset: 4px;
+}
+.appearance-option:disabled {
+  cursor: default;
+  opacity: 0.65;
+}
+.appearance-option > strong {
+  font-size: calc(15px * var(--portal-font-scale, 1));
+}
+.appearance-option > span:last-child {
+  font-size: calc(12px * var(--portal-font-scale, 1));
+  line-height: 1.6;
+  color: var(--portal-text-secondary, #627184);
+}
+.appearance-option-number {
+  font-size: calc(11px * var(--portal-font-scale, 1));
+  color: var(--portal-text-secondary, #627184);
+}
+.appearance-option-preview {
+  grid-row: 1 / span 3;
+  width: 88px;
+  min-height: 88px;
+  border-radius: 9px;
+  background: linear-gradient(135deg, #eef2fc, #fff);
+  padding: 44px 8px 8px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 4px;
+  box-shadow: inset 0 0 0 1px rgb(0 0 0 / 5%);
+}
+.appearance-option-preview i {
+  border-radius: 3px;
+  background: rgb(117 134 192 / 25%);
+}
+.appearance-option-focus .appearance-option-preview {
+  background: radial-gradient(ellipse at top right, #3b726b, transparent),
+    #102f30;
+}
+.appearance-option-orbit .appearance-option-preview {
+  background: radial-gradient(ellipse at top right, #625848, transparent),
+    #22262a;
+}
+.appearance-option-canvas .appearance-option-preview {
+  background: linear-gradient(150deg, #e6e4da, #f9f5ec);
+}
+.appearance-option-tenant .appearance-option-preview {
+  background: linear-gradient(
+    145deg,
+    var(--portal-primary, #39467a),
+    var(--portal-accent, #8f81c7)
+  );
+}
+.appearance-option-focus .appearance-option-preview i,
+.appearance-option-orbit .appearance-option-preview i,
+.appearance-option-tenant .appearance-option-preview i {
+  background: rgb(255 255 255 / 20%);
+}
+.appearance-font-field {
+  max-width: 420px;
+}
+.appearance-save-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+}
+@media (max-width: 1000px) {
+  .appearance-options {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .appearance-save-actions {
+    width: 100%;
+  }
+  .appearance-save-actions > button {
+    flex: 1 1 100%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .appearance-option {
+    transition: none;
+  }
+}

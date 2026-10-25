@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-10-03T04:37:26.007304+00:00",
+  "revision": "kt-ai-portal-demo-requirements-20261003-r3",
+  "imageDigest": "asia-northeast3-docker.pkg.dev/kai-platform-d0ae0/kt-ai-portal/kt-ai-portal-demo@sha256:21c5d3d78224d0cc72389ff9c645602c9b2d98c9ebaa4d72377bb0ccec844c7b",
+  "cloudBuildId": "6d7fbf29-46ad-440a-80ca-024b70ff87a0",
+  "trafficPercent": 100,
+  "minInstances": 1,
+  "maxInstances": 20,
+  "databaseSecretReferencePreserved": true,
+  "cloudSqlConnectionPreserved": true,
+  "hosting": {
+    "version": "e9d512ba60d828c3",
+    "release": "projects/kai-platform-d0ae0/sites/kai-platform-d0ae0/channels/live/releases/1791002217424000",
+    "releasedAt": "2026-10-03T04:36:57.424Z"
+  },
+  "testedPreview": {
+    "version": "e9d512ba60d828c3",
+    "release": "projects/kai-platform-d0ae0/sites/kai-platform-d0ae0/channels/requirements-20261003/releases/1791002139577000",
+    "releasedAt": "2026-10-03T04:35:39.577Z"
+  },
+  "hostingMatchesTestedPreview": true,
+  "databaseMigrationsThisRelease": 0,
+  "productionBusinessWritesThisRelease": 0,
+  "rollback": {
+    "revision": "kt-ai-portal-demo-customer-20261001-r2",
+    "hostingVersion": "5d0a87ebbadf6fe7"
+  },
+  "accessCodeChanged": false
+}

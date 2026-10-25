@@ -1,0 +1,97 @@
+﻿단어ID(임시),한글명,영문명,약어,정의(임시),매핑상태
+TMP-W-001,신청,request,REQ,업무 처리를 요청하는 행위,임시정의
+TMP-W-002,승인,approve,APV,신청 등을 허가하는 결정,임시정의
+TMP-W-003,테넌트,tenant,TNT,포털 내 독립된 운영 단위(군/기관 단위),임시정의
+TMP-W-004,증적,evidence,EVD,통제 이행을 입증하는 자료,임시정의
+TMP-W-005,통제,control,CTL,보안 요구사항을 구현하는 관리 항목,임시정의
+TMP-W-006,크레딧,credit,CRD,플랫폼 자원 사용 단위의 화폐적 수량,임시정의
+TMP-W-007,반출,export,XPT,망/플랫폼 밖으로 자료를 반출하는 행위,임시정의
+TMP-W-008,반입,import,IMP,외부에서 망/플랫폼으로 자료를 반입하는 행위,임시정의
+TMP-W-009,프로젝트,project,PRJ,업무 수행을 위한 작업 단위,임시정의
+TMP-W-010,사용자,user,USR,포털을 사용하는 계정 주체,임시정의
+TMP-W-011,소속,membership,MBR,테넌트 내 사용자 소속 관계,임시정의
+TMP-W-012,역할,role,ROL,권한 묶음의 명칭,임시정의
+TMP-W-013,권한,permission,PRM,수행 가능한 작업의 허가 단위,임시정의
+TMP-W-014,감사,audit,ADT,행위를 기록하고 검증하는 활동,임시정의
+TMP-W-015,기준선,baseline,BSL,평가 대상의 기준이 되는 구성,임시정의
+TMP-W-016,조치,action,ACT,문제에 대한 시정 활동,임시정의
+TMP-W-017,변경,change,CHG,구성이나 정책의 수정,임시정의
+TMP-W-018,평가,evaluation,EVL,적합성을 판정하는 활동,임시정의
+TMP-W-019,코드,code,COD,분류를 위한 기호,임시정의
+TMP-W-020,명칭,name,NME,객체의 이름,임시정의
+TMP-W-021,상태,status,STA,처리 단계를 나타내는 값,임시정의
+TMP-W-022,일시,datetime,DTT,날짜와 시각(UTC),임시정의
+TMP-W-023,식별자,identifier,ID,객체를 고유하게 식별하는 값,임시정의
+TMP-W-024,버전,version,VER,변경 이력 구분용 순번,임시정의
+TMP-W-025,사유,reason,RSN,결정의 근거 설명,임시정의
+TMP-W-026,제목,title,TTL,문서의 제목,임시정의
+TMP-W-027,본문,body,BDY,문서의 본문 내용,임시정의
+TMP-W-028,파일,file,FIL,저장된 전자문서,임시정의
+TMP-W-029,계정,account,ACC,크레딧 잔액의 주체 단위,임시정의
+TMP-W-030,거래,transaction,TRX,크레딧의 증감 기록,임시정의
+TMP-W-031,상품,product,PDT,크레딧 단가가 정해진 자원 단위,임시정의
+TMP-W-032,인가,authorization,AUT,기관의 사용 허가,임시정의
+TMP-W-033,위임,delegation,DGT,권한의 기간 한정 이양,임시정의
+TMP-W-034,그룹,group,GRP,사용자 묶음,임시정의
+TMP-W-035,조직,organization,ORG,소속의 조직 단위,임시정의
+TMP-W-036,설정,setting,SET,구성값의 집합,임시정의
+TMP-W-037,제안,proposal,PPS,개선 아이디어의 게시,임시정의
+TMP-W-038,검토,review,RVW,내용의 심사,임시정의
+TMP-W-039,카탈로그,catalog,CAT,서비스·도구의 목록,임시정의
+TMP-W-040,공감,sympathy,SMP,제안에 대한 동의 표시,임시정의
+TMP-W-041,초대,invite,INV,프로젝트 참여 권유,임시정의
+TMP-W-042,연결,link,LNK,객체 간의 참조 관계,임시정의
+TMP-W-043,추적,trace,TRC,요청 흐름의 추적,임시정의
+TMP-W-044,이벤트,event,EVT,발생한 사실의 기록,임시정의
+TMP-W-045,이력,history,HST,변경의 기록,임시정의
+TMP-W-046,수량,quantity,QTY,계량 가능한 양,임시정의
+TMP-W-047,단가,unit price,UPR,단위당 가격,임시정의
+TMP-W-048,금액,amount,AMT,화폐 가치의 양,임시정의
+TMP-W-049,보안,security,SEC,정보 보호 속성,임시정의
+TMP-W-050,등급,grade,GRD,수준 구분,임시정의
+TMP-W-051,목적,purpose,PUR,행위의 의도,임시정의
+TMP-W-052,범위,scope,SCP,적용 경계,임시정의
+TMP-W-053,유형,type,TYP,분류의 종류,임시정의
+TMP-W-054,분류,category,CTG,체계적 구분,임시정의
+TMP-W-055,제공자,provider,PRV,서비스를 제공하는 주체,임시정의
+TMP-W-056,사용,use,USE,이용 행위,임시정의
+TMP-W-057,결과,result,RST,처리의 결론,임시정의
+TMP-W-058,시작,start,SRT,개시,임시정의
+TMP-W-059,종료,end,END,종결,임시정의
+TMP-W-060,만료,expiration,EXP,유효기간의 끝,임시정의
+TMP-W-061,유효,valid,VAL,효력이 있는,임시정의
+TMP-W-062,생성,creation,CRT,최초 작성,임시정의
+TMP-W-063,수정,modification,UPD,내용 변경,임시정의
+TMP-W-064,저장,storage,STO,보존,임시정의
+TMP-W-065,크기,size,SIZ,용량의 양,임시정의
+TMP-W-066,표시명,display name,DSP,화면에 보이는 이름,임시정의
+TMP-W-067,이메일,email,EML,전자우편 주소,임시정의
+TMP-W-068,발급기관,issuer,ISS,신원을 발급한 기관,임시정의
+TMP-W-069,주체,subject,SBJ,신원의 대상 식별자,임시정의
+TMP-W-070,검증,verification,VRF,진위 확인,임시정의
+TMP-W-071,해시,hash,HSH,무결성 확인용 요약값,임시정의
+TMP-W-072,다이제스트,digest,DGS,요약 값,임시정의
+TMP-W-073,조회,view,VW,정보를 찾아보는 행위,임시정의
+TMP-W-074,계획,plan,PLN,수행 방안,임시정의
+TMP-W-075,필요성,necessity,NCS,필요한 이유,임시정의
+TMP-W-076,요약,summary,SMY,간략한 설명,임시정의
+TMP-W-077,항목,item,ITM,목록의 단위,임시정의
+TMP-W-078,결정,decision,DCS,판단의 결론,임시정의
+TMP-W-079,처리,handling,HDL,작업의 수행,임시정의
+TMP-W-080,공개,disclosure,DSC,대외 개방,임시정의
+TMP-W-081,동의,consent,CNT,허락,임시정의
+TMP-W-082,접근,access,ACS,사용자 도달,임시정의
+TMP-W-083,실행,execution,EXE,수행,임시정의
+TMP-W-084,시험,test,TST,기능 검증 활동,임시정의
+TMP-W-085,여부,flag,FLG,참/거짓 구분,임시정의
+TMP-W-086,멤버,member,MEM,구성원,임시정의
+TMP-W-087,값,value,VLU,데이터의 내용,임시정의
+TMP-W-088,스냅샷,snapshot,SNP,시점별 복사본,임시정의
+TMP-W-089,원인,cause,CAU,문제의 근원,임시정의
+TMP-W-090,영향도,impact,IPD,피해의 정도,임시정의
+TMP-W-091,위험,risk,RSK,불확실한 손해,임시정의
+TMP-W-092,기준,criteria,CRI,판정 기준,임시정의
+TMP-W-093,참조,reference,REF,다른 대상을 가리킴,임시정의
+TMP-W-094,대상,target,TGT,적용되는 개체,임시정의
+TMP-W-095,가입,join,JON,그룹·프로젝트 등에 참여,임시정의
+TMP-W-096,응답,response,RSP,요청에 대한 회신,임시정의

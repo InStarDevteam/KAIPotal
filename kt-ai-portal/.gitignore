@@ -1,0 +1,42 @@
+# Secrets
+.env
+.env.local
+.env.test
+.firebaserc
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependencies
+node_modules/
+
+# Yarn
+.pnp.*
+.yarn/cache
+
+# Build output
+dist/
+dist-types/
+build/
+coverage/
+
+# Docker data volumes
+infra/openmetadata/docker-volume/
+infra/keycloak/docker-volume/
+infra/opensearch/docker-volume/
+
+# Temporary change files created by Vim
+*.swp
+
+# MkDocs build output
+site/
+.venv/
+~$*
+.firebase/
+.gcloud/

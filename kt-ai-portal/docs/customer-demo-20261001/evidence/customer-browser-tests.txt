@@ -1,0 +1,16 @@
+PASS production API mode retains four login/home designs independently of mock mode
+PASS authorized multi-tenant selector opens and switches real API scope
+PASS work overview loads actual ledgers without aggregation failure
+PASS all active authorized pages render without JS errors or requirement IDs
+PASS scoped developer catalog excludes invented pilot API contracts
+PASS single-tenant user can inspect selection without granting unauthorized tenants
+PASS defense profile saves to actual DB and restores after reload
+PASS external profile removes military-only fields and persists distinction
+PASS profile API rejects stale writes, identity fields and cross-user access
+PASS active sessions never present sample records or simulated revocation in server mode
+PASS personal projects use actual membership and readable cards, not narrow resource tables
+PASS ordinary user can read own real activity without audit-admin permission
+PASS work environment request is persisted through UI and reviewed through real API
+PASS six account classes open the correct work landing from actual server permissions
+PASS mobile profile, projects and four designs have no horizontal page overflow
+15 browser scenarios passed

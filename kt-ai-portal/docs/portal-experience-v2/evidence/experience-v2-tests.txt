@@ -1,0 +1,7 @@
+PASS four desktop designs retain four platforms and direct work navigation
+PASS home work action directly opens personal landing, not a dialog
+PASS project filter and selected-project deep link work
+PASS six effective roles receive their own landing and authorized directory
+PASS refresh and search use existing workflows
+PASS mobile layouts have no horizontal overflow and keep all actions
+6 checks passed; no page errors

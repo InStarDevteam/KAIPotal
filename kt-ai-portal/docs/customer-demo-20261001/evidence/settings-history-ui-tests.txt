@@ -1,0 +1,56 @@
+PASS src/components/environment-settings/PortalSettingHistoryServerPanel.test.tsx
+  ● Console
+
+    console.error
+      Warning: findDOMNode is deprecated and will be removed in the next major release. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node
+          at button
+          at ButtonBase (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/ButtonBase/ButtonBase.js:94:22)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at Button (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Button/Button.js:313:24)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at div
+          at StyledComponent (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/styled/styled.js:95:28)
+          at div
+          at Paper (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Paper/Paper.js:55:23)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at PortalSettingHistoryServerPanel (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/packages/app/src/components/environment-settings/PortalSettingHistoryServerPanel.tsx:35:57)
+
+      47 |       },
+      48 |     });
+    > 49 |   render(<PortalSettingHistoryServerPanel />);
+         |         ^
+      50 |   expect(await screen.findByText('새 제목')).toBeInTheDocument();
+      51 |   expect(screen.getByText('포털 관리자')).toBeInTheDocument();
+      52 |   expect(screen.getByText('기존 제목')).toBeInTheDocument();
+
+      at printWarning (../../../node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (../../../node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.findDOMNode (../../../node_modules/react-dom/cjs/react-dom.development.js:29666:7)
+      at ../../../node_modules/@material-ui/core/utils/useIsFocusVisible.js:151:25
+      at setRef (../../../node_modules/@material-ui/core/utils/setRef.js:11:5)
+      at ../../../node_modules/@material-ui/core/utils/useForkRef.js:28:27
+      at setRef (../../../node_modules/@material-ui/core/utils/setRef.js:11:5)
+      at ../../../node_modules/@material-ui/core/utils/useForkRef.js:29:27
+      at commitAttachRef (../../../node_modules/react-dom/cjs/react-dom.development.js:23689:18)
+      at commitLayoutEffectOnFiber (../../../node_modules/react-dom/cjs/react-dom.development.js:23542:9)
+      at commitLayoutMountEffects_complete (../../../node_modules/react-dom/cjs/react-dom.development.js:24727:9)
+      at commitLayoutEffects_begin (../../../node_modules/react-dom/cjs/react-dom.development.js:24713:7)
+      at commitLayoutEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:24651:3)
+      at commitRootImpl (../../../node_modules/react-dom/cjs/react-dom.development.js:26862:5)
+      at commitRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:26721:5)
+      at finishConcurrentRender (../../../node_modules/react-dom/cjs/react-dom.development.js:26020:9)
+      at performConcurrentWorkOnRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:25848:7)
+      at flushActQueue (../../../node_modules/react/cjs/react.development.js:2667:24)
+      at act (../../../node_modules/react/cjs/react.development.js:2582:11)
+      at ../../../node_modules/@testing-library/react/dist/act-compat.js:47:25
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:180:24)
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:271:10)
+      at Object.<anonymous> (components/environment-settings/PortalSettingHistoryServerPanel.test.tsx:49:9)
+
+PASS src/components/environment-settings/portalSettingsServerData.test.ts
+
+Test Suites: 2 passed, 2 total
+Tests:       18 passed, 18 total
+Snapshots:   0 total
+Time:        0.786 s, estimated 1 s
+Ran all test suites matching src/components/environment-settings/PortalSettingHistoryServerPanel.test.tsx|src/components/environment-settings/portalSettingsServerData.test.ts.

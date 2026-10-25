@@ -1,0 +1,69 @@
+{
+  "generatedAt": "2026-10-03T18:41:41.584035+00:00",
+  "status": "PASSED",
+  "scope": "Actual disposable local PostgreSQL; corrupted CSV copies; no production writes",
+  "negativeChecks": [
+    {
+      "case": "nullable",
+      "detectedBy": "f_relationalConstraints",
+      "status": "PASS",
+      "expectedExitCode": 1,
+      "actualExitCode": 1,
+      "failedChecks": 1
+    },
+    {
+      "case": "primary_key",
+      "detectedBy": "f_relationalConstraints",
+      "status": "PASS",
+      "expectedExitCode": 1,
+      "actualExitCode": 1,
+      "failedChecks": 1
+    },
+    {
+      "case": "default_expression",
+      "detectedBy": "f_relationalConstraints",
+      "status": "PASS",
+      "expectedExitCode": 1,
+      "actualExitCode": 1,
+      "failedChecks": 1
+    },
+    {
+      "case": "empty_word_composition",
+      "detectedBy": "b_termWords",
+      "status": "PASS",
+      "expectedExitCode": 1,
+      "actualExitCode": 1,
+      "failedChecks": 1
+    },
+    {
+      "case": "invalid_domain",
+      "detectedBy": "g_domainsAndProvenance",
+      "status": "PASS",
+      "expectedExitCode": 1,
+      "actualExitCode": 1,
+      "failedChecks": 1
+    },
+    {
+      "case": "missing_code",
+      "detectedBy": "c_codeSets",
+      "status": "PASS",
+      "expectedExitCode": 1,
+      "actualExitCode": 1,
+      "failedChecks": 1
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0
+  },
+  "sourceCsvHashes": {
+    "STANDARD_WORDS.csv": "0b76696338927ad6ac545d49c3a5cf66cf30e88cdb7d7aff57df80a253b7cce5",
+    "STANDARD_DOMAINS.csv": "17e66e98f9ec35404c80340d6f058fc252ba9f79fe391201b8c78112b0a68b03",
+    "STANDARD_CODES.csv": "5389ec9b59a07e17ca4444783c1a8f2f5c558d6babd342cbe525c5f0f8502e51",
+    "STANDARD_TERMS.csv": "314829674551d722fbaefa2f6d831b12df2d0cb3f28ffbe150de2546a9f16e35",
+    "DATA_DICTIONARY.csv": "a5ea5e053157ded145ea455731f6deaba0661db9656098e490d64a0c8962081a",
+    "MDR_MAPPING.csv": "8ba7d595eabc1d0daef93fdb6030ef11dbb0e0aeb2a6bb4712def0b8d91ecd9b"
+  },
+  "sourceCsvUnchanged": true,
+  "institutionStandardReceived": false
+}

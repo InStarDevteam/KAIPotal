@@ -1,0 +1,43 @@
+{
+  "status": {
+    "conditions": [
+      {
+        "lastTransitionTime": "2026-10-11T07:30:19.422369Z",
+        "message": "Updating revision scaling succeeded.",
+        "status": "True",
+        "type": "Ready"
+      },
+      {
+        "lastTransitionTime": "2026-10-11T07:29:52.566960Z",
+        "severity": "Info",
+        "status": "True",
+        "type": "Active"
+      },
+      {
+        "lastTransitionTime": "2026-10-11T07:29:52.447117Z",
+        "message": "Containers became healthy in 15.91s.",
+        "status": "True",
+        "type": "ContainerHealthy"
+      },
+      {
+        "lastTransitionTime": "2026-10-11T07:29:34.575833Z",
+        "message": "Container image import completed in 19.07s.",
+        "status": "True",
+        "type": "ContainerReady"
+      },
+      {
+        "lastTransitionTime": "2026-10-11T07:30:19.388328Z",
+        "message": "Min instances provisioned successfully .",
+        "status": "True",
+        "type": "MinInstancesProvisioned"
+      },
+      {
+        "lastTransitionTime": "2026-10-11T07:29:36.087460Z",
+        "message": "Provisioning imported containers completed in 1.51s. Checking container health. This will wait for up to 4m for the configured startup probe, including an initial delay of 0s.",
+        "status": "True",
+        "type": "ResourcesAvailable"
+      }
+    ],
+    "imageDigest": "asia-northeast3-docker.pkg.dev/kai-platform-d0ae0/kt-ai-portal/kt-ai-portal-demo@sha256:5c19982f11e3f12bd355abd67da1f20263eb124e90e1319a0f3e3bfc2cef979e"
+  }
+}

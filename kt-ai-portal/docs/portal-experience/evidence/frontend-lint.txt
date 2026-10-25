@@ -1,0 +1,296 @@
+
+
+  ⚠  http://eslint.org/docs/rules/no-restricted-syntax
+
+     React default imports are deprecated. Follow the https://backstage.io/docs/tutorials/jsx-transform-migration migration guide for details
+
+
+     packages/app/src/components/navigation/PortalJourneyBar.tsx:1:1
+   > 1 | import React from 'react';
+       | ^
+     2 | import { Box, Tooltip, Typography } from '@material-ui/core';
+     3 | import { makeStyles } from '@material-ui/core/styles';
+     4 | import { colors, typographyTokens } from '../common/designTokens';
+
+  ⚠  http://eslint.org/docs/rules/no-restricted-syntax
+
+     React default imports are deprecated. Follow the https://backstage.io/docs/tutorials/jsx-transform-migration migration guide for details. If you need a global type that collides with a React named export (such as `MouseEvent`), try using `globalThis.MouseHandler`
+
+
+     packages/app/src/components/navigation/PortalJourneyBar.tsx:1:8
+   > 1 | import React from 'react';
+       |        ^
+     2 | import { Box, Tooltip, Typography } from '@material-ui/core';
+     3 | import { makeStyles } from '@material-ui/core/styles';
+     4 | import { colors, typographyTokens } from '../common/designTokens';
+
+  ⚠  http://eslint.org/docs/rules/no-restricted-syntax
+
+     React default imports are deprecated. Follow the https://backstage.io/docs/tutorials/jsx-transform-migration migration guide for details
+
+
+     packages/app/src/components/preview-auth/DemoAdminContext.tsx:1:1
+   > 1 | import React, {
+       | ^
+     2 |   createContext,
+     3 |   useContext,
+     4 |   useEffect,
+
+  ⚠  http://eslint.org/docs/rules/no-restricted-syntax
+
+     React default imports are deprecated. Follow the https://backstage.io/docs/tutorials/jsx-transform-migration migration guide for details. If you need a global type that collides with a React named export (such as `MouseEvent`), try using `globalThis.MouseHandler`
+
+
+     packages/app/src/components/preview-auth/DemoAdminContext.tsx:1:8
+   > 1 | import React, {
+       |        ^
+     2 |   createContext,
+     3 |   useContext,
+     4 |   useEffect,
+
+  ⚠  http://eslint.org/docs/rules/no-restricted-syntax
+
+     React default imports are deprecated. Follow the https://backstage.io/docs/tutorials/jsx-transform-migration migration guide for details
+
+
+     packages/app/src/components/project-workspace/ResourceQuotaCard.tsx:1:1
+   > 1 | import React from 'react';
+       | ^
+     2 | import Card from '@material-ui/core/Card';
+     3 | import CardContent from '@material-ui/core/CardContent';
+     4 | import Typography from '@material-ui/core/Typography';
+
+  ⚠  http://eslint.org/docs/rules/no-restricted-syntax
+
+     React default imports are deprecated. Follow the https://backstage.io/docs/tutorials/jsx-transform-migration migration guide for details. If you need a global type that collides with a React named export (such as `MouseEvent`), try using `globalThis.MouseHandler`
+
+
+     packages/app/src/components/project-workspace/ResourceQuotaCard.tsx:1:8
+   > 1 | import React from 'react';
+       |        ^
+     2 | import Card from '@material-ui/core/Card';
+     3 | import CardContent from '@material-ui/core/CardContent';
+     4 | import Typography from '@material-ui/core/Typography';
+
+  ⚠  http://eslint.org/docs/rules/no-restricted-syntax
+
+     React default imports are deprecated. Follow the https://backstage.io/docs/tutorials/jsx-transform-migration migration guide for details
+
+
+     packages/app/src/components/requirement-progress/AdminOnlyGuard.tsx:1:1
+   > 1 | import React from 'react';
+       | ^
+     2 | import { Box, Button, Card, CardContent, Typography, CircularProgress } from '@material-ui/core';
+     3 | import { Link } from 'react-router-dom';
+     4 | import { useDemoAdmin } from '../preview-auth';
+
+  ⚠  http://eslint.org/docs/rules/no-restricted-syntax
+
+     React default imports are deprecated. Follow the https://backstage.io/docs/tutorials/jsx-transform-migration migration guide for details. If you need a global type that collides with a React named export (such as `MouseEvent`), try using `globalThis.MouseHandler`
+
+
+     packages/app/src/components/requirement-progress/AdminOnlyGuard.tsx:1:8
+   > 1 | import React from 'react';
+       |        ^
+     2 | import { Box, Button, Card, CardContent, Typography, CircularProgress } from '@material-ui/core';
+     3 | import { Link } from 'react-router-dom';
+     4 | import { useDemoAdmin } from '../preview-auth';
+
+  ⚠  http://eslint.org/docs/rules/no-restricted-syntax
+
+     React default imports are deprecated. Follow the https://backstage.io/docs/tutorials/jsx-transform-migration migration guide for details
+
+
+     packages/app/src/components/requirement-progress/FeatureProgressTable.tsx:1:1
+   > 1 | import React, { useState, useMemo } from 'react';
+       | ^
+     2 | import {
+     3 |   Table,
+     4 |   TableBody,
+
+  ⚠  http://eslint.org/docs/rules/no-restricted-syntax
+
+     React default imports are deprecated. Follow the https://backstage.io/docs/tutorials/jsx-transform-migration migration guide for details. If you need a global type that collides with a React named export (such as `MouseEvent`), try using `globalThis.MouseHandler`
+
+
+     packages/app/src/components/requirement-progress/FeatureProgressTable.tsx:1:8
+   > 1 | import React, { useState, useMemo } from 'react';
+       |        ^
+     2 | import {
+     3 |   Table,
+     4 |   TableBody,
+
+  ⚠  http://eslint.org/docs/rules/no-restricted-syntax
+
+     React default imports are deprecated. Follow the https://backstage.io/docs/tutorials/jsx-transform-migration migration guide for details
+
+
+     packages/app/src/components/requirement-progress/RequirementChangeHistoryTable.tsx:1:1
+   > 1 | import React from 'react';
+       | ^
+     2 | import {
+     3 |   Table,
+     4 |   TableBody,
+
+  ⚠  http://eslint.org/docs/rules/no-restricted-syntax
+
+     React default imports are deprecated. Follow the https://backstage.io/docs/tutorials/jsx-transform-migration migration guide for details. If you need a global type that collides with a React named export (such as `MouseEvent`), try using `globalThis.MouseHandler`
+
+
+     packages/app/src/components/requirement-progress/RequirementChangeHistoryTable.tsx:1:8
+   > 1 | import React from 'react';
+       |        ^
+     2 | import {
+     3 |   Table,
+     4 |   TableBody,
+
+  ⚠  http://eslint.org/docs/rules/no-restricted-syntax
+
+     React default imports are deprecated. Follow the https://backstage.io/docs/tutorials/jsx-transform-migration migration guide for details
+
+
+     packages/app/src/components/requirement-progress/RequirementProgressFilterPanel.tsx:1:1
+   > 1 | import React from 'react';
+       | ^
+     2 | import {
+     3 |   Box,
+     4 |   FormControl,
+
+  ⚠  http://eslint.org/docs/rules/no-restricted-syntax
+
+     React default imports are deprecated. Follow the https://backstage.io/docs/tutorials/jsx-transform-migration migration guide for details. If you need a global type that collides with a React named export (such as `MouseEvent`), try using `globalThis.MouseHandler`
+
+
+     packages/app/src/components/requirement-progress/RequirementProgressFilterPanel.tsx:1:8
+   > 1 | import React from 'react';
+       |        ^
+     2 | import {
+     3 |   Box,
+     4 |   FormControl,
+
+  ⚠  http://eslint.org/docs/rules/no-restricted-syntax
+
+     React default imports are deprecated. Follow the https://backstage.io/docs/tutorials/jsx-transform-migration migration guide for details
+
+
+     packages/app/src/components/requirement-progress/RequirementProgressPage.tsx:1:1
+   > 1 | import React, { useState } from 'react';
+       | ^
+     2 | import {
+     3 |   Box,
+     4 |   Paper,
+
+  ⚠  http://eslint.org/docs/rules/no-restricted-syntax
+
+     React default imports are deprecated. Follow the https://backstage.io/docs/tutorials/jsx-transform-migration migration guide for details. If you need a global type that collides with a React named export (such as `MouseEvent`), try using `globalThis.MouseHandler`
+
+
+     packages/app/src/components/requirement-progress/RequirementProgressPage.tsx:1:8
+   > 1 | import React, { useState } from 'react';
+       |        ^
+     2 | import {
+     3 |   Box,
+     4 |   Paper,
+
+  ⚠  http://eslint.org/docs/rules/no-restricted-syntax
+
+     React default imports are deprecated. Follow the https://backstage.io/docs/tutorials/jsx-transform-migration migration guide for details
+
+
+     packages/app/src/components/requirement-progress/RequirementProgressSummaryCards.tsx:1:1
+   > 1 | import React from 'react';
+       | ^
+     2 | import Card from '@material-ui/core/Card';
+     3 | import CardContent from '@material-ui/core/CardContent';
+     4 | import Grid from '@material-ui/core/Grid';
+
+  ⚠  http://eslint.org/docs/rules/no-restricted-syntax
+
+     React default imports are deprecated. Follow the https://backstage.io/docs/tutorials/jsx-transform-migration migration guide for details. If you need a global type that collides with a React named export (such as `MouseEvent`), try using `globalThis.MouseHandler`
+
+
+     packages/app/src/components/requirement-progress/RequirementProgressSummaryCards.tsx:1:8
+   > 1 | import React from 'react';
+       |        ^
+     2 | import Card from '@material-ui/core/Card';
+     3 | import CardContent from '@material-ui/core/CardContent';
+     4 | import Grid from '@material-ui/core/Grid';
+
+  ⚠  http://eslint.org/docs/rules/no-restricted-syntax
+
+     React default imports are deprecated. Follow the https://backstage.io/docs/tutorials/jsx-transform-migration migration guide for details
+
+
+     packages/app/src/components/requirement-progress/RequirementQuestionTable.tsx:1:1
+   > 1 | import React from 'react';
+       | ^
+     2 | import {
+     3 |   Table,
+     4 |   TableBody,
+
+  ⚠  http://eslint.org/docs/rules/no-restricted-syntax
+
+     React default imports are deprecated. Follow the https://backstage.io/docs/tutorials/jsx-transform-migration migration guide for details. If you need a global type that collides with a React named export (such as `MouseEvent`), try using `globalThis.MouseHandler`
+
+
+     packages/app/src/components/requirement-progress/RequirementQuestionTable.tsx:1:8
+   > 1 | import React from 'react';
+       |        ^
+     2 | import {
+     3 |   Table,
+     4 |   TableBody,
+
+  ⚠  http://eslint.org/docs/rules/no-restricted-syntax
+
+     React default imports are deprecated. Follow the https://backstage.io/docs/tutorials/jsx-transform-migration migration guide for details
+
+
+     packages/app/src/components/requirement-progress/SfrProgressTable.tsx:1:1
+   > 1 | import React from 'react';
+       | ^
+     2 | import {
+     3 |   Table,
+     4 |   TableBody,
+
+  ⚠  http://eslint.org/docs/rules/no-restricted-syntax
+
+     React default imports are deprecated. Follow the https://backstage.io/docs/tutorials/jsx-transform-migration migration guide for details. If you need a global type that collides with a React named export (such as `MouseEvent`), try using `globalThis.MouseHandler`
+
+
+     packages/app/src/components/requirement-progress/SfrProgressTable.tsx:1:8
+   > 1 | import React from 'react';
+       |        ^
+     2 | import {
+     3 |   Table,
+     4 |   TableBody,
+
+  ⚠  http://eslint.org/docs/rules/no-restricted-syntax
+
+     React default imports are deprecated. Follow the https://backstage.io/docs/tutorials/jsx-transform-migration migration guide for details
+
+
+     packages/app/src/components/role-menu-preview/RoleMenuPreviewPage.tsx:1:1
+   > 1 | import React, { useMemo, useState } from 'react';
+       | ^
+     2 | import {
+     3 |   Box,
+     4 |   Card,
+
+  ⚠  http://eslint.org/docs/rules/no-restricted-syntax
+
+     React default imports are deprecated. Follow the https://backstage.io/docs/tutorials/jsx-transform-migration migration guide for details. If you need a global type that collides with a React named export (such as `MouseEvent`), try using `globalThis.MouseHandler`
+
+
+     packages/app/src/components/role-menu-preview/RoleMenuPreviewPage.tsx:1:8
+   > 1 | import React, { useMemo, useState } from 'react';
+       |        ^
+     2 | import {
+     3 |   Box,
+     4 |   Card,
+
+✘ 24 problems (0 errors, 24 warnings)
+
+
+Warnings:
+  24  http://eslint.org/docs/rules/no-restricted-syntax
+

@@ -1,0 +1,480 @@
+{
+  "checkedAt": "2026-10-03T18:57:10.351Z",
+  "mode": "read-only",
+  "databaseTechnology": "Cloud SQL for PostgreSQL",
+  "roleVerified": true,
+  "tableCount": 57,
+  "businessTableCount": 55,
+  "counts": {
+    "fc_audit_events": 1159,
+    "fc_catalog_application": 3,
+    "fc_catalog_item": 6,
+    "fc_credit_account": 1,
+    "fc_credit_product": 3,
+    "fc_credit_request": 3,
+    "fc_credit_transaction": 4,
+    "fc_delegations": 0,
+    "fc_external_identities": 1,
+    "fc_group_memberships": 0,
+    "fc_groups": 2,
+    "fc_idempotency_keys": 0,
+    "fc_knex_migrations": 12,
+    "fc_knex_migrations_lock": 1,
+    "fc_krmf_action": 2,
+    "fc_krmf_baseline": 1,
+    "fc_krmf_change": 1,
+    "fc_krmf_control": 5,
+    "fc_krmf_control_link": 1,
+    "fc_krmf_eval_record": 1,
+    "fc_krmf_evidence": 1,
+    "fc_krmf_file": 0,
+    "fc_krmf_trr_check": 2,
+    "fc_membership_changes": 0,
+    "fc_metadata_codes": 161,
+    "fc_metadata_columns": 548,
+    "fc_metadata_domains": 22,
+    "fc_metadata_releases": 1,
+    "fc_metadata_terms": 606,
+    "fc_metadata_words": 96,
+    "fc_organizations": 2,
+    "fc_outbox_events": 0,
+    "fc_permissions": 22,
+    "fc_platform_access": 0,
+    "fc_portal_preferences": 0,
+    "fc_portal_setting": 0,
+    "fc_portal_setting_history": 0,
+    "fc_project": 5,
+    "fc_project_invite": 0,
+    "fc_project_member": 5,
+    "fc_project_members": 5,
+    "fc_projects": 5,
+    "fc_proposal": 4,
+    "fc_proposal_review": 2,
+    "fc_proposal_sympathy": 0,
+    "fc_request_events": 9,
+    "fc_role_assignments": 1,
+    "fc_role_permissions": 64,
+    "fc_roles": 6,
+    "fc_tenant_memberships": 1,
+    "fc_tenant_settings": 0,
+    "fc_tenants": 1,
+    "fc_transfer_file": 0,
+    "fc_transfer_request": 4,
+    "fc_user_profiles": 1,
+    "fc_users": 1,
+    "fc_work_requests": 8
+  },
+  "protectedCountVerification": {
+    "allPreserved": true,
+    "tables": [
+      {
+        "table": "fc_tenants",
+        "before": 1,
+        "after": 1,
+        "preserved": true
+      },
+      {
+        "table": "fc_users",
+        "before": 1,
+        "after": 1,
+        "preserved": true
+      },
+      {
+        "table": "fc_external_identities",
+        "before": 1,
+        "after": 1,
+        "preserved": true
+      },
+      {
+        "table": "fc_tenant_memberships",
+        "before": 1,
+        "after": 1,
+        "preserved": true
+      },
+      {
+        "table": "fc_roles",
+        "before": 6,
+        "after": 6,
+        "preserved": true
+      },
+      {
+        "table": "fc_permissions",
+        "before": 22,
+        "after": 22,
+        "preserved": true
+      },
+      {
+        "table": "fc_role_permissions",
+        "before": 64,
+        "after": 64,
+        "preserved": true
+      },
+      {
+        "table": "fc_role_assignments",
+        "before": 1,
+        "after": 1,
+        "preserved": true
+      },
+      {
+        "table": "fc_user_profiles",
+        "before": 1,
+        "after": 1,
+        "preserved": true
+      },
+      {
+        "table": "fc_group_memberships",
+        "before": 0,
+        "after": 0,
+        "preserved": true
+      },
+      {
+        "table": "fc_delegations",
+        "before": 0,
+        "after": 0,
+        "preserved": true
+      },
+      {
+        "table": "fc_membership_changes",
+        "before": 0,
+        "after": 0,
+        "preserved": true
+      },
+      {
+        "table": "fc_platform_access",
+        "before": 0,
+        "after": 0,
+        "preserved": true
+      },
+      {
+        "table": "fc_portal_preferences",
+        "before": 0,
+        "after": 0,
+        "preserved": true
+      },
+      {
+        "table": "fc_tenant_settings",
+        "before": 0,
+        "after": 0,
+        "preserved": true
+      }
+    ],
+    "scope": "Counts only; baseline did not contain field-value snapshots."
+  },
+  "sampleVerification": {
+    "planRows": 74,
+    "allPresent": true,
+    "allEffectiveParentAndTenantReferencesValid": true,
+    "expectedTableCounts": [
+      {
+        "table": "fc_organizations",
+        "before": 0,
+        "inserted": 2,
+        "expected": 2,
+        "after": 2,
+        "matches": true
+      },
+      {
+        "table": "fc_groups",
+        "before": 0,
+        "inserted": 2,
+        "expected": 2,
+        "after": 2,
+        "matches": true
+      },
+      {
+        "table": "fc_project",
+        "before": 2,
+        "inserted": 3,
+        "expected": 5,
+        "after": 5,
+        "matches": true
+      },
+      {
+        "table": "fc_projects",
+        "before": 2,
+        "inserted": 3,
+        "expected": 5,
+        "after": 5,
+        "matches": true
+      },
+      {
+        "table": "fc_project_member",
+        "before": 2,
+        "inserted": 3,
+        "expected": 5,
+        "after": 5,
+        "matches": true
+      },
+      {
+        "table": "fc_project_members",
+        "before": 2,
+        "inserted": 3,
+        "expected": 5,
+        "after": 5,
+        "matches": true
+      },
+      {
+        "table": "fc_work_requests",
+        "before": 1,
+        "inserted": 7,
+        "expected": 8,
+        "after": 8,
+        "matches": true
+      },
+      {
+        "table": "fc_request_events",
+        "before": 2,
+        "inserted": 7,
+        "expected": 9,
+        "after": 9,
+        "matches": true
+      },
+      {
+        "table": "fc_catalog_item",
+        "before": 0,
+        "inserted": 6,
+        "expected": 6,
+        "after": 6,
+        "matches": true
+      },
+      {
+        "table": "fc_catalog_application",
+        "before": 0,
+        "inserted": 3,
+        "expected": 3,
+        "after": 3,
+        "matches": true
+      },
+      {
+        "table": "fc_credit_account",
+        "before": 0,
+        "inserted": 1,
+        "expected": 1,
+        "after": 1,
+        "matches": true
+      },
+      {
+        "table": "fc_credit_transaction",
+        "before": 0,
+        "inserted": 4,
+        "expected": 4,
+        "after": 4,
+        "matches": true
+      },
+      {
+        "table": "fc_credit_product",
+        "before": 0,
+        "inserted": 3,
+        "expected": 3,
+        "after": 3,
+        "matches": true
+      },
+      {
+        "table": "fc_credit_request",
+        "before": 0,
+        "inserted": 3,
+        "expected": 3,
+        "after": 3,
+        "matches": true
+      },
+      {
+        "table": "fc_transfer_request",
+        "before": 0,
+        "inserted": 4,
+        "expected": 4,
+        "after": 4,
+        "matches": true
+      },
+      {
+        "table": "fc_proposal",
+        "before": 0,
+        "inserted": 4,
+        "expected": 4,
+        "after": 4,
+        "matches": true
+      },
+      {
+        "table": "fc_proposal_review",
+        "before": 0,
+        "inserted": 2,
+        "expected": 2,
+        "after": 2,
+        "matches": true
+      },
+      {
+        "table": "fc_krmf_baseline",
+        "before": 0,
+        "inserted": 1,
+        "expected": 1,
+        "after": 1,
+        "matches": true
+      },
+      {
+        "table": "fc_krmf_control",
+        "before": 0,
+        "inserted": 5,
+        "expected": 5,
+        "after": 5,
+        "matches": true
+      },
+      {
+        "table": "fc_krmf_evidence",
+        "before": 0,
+        "inserted": 1,
+        "expected": 1,
+        "after": 1,
+        "matches": true
+      },
+      {
+        "table": "fc_krmf_action",
+        "before": 0,
+        "inserted": 2,
+        "expected": 2,
+        "after": 2,
+        "matches": true
+      },
+      {
+        "table": "fc_krmf_change",
+        "before": 0,
+        "inserted": 1,
+        "expected": 1,
+        "after": 1,
+        "matches": true
+      },
+      {
+        "table": "fc_krmf_trr_check",
+        "before": 0,
+        "inserted": 2,
+        "expected": 2,
+        "after": 2,
+        "matches": true
+      },
+      {
+        "table": "fc_krmf_eval_record",
+        "before": 0,
+        "inserted": 1,
+        "expected": 1,
+        "after": 1,
+        "matches": true
+      },
+      {
+        "table": "fc_krmf_control_link",
+        "before": 0,
+        "inserted": 1,
+        "expected": 1,
+        "after": 1,
+        "matches": true
+      }
+    ],
+    "insertedAuditEvents": 1,
+    "dryRunRowsToInsert": 0
+  },
+  "creditVerification": {
+    "ownerType": "project",
+    "balance": "108000.0000",
+    "transactionSum": "108000.0000",
+    "transactionCount": 4,
+    "balanced": true
+  },
+  "foreignKeyVerification": {
+    "count": 68,
+    "unvalidatedCount": 0,
+    "allValidated": true
+  },
+  "metadataVerification": {
+    "allCountsMatch": true,
+    "runtimeSelectOnly": true,
+    "tables": [
+      {
+        "table": "fc_metadata_releases",
+        "count": 1,
+        "expected": 1,
+        "matches": true,
+        "runtimePermissions": {
+          "select": true,
+          "insert": false,
+          "update": false,
+          "delete": false,
+          "truncate": false
+        },
+        "runtimeReadOnly": true
+      },
+      {
+        "table": "fc_metadata_domains",
+        "count": 22,
+        "expected": 22,
+        "matches": true,
+        "runtimePermissions": {
+          "select": true,
+          "insert": false,
+          "update": false,
+          "delete": false,
+          "truncate": false
+        },
+        "runtimeReadOnly": true
+      },
+      {
+        "table": "fc_metadata_words",
+        "count": 96,
+        "expected": 96,
+        "matches": true,
+        "runtimePermissions": {
+          "select": true,
+          "insert": false,
+          "update": false,
+          "delete": false,
+          "truncate": false
+        },
+        "runtimeReadOnly": true
+      },
+      {
+        "table": "fc_metadata_terms",
+        "count": 606,
+        "expected": 606,
+        "matches": true,
+        "runtimePermissions": {
+          "select": true,
+          "insert": false,
+          "update": false,
+          "delete": false,
+          "truncate": false
+        },
+        "runtimeReadOnly": true
+      },
+      {
+        "table": "fc_metadata_codes",
+        "count": 161,
+        "expected": 161,
+        "matches": true,
+        "runtimePermissions": {
+          "select": true,
+          "insert": false,
+          "update": false,
+          "delete": false,
+          "truncate": false
+        },
+        "runtimeReadOnly": true
+      },
+      {
+        "table": "fc_metadata_columns",
+        "count": 548,
+        "expected": 548,
+        "matches": true,
+        "runtimePermissions": {
+          "select": true,
+          "insert": false,
+          "update": false,
+          "delete": false,
+          "truncate": false
+        },
+        "runtimeReadOnly": true
+      }
+    ],
+    "version": "portal-draft-20261004",
+    "mappingStatus": "provisional",
+    "sourceType": "project_draft",
+    "institutionDictionaryReceived": false,
+    "tableCount": 55,
+    "columnCount": 548
+  }
+}

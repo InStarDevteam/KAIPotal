@@ -1,0 +1,23 @@
+PASS runtime no-context RLS denies rows
+PASS valid role with runtime tenant context
+PASS system role cannot cross tenant boundary
+PASS future membership has no permissions
+PASS expired membership has no permissions
+PASS pool reuse leaves no tenant context
+PASS health queries actual schema
+PASS unauthenticated API is 401
+PASS me returns only valid own memberships under RLS
+PASS tenant selection and audit commit with runtime role
+PASS cross-tenant selection fails
+PASS tenant user listing works under RLS
+PASS missing permission and cross tenant denied
+PASS cannot delegate permissions not held
+PASS assign role with expiry persists and records audit
+PASS duplicate role assignment is conflict
+PASS role with future expiry can be revoked
+PASS last privileged assignment cannot be removed
+PASS suspended account denied tenant selection
+PASS unverified identity denied
+PASS audit failure rolls back role assignment
+PASS runtime cannot edit audit ledger
+22 runtime integration checks passed (real PostgreSQL, disposable DB)

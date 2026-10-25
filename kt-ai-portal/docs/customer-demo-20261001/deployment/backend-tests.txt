@@ -1,0 +1,7 @@
+PASS src/modules/portal/services/projects.test.ts
+
+Test Suites: 12 passed, 12 total
+Tests:       167 passed, 167 total
+Snapshots:   0 total
+Time:        0.266 s, estimated 1 s
+Ran all test suites.

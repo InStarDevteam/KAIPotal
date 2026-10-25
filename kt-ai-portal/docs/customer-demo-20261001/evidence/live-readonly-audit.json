@@ -1,0 +1,875 @@
+{
+  "errors": [],
+  "requests": [
+    {
+      "url": "/api/portal/v1/me",
+      "status": 200,
+      "body": {
+        "data": {
+          "memberships": [
+            {
+              "tenant_name": "국방부 공통",
+              "branch": "joint",
+              "roles": [
+                "portal-admin"
+              ],
+              "permissions": [
+                "audit.view",
+                "catalog.view",
+                "credit.approve",
+                "credit.view",
+                "export.request",
+                "export.review",
+                "integration.view",
+                "krmf.evidence.submit",
+                "krmf.view",
+                "menu.manage",
+                "portal.view",
+                "project.approve",
+                "project.request",
+                "rbac.manage",
+                "requirement.view",
+                "settings.manage",
+                "tenant.manage",
+                "user.manage",
+                "workspace.approve",
+                "workspace.request"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "url": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "url": "/api/portal/v1/me",
+      "status": 200,
+      "body": {
+        "data": {
+          "memberships": [
+            {
+              "tenant_name": "국방부 공통",
+              "branch": "joint",
+              "roles": [
+                "portal-admin"
+              ],
+              "permissions": [
+                "audit.view",
+                "catalog.view",
+                "credit.approve",
+                "credit.view",
+                "export.request",
+                "export.review",
+                "integration.view",
+                "krmf.evidence.submit",
+                "krmf.view",
+                "menu.manage",
+                "portal.view",
+                "project.approve",
+                "project.request",
+                "rbac.manage",
+                "requirement.view",
+                "settings.manage",
+                "tenant.manage",
+                "user.manage",
+                "workspace.approve",
+                "workspace.request"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/me",
+      "status": 200,
+      "body": {
+        "data": {
+          "memberships": [
+            {
+              "tenant_name": "국방부 공통",
+              "branch": "joint",
+              "roles": [
+                "portal-admin"
+              ],
+              "permissions": [
+                "audit.view",
+                "catalog.view",
+                "credit.approve",
+                "credit.view",
+                "export.request",
+                "export.review",
+                "integration.view",
+                "krmf.evidence.submit",
+                "krmf.view",
+                "menu.manage",
+                "portal.view",
+                "project.approve",
+                "project.request",
+                "rbac.manage",
+                "requirement.view",
+                "settings.manage",
+                "tenant.manage",
+                "user.manage",
+                "workspace.approve",
+                "workspace.request"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "url": "/api/portal/v1/work/overview",
+      "status": 500
+    },
+    {
+      "url": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "url": "/api/portal/v1/me",
+      "status": 200,
+      "body": {
+        "data": {
+          "memberships": [
+            {
+              "tenant_name": "국방부 공통",
+              "branch": "joint",
+              "roles": [
+                "portal-admin"
+              ],
+              "permissions": [
+                "audit.view",
+                "catalog.view",
+                "credit.approve",
+                "credit.view",
+                "export.request",
+                "export.review",
+                "integration.view",
+                "krmf.evidence.submit",
+                "krmf.view",
+                "menu.manage",
+                "portal.view",
+                "project.approve",
+                "project.request",
+                "rbac.manage",
+                "requirement.view",
+                "settings.manage",
+                "tenant.manage",
+                "user.manage",
+                "workspace.approve",
+                "workspace.request"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/me",
+      "status": 200,
+      "body": {
+        "data": {
+          "memberships": [
+            {
+              "tenant_name": "국방부 공통",
+              "branch": "joint",
+              "roles": [
+                "portal-admin"
+              ],
+              "permissions": [
+                "audit.view",
+                "catalog.view",
+                "credit.approve",
+                "credit.view",
+                "export.request",
+                "export.review",
+                "integration.view",
+                "krmf.evidence.submit",
+                "krmf.view",
+                "menu.manage",
+                "portal.view",
+                "project.approve",
+                "project.request",
+                "rbac.manage",
+                "requirement.view",
+                "settings.manage",
+                "tenant.manage",
+                "user.manage",
+                "workspace.approve",
+                "workspace.request"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "url": "/api/portal/v1/projects",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/me",
+      "status": 200,
+      "body": {
+        "data": {
+          "memberships": [
+            {
+              "tenant_name": "국방부 공통",
+              "branch": "joint",
+              "roles": [
+                "portal-admin"
+              ],
+              "permissions": [
+                "audit.view",
+                "catalog.view",
+                "credit.approve",
+                "credit.view",
+                "export.request",
+                "export.review",
+                "integration.view",
+                "krmf.evidence.submit",
+                "krmf.view",
+                "menu.manage",
+                "portal.view",
+                "project.approve",
+                "project.request",
+                "rbac.manage",
+                "requirement.view",
+                "settings.manage",
+                "tenant.manage",
+                "user.manage",
+                "workspace.approve",
+                "workspace.request"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "url": "/api/portal/v1/credits/requests",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/credits/requests",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/credits/accounts",
+      "status": 404,
+      "body": {
+        "error": {
+          "code": "not_found",
+          "message": "크레딧 계정을 찾을 수 없습니다.",
+          "retryable": false,
+          "requestId": "ae8d9117-a8de-464e-8995-6992c826dc48"
+        }
+      }
+    },
+    {
+      "url": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/credits/products",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/credits/usage/trend",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "url": "/api/portal/v1/work/overview",
+      "status": 500
+    },
+    {
+      "url": "/api/portal/v1/me",
+      "status": 200,
+      "body": {
+        "data": {
+          "memberships": [
+            {
+              "tenant_name": "국방부 공통",
+              "branch": "joint",
+              "roles": [
+                "portal-admin"
+              ],
+              "permissions": [
+                "audit.view",
+                "catalog.view",
+                "credit.approve",
+                "credit.view",
+                "export.request",
+                "export.review",
+                "integration.view",
+                "krmf.evidence.submit",
+                "krmf.view",
+                "menu.manage",
+                "portal.view",
+                "project.approve",
+                "project.request",
+                "rbac.manage",
+                "requirement.view",
+                "settings.manage",
+                "tenant.manage",
+                "user.manage",
+                "workspace.approve",
+                "workspace.request"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "url": "/api/portal/v1/transfer-requests",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "url": "/api/portal/v1/me",
+      "status": 200,
+      "body": {
+        "data": {
+          "memberships": [
+            {
+              "tenant_name": "국방부 공통",
+              "branch": "joint",
+              "roles": [
+                "portal-admin"
+              ],
+              "permissions": [
+                "audit.view",
+                "catalog.view",
+                "credit.approve",
+                "credit.view",
+                "export.request",
+                "export.review",
+                "integration.view",
+                "krmf.evidence.submit",
+                "krmf.view",
+                "menu.manage",
+                "portal.view",
+                "project.approve",
+                "project.request",
+                "rbac.manage",
+                "requirement.view",
+                "settings.manage",
+                "tenant.manage",
+                "user.manage",
+                "workspace.approve",
+                "workspace.request"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/catalog/applications",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/catalog/items",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "url": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/projects",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "url": "/api/portal/v1/me",
+      "status": 200,
+      "body": {
+        "data": {
+          "memberships": [
+            {
+              "tenant_name": "국방부 공통",
+              "branch": "joint",
+              "roles": [
+                "portal-admin"
+              ],
+              "permissions": [
+                "audit.view",
+                "catalog.view",
+                "credit.approve",
+                "credit.view",
+                "export.request",
+                "export.review",
+                "integration.view",
+                "krmf.evidence.submit",
+                "krmf.view",
+                "menu.manage",
+                "portal.view",
+                "project.approve",
+                "project.request",
+                "rbac.manage",
+                "requirement.view",
+                "settings.manage",
+                "tenant.manage",
+                "user.manage",
+                "workspace.approve",
+                "workspace.request"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "url": "/api/portal/v1/portal-settings",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/me",
+      "status": 200,
+      "body": {
+        "data": {
+          "memberships": [
+            {
+              "tenant_name": "국방부 공통",
+              "branch": "joint",
+              "roles": [
+                "portal-admin"
+              ],
+              "permissions": [
+                "audit.view",
+                "catalog.view",
+                "credit.approve",
+                "credit.view",
+                "export.request",
+                "export.review",
+                "integration.view",
+                "krmf.evidence.submit",
+                "krmf.view",
+                "menu.manage",
+                "portal.view",
+                "project.approve",
+                "project.request",
+                "rbac.manage",
+                "requirement.view",
+                "settings.manage",
+                "tenant.manage",
+                "user.manage",
+                "workspace.approve",
+                "workspace.request"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/me",
+      "status": 200,
+      "body": {
+        "data": {
+          "memberships": [
+            {
+              "tenant_name": "국방부 공통",
+              "branch": "joint",
+              "roles": [
+                "portal-admin"
+              ],
+              "permissions": [
+                "audit.view",
+                "catalog.view",
+                "credit.approve",
+                "credit.view",
+                "export.request",
+                "export.review",
+                "integration.view",
+                "krmf.evidence.submit",
+                "krmf.view",
+                "menu.manage",
+                "portal.view",
+                "project.approve",
+                "project.request",
+                "rbac.manage",
+                "requirement.view",
+                "settings.manage",
+                "tenant.manage",
+                "user.manage",
+                "workspace.approve",
+                "workspace.request"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/me",
+      "status": 200,
+      "body": {
+        "data": {
+          "memberships": [
+            {
+              "tenant_name": "국방부 공통",
+              "branch": "joint",
+              "roles": [
+                "portal-admin"
+              ],
+              "permissions": [
+                "audit.view",
+                "catalog.view",
+                "credit.approve",
+                "credit.view",
+                "export.request",
+                "export.review",
+                "integration.view",
+                "krmf.evidence.submit",
+                "krmf.view",
+                "menu.manage",
+                "portal.view",
+                "project.approve",
+                "project.request",
+                "rbac.manage",
+                "requirement.view",
+                "settings.manage",
+                "tenant.manage",
+                "user.manage",
+                "workspace.approve",
+                "workspace.request"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "url": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "url": "/api/portal/v1/me",
+      "status": 200,
+      "body": {
+        "data": {
+          "memberships": [
+            {
+              "tenant_name": "국방부 공통",
+              "branch": "joint",
+              "roles": [
+                "portal-admin"
+              ],
+              "permissions": [
+                "audit.view",
+                "catalog.view",
+                "credit.approve",
+                "credit.view",
+                "export.request",
+                "export.review",
+                "integration.view",
+                "krmf.evidence.submit",
+                "krmf.view",
+                "menu.manage",
+                "portal.view",
+                "project.approve",
+                "project.request",
+                "rbac.manage",
+                "requirement.view",
+                "settings.manage",
+                "tenant.manage",
+                "user.manage",
+                "workspace.approve",
+                "workspace.request"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "url": "/api/portal/v1/proposals",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "url": "/api/portal/v1/me",
+      "status": 200,
+      "body": {
+        "data": {
+          "memberships": [
+            {
+              "tenant_name": "국방부 공통",
+              "branch": "joint",
+              "roles": [
+                "portal-admin"
+              ],
+              "permissions": [
+                "audit.view",
+                "catalog.view",
+                "credit.approve",
+                "credit.view",
+                "export.request",
+                "export.review",
+                "integration.view",
+                "krmf.evidence.submit",
+                "krmf.view",
+                "menu.manage",
+                "portal.view",
+                "project.approve",
+                "project.request",
+                "rbac.manage",
+                "requirement.view",
+                "settings.manage",
+                "tenant.manage",
+                "user.manage",
+                "workspace.approve",
+                "workspace.request"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "/api/portal/v1/context/tenant",
+      "status": 200
+    }
+  ]
+}

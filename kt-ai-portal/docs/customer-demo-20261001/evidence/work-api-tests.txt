@@ -1,0 +1,24 @@
+PASS migration creates work ledger tables
+PASS overview: 내 프로젝트는 서버 멤버십 원장 기준만
+PASS overview: 감사 최근 기록은 audit.view 권한으로만
+PASS overview: 크레딧/자원 사용량은 pending_integration(수치 미제조)
+PASS 운영 장애 재현: 프로젝트 SELECT 권한 누락을 부분 실패로 구분
+PASS 최소 GRANT 복구 후 집계 정상화, RLS·감사 불변
+PASS read-only 배포 점검은 runtime 정상 권한 통과·회수 즉시 실패
+PASS 역할 승인 권한만으로 신청 권한이 생기지 않음
+PASS 잘못된 프로젝트 ID는 서버 오류 대신 입력 오류
+PASS 신청 접수 → 다른 사용자의 승인함에 표시
+PASS 프로젝트 멤버십 없는 신청은 거부
+PASS 승인 권한 없는 사용자의 결정 시도는 403
+PASS version 불일치 결정은 409 version_conflict
+PASS 정상 승인: 상태·이력·감사 원자 기록
+PASS 이미 결정된 신청 재결정은 409 already_decided
+PASS 교차 테넌트: 승인함·상세·결정이 보이지 않음(RLS)
+PASS 유형별 승인함 분리: pm에게 export 항목 미노출, finance는 credit만
+PASS 내 신청 커서 페이지네이션(중복 없음)
+PASS 승인 후 집계에 반영(approvalQueue 감소)
+PASS 승인함 집계는 유형 수가 아닌 실제 요청 건수
+PASS 요약은 전체 건수, 미리보기 20개/10개 제한과 구분
+PASS 모든 조회 원장 권한 누락이면 503, 빈 목록 성공으로 위장 금지
+
+22 checks passed

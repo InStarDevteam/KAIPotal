@@ -1,0 +1,18 @@
+- generic [ref=e5]:
+  - heading "국방지능형플랫폼포털" [level=5] [ref=e6]
+  - heading "제안팀 검토용 PoC 데모" [level=6] [ref=e7]
+  - paragraph [ref=e8]: 제안서 작성을 위해 제공되는 PoC 데모 사이트입니다.
+  - button "Google 계정으로 로그인" [ref=e9] [cursor=pointer]:
+    - generic [ref=e10]: Google 계정으로 로그인
+  - generic [ref=e11]:
+    - separator [ref=e12]
+    - generic [ref=e13]: 또는
+  - generic [ref=e14]:
+    - generic [ref=e15]:
+      - generic: 접근코드
+      - generic [ref=e16]:
+        - textbox [ref=e17]
+        - group
+    - button "접근코드로 입장" [ref=e19] [cursor=pointer]:
+      - generic [ref=e20]: 접근코드로 입장
+  - generic [ref=e21]: 본 사이트는 제안팀 검토용 데모이며, 실제 운영 시스템이 아닙니다.

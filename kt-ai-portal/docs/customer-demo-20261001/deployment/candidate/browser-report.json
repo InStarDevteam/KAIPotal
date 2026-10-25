@@ -1,0 +1,40 @@
+{
+  "phase": "candidate",
+  "uiOrigin": "https://kai-platform-d0ae0--customer-20261001-ahrizevl.web.app",
+  "candidateApiOrigin": "https://portal-review---kt-ai-portal-demo-e2ik6gboua-du.a.run.app",
+  "startedAt": "2026-10-01T03:46:41.258Z",
+  "businessWritesAllowed": false,
+  "capturesMasked": true,
+  "checks": [
+    {
+      "name": "login exposes four design entry choices",
+      "passed": true
+    },
+    {
+      "name": "release inspection startup/completion",
+      "passed": false,
+      "failureClass": "TimeoutError"
+    }
+  ],
+  "responses": [
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    }
+  ],
+  "serverFailures": [],
+  "networkFailures": [],
+  "pageErrors": [],
+  "blockedWrites": [],
+  "finishedAt": "2026-10-01T03:47:42.652Z",
+  "summary": {
+    "passed": 1,
+    "failed": 1,
+    "apiResponses": 1,
+    "serverFailures": 0,
+    "pageErrors": 0,
+    "networkFailures": 0,
+    "attemptedBusinessWrites": 0
+  }
+}

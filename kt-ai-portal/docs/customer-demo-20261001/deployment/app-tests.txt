@@ -1,0 +1,7 @@
+PASS src/components/integrated-search/searchFiltering.test.ts
+
+Test Suites: 42 passed, 42 total
+Tests:       255 passed, 255 total
+Snapshots:   0 total
+Time:        5.978 s, estimated 7 s
+Ran all test suites.

@@ -1,0 +1,31 @@
+# Secrets & credentials
+.secrets/
+.gcloud/
+*.pem
+*.key
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Node / Backstage
+node_modules/
+dist-types/
+.yarn/
+*.tsbuildinfo
+
+# Firebase
+.firebase/
+firebase-debug.log
+*.log
+
+# Local docker volumes (dev data)
+docker-volume/
+
+# OS / tooling
+.DS_Store
+.playwright-mcp/
+
+# Nested repo hold (temporary)
+kt-ai-portal/.git-hold/

@@ -1,0 +1,474 @@
+{
+  "status": "PASS",
+  "roles": [
+    {
+      "rolname": "portal_runtime",
+      "rolcreaterole": false,
+      "rolcreatedb": false,
+      "rolsuper": false,
+      "rolbypassrls": false
+    }
+  ],
+  "memberships": [],
+  "tables": [
+    {
+      "relname": "fc_audit_events",
+      "rls": true,
+      "force_rls": false,
+      "select": true,
+      "insert": true,
+      "update": false,
+      "delete": false
+    },
+    {
+      "relname": "fc_catalog_application",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_catalog_item",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_credit_account",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_credit_product",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_credit_request",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_credit_transaction",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_delegations",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_external_identities",
+      "rls": false,
+      "force_rls": false,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_group_memberships",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_groups",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_idempotency_keys",
+      "rls": false,
+      "force_rls": false,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_knex_migrations",
+      "rls": false,
+      "force_rls": false,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_knex_migrations_lock",
+      "rls": false,
+      "force_rls": false,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_krmf_action",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_krmf_baseline",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_krmf_change",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_krmf_control",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_krmf_control_link",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_krmf_eval_record",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_krmf_evidence",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_krmf_file",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_krmf_trr_check",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_membership_changes",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_organizations",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_outbox_events",
+      "rls": false,
+      "force_rls": false,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_permissions",
+      "rls": false,
+      "force_rls": false,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_platform_access",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_portal_preferences",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_portal_setting",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_portal_setting_history",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_project",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_project_invite",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_project_member",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_project_members",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_projects",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_proposal",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_proposal_review",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_proposal_sympathy",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_request_events",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": false,
+      "delete": false
+    },
+    {
+      "relname": "fc_role_assignments",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_role_permissions",
+      "rls": false,
+      "force_rls": false,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_roles",
+      "rls": false,
+      "force_rls": false,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_tenant_memberships",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_tenant_settings",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_tenants",
+      "rls": false,
+      "force_rls": false,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_transfer_file",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_transfer_request",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_user_profiles",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_users",
+      "rls": false,
+      "force_rls": false,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    },
+    {
+      "relname": "fc_work_requests",
+      "rls": true,
+      "force_rls": true,
+      "select": true,
+      "insert": true,
+      "update": true,
+      "delete": true
+    }
+  ]
+}

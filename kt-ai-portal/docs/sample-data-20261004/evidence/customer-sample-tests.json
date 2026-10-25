@@ -1,0 +1,124 @@
+{
+  "checkedAt": "2026-10-03T18:49:22.622Z",
+  "databaseType": "disposable local PostgreSQL",
+  "passed": 23,
+  "failed": 0,
+  "total": 23,
+  "checks": [
+    {
+      "id": "SEED01",
+      "scenario": "25테이블 74행 결정적 UUID와 명확한 합성 표기",
+      "result": "PASS"
+    },
+    {
+      "id": "SEED02",
+      "scenario": "기본 dry-run은 업무행·감사행을 생성하지 않음",
+      "result": "PASS"
+    },
+    {
+      "id": "SEED03",
+      "scenario": "현재 유효한 멤버십 없는 사용자 적재 거절",
+      "result": "PASS"
+    },
+    {
+      "id": "SEED04",
+      "scenario": "자연키 충돌 시 이전 삽입행까지 전부 rollback",
+      "result": "PASS"
+    },
+    {
+      "id": "SEED05",
+      "scenario": "명시 apply는 74행과 실제 적재 감사 1행을 원자적으로 등록",
+      "result": "PASS"
+    },
+    {
+      "id": "SEED06",
+      "scenario": "재실행은 중복·감사 추가 없이 멱등",
+      "result": "PASS"
+    },
+    {
+      "id": "SEED07",
+      "scenario": "실제 기존 프로젝트와 사용자·역할·접근정책·프로필 무변경",
+      "result": "PASS"
+    },
+    {
+      "id": "SEED08",
+      "scenario": "시연 후 수정된 샘플 제목·버전은 재실행 시 보존",
+      "result": "PASS"
+    },
+    {
+      "id": "SEED09",
+      "scenario": "프로젝트 양원장·멤버십 3개가 동일 ID와 소속으로 연결",
+      "result": "PASS"
+    },
+    {
+      "id": "SEED10",
+      "scenario": "크레딧 거래합계·잔액 일치, 기존 사용자·테넌트 계정 없음",
+      "result": "PASS"
+    },
+    {
+      "id": "SEED11",
+      "scenario": "카탈로그 3신청과 승인함 참조·상태 정합 및 실행 대기",
+      "result": "PASS"
+    },
+    {
+      "id": "SEED12",
+      "scenario": "K-RMF는 draft·합성 코드·미승인 참조 증적, 공식 인가 판정 없음",
+      "result": "PASS"
+    },
+    {
+      "id": "SEED13",
+      "scenario": "미등록 파일을 승인하거나 실제 전송 완료로 표시하지 않음",
+      "result": "PASS"
+    },
+    {
+      "id": "SEED14",
+      "scenario": "runtime RLS: context 없음·다른 tenant에서 sample rows 0건",
+      "result": "PASS"
+    },
+    {
+      "id": "SEED15",
+      "scenario": "같은 ID의 다른 소유자 충돌을 수정 없이 거절",
+      "result": "PASS"
+    },
+    {
+      "id": "SEED16",
+      "scenario": "부분 삭제된 크레딧 원장은 자동 복원·잔액 변경을 거절",
+      "result": "PASS"
+    },
+    {
+      "id": "SEED21",
+      "scenario": "기존 샘플의 다른 tenant 부모·JSON 통제 참조를 수정 없이 거절",
+      "result": "PASS"
+    },
+    {
+      "id": "SEED22",
+      "scenario": "기존 샘플의 미소속 사용자 참조를 변경 없이 거절",
+      "result": "PASS"
+    },
+    {
+      "id": "SEED23",
+      "scenario": "조직·그룹 각 2개 샘플 계층 연결, 실제 사용자 소속·그룹 미배정",
+      "result": "PASS"
+    },
+    {
+      "id": "SEED17",
+      "scenario": "샘플 19개 API 실제 runtime 조회·집계·검색 정상",
+      "result": "PASS"
+    },
+    {
+      "id": "SEED18",
+      "scenario": "샘플 카탈로그 승인 실제 API·연결 원장 갱신, 실행 대기 유지",
+      "result": "PASS"
+    },
+    {
+      "id": "SEED19",
+      "scenario": "샘플 크레딧 승인 실제 API 거래·잔액 일치와 seed 재실행 보존",
+      "result": "PASS"
+    },
+    {
+      "id": "SEED20",
+      "scenario": "샘플 업무 신청 반려·증적 검토 실제 API와 멱등 seed 보존",
+      "result": "PASS"
+    }
+  ]
+}

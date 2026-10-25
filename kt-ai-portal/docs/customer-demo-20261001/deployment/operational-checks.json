@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checkedAt": "2026-10-01T03:59:30.343379+00:00",
+  "revision": "kt-ai-portal-demo-customer-20261001-r2",
+  "logWindowStart": "2026-10-01T03:54:00Z",
+  "cloudRunErrorLogs": 0,
+  "query": "severity >= ERROR or JSON level/severity = error; current revision only",
+  "temporaryProxyStopped": true,
+  "note": "Point-in-time deployment verification; this is not a guarantee against future incidents."
+}

@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "checkedAt": "2026-10-01T03:58:17.765927+00:00",
+  "cloudRun": {
+    "revision": "kt-ai-portal-demo-customer-20261001-r2",
+    "ready": true,
+    "trafficPercent": 100,
+    "imageDigest": "asia-northeast3-docker.pkg.dev/kai-platform-d0ae0/kt-ai-portal/kt-ai-portal-demo@sha256:5ead578d2949c4f363d5a59e35c1ac754a19c4eac3f576bcf2a15769447a9d31",
+    "minInstances": 1,
+    "maxInstances": 20,
+    "runtimeEnvironmentPreservedExceptAccessCode": true,
+    "databaseSecretsAndMountPreserved": true,
+    "accessCodeMatchesCurrentDemo": true
+  },
+  "hosting": {
+    "release": "projects/kai-platform-d0ae0/sites/kai-platform-d0ae0/channels/live/releases/1790826995494000",
+    "version": "projects/kai-platform-d0ae0/sites/kai-platform-d0ae0/versions/5d0a87ebbadf6fe7",
+    "releaseTime": "2026-10-01T03:56:35.494Z",
+    "identicalToTestedPreview": true,
+    "fileCount": 741
+  }
+}

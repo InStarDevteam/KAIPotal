@@ -1,0 +1,19 @@
+{
+  "createTime": "2026-10-03T04:28:55.737908557Z",
+  "finishTime": "2026-10-03T04:31:52.418027Z",
+  "id": "6d7fbf29-46ad-440a-80ca-024b70ff87a0",
+  "results": {
+    "images": [
+      {
+        "artifactRegistryPackage": "projects/kai-platform-d0ae0/locations/asia-northeast3/repositories/kt-ai-portal/packages/kt-ai-portal-demo/versions/sha256:21c5d3d78224d0cc72389ff9c645602c9b2d98c9ebaa4d72377bb0ccec844c7b",
+        "digest": "sha256:21c5d3d78224d0cc72389ff9c645602c9b2d98c9ebaa4d72377bb0ccec844c7b",
+        "name": "asia-northeast3-docker.pkg.dev/kai-platform-d0ae0/kt-ai-portal/kt-ai-portal-demo:requirements-20261003-r2",
+        "pushTiming": {
+          "endTime": "2026-10-03T04:31:51.057425247Z",
+          "startTime": "2026-10-03T04:30:58.488643834Z"
+        }
+      }
+    ]
+  },
+  "status": "SUCCESS"
+}

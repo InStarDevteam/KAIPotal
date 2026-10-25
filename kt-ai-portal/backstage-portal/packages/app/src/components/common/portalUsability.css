@@ -1,0 +1,77 @@
+/* Shared reading surface: preserve natural column width instead of splitting
+   Korean labels, dates and resource values into narrow vertical fragments. */
+.portal-shell-experience #portal-main .MuiTableContainer-root,
+.portal-shell-experience #portal-main div:has(> table) {
+  min-width: 0;
+  max-width: 100%;
+  overflow-x: auto;
+  border-radius: 12px;
+  border-color: var(--portal-line, #dce3ec);
+  overscroll-behavior-x: contain;
+}
+.portal-shell-experience #portal-main table {
+  table-layout: auto;
+}
+/* Backstage can generate production class names; semantic selectors keep the
+   reading rules identical in customer builds and local development. */
+.portal-shell-experience #portal-main table:has(th:nth-child(5)) {
+  min-width: 720px;
+}
+.portal-shell-experience #portal-main table:has(th:nth-child(8)) {
+  min-width: 1000px;
+}
+.portal-shell-experience #portal-main th,
+.portal-shell-experience #portal-main td {
+  padding: 14px 16px;
+  font-size: calc(14px * var(--portal-font-scale, 1));
+  line-height: 1.6;
+  word-break: keep-all;
+  overflow-wrap: normal;
+  border-bottom-color: var(--portal-line, #e5eaf0);
+  color: var(--portal-text, #243247);
+}
+.portal-shell-experience #portal-main thead th {
+  color: var(--portal-muted, #43526a);
+  background: var(--portal-primary-soft, #f2f5f9);
+  font-size: calc(13px * var(--portal-font-scale, 1));
+  font-weight: 700;
+  white-space: nowrap;
+}
+.portal-shell-experience #portal-main .MuiTableRow-root.Mui-selected {
+  background-color: var(--portal-primary-soft, #edf2ff);
+}
+.portal-shell-experience #portal-main .MuiTableCell-root .MuiChip-root {
+  white-space: nowrap;
+  height: auto;
+  min-height: 26px;
+}
+.portal-shell-experience #portal-main [role='tablist'] {
+  min-height: 52px;
+}
+.portal-shell-experience #portal-main [role='tab'] {
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: calc(14px * var(--portal-font-scale, 1));
+  font-weight: 600;
+  min-height: 52px;
+}
+.portal-shell-experience #portal-main .MuiTypography-colorTextSecondary {
+  color: var(--portal-muted, #5f6c7d);
+}
+.portal-shell-experience #portal-main button:focus-visible,
+.portal-shell-experience #portal-main a:focus-visible {
+  outline: 3px solid var(--portal-primary, #4361a8);
+  outline-offset: 3px;
+}
+@media (max-width: 767px) {
+  .portal-shell-experience #portal-main .portal-search-page {
+    padding: 12px !important;
+  }
+  .portal-shell-experience #portal-main th,
+  .portal-shell-experience #portal-main td {
+    padding: 12px;
+  }
+  .portal-shell-experience #portal-main [role='tab'] {
+    min-width: 116px;
+  }
+}

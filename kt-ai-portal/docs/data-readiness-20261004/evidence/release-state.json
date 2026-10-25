@@ -1,0 +1,86 @@
+{
+  "checkedAt": "2026-10-03T19:10:28.729068+00:00",
+  "status": "PASS",
+  "cloudBuild": {
+    "id": "677be501-2b35-4f6d-94c0-60e2e751c794",
+    "status": "SUCCESS",
+    "finishTime": "2026-10-03T19:01:55.383161Z",
+    "digest": "sha256:2a7e6cc906f1c20af49cb2578ae2ec196198626dc3d5002ba615e26bcc7c28d9"
+  },
+  "cloudRun": {
+    "revision": "kt-ai-portal-demo-data-readiness-20261004-r2",
+    "ready": true,
+    "productionTrafficPercent": 100,
+    "minInstances": 1,
+    "maxInstances": 20,
+    "runtimeEnvironmentUnchanged": true,
+    "resourceLimitsUnchanged": true,
+    "databaseSecretReferenceUnchanged": true,
+    "cloudSqlConnectionUnchanged": true
+  },
+  "hosting": {
+    "version": "f97e6a7b03bc8ece",
+    "releaseName": "projects/kai-platform-d0ae0/sites/kai-platform-d0ae0/channels/live/releases/1791054322885000",
+    "releaseTime": "2026-10-03T19:05:22.885Z",
+    "identicalToTestedPreview": true,
+    "previewChannel": "data-readiness-20261004"
+  },
+  "database": {
+    "totalTables": 57,
+    "businessAndTechnicalTables": 55,
+    "businessColumns": 548,
+    "migrations": 12,
+    "newMigrations": 1,
+    "metadataRows": 1434,
+    "sampleBusinessRows": 74,
+    "sampleBusinessTables": 25,
+    "sampleImportAuditRows": 1
+  },
+  "rollback": {
+    "cloudRunRevision": "kt-ai-portal-demo-requirements-20261003-r3",
+    "hostingVersion": "e9d512ba60d828c3",
+    "databaseStrategy": "additive compatible schema; no destructive automatic rollback"
+  },
+  "verification": {
+    "candidate": {
+      "browser": {
+        "passed": 59,
+        "failed": 0,
+        "apiResponses": 565,
+        "serverFailures": 0,
+        "pageErrors": 0,
+        "networkFailures": 0,
+        "attemptedBusinessWrites": 0
+      },
+      "apiPassed": 14,
+      "apiStatus": "PASS",
+      "browserFinishedAt": "2026-10-03T19:04:53.450Z"
+    },
+    "live": {
+      "browser": {
+        "passed": 59,
+        "failed": 0,
+        "apiResponses": 565,
+        "serverFailures": 0,
+        "pageErrors": 0,
+        "networkFailures": 0,
+        "attemptedBusinessWrites": 0
+      },
+      "apiPassed": 14,
+      "apiStatus": "PASS",
+      "browserFinishedAt": "2026-10-03T19:08:35.253Z"
+    }
+  },
+  "errorLogs": 0,
+  "temporaryAccessCleaned": {
+    "at": "2026-10-03T18:59:51.274599+00:00",
+    "temporarySqlUserDeleted": true,
+    "privateTemporaryFilesRemoved": [
+      "kai-20261004-db-private.json",
+      "kai-20261004-service-private.json"
+    ],
+    "existingDatabasePasswordsChanged": false,
+    "privateBackupPreserved": true,
+    "proxyStopped": true
+  }
+}

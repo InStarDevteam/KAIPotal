@@ -1,0 +1,13 @@
+{
+  "origin": "https://kai-platform-d0ae0.web.app",
+  "checks": 23,
+  "widths": [
+    390,
+    768,
+    1366,
+    1440,
+    1920
+  ],
+  "errors": [],
+  "time": "2026-09-16T11:14:02.021Z"
+}

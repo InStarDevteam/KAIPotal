@@ -1,0 +1,13 @@
+{
+  "baselineRevision": "kt-ai-portal-demo-requirements-20261003-r3",
+  "candidateRevision": "kt-ai-portal-demo-data-readiness-20261004-r2",
+  "ready": true,
+  "imageDigest": "asia-northeast3-docker.pkg.dev/kai-platform-d0ae0/kt-ai-portal/kt-ai-portal-demo@sha256:2a7e6cc906f1c20af49cb2578ae2ec196198626dc3d5002ba615e26bcc7c28d9",
+  "creationTimestamp": "2026-10-03T19:02:11.888871Z",
+  "runtimeEnvironmentUnchanged": true,
+  "resourceLimitsUnchanged": true,
+  "databaseSecretReferenceUnchanged": true,
+  "cloudSqlConnectionUnchanged": true,
+  "minInstances": 1,
+  "maxInstances": 20
+}

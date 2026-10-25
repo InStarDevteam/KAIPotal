@@ -1,0 +1,311 @@
+{
+  "generatedAt": "2026-10-03T18:57:57.629Z",
+  "database": "disposable",
+  "checks": [
+    {
+      "id": "S0-1",
+      "scenario": "migration 9개 전부 적용 확인",
+      "result": "PASS",
+      "detail": "migration 12개 적용"
+    },
+    {
+      "id": "S1-1",
+      "scenario": "관리자 기준선 생성(이름+버전)",
+      "result": "PASS",
+      "detail": "baseline f8ca2ef4-bdf8-47cd-becd-c870f641a532"
+    },
+    {
+      "id": "S1-2",
+      "scenario": "통제 3건 등록 + 제외 사유 필수 검증",
+      "result": "PASS",
+      "detail": "통제 3건(적용 2·제외 1), 사유 없는 제외 422"
+    },
+    {
+      "id": "S1-3",
+      "scenario": "overview 집계 일치(통제 3·적용 2·제외 1·이행률 0)",
+      "result": "PASS",
+      "detail": "total=3 applied=2 excluded=1 rate=0%"
+    },
+    {
+      "id": "S2-1",
+      "scenario": "빈 기준선은 implementation_rate=null, 등록된 통제 없음",
+      "result": "PASS",
+      "detail": "rate=null, rate_label=등록된 통제 없음"
+    },
+    {
+      "id": "S3-1",
+      "scenario": "일반 사용자 증적 multipart 업로드(idempotency_key)",
+      "result": "PASS",
+      "detail": "evidence f517b7cd-3d23-49ce-b222-45902010ed7f"
+    },
+    {
+      "id": "S3-2",
+      "scenario": "동일 idempotency_key 재요청 replay — 중복 생성 0건",
+      "result": "PASS",
+      "detail": "replayed=true, 동일 id, 목록 1건"
+    },
+    {
+      "id": "S3-3",
+      "scenario": "관리자 검토 승인(expectedVersion 일치) + 재처리 409/재승인 replay",
+      "result": "PASS",
+      "detail": "승인 200, 버전 다른 재처리 409 already_reviewed, 동일 버전 재승인 200"
+    },
+    {
+      "id": "S3-4",
+      "scenario": "overview 이행률 1/2 = 50% 갱신",
+      "result": "PASS",
+      "detail": "implementation_rate=50%"
+    },
+    {
+      "id": "S4-1",
+      "scenario": "검토 권한 없는 사용자의 검토 시도 403",
+      "result": "PASS",
+      "detail": "403 permission_denied"
+    },
+    {
+      "id": "S4-2",
+      "scenario": "타 테넌트 사용자 증적 조회/다운로드 차단",
+      "result": "PASS",
+      "detail": "타 테넌트 다운로드 404, 목록 0건"
+    },
+    {
+      "id": "S4-3",
+      "scenario": "다운로드 파일 내용·원본명 일치",
+      "result": "PASS",
+      "detail": "바이트 일치, 원본명 Content-Disposition 일치"
+    },
+    {
+      "id": "S5-1",
+      "scenario": "조치 등록 원인 필수 + 기한 과거 등록",
+      "result": "PASS",
+      "detail": "원인 없음 422, 조치 등록"
+    },
+    {
+      "id": "S5-2",
+      "scenario": "overdue 필터에 기한 경과 조치 반영",
+      "result": "PASS",
+      "detail": "overdue=true 목록에 기한 경과 조치 포함"
+    },
+    {
+      "id": "S5-3",
+      "scenario": "조치 상태 전이 순서 강제(open→in_progress→resolved→reconfirmed)",
+      "result": "PASS",
+      "detail": "걸어넘기 400, 해결내용 필수 422, 순서 전이 성공"
+    },
+    {
+      "id": "S6-1",
+      "scenario": "운영변경 등록(유형 policy, 설명 필수 검증)",
+      "result": "PASS",
+      "detail": "설명/유형 검증 422, 변경 등록"
+    },
+    {
+      "id": "S6-2",
+      "scenario": "재검토 요청(under_review) + 영향 통제 next_due overview 반영",
+      "result": "PASS",
+      "detail": "next_due=2099-06-01T00:00:00.000Z, 재검토 대기 1건"
+    },
+    {
+      "id": "S7-1",
+      "scenario": "TRR 항목 upsert 2건",
+      "result": "PASS",
+      "detail": "TRR 항목 2건 upsert"
+    },
+    {
+      "id": "S7-2",
+      "scenario": "TRR PATCH evidence_ready/status 목록 반영",
+      "result": "PASS",
+      "detail": "ready/evidence_ready 반영, 미변경 항목 유지"
+    },
+    {
+      "id": "S7-3",
+      "scenario": "추적 연결 링크 등록(requirement) 후 미연결 조회에서 제외",
+      "result": "PASS",
+      "detail": "unlinked에서 c1 제외, requirement 링크 1건"
+    },
+    {
+      "id": "S8-1",
+      "scenario": "implementation CSV — BOM, 한글 헤더, 실제 통제 수치",
+      "result": "PASS",
+      "detail": "BOM+헤더+3데이터행, AC-01 증적수 1/승인 1(실측)"
+    },
+    {
+      "id": "S8-2",
+      "scenario": "traceability CSV — 연결 상태 반영(가짜 수치 없음)",
+      "result": "PASS",
+      "detail": "AC-01 연결됨(실측), AC-02 요구링크 0·미해결 N"
+    },
+    {
+      "id": "S8-3",
+      "scenario": "evidence CSV — 실제 증적 1걧만 출력",
+      "result": "PASS",
+      "detail": "증적 1행(실측), 검토상태 approved"
+    },
+    {
+      "id": "S9-1",
+      "scenario": "크레딧 상품 등록(unit_price) — 목록 조회로 검증",
+      "result": "PASS",
+      "detail": "unit_price=120.0000 상품 조회"
+    },
+    {
+      "id": "S9-2",
+      "scenario": "일반 사용자 충전 신청(idempotency) + 같은 키 재신청 중복 0",
+      "result": "PASS",
+      "detail": "재신청 동일 id, 목록 1건, 타인 신청 403"
+    },
+    {
+      "id": "S9-3",
+      "scenario": "승인권자 승인 → 잔액·원장 합산 대조",
+      "result": "PASS",
+      "detail": "잔액 100.0000 = 원장 합산, 중복 승인 409"
+    },
+    {
+      "id": "S10-1",
+      "scenario": "차감 시 잔액 부족 409(잔액이 부족합니다)",
+      "result": "PASS",
+      "detail": "409 insufficient_balance '잔액이 부족합니다.', 잔액 유지"
+    },
+    {
+      "id": "S10-2",
+      "scenario": "사용량 추이 measured=false(가짜 수치 없음)",
+      "result": "PASS",
+      "detail": "measured=false, items=[], 타인 추이 403"
+    },
+    {
+      "id": "S11-1",
+      "scenario": "반출 신청(multipart+공개동의+보안등급, idempotency)",
+      "result": "PASS",
+      "detail": "동의 없는 공개범위 422, 신청+replay 동일 id, 파일 버전 1"
+    },
+    {
+      "id": "S11-2",
+      "scenario": "승인자 승인(approved_file_version=1) → 승인 파일 다운로드 200",
+      "result": "PASS",
+      "detail": "승인 권한 없음 403, approved_file_version=1, 다운로드 바이트 일치"
+    },
+    {
+      "id": "S11-3",
+      "scenario": "신규 버전 업로드 시 staleApproval, 최신 버전 다운로드만 409 차단",
+      "result": "PASS",
+      "detail": "staleApproval=true, 최신 v2 다운로드 409, 승인 v1 다운로드 200"
+    },
+    {
+      "id": "S11-4",
+      "scenario": "보완요청 결정 후 신청자 파일 재업로드 시 in_review 전이",
+      "result": "PASS",
+      "detail": "supplement_requested → 파일 재업로드 → in_review"
+    },
+    {
+      "id": "S14-1",
+      "scenario": "카탈로그 항목 등록(관리자) + 입력 검증",
+      "result": "PASS",
+      "detail": "항목 등록 201, 비관리자 403, 무효 입력 422"
+    },
+    {
+      "id": "S12-1",
+      "scenario": "프로젝트 생성(idempotency replay 동일 id)",
+      "result": "PASS",
+      "detail": "생성 201, replay 200 동일 id"
+    },
+    {
+      "id": "S12-2",
+      "scenario": "멤버 추가 + 중복 추가 409",
+      "result": "PASS",
+      "detail": "멤버 2명, 중복 409 already_member"
+    },
+    {
+      "id": "S12-3",
+      "scenario": "카탈로그 신청 pending 상태에서 종료 시도 → 409 close_blocked + blockers",
+      "result": "PASS",
+      "detail": "close_blocked, blockers 2건(catalog_application 포함)"
+    },
+    {
+      "id": "S12-4",
+      "scenario": "신청 처리 후 preserveOutputs=true 종료 성공",
+      "result": "PASS",
+      "detail": "승인 후 종료 closed, 비결정권자 403"
+    },
+    {
+      "id": "S13-1",
+      "scenario": "제안 작성(idempotency replay 동일 id)",
+      "result": "PASS",
+      "detail": "작성 201, replay 200 동일 id"
+    },
+    {
+      "id": "S13-2",
+      "scenario": "본인 공감 → 중복 공감은 토글 취소(수치 반환)",
+      "result": "PASS",
+      "detail": "공감 1 → 토글 0 → 재공감 1"
+    },
+    {
+      "id": "S13-3",
+      "scenario": "관리자 답변(review) 후 수정 409 reviewed_locked",
+      "result": "PASS",
+      "detail": "답변 201(answered), 답변 후 수정 409 reviewed_locked"
+    },
+    {
+      "id": "S14-2",
+      "scenario": "카탈로그 신청(idempotency) + 승인 후 execution_status=pending_platform 유지",
+      "result": "PASS",
+      "detail": "승인 후에도 execution_status='pending_platform'(플랫폼 미연동 상태 그대로)"
+    },
+    {
+      "id": "S15-1",
+      "scenario": "메뉴 검색(q 2자 이상·페이지) + 1자 검색 422",
+      "result": "PASS",
+      "detail": "total=2, 페이지 1/2 결과 상이, q 1자 422"
+    },
+    {
+      "id": "S15-2",
+      "scenario": "프로젝트 검색 + 타 테넌트 결과 0건",
+      "result": "PASS",
+      "detail": "본 테넌트 1건, 타 테넌트 0건"
+    },
+    {
+      "id": "S15-3",
+      "scenario": "외부 원천 /v1/search/sources integration_pending",
+      "result": "PASS",
+      "detail": "외부 원천 5개 전부 integration_pending"
+    },
+    {
+      "id": "S15-4",
+      "scenario": "user 유형 검색 권한(user.manage 없으면 빈 결과, 있으면 조회)",
+      "result": "PASS",
+      "detail": "일반 빈 결과(200), user.manage 보유 시 조회"
+    },
+    {
+      "id": "S16-1",
+      "scenario": "주요 쓰기 감사 이벤트 4종 표본 확인",
+      "result": "PASS",
+      "detail": "증적 검토 승인 2건; 반출 승인 1건; 프로젝트 종료 1건; 제안 답변 2건"
+    },
+    {
+      "id": "S17-1",
+      "scenario": "K-RMF unconfigured file storage rejects uploads and downloads but permits references",
+      "result": "PASS",
+      "detail": "Explicit storage missing: capability=false, file upload/download=503, reference registration=201"
+    },
+    {
+      "id": "S18-1",
+      "scenario": "업무 요약이 크레딧·반입반출 원장을 포함하고 사용자·테넌트를 격리",
+      "result": "PASS",
+      "detail": "Two separate ledgers included once, another tenant and another actor excluded"
+    },
+    {
+      "id": "S19-1",
+      "scenario": "장문 입력 줄바꿈 등록·수정·검토·신청은 허용하고 제목 제어문자는 거부",
+      "result": "PASS",
+      "detail": "CR/LF/TAB descriptions round-trip through DB; titles and non-text controls still rejected"
+    },
+    {
+      "id": "S19-2",
+      "scenario": "전체 프로젝트 검색·101번째 페이지·제안 본인 필터·전체 집계·카탈로그 페이지 정합",
+      "result": "PASS",
+      "detail": "101st project reachable, literal wildcard protected, own proposals paged before filtering, real personal sympathy and catalog totals"
+    }
+  ],
+  "summary": {
+    "total": 50,
+    "passed": 50,
+    "failed": 0
+  }
+}

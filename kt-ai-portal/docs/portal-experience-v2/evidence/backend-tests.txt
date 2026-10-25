@@ -1,0 +1,8 @@
+PASS src/modules/portal/services/integrationProbe.test.ts
+PASS src/modules/portal/services/platformAccess.test.ts
+
+Test Suites: 2 passed, 2 total
+Tests:       20 passed, 20 total
+Snapshots:   0 total
+Time:        0.117 s, estimated 1 s
+Ran all test suites.

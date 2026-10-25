@@ -1,0 +1,15 @@
+# 사전 검증한 backend bundle을 실행한다. build context는 전용 임시 디렉터리다.
+FROM node:24.13.1-trixie-slim
+ENV NODE_ENV=production NODE_OPTIONS="--no-node-snapshot" PYTHON=/usr/bin/python3
+RUN apt-get update && apt-get install -y --no-install-recommends python3 g++ make libsqlite3-dev ca-certificates git && rm -rf /var/lib/apt/lists/*
+WORKDIR /app
+RUN chown node:node /app && corepack enable
+USER node
+COPY --chown=node:node .yarn .yarn
+COPY --chown=node:node .yarnrc.yml package.json yarn.lock backstage.json ./
+COPY --chown=node:node skeleton.tar.gz ./
+RUN tar -xzf skeleton.tar.gz && rm skeleton.tar.gz && yarn workspaces focus --all --production && yarn cache clean
+COPY --chown=node:node bundle.tar.gz app-config.demo.yaml app-config.customer-showcase.yaml ./
+RUN tar -xzf bundle.tar.gz && rm bundle.tar.gz
+EXPOSE 7007
+CMD ["node", "packages/backend", "--config", "app-config.demo.yaml", "--config", "app-config.customer-showcase.yaml"]

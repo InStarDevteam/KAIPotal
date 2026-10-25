@@ -1,0 +1,78 @@
+
+
+  ⚠  http://eslint.org/docs/rules/func-names
+
+     Unexpected unnamed function
+
+
+     packages/backend/src/modules/portal/routes/catalog.ts:425:18
+     423 |         const base = trx('portal.fc_catalog_application as a')
+     424 |           .join('portal.fc_catalog_item as i', 'i.id', 'a.item_id')
+   > 425 |           .where(function () {
+         |                  ^
+     426 |             this.where('a.requested_by', ctx.identity.userId);
+     427 |             if (decideAll) this.orWhere(trx.raw('true'));
+     428 |           })
+
+  ⚠  http://eslint.org/docs/rules/func-names
+
+     Unexpected unnamed function
+
+
+     packages/backend/src/modules/portal/services/projects.ts:139:12
+     137 |         .andOn('m.user_id', trx.raw('?', [userId])),
+     138 |     )
+   > 139 |     .where(function () {
+         |            ^
+     140 |       this.where('p.visibility', 'public').orWhereNotNull('m.user_id');
+     141 |     })
+     142 |     .select(
+
+  ⚠  http://eslint.org/docs/rules/func-names
+
+     Unexpected unnamed function
+
+
+     packages/backend/src/modules/portal/services/proposals.ts:120:12
+     118 |   const base = trx('portal.fc_proposal as p')
+     119 |     .leftJoin(sympathyCount, 's.proposal_id', 'p.id')
+   > 120 |     .where(function () {
+         |            ^
+     121 |       this.whereNot('p.visibility', 'private')
+     122 |         .orWhere('p.author_id', userId)
+     123 |         .orWhere(trx.raw('?', [isAdmin]));
+
+  ⚠  http://eslint.org/docs/rules/func-names
+
+     Unexpected unnamed function
+
+
+     packages/backend/src/modules/portal/services/workRequests.ts:233:21
+     231 |     const c = parseCursor(options.cursor);
+     232 |     if (c) {
+   > 233 |       qb = qb.where(function () {
+         |                     ^
+     234 |         this.where('created_at', '<', c.at).orWhere(function () {
+     235 |           this.where('created_at', c.at).andWhere('id', '<', c.id);
+     236 |         });
+
+  ⚠  http://eslint.org/docs/rules/func-names
+
+     Unexpected unnamed function
+
+
+     packages/backend/src/modules/portal/services/workRequests.ts:234:53
+     232 |     if (c) {
+     233 |       qb = qb.where(function () {
+   > 234 |         this.where('created_at', '<', c.at).orWhere(function () {
+         |                                                     ^
+     235 |           this.where('created_at', c.at).andWhere('id', '<', c.id);
+     236 |         });
+     237 |       });
+
+✘ 5 problems (0 errors, 5 warnings)
+
+
+Warnings:
+  5  http://eslint.org/docs/rules/func-names
+

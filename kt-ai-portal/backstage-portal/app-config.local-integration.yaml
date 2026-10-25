@@ -1,0 +1,40 @@
+# local-integration 프로파일: 실제 PostgreSQL(로컬 컨테이너)을 사용하는 개발 구성.
+# 기본 app-config.yaml 위에 --config 로 겹쳐 사용한다.
+#   yarn workspace backend start --config ../../app-config.yaml --config ../../app-config.local-integration.yaml
+# 운영/스테이징에서는 app.migrations.runOnStartup을 true로 두지 않는다.
+app:
+  baseUrl: http://localhost:3000
+
+backend:
+  baseUrl: http://localhost:7007
+  listen:
+    port: 7007
+  cors:
+    origin: http://localhost:3000
+    methods: [GET, HEAD, PATCH, POST, PUT, DELETE]
+    credentials: true
+  database:
+    client: pg
+    connection:
+      host: ${POSTGRES_HOST}
+      port: ${POSTGRES_PORT}
+      user: ${POSTGRES_USER}
+      password: ${POSTGRES_PASSWORD}
+      database: ${POSTGRES_DB}
+
+portal:
+  migrations:
+    # 로컬 개발 한정: 시작 시 portal 스키마 migration을 실행한다.
+    runOnStartup: true
+  database:
+    # 포털 업무 전용 DB(Backstage framework DB와 소유 분리)
+    host: ${POSTGRES_HOST}
+    port: ${POSTGRES_PORT}
+    user: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
+    database: ${POSTGRES_DB}
+
+auth:
+  environment: development
+  providers:
+    guest: {}

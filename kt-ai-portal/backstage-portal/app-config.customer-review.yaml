@@ -1,0 +1,11 @@
+# 로컬 시연 검증: 실제 BFF/일회성 PostgreSQL, 외부 인증만 테스트 신원.
+# scripts/test-customer-demo.mjs만 localhost에서 인증을 대체한다. 배포용 아님.
+app:
+  baseUrl: http://localhost:3001
+  designReviewEnabled: true
+  previewAuthEnabled: true
+  previewAccessCode: demo1234
+  proposalCapture:
+    enabled: false
+backend:
+  baseUrl: http://localhost:3001

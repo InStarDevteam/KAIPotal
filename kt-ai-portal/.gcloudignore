@@ -1,0 +1,11 @@
+.git
+.git/**
+**/node_modules
+**/.env
+**/.env.*
+**/*.log
+**/app-config.local.yaml
+.firebase
+.gcloud
+proposal-package
+**/docs/assets

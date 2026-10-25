@@ -1,0 +1,105 @@
+# syntax=docker/dockerfile:1
+# Multi-stage Dockerfile for Firebase Hosting + Cloud Run demo.
+# Build context: backstage-portal/ (the Backstage app root).
+# This image runs the Backstage backend with app-config.demo.yaml.
+
+# -----------------------------------------------------------------------------
+# Stage 1: Build
+# -----------------------------------------------------------------------------
+FROM --platform=linux/amd64 node:24-trixie-slim AS build
+
+ENV PYTHON=/usr/bin/python3
+ENV NODE_OPTIONS="--no-node-snapshot"
+
+ARG APP_BASE_URL
+ARG BACKEND_BASE_URL
+ARG PREVIEW_ACCESS_CODE
+ARG FIREBASE_API_KEY
+ARG FIREBASE_AUTH_DOMAIN
+ARG FIREBASE_PROJECT_ID
+ARG FIREBASE_APP_ID
+ARG DEMO_ALLOWED_EMAILS
+ARG DEMO_ALLOWED_DOMAINS
+ARG DEMO_ADMIN_EMAILS
+
+ENV APP_BASE_URL=${APP_BASE_URL}
+ENV BACKEND_BASE_URL=${BACKEND_BASE_URL}
+ENV PREVIEW_ACCESS_CODE=${PREVIEW_ACCESS_CODE}
+ENV FIREBASE_API_KEY=${FIREBASE_API_KEY}
+ENV FIREBASE_AUTH_DOMAIN=${FIREBASE_AUTH_DOMAIN}
+ENV FIREBASE_PROJECT_ID=${FIREBASE_PROJECT_ID}
+ENV FIREBASE_APP_ID=${FIREBASE_APP_ID}
+ENV DEMO_ALLOWED_EMAILS=${DEMO_ALLOWED_EMAILS}
+ENV DEMO_ALLOWED_DOMAINS=${DEMO_ALLOWED_DOMAINS}
+ENV DEMO_ADMIN_EMAILS=${DEMO_ADMIN_EMAILS}
+
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+      python3 g++ build-essential libsqlite3-dev git ca-certificates && \
+    rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+# Copy repo source into the build stage.
+COPY --chown=node:node . .
+
+# Ensure the app directory is writable by the node user.
+RUN chown -R node:node /app
+
+# Enable the project's package manager (Yarn 4) globally.
+RUN corepack enable
+
+USER node
+
+# Install dependencies and build the project.
+RUN yarn install --immutable
+RUN yarn tsc
+RUN yarn workspace app build --config /app/app-config.demo.yaml
+RUN yarn build:backend --config /app/app-config.demo.yaml
+
+# -----------------------------------------------------------------------------
+# Stage 2: Production runtime
+# -----------------------------------------------------------------------------
+FROM --platform=linux/amd64 node:24-trixie-slim AS runner
+
+ENV PYTHON=/usr/bin/python3
+ENV NODE_ENV=production
+ENV NODE_OPTIONS="--no-node-snapshot"
+
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+      python3 g++ build-essential libsqlite3-dev git ca-certificates && \
+    rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+RUN chown -R node:node /app
+
+# Enable Yarn 4 before switching to the node user.
+RUN corepack enable
+
+USER node
+
+# Copy the Yarn configuration, root workspace metadata, and backstage metadata.
+COPY --chown=node:node --from=build /app/.yarn ./.yarn
+COPY --chown=node:node --from=build /app/.yarnrc.yml ./
+COPY --chown=node:node --from=build /app/backstage.json ./
+COPY --chown=node:node --from=build /app/package.json ./
+COPY --chown=node:node --from=build /app/yarn.lock ./
+
+# Copy and extract the backend skeleton (package.json files) so Yarn can
+# resolve production dependencies.
+COPY --chown=node:node --from=build /app/packages/backend/dist/skeleton.tar.gz ./skeleton.tar.gz
+RUN tar -xzf skeleton.tar.gz && rm -f skeleton.tar.gz
+
+# Install only production dependencies for all workspaces.
+RUN yarn workspaces focus --all --production && \
+    rm -rf "$(yarn cache clean)"
+
+# Copy and extract the built backend bundle (compiled backend + app dist).
+COPY --chown=node:node --from=build /app/packages/backend/dist/bundle.tar.gz ./bundle.tar.gz
+COPY --chown=node:node --from=build /app/app-config.demo.yaml ./app-config.demo.yaml
+RUN tar -xzf bundle.tar.gz && rm -f bundle.tar.gz
+
+EXPOSE 7007
+
+CMD ["node", "packages/backend", "--config", "app-config.demo.yaml"]

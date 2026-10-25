@@ -1,0 +1,2253 @@
+{
+  "phase": "candidate-r2",
+  "uiOrigin": "https://kai-platform-d0ae0--customer-20261001-ahrizevl.web.app",
+  "candidateApiOrigin": "https://portal-review---kt-ai-portal-demo-e2ik6gboua-du.a.run.app",
+  "startedAt": "2026-10-01T03:50:13.622Z",
+  "businessWritesAllowed": false,
+  "capturesMasked": true,
+  "checks": [
+    {
+      "name": "login exposes four design entry choices",
+      "passed": true
+    },
+    {
+      "name": "four homepage designs use live API mode",
+      "passed": true
+    },
+    {
+      "name": "single authorized membership selector is openable",
+      "passed": true
+    },
+    {
+      "name": "portal work opens directly and has no failed/partial aggregation",
+      "passed": true
+    },
+    {
+      "name": "desktop authorized route /project-workspace",
+      "passed": true
+    },
+    {
+      "name": "desktop authorized route /export-approval",
+      "passed": true
+    },
+    {
+      "name": "desktop authorized route /credit-manager",
+      "passed": true
+    },
+    {
+      "name": "desktop authorized route /krmf-monitor",
+      "passed": true
+    },
+    {
+      "name": "desktop authorized route /integrated-search",
+      "passed": true
+    },
+    {
+      "name": "desktop authorized route /admin-console",
+      "passed": true
+    },
+    {
+      "name": "desktop authorized route /role-menu-preview",
+      "passed": true
+    },
+    {
+      "name": "desktop authorized route /service-catalog",
+      "passed": true
+    },
+    {
+      "name": "desktop authorized route /proposal-board",
+      "passed": true
+    },
+    {
+      "name": "desktop authorized route /my-page",
+      "passed": true
+    },
+    {
+      "name": "desktop authorized route /environment-settings",
+      "passed": true
+    },
+    {
+      "name": "desktop authorized route /tenant-management",
+      "passed": true
+    },
+    {
+      "name": "desktop authorized route /tenant-settings",
+      "passed": true
+    },
+    {
+      "name": "desktop authorized route /audit-history",
+      "passed": true
+    },
+    {
+      "name": "desktop authorized route /developer-console",
+      "passed": true
+    },
+    {
+      "name": "defense profile reads live data and exposes military/external fields without saving",
+      "passed": false,
+      "failureClass": "Error"
+    },
+    {
+      "name": "active sessions clearly report missing identity integration",
+      "passed": true
+    },
+    {
+      "name": "my projects use readable cards or truthful empty state",
+      "passed": true
+    },
+    {
+      "name": "setting history reads the real server API",
+      "passed": true
+    },
+    {
+      "name": "all four mobile home designs fit 390px",
+      "passed": true
+    },
+    {
+      "name": "mobile authorized route /project-workspace",
+      "passed": true
+    },
+    {
+      "name": "mobile authorized route /export-approval",
+      "passed": true
+    },
+    {
+      "name": "mobile authorized route /credit-manager",
+      "passed": true
+    },
+    {
+      "name": "mobile authorized route /krmf-monitor",
+      "passed": true
+    },
+    {
+      "name": "mobile authorized route /integrated-search",
+      "passed": true
+    },
+    {
+      "name": "mobile authorized route /admin-console",
+      "passed": true
+    },
+    {
+      "name": "mobile authorized route /role-menu-preview",
+      "passed": true
+    },
+    {
+      "name": "mobile authorized route /service-catalog",
+      "passed": true
+    },
+    {
+      "name": "mobile authorized route /proposal-board",
+      "passed": true
+    },
+    {
+      "name": "mobile authorized route /my-page",
+      "passed": true
+    },
+    {
+      "name": "mobile authorized route /environment-settings",
+      "passed": true
+    },
+    {
+      "name": "mobile authorized route /tenant-management",
+      "passed": true
+    },
+    {
+      "name": "mobile authorized route /tenant-settings",
+      "passed": true
+    },
+    {
+      "name": "mobile authorized route /audit-history",
+      "passed": true
+    },
+    {
+      "name": "mobile authorized route /developer-console",
+      "passed": true
+    },
+    {
+      "name": "mobile authorized route /portal-work",
+      "passed": true
+    },
+    {
+      "name": "mobile authorized route /my-page?tab=projects",
+      "passed": true
+    },
+    {
+      "name": "mobile authorized route /my-page?tab=sessions",
+      "passed": true
+    },
+    {
+      "name": "mobile setting history fits within its own scrolling table",
+      "passed": true
+    },
+    {
+      "name": "no API 5xx, network failures, uncaught JS or attempted business writes",
+      "passed": true
+    }
+  ],
+  "responses": [
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/work/overview",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/projects",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/transfer-requests",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/credits/requests",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/credits/requests",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/credits/products",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/credits/accounts",
+      "status": 404
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/credits/usage/trend",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/work/overview",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/krmf/baselines",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/krmf/overview",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/search/sources",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/memberships",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/catalog/items",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/projects",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/catalog/applications",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/proposals",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me/profile",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/portal-settings",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/audit-events",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/integrations/targets",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me/profile",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/projects",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/portal-settings",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/portal-settings/history",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/projects",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/transfer-requests",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/credits/requests",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/credits/usage/trend",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/credits/products",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/credits/requests",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/credits/accounts",
+      "status": 404
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/work/overview",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/krmf/baselines",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/krmf/overview",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/search/sources",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/memberships",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/catalog/items",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/projects",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/catalog/applications",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/proposals",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me/profile",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/portal-settings",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/audit-events",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/integrations/targets",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/work/overview",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/projects",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/oidc/refresh",
+      "status": 404
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/guest/refresh",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/me",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/context/tenant",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/tenant-settings",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/platform-access/members",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/portal-settings",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/portal/v1/activity",
+      "status": 201
+    },
+    {
+      "method": "GET",
+      "path": "/api/portal/v1/portal-settings/history",
+      "status": 200
+    }
+  ],
+  "serverFailures": [],
+  "networkFailures": [],
+  "pageErrors": [],
+  "blockedWrites": [],
+  "finishedAt": "2026-10-01T03:50:58.267Z",
+  "summary": {
+    "passed": 43,
+    "failed": 1,
+    "apiResponses": 410,
+    "serverFailures": 0,
+    "pageErrors": 0,
+    "networkFailures": 0,
+    "attemptedBusinessWrites": 0
+  }
+}

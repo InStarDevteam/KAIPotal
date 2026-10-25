@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "summary": {
+    "portalTables": 50,
+    "tenants": 1,
+    "migrations": 9,
+    "auditEvents": 117
+  },
+  "backupPath": "/Users/choikyubeom/.local/share/kai-portal/backups/20261001-before-release/portal.sql",
+  "managedBackup": "unavailable: Firebase Data Connect no cost trial"
+}

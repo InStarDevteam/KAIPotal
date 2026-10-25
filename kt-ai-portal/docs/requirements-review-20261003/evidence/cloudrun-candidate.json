@@ -1,0 +1,33 @@
+{
+  "spec": {
+    "template": {
+      "metadata": {
+        "annotations": {
+          "autoscaling.knative.dev/maxScale": "20",
+          "autoscaling.knative.dev/minScale": "1",
+          "run.googleapis.com/client-name": "gcloud",
+          "run.googleapis.com/client-version": "575.0.1",
+          "run.googleapis.com/cloudsql-instances": "kai-platform-d0ae0:asia-northeast3:kai-platform-d0ae0-instance",
+          "run.googleapis.com/cpu-throttling": "true",
+          "run.googleapis.com/secrets": "secret-alias-1:projects/1088986528140/secrets/portal-runtime-db-password",
+          "run.googleapis.com/sessionAffinity": "false",
+          "run.googleapis.com/startup-cpu-boost": "true"
+        }
+      }
+    }
+  },
+  "status": {
+    "latestReadyRevisionName": "kt-ai-portal-demo-requirements-20261003-r3",
+    "traffic": [
+      {
+        "percent": 100,
+        "revisionName": "kt-ai-portal-demo-customer-20261001-r2"
+      },
+      {
+        "revisionName": "kt-ai-portal-demo-requirements-20261003-r3",
+        "tag": "portal-review",
+        "url": "https://portal-review---kt-ai-portal-demo-e2ik6gboua-du.a.run.app"
+      }
+    ]
+  }
+}

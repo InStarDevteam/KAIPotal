@@ -1,0 +1,23 @@
+{
+  "checks": [
+    "login exposes 4 choices and rejects wrong code",
+    "selected design opens after authentication, reload preserves it",
+    "all 4 homes have 4 services and no visible sidebar",
+    "launcher provides four icons and role-filtered portal functions",
+    "unconfigured platform shows honest handoff, not simulated success",
+    "personal order and favorite persist after reload",
+    "general users cannot open admin routes directly",
+    "admin API catalog retains 40 interfaces without RFP codes",
+    "API sample validates edited JSON, error paths and persists history",
+    "API history and full specification download",
+    "superuser can assign tenant admin with explicit reason",
+    "tenant picker includes marine corps and platform policy persists",
+    "all homes and developer console fit mobile/tablet/desktop",
+    "active page routes and tabs render without requirement IDs",
+    "logout clears preview identity and returns to login",
+    "no browser runtime exceptions"
+  ],
+  "count": 16,
+  "errors": [],
+  "date": "2026-09-24T08:03:37.796Z"
+}

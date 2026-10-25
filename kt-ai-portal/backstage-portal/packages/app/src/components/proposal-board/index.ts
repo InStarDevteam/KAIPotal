@@ -1,0 +1,1 @@
+export { ProposalBoardPage } from './ProposalBoardPage';

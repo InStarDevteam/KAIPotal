@@ -1,0 +1,13 @@
+{
+  "origin": "http://127.0.0.1:3000",
+  "checks": [
+    "catalog preserves 40 contracts and removes requirement labels",
+    "sample contract validates successfully without claiming external connection",
+    "invalid request is rejected and a missing sample response field fails",
+    "history survives reload and CSV identifies sample results",
+    "contract export carries draft schemas and no requirement IDs",
+    "VDI filter opens the two proposed VDI interfaces",
+    "mobile console fits viewport without horizontal overflow",
+    "no browser runtime errors"
+  ]
+}

@@ -1,0 +1,6 @@
+PASS baseline DML-only runtime passes role/ACL/RLS guard
+PASS direct CREATEROLE/CREATEDB drift is rejected
+PASS nested privileged membership is rejected even with NOINHERIT
+PASS runtime object ownership is rejected
+PASS least privilege repair preserves business DML and append-only audit
+5/5 runtime least-privilege checks passed

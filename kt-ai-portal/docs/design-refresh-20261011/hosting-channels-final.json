@@ -1,0 +1,43 @@
+{
+  "status": "success",
+  "result": {
+    "channels": [
+      {
+        "name": "projects/kai-platform-d0ae0/sites/kai-platform-d0ae0/channels/live",
+        "url": "https://kai-platform-d0ae0.web.app",
+        "release": {
+          "name": "projects/kai-platform-d0ae0/sites/kai-platform-d0ae0/channels/live/releases/1791703841995000",
+          "releaseTime": "2026-10-11T07:30:41.995Z",
+          "version": {
+            "name": "projects/kai-platform-d0ae0/sites/kai-platform-d0ae0/versions/2e3d1eba903e2e4b",
+            "status": "FINALIZED"
+          }
+        }
+      },
+      {
+        "name": "projects/kai-platform-d0ae0/sites/kai-platform-d0ae0/channels/design-refresh-20261011",
+        "url": "https://kai-platform-d0ae0--design-refresh-20261011-tkk4hnoi.web.app",
+        "release": {
+          "name": "projects/kai-platform-d0ae0/sites/kai-platform-d0ae0/channels/design-refresh-20261011/releases/1791703432157000",
+          "releaseTime": "2026-10-11T07:23:52.157Z",
+          "version": {
+            "name": "projects/kai-platform-d0ae0/sites/kai-platform-d0ae0/versions/2e3d1eba903e2e4b",
+            "status": "FINALIZED"
+          }
+        }
+      },
+      {
+        "name": "projects/kai-platform-d0ae0/sites/kai-platform-d0ae0/channels/data-readiness-20261004",
+        "url": "https://kai-platform-d0ae0--data-readiness-20261004-18ntuswm.web.app",
+        "release": {
+          "name": "projects/kai-platform-d0ae0/sites/kai-platform-d0ae0/channels/data-readiness-20261004/releases/1791053940145000",
+          "releaseTime": "2026-10-03T18:59:00.145Z",
+          "version": {
+            "name": "projects/kai-platform-d0ae0/sites/kai-platform-d0ae0/versions/f97e6a7b03bc8ece",
+            "status": "FINALIZED"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+PASS src/modules/portal/services/portalSearch.test.ts
+PASS src/modules/portal/services/krmfStorage.test.ts
+PASS src/modules/portal/services/integrationProbe.test.ts
+PASS src/modules/portal/services/credits.test.ts
+PASS src/modules/portal/services/transfers.test.ts
+PASS src/modules/portal/services/proposals.test.ts
+PASS src/modules/portal/services/projects.test.ts
+PASS src/modules/portal/services/portalSettings.test.ts
+PASS src/modules/portal/services/krmfDomain.test.ts
+PASS src/modules/portal/services/platformAccess.test.ts
+PASS src/modules/portal/services/myProfile.test.ts
+PASS src/modules/portal/services/catalog.test.ts
+
+Test Suites: 12 passed, 12 total
+Tests:       168 passed, 168 total
+Snapshots:   0 total
+Time:        0.275 s, estimated 1 s
+Ran all test suites.

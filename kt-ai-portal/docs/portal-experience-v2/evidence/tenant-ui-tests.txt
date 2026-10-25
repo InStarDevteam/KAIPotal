@@ -1,0 +1,15 @@
+PASS save tenant branding and apply shell theme
+PASS persist settings across reload
+PASS tenant settings isolation and restore on switch
+PASS invalid contrast prevents saving
+PASS menu label and visibility persist in navigation
+PASS hidden menu blocks direct route
+PASS common help text applied
+PASS integrated audit includes settings and access events
+PASS audit filtering and CSV export
+PASS archived pages cannot be opened
+PASS active pages omit requirement codes and KRMF labels
+PASS settings and audit responsive without page overflow
+PASS branch administrator cannot select another branch
+PASS general user inherits branch branding but cannot manage or audit
+15 browser scenarios passed

@@ -1,0 +1,49 @@
+PASS server menu defaults match active frontend IDs and ordering
+PASS runtime no-context RLS denies rows
+PASS valid role with runtime tenant context
+PASS system role cannot cross tenant boundary
+PASS future membership has no permissions
+PASS expired membership has no permissions
+PASS pool reuse leaves no tenant context
+PASS health queries actual schema
+PASS unauthenticated API is 401
+PASS me returns only valid own memberships and server authorization under RLS
+PASS tenant selection and audit commit with runtime role
+PASS cross-tenant selection fails
+PASS tenant user listing works under RLS
+PASS missing permission and cross tenant denied
+PASS cannot delegate permissions not held
+PASS assign role with expiry persists and records audit
+PASS duplicate role assignment is conflict
+PASS role with future expiry can be revoked
+PASS last privileged assignment cannot be removed
+PASS unsaved tenant settings return branch defaults and version zero
+PASS branding persists atomically with audit and version
+PASS stale editor cannot overwrite settings
+PASS concurrent editors cannot lose a settings update
+PASS malicious logo, unreadable color, hidden recovery menu and archived route rejected
+PASS branding permission does not grant menu changes
+PASS menu permission does not grant branding changes
+PASS settings RLS hides rows without context and prevents cross tenant changes
+PASS reader can load appearance but cannot save or read audit ledger
+PASS client activity is attributed to verified identity and labeled client
+PASS client cannot forge audit actor result server action or archived page
+PASS audit filters summaries and pagination are restricted to authorized tenant
+PASS audit snapshot prevents its own read events shifting pagination
+PASS export requests have distinct immutable audit events
+PASS export rejects over 10000 rows without returning a partial file
+PASS export rows and summary retain one snapshot when an older event commits midway
+PASS platform policy reads defaults and unconfigured launch never returns a fake endpoint
+PASS tenant admins persist platform endpoints with optimistic concurrency and audit
+PASS platform policy cannot be changed by readers or across tenants and enforces membership
+PASS individual revoke is enforced by launch API and other users grants stay private
+PASS personal preferences are stored for the verified user and cannot grant access
+PASS superuser can assign a tenant admin while ordinary users cannot
+PASS new menu definitions preserve stored branding and existing menu customization
+PASS suspended account denied tenant selection
+PASS unverified identity denied
+PASS audit failure rolls back settings update
+PASS audit failure rolls back role assignment
+PASS runtime cannot edit audit ledger
+PASS runtime cannot delete audit ledger
+48 runtime integration checks passed (real PostgreSQL, disposable DB)

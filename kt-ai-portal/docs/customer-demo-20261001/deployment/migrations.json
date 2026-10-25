@@ -1,0 +1,9 @@
+{
+  "at": "2026-10-01T03:40:41.921Z",
+  "batch": 5,
+  "applied": [
+    "20261001000001_repair_work_runtime_grants.js",
+    "20261001000010_user_profile.js"
+  ],
+  "role": "portal_migrator"
+}

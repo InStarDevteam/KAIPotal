@@ -1,0 +1,70 @@
+{
+  "generatedAt": "2026-10-03T18:41:01.409Z",
+  "status": "PASSED",
+  "database": "일회성 로컬 DB portal_mdr_verify_48bb981dbbc2(12개 migration 전체 적용, 검증 후 삭제)",
+  "appliedMigrations": [
+    "20260915000001_init.js",
+    "20260916000001_org_group_delegation.js",
+    "20260916000003_audit_append_policy.js",
+    "20260918000001_tenant_settings.js",
+    "20260924000001_platform_access.js",
+    "20260924000002_work_requests.js",
+    "20260929000001_krmf.js",
+    "20260929000010_domain_ledger.js",
+    "20260929000020_domains.js",
+    "20261001000001_repair_work_runtime_grants.js",
+    "20261001000010_user_profile.js",
+    "20261004000001_metadata_dictionary.js"
+  ],
+  "institutionStandardReceived": false,
+  "dictionaryRows": 548,
+  "tableCount": 55,
+  "checks": {
+    "a_dictionaryCoverage": {
+      "description": "DATA_DICTIONARY.csv (테이블,컬럼) ↔ information_schema.columns 일치",
+      "total": 548,
+      "issues": []
+    },
+    "b_termWords": {
+      "description": "STANDARD_TERMS 구성단어ID 존재 여부",
+      "total": 58,
+      "issues": []
+    },
+    "c_codeSets": {
+      "description": "STANDARD_CODES 코드셋 ↔ pg_constraint CHECK 일치",
+      "total": 49,
+      "issues": []
+    },
+    "d_dataTypes": {
+      "description": "자료형/길이·정밀도 일치",
+      "total": 548,
+      "issues": []
+    },
+    "e_integrity": {
+      "description": "중복 용어·고아 FK·tenant_id 누락",
+      "duplicateTerms": [],
+      "duplicateWords": [],
+      "duplicateTermIds": [],
+      "duplicateWordIds": [],
+      "duplicateDomains": [],
+      "duplicateColumns": [],
+      "orphanFkCount": 0,
+      "tenantMissing": []
+    },
+    "f_relationalConstraints": {
+      "description": "PK·NULL·기본값·FK 정의 및 FK 검증 상태 ↔ 실제 PostgreSQL 제약",
+      "total": 2260,
+      "issues": []
+    },
+    "g_domainsAndProvenance": {
+      "description": "임시 도메인 기술 형식·기관 매핑 미수령 상태(기관 승인 검증 제외)",
+      "total": 19,
+      "issues": []
+    }
+  },
+  "summary": {
+    "passed": 2989,
+    "failed": 0,
+    "skipped": 0
+  }
+}

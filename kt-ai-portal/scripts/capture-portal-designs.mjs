@@ -1,0 +1,31 @@
+import { createRequire } from 'node:module';
+import fs from 'node:fs/promises';
+const require = createRequire(new URL('../backstage-portal/package.json', import.meta.url));
+const { chromium } = require('@playwright/test');
+const browser = await chromium.launch({ headless: true });
+const page = await browser.newPage({ viewport: { width: 1440, height: 1050 }, deviceScaleFactor: 1 });
+const errors = [];
+page.on('pageerror', e => errors.push(e.message));
+await page.goto('http://localhost:3000');
+await page.getByTestId('portal-login').waitFor();
+await page.screenshot({ path: 'docs/portal-experience/evidence/01-login.png', fullPage: true });
+await page.getByLabel('접근코드', { exact: true }).fill('demo1234');
+await page.getByRole('button', { name: '01 Aurora 메인으로 입장' }).click();
+await page.getByTestId('portal-home').waitFor();
+for (const [index, design] of ['Aurora', 'Focus', 'Orbit', 'Canvas'].entries()) {
+  await page.getByRole('button', { name: `0${index + 1} ${design}`, exact: true }).click();
+  await page.waitForTimeout(300);
+  await page.screenshot({ path: `docs/portal-experience/evidence/0${index + 2}-home-${design.toLowerCase()}.png`, fullPage: true });
+}
+await page.getByRole('button', { name: '01 Aurora', exact: true }).click();
+await page.getByRole('button', { name: '모든 앱', exact: true }).click();
+await page.getByRole('dialog', { name: '모든 앱', exact: true }).waitFor({ state: 'visible' });
+await page.waitForTimeout(350);
+await page.screenshot({ path: 'docs/portal-experience/evidence/06-app-launcher.png', fullPage: true });
+await page.getByRole('button', { name: '앱 메뉴 닫기' }).click();
+await page.setViewportSize({ width: 390, height: 844 });
+await page.waitForTimeout(350);
+await page.screenshot({ path: 'docs/portal-experience/evidence/07-home-mobile.png', fullPage: true });
+await fs.writeFile('docs/portal-experience/evidence/capture-errors.json', JSON.stringify(errors, null, 2));
+console.log(JSON.stringify({ errors }));
+await browser.close();

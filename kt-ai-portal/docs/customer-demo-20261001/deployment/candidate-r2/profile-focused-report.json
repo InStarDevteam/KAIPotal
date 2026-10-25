@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-10-01T03:55:07.004575+00:00",
+  "uiOrigin": "https://kai-platform-d0ae0--customer-20261001-ahrizevl.web.app",
+  "candidateApiOrigin": "https://portal-review---kt-ai-portal-demo-e2ik6gboua-du.a.run.app",
+  "applicationChangeRequired": false,
+  "cause": "Playwright strict-mode ambiguity: a MUI exiting listbox temporarily retains the same accessible label as the Select control.",
+  "fix": "Target the unique #profile-user-category control and wait until the listbox is hidden after each selection.",
+  "passed": [
+    "military fields visible",
+    "external option selectable after military screenshot",
+    "military number hidden for external category",
+    "company/institute visible",
+    "internal sponsor visible"
+  ],
+  "savedProfile": false,
+  "businessWritesAllowed": false,
+  "note": "Independent focused read-only check; original 43/44 full-suite report is preserved. All profile changes remained unsaved browser state."
+}

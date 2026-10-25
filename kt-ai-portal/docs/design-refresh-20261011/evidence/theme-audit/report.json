@@ -1,0 +1,1389 @@
+{
+  "startedAt": "2026-10-11T07:10:33.832Z",
+  "uiOrigin": "http://127.0.0.1:3011",
+  "apiOrigin": "https://kt-ai-portal-demo-e2ik6gboua-du.a.run.app",
+  "readOnly": true,
+  "capturesMasked": true,
+  "checks": [
+    {
+      "design": "aurora",
+      "path": "/",
+      "appliedDesign": "aurora",
+      "headerColor": "rgb(32, 54, 97)",
+      "headerInk": "rgb(245, 248, 255)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "60.48px",
+        "color": "rgb(23, 38, 61)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review"
+    },
+    {
+      "design": "aurora",
+      "path": "/portal-work",
+      "appliedDesign": "aurora",
+      "headerColor": "rgb(32, 54, 97)",
+      "headerInk": "rgb(245, 248, 255)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "36px",
+        "color": "rgb(25, 41, 52)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "aurora",
+      "path": "/project-workspace",
+      "appliedDesign": "aurora",
+      "headerColor": "rgb(32, 54, 97)",
+      "headerInk": "rgb(245, 248, 255)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "aurora",
+      "path": "/export-approval",
+      "appliedDesign": "aurora",
+      "headerColor": "rgb(32, 54, 97)",
+      "headerInk": "rgb(245, 248, 255)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "aurora",
+      "path": "/credit-manager",
+      "appliedDesign": "aurora",
+      "headerColor": "rgb(32, 54, 97)",
+      "headerInk": "rgb(245, 248, 255)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 2,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "aurora",
+      "path": "/krmf-monitor",
+      "appliedDesign": "aurora",
+      "headerColor": "rgb(32, 54, 97)",
+      "headerInk": "rgb(245, 248, 255)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "28px",
+        "color": "rgb(23, 38, 61)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 1,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "aurora",
+      "path": "/integrated-search",
+      "appliedDesign": "aurora",
+      "headerColor": "rgb(32, 54, 97)",
+      "headerInk": "rgb(245, 248, 255)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "aurora",
+      "path": "/admin-console",
+      "appliedDesign": "aurora",
+      "headerColor": "rgb(32, 54, 97)",
+      "headerInk": "rgb(245, 248, 255)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 1,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "aurora",
+      "path": "/role-menu-preview",
+      "appliedDesign": "aurora",
+      "headerColor": "rgb(32, 54, 97)",
+      "headerInk": "rgb(245, 248, 255)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "aurora",
+      "path": "/service-catalog",
+      "appliedDesign": "aurora",
+      "headerColor": "rgb(32, 54, 97)",
+      "headerInk": "rgb(245, 248, 255)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "aurora",
+      "path": "/proposal-board",
+      "appliedDesign": "aurora",
+      "headerColor": "rgb(32, 54, 97)",
+      "headerInk": "rgb(245, 248, 255)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "aurora",
+      "path": "/my-page",
+      "appliedDesign": "aurora",
+      "headerColor": "rgb(32, 54, 97)",
+      "headerInk": "rgb(245, 248, 255)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "32px",
+        "color": "rgb(23, 38, 61)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "aurora",
+      "path": "/environment-settings",
+      "appliedDesign": "aurora",
+      "headerColor": "rgb(32, 54, 97)",
+      "headerInk": "rgb(245, 248, 255)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "aurora",
+      "path": "/tenant-management",
+      "appliedDesign": "aurora",
+      "headerColor": "rgb(32, 54, 97)",
+      "headerInk": "rgb(245, 248, 255)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "aurora",
+      "path": "/tenant-settings",
+      "appliedDesign": "aurora",
+      "headerColor": "rgb(32, 54, 97)",
+      "headerInk": "rgb(245, 248, 255)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "26px",
+        "color": "rgb(23, 38, 61)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "aurora",
+      "path": "/audit-history",
+      "appliedDesign": "aurora",
+      "headerColor": "rgb(32, 54, 97)",
+      "headerInk": "rgb(245, 248, 255)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "26.4px",
+        "color": "rgb(23, 38, 61)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "aurora",
+      "path": "/developer-console",
+      "appliedDesign": "aurora",
+      "headerColor": "rgb(32, 54, 97)",
+      "headerInk": "rgb(245, 248, 255)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "30px",
+        "color": "rgb(36, 50, 74)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "aurora",
+      "path": "/",
+      "appliedDesign": "aurora",
+      "headerColor": "rgb(32, 54, 97)",
+      "headerInk": "rgb(245, 248, 255)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "32.76px",
+        "color": "rgb(23, 38, 61)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "viewport": 390
+    },
+    {
+      "design": "aurora",
+      "path": "/portal-work",
+      "appliedDesign": "aurora",
+      "headerColor": "rgb(32, 54, 97)",
+      "headerInk": "rgb(245, 248, 255)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "28px",
+        "color": "rgb(25, 41, 52)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "viewport": 390
+    },
+    {
+      "design": "aurora",
+      "path": "/my-page?tab=projects",
+      "appliedDesign": "aurora",
+      "headerColor": "rgb(32, 54, 97)",
+      "headerInk": "rgb(245, 248, 255)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "28px",
+        "color": "rgb(23, 38, 61)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "viewport": 390
+    },
+    {
+      "design": "aurora",
+      "path": "/tenant-settings",
+      "appliedDesign": "aurora",
+      "headerColor": "rgb(32, 54, 97)",
+      "headerInk": "rgb(245, 248, 255)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "26px",
+        "color": "rgb(23, 38, 61)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "viewport": 390
+    },
+    {
+      "design": "aurora",
+      "path": "/",
+      "appliedDesign": "aurora",
+      "headerColor": "rgb(32, 54, 97)",
+      "headerInk": "rgb(245, 248, 255)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "36px",
+        "color": "rgb(23, 38, 61)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "viewport": 320,
+      "cssScalePreview": 1.2
+    },
+    {
+      "design": "focus",
+      "path": "/",
+      "appliedDesign": "focus",
+      "headerColor": "rgb(32, 66, 84)",
+      "headerInk": "rgb(243, 250, 246)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "60.48px",
+        "color": "rgb(241, 247, 246)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review"
+    },
+    {
+      "design": "focus",
+      "path": "/portal-work",
+      "appliedDesign": "focus",
+      "headerColor": "rgb(32, 66, 84)",
+      "headerInk": "rgb(243, 250, 246)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "36px",
+        "color": "rgb(25, 41, 52)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "focus",
+      "path": "/project-workspace",
+      "appliedDesign": "focus",
+      "headerColor": "rgb(32, 66, 84)",
+      "headerInk": "rgb(243, 250, 246)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "focus",
+      "path": "/export-approval",
+      "appliedDesign": "focus",
+      "headerColor": "rgb(32, 66, 84)",
+      "headerInk": "rgb(243, 250, 246)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "focus",
+      "path": "/credit-manager",
+      "appliedDesign": "focus",
+      "headerColor": "rgb(32, 66, 84)",
+      "headerInk": "rgb(243, 250, 246)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 2,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "focus",
+      "path": "/krmf-monitor",
+      "appliedDesign": "focus",
+      "headerColor": "rgb(32, 66, 84)",
+      "headerInk": "rgb(243, 250, 246)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "28px",
+        "color": "rgb(25, 51, 47)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 1,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "focus",
+      "path": "/integrated-search",
+      "appliedDesign": "focus",
+      "headerColor": "rgb(32, 66, 84)",
+      "headerInk": "rgb(243, 250, 246)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "focus",
+      "path": "/admin-console",
+      "appliedDesign": "focus",
+      "headerColor": "rgb(32, 66, 84)",
+      "headerInk": "rgb(243, 250, 246)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 1,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "focus",
+      "path": "/role-menu-preview",
+      "appliedDesign": "focus",
+      "headerColor": "rgb(32, 66, 84)",
+      "headerInk": "rgb(243, 250, 246)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "focus",
+      "path": "/service-catalog",
+      "appliedDesign": "focus",
+      "headerColor": "rgb(32, 66, 84)",
+      "headerInk": "rgb(243, 250, 246)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "focus",
+      "path": "/proposal-board",
+      "appliedDesign": "focus",
+      "headerColor": "rgb(32, 66, 84)",
+      "headerInk": "rgb(243, 250, 246)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "focus",
+      "path": "/my-page",
+      "appliedDesign": "focus",
+      "headerColor": "rgb(32, 66, 84)",
+      "headerInk": "rgb(243, 250, 246)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "32px",
+        "color": "rgb(25, 51, 47)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "focus",
+      "path": "/environment-settings",
+      "appliedDesign": "focus",
+      "headerColor": "rgb(32, 66, 84)",
+      "headerInk": "rgb(243, 250, 246)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "focus",
+      "path": "/tenant-management",
+      "appliedDesign": "focus",
+      "headerColor": "rgb(32, 66, 84)",
+      "headerInk": "rgb(243, 250, 246)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "focus",
+      "path": "/tenant-settings",
+      "appliedDesign": "focus",
+      "headerColor": "rgb(32, 66, 84)",
+      "headerInk": "rgb(243, 250, 246)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "26px",
+        "color": "rgb(25, 51, 47)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "focus",
+      "path": "/audit-history",
+      "appliedDesign": "focus",
+      "headerColor": "rgb(32, 66, 84)",
+      "headerInk": "rgb(243, 250, 246)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "26.4px",
+        "color": "rgb(25, 51, 47)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "focus",
+      "path": "/developer-console",
+      "appliedDesign": "focus",
+      "headerColor": "rgb(32, 66, 84)",
+      "headerInk": "rgb(243, 250, 246)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "30px",
+        "color": "rgb(36, 50, 74)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "focus",
+      "path": "/",
+      "appliedDesign": "focus",
+      "headerColor": "rgb(32, 66, 84)",
+      "headerInk": "rgb(243, 250, 246)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "32.76px",
+        "color": "rgb(241, 247, 246)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "viewport": 390
+    },
+    {
+      "design": "focus",
+      "path": "/portal-work",
+      "appliedDesign": "focus",
+      "headerColor": "rgb(32, 66, 84)",
+      "headerInk": "rgb(243, 250, 246)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "28px",
+        "color": "rgb(25, 41, 52)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "viewport": 390
+    },
+    {
+      "design": "focus",
+      "path": "/my-page?tab=projects",
+      "appliedDesign": "focus",
+      "headerColor": "rgb(32, 66, 84)",
+      "headerInk": "rgb(243, 250, 246)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "28px",
+        "color": "rgb(25, 51, 47)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "viewport": 390
+    },
+    {
+      "design": "focus",
+      "path": "/tenant-settings",
+      "appliedDesign": "focus",
+      "headerColor": "rgb(32, 66, 84)",
+      "headerInk": "rgb(243, 250, 246)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "26px",
+        "color": "rgb(25, 51, 47)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "viewport": 390
+    },
+    {
+      "design": "focus",
+      "path": "/",
+      "appliedDesign": "focus",
+      "headerColor": "rgb(32, 66, 84)",
+      "headerInk": "rgb(243, 250, 246)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "36px",
+        "color": "rgb(241, 247, 246)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "viewport": 320,
+      "cssScalePreview": 1.2
+    },
+    {
+      "design": "orbit",
+      "path": "/",
+      "appliedDesign": "orbit",
+      "headerColor": "rgb(38, 46, 72)",
+      "headerInk": "rgb(255, 248, 233)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "54.72px",
+        "color": "rgb(247, 245, 239)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review"
+    },
+    {
+      "design": "orbit",
+      "path": "/portal-work",
+      "appliedDesign": "orbit",
+      "headerColor": "rgb(38, 46, 72)",
+      "headerInk": "rgb(255, 248, 233)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "36px",
+        "color": "rgb(25, 41, 52)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "orbit",
+      "path": "/project-workspace",
+      "appliedDesign": "orbit",
+      "headerColor": "rgb(38, 46, 72)",
+      "headerInk": "rgb(255, 248, 233)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "orbit",
+      "path": "/export-approval",
+      "appliedDesign": "orbit",
+      "headerColor": "rgb(38, 46, 72)",
+      "headerInk": "rgb(255, 248, 233)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "orbit",
+      "path": "/credit-manager",
+      "appliedDesign": "orbit",
+      "headerColor": "rgb(38, 46, 72)",
+      "headerInk": "rgb(255, 248, 233)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 2,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "orbit",
+      "path": "/krmf-monitor",
+      "appliedDesign": "orbit",
+      "headerColor": "rgb(38, 46, 72)",
+      "headerInk": "rgb(255, 248, 233)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "28px",
+        "color": "rgb(41, 43, 48)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "orbit",
+      "path": "/integrated-search",
+      "appliedDesign": "orbit",
+      "headerColor": "rgb(38, 46, 72)",
+      "headerInk": "rgb(255, 248, 233)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "orbit",
+      "path": "/admin-console",
+      "appliedDesign": "orbit",
+      "headerColor": "rgb(38, 46, 72)",
+      "headerInk": "rgb(255, 248, 233)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 1,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "orbit",
+      "path": "/role-menu-preview",
+      "appliedDesign": "orbit",
+      "headerColor": "rgb(38, 46, 72)",
+      "headerInk": "rgb(255, 248, 233)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "orbit",
+      "path": "/service-catalog",
+      "appliedDesign": "orbit",
+      "headerColor": "rgb(38, 46, 72)",
+      "headerInk": "rgb(255, 248, 233)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "orbit",
+      "path": "/proposal-board",
+      "appliedDesign": "orbit",
+      "headerColor": "rgb(38, 46, 72)",
+      "headerInk": "rgb(255, 248, 233)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "orbit",
+      "path": "/my-page",
+      "appliedDesign": "orbit",
+      "headerColor": "rgb(38, 46, 72)",
+      "headerInk": "rgb(255, 248, 233)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "32px",
+        "color": "rgb(41, 43, 48)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "orbit",
+      "path": "/environment-settings",
+      "appliedDesign": "orbit",
+      "headerColor": "rgb(38, 46, 72)",
+      "headerInk": "rgb(255, 248, 233)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "orbit",
+      "path": "/tenant-management",
+      "appliedDesign": "orbit",
+      "headerColor": "rgb(38, 46, 72)",
+      "headerInk": "rgb(255, 248, 233)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "orbit",
+      "path": "/tenant-settings",
+      "appliedDesign": "orbit",
+      "headerColor": "rgb(38, 46, 72)",
+      "headerInk": "rgb(255, 248, 233)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "26px",
+        "color": "rgb(41, 43, 48)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "orbit",
+      "path": "/audit-history",
+      "appliedDesign": "orbit",
+      "headerColor": "rgb(38, 46, 72)",
+      "headerInk": "rgb(255, 248, 233)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "26.4px",
+        "color": "rgb(41, 43, 48)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "orbit",
+      "path": "/developer-console",
+      "appliedDesign": "orbit",
+      "headerColor": "rgb(38, 46, 72)",
+      "headerInk": "rgb(255, 248, 233)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "30px",
+        "color": "rgb(36, 50, 74)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "orbit",
+      "path": "/",
+      "appliedDesign": "orbit",
+      "headerColor": "rgb(38, 46, 72)",
+      "headerInk": "rgb(255, 248, 233)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "30.42px",
+        "color": "rgb(247, 245, 239)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "viewport": 390
+    },
+    {
+      "design": "orbit",
+      "path": "/portal-work",
+      "appliedDesign": "orbit",
+      "headerColor": "rgb(38, 46, 72)",
+      "headerInk": "rgb(255, 248, 233)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "28px",
+        "color": "rgb(25, 41, 52)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "viewport": 390
+    },
+    {
+      "design": "orbit",
+      "path": "/my-page?tab=projects",
+      "appliedDesign": "orbit",
+      "headerColor": "rgb(38, 46, 72)",
+      "headerInk": "rgb(255, 248, 233)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "28px",
+        "color": "rgb(41, 43, 48)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "viewport": 390
+    },
+    {
+      "design": "orbit",
+      "path": "/tenant-settings",
+      "appliedDesign": "orbit",
+      "headerColor": "rgb(38, 46, 72)",
+      "headerInk": "rgb(255, 248, 233)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "26px",
+        "color": "rgb(41, 43, 48)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "viewport": 390
+    },
+    {
+      "design": "orbit",
+      "path": "/",
+      "appliedDesign": "orbit",
+      "headerColor": "rgb(38, 46, 72)",
+      "headerInk": "rgb(255, 248, 233)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "34.8px",
+        "color": "rgb(247, 245, 239)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "viewport": 320,
+      "cssScalePreview": 1.2
+    },
+    {
+      "design": "canvas",
+      "path": "/",
+      "appliedDesign": "canvas",
+      "headerColor": "rgb(238, 238, 238)",
+      "headerInk": "rgb(39, 62, 59)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "60.48px",
+        "color": "rgb(34, 58, 64)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review"
+    },
+    {
+      "design": "canvas",
+      "path": "/portal-work",
+      "appliedDesign": "canvas",
+      "headerColor": "rgb(238, 238, 238)",
+      "headerInk": "rgb(39, 62, 59)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "36px",
+        "color": "rgb(25, 41, 52)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "canvas",
+      "path": "/project-workspace",
+      "appliedDesign": "canvas",
+      "headerColor": "rgb(238, 238, 238)",
+      "headerInk": "rgb(39, 62, 59)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "canvas",
+      "path": "/export-approval",
+      "appliedDesign": "canvas",
+      "headerColor": "rgb(238, 238, 238)",
+      "headerInk": "rgb(39, 62, 59)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "canvas",
+      "path": "/credit-manager",
+      "appliedDesign": "canvas",
+      "headerColor": "rgb(238, 238, 238)",
+      "headerInk": "rgb(39, 62, 59)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 2,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "canvas",
+      "path": "/krmf-monitor",
+      "appliedDesign": "canvas",
+      "headerColor": "rgb(238, 238, 238)",
+      "headerInk": "rgb(39, 62, 59)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "28px",
+        "color": "rgb(40, 59, 58)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 1,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "canvas",
+      "path": "/integrated-search",
+      "appliedDesign": "canvas",
+      "headerColor": "rgb(238, 238, 238)",
+      "headerInk": "rgb(39, 62, 59)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "canvas",
+      "path": "/admin-console",
+      "appliedDesign": "canvas",
+      "headerColor": "rgb(238, 238, 238)",
+      "headerInk": "rgb(39, 62, 59)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 1,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "canvas",
+      "path": "/role-menu-preview",
+      "appliedDesign": "canvas",
+      "headerColor": "rgb(238, 238, 238)",
+      "headerInk": "rgb(39, 62, 59)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "canvas",
+      "path": "/service-catalog",
+      "appliedDesign": "canvas",
+      "headerColor": "rgb(238, 238, 238)",
+      "headerInk": "rgb(39, 62, 59)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "canvas",
+      "path": "/proposal-board",
+      "appliedDesign": "canvas",
+      "headerColor": "rgb(238, 238, 238)",
+      "headerInk": "rgb(39, 62, 59)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "canvas",
+      "path": "/my-page",
+      "appliedDesign": "canvas",
+      "headerColor": "rgb(238, 238, 238)",
+      "headerInk": "rgb(39, 62, 59)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "32px",
+        "color": "rgb(40, 59, 58)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "canvas",
+      "path": "/environment-settings",
+      "appliedDesign": "canvas",
+      "headerColor": "rgb(238, 238, 238)",
+      "headerInk": "rgb(39, 62, 59)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "canvas",
+      "path": "/tenant-management",
+      "appliedDesign": "canvas",
+      "headerColor": "rgb(238, 238, 238)",
+      "headerInk": "rgb(39, 62, 59)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": null,
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "canvas",
+      "path": "/tenant-settings",
+      "appliedDesign": "canvas",
+      "headerColor": "rgb(238, 238, 238)",
+      "headerInk": "rgb(39, 62, 59)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "26px",
+        "color": "rgb(40, 59, 58)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "canvas",
+      "path": "/audit-history",
+      "appliedDesign": "canvas",
+      "headerColor": "rgb(238, 238, 238)",
+      "headerInk": "rgb(39, 62, 59)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "26.4px",
+        "color": "rgb(40, 59, 58)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "canvas",
+      "path": "/developer-console",
+      "appliedDesign": "canvas",
+      "headerColor": "rgb(238, 238, 238)",
+      "headerInk": "rgb(39, 62, 59)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "30px",
+        "color": "rgb(36, 50, 74)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "headerMatchesHome": true
+    },
+    {
+      "design": "canvas",
+      "path": "/",
+      "appliedDesign": "canvas",
+      "headerColor": "rgb(238, 238, 238)",
+      "headerInk": "rgb(39, 62, 59)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "32.76px",
+        "color": "rgb(34, 58, 64)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "viewport": 390
+    },
+    {
+      "design": "canvas",
+      "path": "/portal-work",
+      "appliedDesign": "canvas",
+      "headerColor": "rgb(238, 238, 238)",
+      "headerInk": "rgb(39, 62, 59)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "28px",
+        "color": "rgb(25, 41, 52)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "viewport": 390
+    },
+    {
+      "design": "canvas",
+      "path": "/my-page?tab=projects",
+      "appliedDesign": "canvas",
+      "headerColor": "rgb(238, 238, 238)",
+      "headerInk": "rgb(39, 62, 59)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "28px",
+        "color": "rgb(40, 59, 58)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "viewport": 390
+    },
+    {
+      "design": "canvas",
+      "path": "/tenant-settings",
+      "appliedDesign": "canvas",
+      "headerColor": "rgb(238, 238, 238)",
+      "headerInk": "rgb(39, 62, 59)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "26px",
+        "color": "rgb(40, 59, 58)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "viewport": 390
+    },
+    {
+      "design": "canvas",
+      "path": "/",
+      "appliedDesign": "canvas",
+      "headerColor": "rgb(238, 238, 238)",
+      "headerInk": "rgb(39, 62, 59)",
+      "fontScale": "1",
+      "background": "rgba(0, 0, 0, 0)",
+      "heading": {
+        "fontSize": "36px",
+        "color": "rgb(34, 58, 64)"
+      },
+      "horizontalOverflow": false,
+      "mainAlerts": 0,
+      "appearanceSource": "review",
+      "viewport": 320,
+      "cssScalePreview": 1.2
+    }
+  ],
+  "networkErrors": [],
+  "pageErrors": [],
+  "blockedWrites": [],
+  "completedAt": "2026-10-11T07:11:43.909Z"
+}

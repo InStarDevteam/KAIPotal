@@ -1,0 +1,924 @@
+PASS src/components/proposal-board/ProposalBoardPage.test.tsx
+  ● Console
+
+    console.error
+      Warning: findDOMNode is deprecated and will be removed in the next major release. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node
+          at button
+          at ButtonBase (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/ButtonBase/ButtonBase.js:94:22)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at Tab (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Tab/Tab.js:127:23)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at div
+          at div
+          at div
+          at Tabs (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Tabs/Tabs.js:120:24)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at ProposalTabs (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/packages/app/src/components/proposal-board/ProposalTabs.tsx:27:25)
+          at div
+          at StyledComponent (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/styled/styled.js:95:28)
+          at div
+          at StyledComponent (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/styled/styled.js:95:28)
+          at ProposalBoardContent (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/packages/app/src/components/proposal-board/ProposalBoardPage.tsx:30:33)
+          at ProposalBoardPage
+
+      43 | test('creates, votes, comments, edits and deletes own proposal persistently', () => {
+      44 |   configure();
+    > 45 |   const view = render(<ProposalBoardPage />);
+         |                      ^
+      46 |   register();
+      47 |   expect(screen.getAllByText('직접 작성한 제안')).not.toHaveLength(0);
+      48 |   fireEvent.click(screen.getByRole('button', { name: '좋아요 0' }));
+
+      at printWarning (../../../node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (../../../node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.findDOMNode (../../../node_modules/react-dom/cjs/react-dom.development.js:29666:7)
+      at ../../../node_modules/@material-ui/core/utils/useIsFocusVisible.js:151:25
+      at setRef (../../../node_modules/@material-ui/core/utils/setRef.js:11:5)
+      at ../../../node_modules/@material-ui/core/utils/useForkRef.js:28:27
+      at setRef (../../../node_modules/@material-ui/core/utils/setRef.js:11:5)
+      at ../../../node_modules/@material-ui/core/utils/useForkRef.js:29:27
+      at commitAttachRef (../../../node_modules/react-dom/cjs/react-dom.development.js:23689:18)
+      at commitLayoutEffectOnFiber (../../../node_modules/react-dom/cjs/react-dom.development.js:23542:9)
+      at commitLayoutMountEffects_complete (../../../node_modules/react-dom/cjs/react-dom.development.js:24727:9)
+      at commitLayoutEffects_begin (../../../node_modules/react-dom/cjs/react-dom.development.js:24713:7)
+      at commitLayoutEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:24651:3)
+      at commitRootImpl (../../../node_modules/react-dom/cjs/react-dom.development.js:26862:5)
+      at commitRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:26721:5)
+      at finishConcurrentRender (../../../node_modules/react-dom/cjs/react-dom.development.js:26020:9)
+      at performConcurrentWorkOnRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:25848:7)
+      at flushActQueue (../../../node_modules/react/cjs/react.development.js:2667:24)
+      at act (../../../node_modules/react/cjs/react.development.js:2582:11)
+      at ../../../node_modules/@testing-library/react/dist/act-compat.js:47:25
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:180:24)
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:271:10)
+      at Object.<anonymous> (components/proposal-board/ProposalBoardPage.test.tsx:45:22)
+
+(node:28146) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+PASS src/App.test.tsx
+  ● Console
+
+    console.warn
+      DEPRECATION WARNING: Authentication providers require a configApi instance to configure the authentication flow. Please provide one to the authentication provider constructor.
+
+      235 |       },
+      236 |       factory: ({ discoveryApi, oauthRequestApi }) =>
+    > 237 |         OAuth2.create({
+          |                ^
+      238 |           discoveryApi,
+      239 |           oauthRequestApi,
+      240 |           provider: {
+
+      at new warn (../../../node_modules/@backstage/core-app-api/dist/lib/AuthConnector/DefaultAuthConnector.esm.js:28:15)
+      at OAuth2.createAuthConnector (../../../node_modules/@backstage/core-app-api/dist/apis/implementations/auth/oauth2/OAuth2.esm.js:25:12)
+      at OAuth2.createAuthConnector [as create] (../../../node_modules/@backstage/core-app-api/dist/apis/implementations/auth/oauth2/OAuth2.esm.js:60:30)
+      at Object.create [as factory] (App.tsx:237:16)
+      at ApiResolver.factory [as load] (../../../node_modules/@backstage/core-app-api/dist/apis/system/ApiResolver.esm.js:48:25)
+      at ApiResolver.load [as get] (../../../node_modules/@backstage/core-app-api/dist/apis/system/ApiResolver.esm.js:33:17)
+      at get (../../../node_modules/@backstage/frontend-plugin-api/dist/apis/system/useApi.esm.js:19:25)
+      at PortalSignInPage (App.tsx:122:22)
+      at renderWithHooks (../../../node_modules/react-dom/cjs/react-dom.development.js:15486:18)
+      at mountIndeterminateComponent (../../../node_modules/react-dom/cjs/react-dom.development.js:20103:13)
+      at beginWork (../../../node_modules/react-dom/cjs/react-dom.development.js:21626:16)
+      at beginWork$1 (../../../node_modules/react-dom/cjs/react-dom.development.js:27465:14)
+      at performUnitOfWork (../../../node_modules/react-dom/cjs/react-dom.development.js:26599:12)
+      at workLoopSync (../../../node_modules/react-dom/cjs/react-dom.development.js:26505:5)
+      at renderRootSync (../../../node_modules/react-dom/cjs/react-dom.development.js:26473:7)
+      at performConcurrentWorkOnRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:25777:74)
+      at workLoop (../../../node_modules/scheduler/cjs/scheduler.development.js:266:34)
+      at flushWork (../../../node_modules/scheduler/cjs/scheduler.development.js:239:14)
+      at performWorkUntilDeadline (../../../node_modules/scheduler/cjs/scheduler.development.js:533:21)
+      at Timeout.task [as _onTimeout] (../../../node_modules/jsdom/lib/jsdom/browser/Window.js:605:19)
+
+    console.error
+      Warning: findDOMNode is deprecated and will be removed in the next major release. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node
+          at button
+          at ButtonBase (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/ButtonBase/ButtonBase.js:94:22)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at Button (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Button/Button.js:313:24)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at form
+          at div
+          at section
+          at main
+          at PreviewLoginPage (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/packages/app/src/components/preview-auth/PreviewLoginPage.tsx:28:29)
+          at PortalSignInPage (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/packages/app/src/App.tsx:107:29)
+          at SignInPageWrapper (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@backstage/core-app-api/dist/app/AppRouter.esm.js:38:41)
+          at $75bd88aab025820b$export$323e4fc2fa4753fb (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/react-aria/dist/private/utils/openLink.cjs:56:21)
+          at RoutedContent (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@backstage/ui/dist/provider/BUIProvider.esm.js:38:26)
+          at BUIProvider (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@backstage/ui/dist/provider/BUIProvider.esm.js:19:13)
+          at Router (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/react-router/dist/umd/react-router.development.js:1102:25)
+          at BrowserRouter (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/react-router-dom/dist/umd/react-router-dom.development.js:703:15)
+          at AppRouter (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@backstage/core-app-api/dist/app/AppRouter.esm.js:55:100)
+          at PlatformAccessProvider (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/packages/app/src/components/tenant-settings/PlatformAccessContext.tsx:26:35)
+          at div
+          at ThemeProvider (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/ThemeProvider/ThemeProvider.js:48:24)
+          at TenantSettingsProvider (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/packages/app/src/components/tenant-settings/TenantSettingsContext.tsx:28:35)
+          at AuthzProvider (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/packages/app/src/components/authz/AuthzContext.tsx:60:26)
+          at PortalRuntimeProvider (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/packages/app/src/components/portal-runtime/PortalRuntimeContext.tsx:57:34)
+          at DemoAdminProvider (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/packages/app/src/components/preview-auth/DemoAdminContext.tsx:78:30)
+          at App
+          at Suspense
+          at RoutingProvider (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@backstage/core-app-api/dist/routing/RoutingProvider.esm.js:15:28)
+          at ThemeProvider (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/ThemeProvider/ThemeProvider.js:48:24)
+          at StylesProvider (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/StylesProvider/StylesProvider.js:57:24)
+          at DefaultPropsProvider (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@mui/system/DefaultPropsProvider/DefaultPropsProvider.js:18:3)
+          at RtlProvider (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@mui/system/RtlProvider/index.js:19:7)
+          at ThemeProvider (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@mui/private-theming/node/ThemeProvider/ThemeProvider.js:39:5)
+          at ThemeProvider (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@mui/system/ThemeProvider/ThemeProvider.js:53:5)
+          at ThemeProvider (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@mui/material/node/styles/ThemeProvider.js:21:14)
+          at StyledEngineProvider (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@mui/styled-engine/node/StyledEngineProvider/StyledEngineProvider.js:38:5)
+          at UnifiedThemeProvider (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@backstage/theme/dist/unified/UnifiedThemeProvider.esm.js:26:13)
+          at Provider (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@backstage/app-defaults/dist/defaults/themes.esm.js:26:22)
+          at AppThemeProvider (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@backstage/core-app-api/dist/app/AppThemeProvider.esm.js:55:29)
+          at AppContextProvider (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@backstage/core-app-api/dist/app/AppContext.esm.js:14:31)
+          at BUIProvider (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@backstage/ui/dist/provider/BUIProvider.esm.js:19:13)
+          at ApiProvider (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@backstage/core-app-api/dist/apis/system/ApiProvider.esm.js:23:13)
+          at Provider (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@backstage/core-app-api/dist/app/AppManager.esm.js:160:29)
+          at AppRoot
+
+      at printWarning (../../../node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (../../../node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.findDOMNode (../../../node_modules/react-dom/cjs/react-dom.development.js:29666:7)
+      at ../../../node_modules/@material-ui/core/utils/useIsFocusVisible.js:151:25
+      at setRef (../../../node_modules/@material-ui/core/utils/setRef.js:11:5)
+      at ../../../node_modules/@material-ui/core/utils/useForkRef.js:28:27
+      at setRef (../../../node_modules/@material-ui/core/utils/setRef.js:11:5)
+      at ../../../node_modules/@material-ui/core/utils/useForkRef.js:29:27
+      at commitAttachRef (../../../node_modules/react-dom/cjs/react-dom.development.js:23689:18)
+      at commitLayoutEffectOnFiber (../../../node_modules/react-dom/cjs/react-dom.development.js:23542:9)
+      at commitLayoutMountEffects_complete (../../../node_modules/react-dom/cjs/react-dom.development.js:24727:9)
+      at commitLayoutEffects_begin (../../../node_modules/react-dom/cjs/react-dom.development.js:24713:7)
+      at commitLayoutEffects_begin (../../../node_modules/react-dom/cjs/react-dom.development.js:24695:11)
+      at commitLayoutEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:24651:3)
+      at commitRootImpl (../../../node_modules/react-dom/cjs/react-dom.development.js:26862:5)
+      at commitRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:26721:5)
+      at finishConcurrentRender (../../../node_modules/react-dom/cjs/react-dom.development.js:26020:9)
+      at performConcurrentWorkOnRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:25848:7)
+      at workLoop (../../../node_modules/scheduler/cjs/scheduler.development.js:266:34)
+      at flushWork (../../../node_modules/scheduler/cjs/scheduler.development.js:239:14)
+      at performWorkUntilDeadline (../../../node_modules/scheduler/cjs/scheduler.development.js:533:21)
+      at Timeout.task [as _onTimeout] (../../../node_modules/jsdom/lib/jsdom/browser/Window.js:605:19)
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+
+      at warn (../../../node_modules/react-router/dist/umd/react-router.development.js:953:15)
+      at warnOnce (../../../node_modules/react-router/dist/umd/react-router.development.js:956:47)
+      at Object.logDeprecation [as UNSAFE_logV6DeprecationWarnings] (../../../node_modules/react-router/dist/umd/react-router.development.js:959:7)
+      at UNSAFE_logV6DeprecationWarnings (../../../node_modules/react-router-dom/dist/umd/react-router-dom.development.js:712:50)
+      at commitHookEffectListMount (../../../node_modules/react-dom/cjs/react-dom.development.js:23189:26)
+      at commitPassiveMountOnFiber (../../../node_modules/react-dom/cjs/react-dom.development.js:24970:11)
+      at commitPassiveMountEffects_complete (../../../node_modules/react-dom/cjs/react-dom.development.js:24930:9)
+      at commitPassiveMountEffects_begin (../../../node_modules/react-dom/cjs/react-dom.development.js:24917:7)
+      at commitPassiveMountEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:24905:3)
+      at flushPassiveEffectsImpl (../../../node_modules/react-dom/cjs/react-dom.development.js:27078:3)
+      at flushPassiveEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:27023:14)
+      at performSyncWorkOnRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:26115:3)
+      at flushSyncCallbacks (../../../node_modules/react-dom/cjs/react-dom.development.js:12042:22)
+      at flushSync (../../../node_modules/react-dom/cjs/react-dom.development.js:26240:7)
+      at ReactDOMRoot.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (../../../node_modules/react-dom/cjs/react-dom.development.js:29375:5)
+      at Object.unmount (../../../node_modules/@testing-library/react/dist/pure.js:155:12)
+      at unmount (../../../node_modules/@testing-library/react/dist/pure.js:286:12)
+      at ../../../node_modules/@testing-library/react/dist/act-compat.js:48:24
+      at act (../../../node_modules/react/cjs/react.development.js:2512:16)
+      at ../../../node_modules/@testing-library/react/dist/act-compat.js:47:25
+      at ../../../node_modules/@testing-library/react/dist/pure.js:285:26
+          at Array.forEach (<anonymous>)
+      at forEach (../../../node_modules/@testing-library/react/dist/pure.js:281:22)
+      at Object.<anonymous> (../../../node_modules/@testing-library/react/dist/index.js:29:23)
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+      at warn (../../../node_modules/react-router/dist/umd/react-router.development.js:953:15)
+      at warnOnce (../../../node_modules/react-router/dist/umd/react-router.development.js:956:47)
+      at Object.logDeprecation [as UNSAFE_logV6DeprecationWarnings] (../../../node_modules/react-router/dist/umd/react-router.development.js:962:7)
+      at UNSAFE_logV6DeprecationWarnings (../../../node_modules/react-router-dom/dist/umd/react-router-dom.development.js:712:50)
+      at commitHookEffectListMount (../../../node_modules/react-dom/cjs/react-dom.development.js:23189:26)
+      at commitPassiveMountOnFiber (../../../node_modules/react-dom/cjs/react-dom.development.js:24970:11)
+      at commitPassiveMountEffects_complete (../../../node_modules/react-dom/cjs/react-dom.development.js:24930:9)
+      at commitPassiveMountEffects_begin (../../../node_modules/react-dom/cjs/react-dom.development.js:24917:7)
+      at commitPassiveMountEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:24905:3)
+      at flushPassiveEffectsImpl (../../../node_modules/react-dom/cjs/react-dom.development.js:27078:3)
+      at flushPassiveEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:27023:14)
+      at performSyncWorkOnRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:26115:3)
+      at flushSyncCallbacks (../../../node_modules/react-dom/cjs/react-dom.development.js:12042:22)
+      at flushSync (../../../node_modules/react-dom/cjs/react-dom.development.js:26240:7)
+      at ReactDOMRoot.ReactDOMHydrationRoot.unmount.ReactDOMRoot.unmount [as unmount] (../../../node_modules/react-dom/cjs/react-dom.development.js:29375:5)
+      at Object.unmount (../../../node_modules/@testing-library/react/dist/pure.js:155:12)
+      at unmount (../../../node_modules/@testing-library/react/dist/pure.js:286:12)
+      at ../../../node_modules/@testing-library/react/dist/act-compat.js:48:24
+      at act (../../../node_modules/react/cjs/react.development.js:2512:16)
+      at ../../../node_modules/@testing-library/react/dist/act-compat.js:47:25
+      at ../../../node_modules/@testing-library/react/dist/pure.js:285:26
+          at Array.forEach (<anonymous>)
+      at forEach (../../../node_modules/@testing-library/react/dist/pure.js:281:22)
+      at Object.<anonymous> (../../../node_modules/@testing-library/react/dist/index.js:29:23)
+
+PASS src/components/integrated-search/IntegratedSearchPage.test.tsx
+  ● Console
+
+    console.error
+      Warning: findDOMNode is deprecated and will be removed in the next major release. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node
+          at button
+          at ButtonBase (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/ButtonBase/ButtonBase.js:94:22)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at IconButton (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/IconButton/IconButton.js:131:27)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at div
+          at div
+          at InputBase (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/InputBase/InputBase.js:219:30)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at Input (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Input/Input.js:137:32)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at div
+          at FormControl (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/FormControl/FormControl.js:90:24)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at TextField (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/TextField/TextField.js:86:28)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at div
+          at Autocomplete (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/lab/Autocomplete/Autocomplete.js:310:35)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at form
+          at Paper (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Paper/Paper.js:55:23)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at SearchBox (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/packages/app/src/components/integrated-search/SearchBox.tsx:25:22)
+          at div
+          at Grid (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Grid/Grid.js:243:35)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at div
+          at Grid (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Grid/Grid.js:243:35)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at div
+          at IntegratedSearchPage (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/packages/app/src/components/integrated-search/IntegratedSearchPage.tsx:39:69)
+          at Harness (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/packages/app/src/components/integrated-search/IntegratedSearchPage.test.tsx:55:54)
+          at Router (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/react-router/dist/umd/react-router.development.js:1102:25)
+          at MemoryRouter (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/react-router/dist/umd/react-router.development.js:1008:15)
+
+      82 | });
+      83 | it('empty entry reports an input hint and real source availability without a failed search', async () => {
+    > 84 |   render(view());
+         |         ^
+      85 |   await screen.findByText('검색 서비스 연결됨');
+      86 |   expect(screen.getByText('데이터셋')).toBeVisible();
+      87 |   expect(screen.getByRole('status')).toHaveTextContent(
+
+      at printWarning (../../../node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (../../../node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.findDOMNode (../../../node_modules/react-dom/cjs/react-dom.development.js:29666:7)
+      at ../../../node_modules/@material-ui/core/utils/useIsFocusVisible.js:151:25
+      at setRef (../../../node_modules/@material-ui/core/utils/setRef.js:11:5)
+      at ../../../node_modules/@material-ui/core/utils/useForkRef.js:28:27
+      at setRef (../../../node_modules/@material-ui/core/utils/setRef.js:11:5)
+      at ../../../node_modules/@material-ui/core/utils/useForkRef.js:29:27
+      at commitAttachRef (../../../node_modules/react-dom/cjs/react-dom.development.js:23689:18)
+      at commitLayoutEffectOnFiber (../../../node_modules/react-dom/cjs/react-dom.development.js:23542:9)
+      at commitLayoutMountEffects_complete (../../../node_modules/react-dom/cjs/react-dom.development.js:24727:9)
+      at commitLayoutEffects_begin (../../../node_modules/react-dom/cjs/react-dom.development.js:24713:7)
+      at commitLayoutEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:24651:3)
+      at commitRootImpl (../../../node_modules/react-dom/cjs/react-dom.development.js:26862:5)
+      at commitRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:26721:5)
+      at finishConcurrentRender (../../../node_modules/react-dom/cjs/react-dom.development.js:26020:9)
+      at performConcurrentWorkOnRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:25848:7)
+      at flushActQueue (../../../node_modules/react/cjs/react.development.js:2667:24)
+      at act (../../../node_modules/react/cjs/react.development.js:2582:11)
+      at ../../../node_modules/@testing-library/react/dist/act-compat.js:47:25
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:180:24)
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:271:10)
+      at Object.<anonymous> (components/integrated-search/IntegratedSearchPage.test.tsx:84:9)
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+
+      82 | });
+      83 | it('empty entry reports an input hint and real source availability without a failed search', async () => {
+    > 84 |   render(view());
+         |         ^
+      85 |   await screen.findByText('검색 서비스 연결됨');
+      86 |   expect(screen.getByText('데이터셋')).toBeVisible();
+      87 |   expect(screen.getByRole('status')).toHaveTextContent(
+
+      at warn (../../../node_modules/react-router/dist/umd/react-router.development.js:953:15)
+      at warnOnce (../../../node_modules/react-router/dist/umd/react-router.development.js:956:47)
+      at logDeprecation (../../../node_modules/react-router/dist/umd/react-router.development.js:959:7)
+      at logV6DeprecationWarnings (../../../node_modules/react-router/dist/umd/react-router.development.js:1123:38)
+      at commitHookEffectListMount (../../../node_modules/react-dom/cjs/react-dom.development.js:23189:26)
+      at commitPassiveMountOnFiber (../../../node_modules/react-dom/cjs/react-dom.development.js:24970:11)
+      at commitPassiveMountEffects_complete (../../../node_modules/react-dom/cjs/react-dom.development.js:24930:9)
+      at commitPassiveMountEffects_begin (../../../node_modules/react-dom/cjs/react-dom.development.js:24917:7)
+      at commitPassiveMountEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:24905:3)
+      at flushPassiveEffectsImpl (../../../node_modules/react-dom/cjs/react-dom.development.js:27078:3)
+      at flushPassiveEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:27023:14)
+      at performSyncWorkOnRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:26115:3)
+      at flushSyncCallbacks (../../../node_modules/react-dom/cjs/react-dom.development.js:12042:22)
+      at commitRootImpl (../../../node_modules/react-dom/cjs/react-dom.development.js:26998:3)
+      at commitRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:26721:5)
+      at finishConcurrentRender (../../../node_modules/react-dom/cjs/react-dom.development.js:26020:9)
+      at performConcurrentWorkOnRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:25848:7)
+      at flushActQueue (../../../node_modules/react/cjs/react.development.js:2667:24)
+      at act (../../../node_modules/react/cjs/react.development.js:2582:11)
+      at ../../../node_modules/@testing-library/react/dist/act-compat.js:47:25
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:180:24)
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:271:10)
+      at Object.<anonymous> (components/integrated-search/IntegratedSearchPage.test.tsx:84:9)
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+      82 | });
+      83 | it('empty entry reports an input hint and real source availability without a failed search', async () => {
+    > 84 |   render(view());
+         |         ^
+      85 |   await screen.findByText('검색 서비스 연결됨');
+      86 |   expect(screen.getByText('데이터셋')).toBeVisible();
+      87 |   expect(screen.getByRole('status')).toHaveTextContent(
+
+      at warn (../../../node_modules/react-router/dist/umd/react-router.development.js:953:15)
+      at warnOnce (../../../node_modules/react-router/dist/umd/react-router.development.js:956:47)
+      at logDeprecation (../../../node_modules/react-router/dist/umd/react-router.development.js:962:7)
+      at logV6DeprecationWarnings (../../../node_modules/react-router/dist/umd/react-router.development.js:1123:38)
+      at commitHookEffectListMount (../../../node_modules/react-dom/cjs/react-dom.development.js:23189:26)
+      at commitPassiveMountOnFiber (../../../node_modules/react-dom/cjs/react-dom.development.js:24970:11)
+      at commitPassiveMountEffects_complete (../../../node_modules/react-dom/cjs/react-dom.development.js:24930:9)
+      at commitPassiveMountEffects_begin (../../../node_modules/react-dom/cjs/react-dom.development.js:24917:7)
+      at commitPassiveMountEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:24905:3)
+      at flushPassiveEffectsImpl (../../../node_modules/react-dom/cjs/react-dom.development.js:27078:3)
+      at flushPassiveEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:27023:14)
+      at performSyncWorkOnRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:26115:3)
+      at flushSyncCallbacks (../../../node_modules/react-dom/cjs/react-dom.development.js:12042:22)
+      at commitRootImpl (../../../node_modules/react-dom/cjs/react-dom.development.js:26998:3)
+      at commitRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:26721:5)
+      at finishConcurrentRender (../../../node_modules/react-dom/cjs/react-dom.development.js:26020:9)
+      at performConcurrentWorkOnRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:25848:7)
+      at flushActQueue (../../../node_modules/react/cjs/react.development.js:2667:24)
+      at act (../../../node_modules/react/cjs/react.development.js:2582:11)
+      at ../../../node_modules/@testing-library/react/dist/act-compat.js:47:25
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:180:24)
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:271:10)
+      at Object.<anonymous> (components/integrated-search/IntegratedSearchPage.test.tsx:84:9)
+
+    console.error
+      Warning: validateDOMNesting(...): <div> cannot appear as a descendant of <p>.
+          at div
+          at Chip (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Chip/Chip.js:325:26)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at p
+          at Typography (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Typography/Typography.js:173:28)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at div
+          at div
+          at Paper (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Paper/Paper.js:55:23)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at SearchIndexStatusBar (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/packages/app/src/components/integrated-search/SearchIndexStatusBar.tsx:20:33)
+          at div
+          at Grid (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Grid/Grid.js:243:35)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at div
+          at Grid (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Grid/Grid.js:243:35)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at div
+          at IntegratedSearchPage (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/packages/app/src/components/integrated-search/IntegratedSearchPage.tsx:39:69)
+          at Harness (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/packages/app/src/components/integrated-search/IntegratedSearchPage.test.tsx:55:54)
+          at Router (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/react-router/dist/umd/react-router.development.js:1102:25)
+          at MemoryRouter (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/react-router/dist/umd/react-router.development.js:1008:15)
+
+      at printWarning (../../../node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (../../../node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at validateDOMNesting (../../../node_modules/react-dom/cjs/react-dom.development.js:10849:7)
+      at createInstance (../../../node_modules/react-dom/cjs/react-dom.development.js:10930:5)
+      at completeWork (../../../node_modules/react-dom/cjs/react-dom.development.js:22226:28)
+      at completeUnitOfWork (../../../node_modules/react-dom/cjs/react-dom.development.js:26632:16)
+      at performUnitOfWork (../../../node_modules/react-dom/cjs/react-dom.development.js:26607:5)
+      at workLoopSync (../../../node_modules/react-dom/cjs/react-dom.development.js:26505:5)
+      at renderRootSync (../../../node_modules/react-dom/cjs/react-dom.development.js:26473:7)
+      at performConcurrentWorkOnRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:25777:74)
+      at workLoop (../../../node_modules/scheduler/cjs/scheduler.development.js:266:34)
+      at flushWork (../../../node_modules/scheduler/cjs/scheduler.development.js:239:14)
+      at performWorkUntilDeadline (../../../node_modules/scheduler/cjs/scheduler.development.js:533:21)
+      at Timeout.task [as _onTimeout] (../../../node_modules/jsdom/lib/jsdom/browser/Window.js:605:19)
+
+PASS src/components/project-workspace/WorkEnvRequestWizard.test.tsx
+  ● Console
+
+    console.error
+      Warning: findDOMNode is deprecated and will be removed in the next major release. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node
+          at span
+          at ButtonBase (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/ButtonBase/ButtonBase.js:94:22)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at IconButton (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/IconButton/IconButton.js:131:27)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at SwitchBase (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/internal/SwitchBase.js:59:25)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at Radio (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Radio/Radio.js:93:27)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at label
+          at FormControlLabel (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/FormControlLabel/FormControlLabel.js:89:23)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at div
+          at FormGroup (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/FormGroup/FormGroup.js:45:23)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at RadioGroup (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/RadioGroup/RadioGroup.js:33:23)
+          at fieldset
+          at FormControl (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/FormControl/FormControl.js:90:24)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at div
+          at Paper (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Paper/Paper.js:55:23)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at WorkEnvRequestContent (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/packages/app/src/components/project-workspace/WorkEnvRequestWizard.tsx:154:34)
+          at WorkEnvRequestWizard
+
+      36 | test('submits the actual request and preserves approved status after remount', () => {
+      37 |   configure();
+    > 38 |   const view = render(<WorkEnvRequestWizard />);
+         |                      ^
+      39 |   fill(/워크스페이스명/, '정비 AI 체험 환경');
+      40 |   next();
+      41 |   fireEvent.click(screen.getByLabelText('육군 장비 정비이력 데이터셋'));
+
+      at printWarning (../../../node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (../../../node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.findDOMNode (../../../node_modules/react-dom/cjs/react-dom.development.js:29666:7)
+      at ../../../node_modules/@material-ui/core/utils/useIsFocusVisible.js:151:25
+      at setRef (../../../node_modules/@material-ui/core/utils/setRef.js:11:5)
+      at ../../../node_modules/@material-ui/core/utils/useForkRef.js:28:27
+      at setRef (../../../node_modules/@material-ui/core/utils/setRef.js:11:5)
+      at ../../../node_modules/@material-ui/core/utils/useForkRef.js:29:27
+      at commitAttachRef (../../../node_modules/react-dom/cjs/react-dom.development.js:23689:18)
+      at commitLayoutEffectOnFiber (../../../node_modules/react-dom/cjs/react-dom.development.js:23542:9)
+      at commitLayoutMountEffects_complete (../../../node_modules/react-dom/cjs/react-dom.development.js:24727:9)
+      at commitLayoutEffects_begin (../../../node_modules/react-dom/cjs/react-dom.development.js:24713:7)
+      at commitLayoutEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:24651:3)
+      at commitRootImpl (../../../node_modules/react-dom/cjs/react-dom.development.js:26862:5)
+      at commitRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:26721:5)
+      at finishConcurrentRender (../../../node_modules/react-dom/cjs/react-dom.development.js:26020:9)
+      at performConcurrentWorkOnRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:25848:7)
+      at flushActQueue (../../../node_modules/react/cjs/react.development.js:2667:24)
+      at act (../../../node_modules/react/cjs/react.development.js:2582:11)
+      at ../../../node_modules/@testing-library/react/dist/act-compat.js:47:25
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:180:24)
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:271:10)
+      at Object.<anonymous> (components/project-workspace/WorkEnvRequestWizard.test.tsx:38:22)
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+
+      70 |   configure('army', false);
+      71 |   request.mockResolvedValue({ data: { items: [], nextCursor: null } });
+    > 72 |   render(
+         |         ^
+      73 |     <MemoryRouter>
+      74 |       <WorkEnvRequestWizard />
+      75 |     </MemoryRouter>,
+
+      at warn (../../../node_modules/react-router/dist/umd/react-router.development.js:953:15)
+      at warnOnce (../../../node_modules/react-router/dist/umd/react-router.development.js:956:47)
+      at logDeprecation (../../../node_modules/react-router/dist/umd/react-router.development.js:959:7)
+      at logV6DeprecationWarnings (../../../node_modules/react-router/dist/umd/react-router.development.js:1123:38)
+      at commitHookEffectListMount (../../../node_modules/react-dom/cjs/react-dom.development.js:23189:26)
+      at commitPassiveMountOnFiber (../../../node_modules/react-dom/cjs/react-dom.development.js:24970:11)
+      at commitPassiveMountEffects_complete (../../../node_modules/react-dom/cjs/react-dom.development.js:24930:9)
+      at commitPassiveMountEffects_begin (../../../node_modules/react-dom/cjs/react-dom.development.js:24917:7)
+      at commitPassiveMountEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:24905:3)
+      at flushPassiveEffectsImpl (../../../node_modules/react-dom/cjs/react-dom.development.js:27078:3)
+      at flushPassiveEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:27023:14)
+      at ../../../node_modules/react-dom/cjs/react-dom.development.js:26808:9
+      at flushActQueue (../../../node_modules/react/cjs/react.development.js:2667:24)
+      at act (../../../node_modules/react/cjs/react.development.js:2582:11)
+      at ../../../node_modules/@testing-library/react/dist/act-compat.js:47:25
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:180:24)
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:271:10)
+      at Object.<anonymous> (components/project-workspace/WorkEnvRequestWizard.test.tsx:72:9)
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+      70 |   configure('army', false);
+      71 |   request.mockResolvedValue({ data: { items: [], nextCursor: null } });
+    > 72 |   render(
+         |         ^
+      73 |     <MemoryRouter>
+      74 |       <WorkEnvRequestWizard />
+      75 |     </MemoryRouter>,
+
+      at warn (../../../node_modules/react-router/dist/umd/react-router.development.js:953:15)
+      at warnOnce (../../../node_modules/react-router/dist/umd/react-router.development.js:956:47)
+      at logDeprecation (../../../node_modules/react-router/dist/umd/react-router.development.js:962:7)
+      at logV6DeprecationWarnings (../../../node_modules/react-router/dist/umd/react-router.development.js:1123:38)
+      at commitHookEffectListMount (../../../node_modules/react-dom/cjs/react-dom.development.js:23189:26)
+      at commitPassiveMountOnFiber (../../../node_modules/react-dom/cjs/react-dom.development.js:24970:11)
+      at commitPassiveMountEffects_complete (../../../node_modules/react-dom/cjs/react-dom.development.js:24930:9)
+      at commitPassiveMountEffects_begin (../../../node_modules/react-dom/cjs/react-dom.development.js:24917:7)
+      at commitPassiveMountEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:24905:3)
+      at flushPassiveEffectsImpl (../../../node_modules/react-dom/cjs/react-dom.development.js:27078:3)
+      at flushPassiveEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:27023:14)
+      at ../../../node_modules/react-dom/cjs/react-dom.development.js:26808:9
+      at flushActQueue (../../../node_modules/react/cjs/react.development.js:2667:24)
+      at act (../../../node_modules/react/cjs/react.development.js:2582:11)
+      at ../../../node_modules/@testing-library/react/dist/act-compat.js:47:25
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:180:24)
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:271:10)
+      at Object.<anonymous> (components/project-workspace/WorkEnvRequestWizard.test.tsx:72:9)
+
+PASS src/components/audit-history/AuditHistoryPage.test.tsx
+  ● Console
+
+    console.error
+      Warning: findDOMNode is deprecated and will be removed in the next major release. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node
+          at button
+          at ButtonBase (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/ButtonBase/ButtonBase.js:94:22)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at Button (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Button/Button.js:313:24)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at div
+          at StyledComponent (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/styled/styled.js:95:28)
+          at div
+          at StyledComponent (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/styled/styled.js:95:28)
+          at div
+          at StyledComponent (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/styled/styled.js:95:28)
+          at AuditHistoryPage (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/packages/app/src/components/audit-history/AuditHistoryPage.tsx:81:51)
+
+      104 |       : Promise.resolve(response('navy', '해군조회자')),
+      105 |   );
+    > 106 |   const view = render(<AuditHistoryPage />);
+          |                      ^
+      107 |   await waitFor(() => expect(mockRequest).toHaveBeenCalledTimes(1));
+      108 |   mockTenantId = 'navy';
+      109 |   view.rerender(<AuditHistoryPage />);
+
+      at printWarning (../../../node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (../../../node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.findDOMNode (../../../node_modules/react-dom/cjs/react-dom.development.js:29666:7)
+      at ../../../node_modules/@material-ui/core/utils/useIsFocusVisible.js:151:25
+      at setRef (../../../node_modules/@material-ui/core/utils/setRef.js:11:5)
+      at ../../../node_modules/@material-ui/core/utils/useForkRef.js:28:27
+      at setRef (../../../node_modules/@material-ui/core/utils/setRef.js:11:5)
+      at ../../../node_modules/@material-ui/core/utils/useForkRef.js:29:27
+      at commitAttachRef (../../../node_modules/react-dom/cjs/react-dom.development.js:23689:18)
+      at commitLayoutEffectOnFiber (../../../node_modules/react-dom/cjs/react-dom.development.js:23542:9)
+      at commitLayoutMountEffects_complete (../../../node_modules/react-dom/cjs/react-dom.development.js:24727:9)
+      at commitLayoutEffects_begin (../../../node_modules/react-dom/cjs/react-dom.development.js:24713:7)
+      at commitLayoutEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:24651:3)
+      at commitRootImpl (../../../node_modules/react-dom/cjs/react-dom.development.js:26862:5)
+      at commitRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:26721:5)
+      at finishConcurrentRender (../../../node_modules/react-dom/cjs/react-dom.development.js:26020:9)
+      at performConcurrentWorkOnRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:25848:7)
+      at flushActQueue (../../../node_modules/react/cjs/react.development.js:2667:24)
+      at act (../../../node_modules/react/cjs/react.development.js:2582:11)
+      at ../../../node_modules/@testing-library/react/dist/act-compat.js:47:25
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:180:24)
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:271:10)
+      at Object.<anonymous> (components/audit-history/AuditHistoryPage.test.tsx:106:22)
+
+PASS src/components/my-page/DefenseProfilePanel.test.tsx
+  ● Console
+
+    console.error
+      Warning: findDOMNode is deprecated and will be removed in the next major release. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node
+          at button
+          at ButtonBase (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/ButtonBase/ButtonBase.js:94:22)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at Button (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Button/Button.js:313:24)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at div
+          at section
+          at DefenseProfilePanel (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/packages/app/src/components/my-page/DefenseProfilePanel.tsx:40:49)
+
+      41 |     data: { profile: { ...profile, contact: '02-1234-5678' }, version: 3 },
+      42 |   });
+    > 43 |   render(<DefenseProfilePanel />);
+         |         ^
+      44 |   await screen.findByText('시험 사용자');
+      45 |   fireEvent.change(screen.getByLabelText('업무 연락처'), {
+      46 |     target: { value: '02-1234-5678' },
+
+      at printWarning (../../../node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (../../../node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.findDOMNode (../../../node_modules/react-dom/cjs/react-dom.development.js:29666:7)
+      at ../../../node_modules/@material-ui/core/utils/useIsFocusVisible.js:151:25
+      at setRef (../../../node_modules/@material-ui/core/utils/setRef.js:11:5)
+      at ../../../node_modules/@material-ui/core/utils/useForkRef.js:28:27
+      at setRef (../../../node_modules/@material-ui/core/utils/setRef.js:11:5)
+      at ../../../node_modules/@material-ui/core/utils/useForkRef.js:29:27
+      at commitAttachRef (../../../node_modules/react-dom/cjs/react-dom.development.js:23689:18)
+      at commitLayoutEffectOnFiber (../../../node_modules/react-dom/cjs/react-dom.development.js:23542:9)
+      at commitLayoutMountEffects_complete (../../../node_modules/react-dom/cjs/react-dom.development.js:24727:9)
+      at commitLayoutEffects_begin (../../../node_modules/react-dom/cjs/react-dom.development.js:24713:7)
+      at commitLayoutEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:24651:3)
+      at commitRootImpl (../../../node_modules/react-dom/cjs/react-dom.development.js:26862:5)
+      at commitRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:26721:5)
+      at finishConcurrentRender (../../../node_modules/react-dom/cjs/react-dom.development.js:26020:9)
+      at performConcurrentWorkOnRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:25848:7)
+      at flushActQueue (../../../node_modules/react/cjs/react.development.js:2667:24)
+      at act (../../../node_modules/react/cjs/react.development.js:2582:11)
+      at ../../../node_modules/@testing-library/react/dist/act-compat.js:47:25
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:180:24)
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:271:10)
+      at Object.<anonymous> (components/my-page/DefenseProfilePanel.test.tsx:43:9)
+
+PASS src/components/tenant-settings/PlatformAccessContext.test.tsx
+PASS src/components/environment-settings/PortalSettingHistoryServerPanel.test.tsx
+  ● Console
+
+    console.error
+      Warning: findDOMNode is deprecated and will be removed in the next major release. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node
+          at button
+          at ButtonBase (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/ButtonBase/ButtonBase.js:94:22)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at Button (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Button/Button.js:313:24)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at div
+          at StyledComponent (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/styled/styled.js:95:28)
+          at div
+          at Paper (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Paper/Paper.js:55:23)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at PortalSettingHistoryServerPanel (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/packages/app/src/components/environment-settings/PortalSettingHistoryServerPanel.tsx:36:57)
+
+      47 |       },
+      48 |     });
+    > 49 |   render(<PortalSettingHistoryServerPanel />);
+         |         ^
+      50 |   expect(await screen.findByText('새 제목')).toBeInTheDocument();
+      51 |   expect(screen.getByText('포털 관리자')).toBeInTheDocument();
+      52 |   expect(screen.getByText('기존 제목')).toBeInTheDocument();
+
+      at printWarning (../../../node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (../../../node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.findDOMNode (../../../node_modules/react-dom/cjs/react-dom.development.js:29666:7)
+      at ../../../node_modules/@material-ui/core/utils/useIsFocusVisible.js:151:25
+      at setRef (../../../node_modules/@material-ui/core/utils/setRef.js:11:5)
+      at ../../../node_modules/@material-ui/core/utils/useForkRef.js:28:27
+      at setRef (../../../node_modules/@material-ui/core/utils/setRef.js:11:5)
+      at ../../../node_modules/@material-ui/core/utils/useForkRef.js:29:27
+      at commitAttachRef (../../../node_modules/react-dom/cjs/react-dom.development.js:23689:18)
+      at commitLayoutEffectOnFiber (../../../node_modules/react-dom/cjs/react-dom.development.js:23542:9)
+      at commitLayoutMountEffects_complete (../../../node_modules/react-dom/cjs/react-dom.development.js:24727:9)
+      at commitLayoutEffects_begin (../../../node_modules/react-dom/cjs/react-dom.development.js:24713:7)
+      at commitLayoutEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:24651:3)
+      at commitRootImpl (../../../node_modules/react-dom/cjs/react-dom.development.js:26862:5)
+      at commitRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:26721:5)
+      at finishConcurrentRender (../../../node_modules/react-dom/cjs/react-dom.development.js:26020:9)
+      at performConcurrentWorkOnRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:25848:7)
+      at flushActQueue (../../../node_modules/react/cjs/react.development.js:2667:24)
+      at act (../../../node_modules/react/cjs/react.development.js:2582:11)
+      at ../../../node_modules/@testing-library/react/dist/act-compat.js:47:25
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:180:24)
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:271:10)
+      at Object.<anonymous> (components/environment-settings/PortalSettingHistoryServerPanel.test.tsx:49:9)
+
+PASS src/components/portal-shell/PortalTenantPicker.test.tsx
+  ● Console
+
+    console.error
+      Warning: findDOMNode is deprecated and will be removed in the next major release. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node
+          at div
+          at FormControl (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/FormControl/FormControl.js:90:24)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at Tooltip (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Tooltip/Tooltip.js:214:28)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at PortalTenantPicker (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/packages/app/src/components/portal-shell/PortalTenantPicker.tsx:13:31)
+
+      19 | it('keeps a single membership inspectable and explains why other tenants are absent', () => {
+      20 |   const onSelect = jest.fn();
+    > 21 |   render(
+         |         ^
+      22 |     <PortalTenantPicker
+      23 |       tenants={[army]}
+      24 |       tenantId="army"
+
+      at printWarning (../../../node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (../../../node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.findDOMNode (../../../node_modules/react-dom/cjs/react-dom.development.js:29666:7)
+      at ../../../node_modules/@material-ui/core/Tooltip/Tooltip.js:468:51
+      at setRef (../../../node_modules/@material-ui/core/utils/setRef.js:11:5)
+      at ../../../node_modules/@material-ui/core/utils/useForkRef.js:29:27
+      at commitAttachRef (../../../node_modules/react-dom/cjs/react-dom.development.js:23689:18)
+      at commitLayoutEffectOnFiber (../../../node_modules/react-dom/cjs/react-dom.development.js:23542:9)
+      at commitLayoutMountEffects_complete (../../../node_modules/react-dom/cjs/react-dom.development.js:24727:9)
+      at commitLayoutEffects_begin (../../../node_modules/react-dom/cjs/react-dom.development.js:24713:7)
+      at commitLayoutEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:24651:3)
+      at commitRootImpl (../../../node_modules/react-dom/cjs/react-dom.development.js:26862:5)
+      at commitRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:26721:5)
+      at finishConcurrentRender (../../../node_modules/react-dom/cjs/react-dom.development.js:26020:9)
+      at performConcurrentWorkOnRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:25848:7)
+      at flushActQueue (../../../node_modules/react/cjs/react.development.js:2667:24)
+      at act (../../../node_modules/react/cjs/react.development.js:2582:11)
+      at ../../../node_modules/@testing-library/react/dist/act-compat.js:47:25
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:180:24)
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:271:10)
+      at Object.<anonymous> (components/portal-shell/PortalTenantPicker.test.tsx:21:9)
+
+PASS src/components/integrated-search/SearchBox.test.tsx
+  ● Console
+
+    console.error
+      Warning: findDOMNode is deprecated and will be removed in the next major release. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node
+          at button
+          at ButtonBase (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/ButtonBase/ButtonBase.js:94:22)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at IconButton (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/IconButton/IconButton.js:131:27)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at div
+          at div
+          at InputBase (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/InputBase/InputBase.js:219:30)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at Input (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Input/Input.js:137:32)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at div
+          at FormControl (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/FormControl/FormControl.js:90:24)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at TextField (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/TextField/TextField.js:86:28)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at div
+          at Autocomplete (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/lab/Autocomplete/Autocomplete.js:310:35)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at form
+          at Paper (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Paper/Paper.js:55:23)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at SearchBox (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/packages/app/src/components/integrated-search/SearchBox.tsx:25:22)
+
+       7 | it('debounces fast input and avoids single-character suggestion calls', async () => {
+       8 |   const suggest = jest.fn().mockResolvedValue([]);
+    >  9 |   render(<SearchBox value="" onSearch={jest.fn()} onSuggest={suggest} />);
+         |         ^
+      10 |   const input = screen.getByLabelText('검색어');
+      11 |   fireEvent.change(input, { target: { value: '군' } });
+      12 |   await act(async () => {
+
+      at printWarning (../../../node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (../../../node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.findDOMNode (../../../node_modules/react-dom/cjs/react-dom.development.js:29666:7)
+      at ../../../node_modules/@material-ui/core/utils/useIsFocusVisible.js:151:25
+      at setRef (../../../node_modules/@material-ui/core/utils/setRef.js:11:5)
+      at ../../../node_modules/@material-ui/core/utils/useForkRef.js:28:27
+      at setRef (../../../node_modules/@material-ui/core/utils/setRef.js:11:5)
+      at ../../../node_modules/@material-ui/core/utils/useForkRef.js:29:27
+      at commitAttachRef (../../../node_modules/react-dom/cjs/react-dom.development.js:23689:18)
+      at commitLayoutEffectOnFiber (../../../node_modules/react-dom/cjs/react-dom.development.js:23542:9)
+      at commitLayoutMountEffects_complete (../../../node_modules/react-dom/cjs/react-dom.development.js:24727:9)
+      at commitLayoutEffects_begin (../../../node_modules/react-dom/cjs/react-dom.development.js:24713:7)
+      at commitLayoutEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:24651:3)
+      at commitRootImpl (../../../node_modules/react-dom/cjs/react-dom.development.js:26862:5)
+      at commitRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:26721:5)
+      at finishConcurrentRender (../../../node_modules/react-dom/cjs/react-dom.development.js:26020:9)
+      at performConcurrentWorkOnRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:25848:7)
+      at flushActQueue (../../../node_modules/react/cjs/react.development.js:2667:24)
+      at act (../../../node_modules/react/cjs/react.development.js:2582:11)
+      at ../../../node_modules/@testing-library/react/dist/act-compat.js:47:25
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:180:24)
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:271:10)
+      at Object.<anonymous> (components/integrated-search/SearchBox.test.tsx:9:9)
+
+PASS src/components/my-page/MyPage.test.tsx
+  ● Console
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+
+      26 | });
+      27 | it('keeps account capabilities while removing the invented pilot tab', () => {
+    > 28 |   render(
+         |         ^
+      29 |     <MemoryRouter initialEntries={['/my-page?tab=sessions']}>
+      30 |       <MyPage />
+      31 |     </MemoryRouter>,
+
+      at warn (../../../node_modules/react-router/dist/umd/react-router.development.js:953:15)
+      at warnOnce (../../../node_modules/react-router/dist/umd/react-router.development.js:956:47)
+      at logDeprecation (../../../node_modules/react-router/dist/umd/react-router.development.js:959:7)
+      at logV6DeprecationWarnings (../../../node_modules/react-router/dist/umd/react-router.development.js:1123:38)
+      at commitHookEffectListMount (../../../node_modules/react-dom/cjs/react-dom.development.js:23189:26)
+      at commitPassiveMountOnFiber (../../../node_modules/react-dom/cjs/react-dom.development.js:24970:11)
+      at commitPassiveMountEffects_complete (../../../node_modules/react-dom/cjs/react-dom.development.js:24930:9)
+      at commitPassiveMountEffects_begin (../../../node_modules/react-dom/cjs/react-dom.development.js:24917:7)
+      at commitPassiveMountEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:24905:3)
+      at flushPassiveEffectsImpl (../../../node_modules/react-dom/cjs/react-dom.development.js:27078:3)
+      at flushPassiveEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:27023:14)
+      at ../../../node_modules/react-dom/cjs/react-dom.development.js:26808:9
+      at flushActQueue (../../../node_modules/react/cjs/react.development.js:2667:24)
+      at act (../../../node_modules/react/cjs/react.development.js:2582:11)
+      at ../../../node_modules/@testing-library/react/dist/act-compat.js:47:25
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:180:24)
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:271:10)
+      at Object.<anonymous> (components/my-page/MyPage.test.tsx:28:9)
+
+    console.warn
+      ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+
+      26 | });
+      27 | it('keeps account capabilities while removing the invented pilot tab', () => {
+    > 28 |   render(
+         |         ^
+      29 |     <MemoryRouter initialEntries={['/my-page?tab=sessions']}>
+      30 |       <MyPage />
+      31 |     </MemoryRouter>,
+
+      at warn (../../../node_modules/react-router/dist/umd/react-router.development.js:953:15)
+      at warnOnce (../../../node_modules/react-router/dist/umd/react-router.development.js:956:47)
+      at logDeprecation (../../../node_modules/react-router/dist/umd/react-router.development.js:962:7)
+      at logV6DeprecationWarnings (../../../node_modules/react-router/dist/umd/react-router.development.js:1123:38)
+      at commitHookEffectListMount (../../../node_modules/react-dom/cjs/react-dom.development.js:23189:26)
+      at commitPassiveMountOnFiber (../../../node_modules/react-dom/cjs/react-dom.development.js:24970:11)
+      at commitPassiveMountEffects_complete (../../../node_modules/react-dom/cjs/react-dom.development.js:24930:9)
+      at commitPassiveMountEffects_begin (../../../node_modules/react-dom/cjs/react-dom.development.js:24917:7)
+      at commitPassiveMountEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:24905:3)
+      at flushPassiveEffectsImpl (../../../node_modules/react-dom/cjs/react-dom.development.js:27078:3)
+      at flushPassiveEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:27023:14)
+      at ../../../node_modules/react-dom/cjs/react-dom.development.js:26808:9
+      at flushActQueue (../../../node_modules/react/cjs/react.development.js:2667:24)
+      at act (../../../node_modules/react/cjs/react.development.js:2582:11)
+      at ../../../node_modules/@testing-library/react/dist/act-compat.js:47:25
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:180:24)
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:271:10)
+      at Object.<anonymous> (components/my-page/MyPage.test.tsx:28:9)
+
+    console.error
+      Warning: findDOMNode is deprecated and will be removed in the next major release. Instead, add a ref directly to the element you want to reference. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-find-node
+          at a
+          at LinkWithRef (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/react-router-dom/dist/umd/react-router-dom.development.js:821:15)
+          at ButtonBase (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/ButtonBase/ButtonBase.js:94:22)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at Button (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/core/Button/Button.js:313:24)
+          at WithStyles (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/@material-ui/styles/withStyles/withStyles.js:67:31)
+          at div
+          at section
+          at ServerMyProjectsPanel (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/packages/app/src/components/my-page/ServerMyProjectsPanel.tsx:31:51)
+          at div
+          at div
+          at div
+          at MyPage (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/packages/app/src/components/my-page/MyPage.tsx:45:69)
+          at Router (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/react-router/dist/umd/react-router.development.js:1102:25)
+          at MemoryRouter (/Users/choikyubeom/Documents/kimi-projects/KAIPotal/kt-ai-portal/backstage-portal/node_modules/react-router/dist/umd/react-router.development.js:1008:15)
+
+      68 |     },
+      69 |   });
+    > 70 |   render(
+         |         ^
+      71 |     <MemoryRouter initialEntries={['/my-page?tab=projects']}>
+      72 |       <MyPage />
+      73 |     </MemoryRouter>,
+
+      at printWarning (../../../node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (../../../node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at Object.findDOMNode (../../../node_modules/react-dom/cjs/react-dom.development.js:29666:7)
+      at ../../../node_modules/@material-ui/core/utils/useIsFocusVisible.js:151:25
+      at setRef (../../../node_modules/@material-ui/core/utils/setRef.js:11:5)
+      at ../../../node_modules/@material-ui/core/utils/useForkRef.js:28:27
+      at setRef (../../../node_modules/@material-ui/core/utils/setRef.js:11:5)
+      at ../../../node_modules/@material-ui/core/utils/useForkRef.js:29:27
+      at commitAttachRef (../../../node_modules/react-dom/cjs/react-dom.development.js:23689:18)
+      at commitLayoutEffectOnFiber (../../../node_modules/react-dom/cjs/react-dom.development.js:23542:9)
+      at commitLayoutMountEffects_complete (../../../node_modules/react-dom/cjs/react-dom.development.js:24727:9)
+      at commitLayoutEffects_begin (../../../node_modules/react-dom/cjs/react-dom.development.js:24713:7)
+      at commitLayoutEffects (../../../node_modules/react-dom/cjs/react-dom.development.js:24651:3)
+      at commitRootImpl (../../../node_modules/react-dom/cjs/react-dom.development.js:26862:5)
+      at commitRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:26721:5)
+      at finishConcurrentRender (../../../node_modules/react-dom/cjs/react-dom.development.js:26020:9)
+      at performConcurrentWorkOnRoot (../../../node_modules/react-dom/cjs/react-dom.development.js:25848:7)
+      at flushActQueue (../../../node_modules/react/cjs/react.development.js:2667:24)
+      at act (../../../node_modules/react/cjs/react.development.js:2582:11)
+      at ../../../node_modules/@testing-library/react/dist/act-compat.js:47:25
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:180:24)
+      at renderRoot (../../../node_modules/@testing-library/react/dist/pure.js:271:10)
+      at Object.<anonymous> (components/my-page/MyPage.test.tsx:70:9)
+
+PASS src/components/tenant-settings/TenantSettingsContext.test.tsx
+PASS src/components/navigation/portalMenuDefinitions.test.ts
+PASS src/components/authz/AuthzContext.test.tsx
+PASS src/components/tenant-settings/settingsModel.test.ts
+PASS src/components/my-page/MyProjectWorkspacePanel.test.tsx
+PASS src/components/developer-console/integrationModel.test.ts
+PASS src/components/krmf-evidence/krmfData.test.ts
+PASS src/components/export-approval/exportRequestStore.test.ts
+PASS src/components/service-catalog/serviceCatalogRequestStore.test.ts
+PASS src/components/project-workspace/workspaceDemoStore.test.ts
+PASS src/components/my-page/myPageProfileStore.test.ts
+PASS src/components/krmf-monitor/krmfLabels.test.ts
+PASS src/components/export-approval/exportDecisionStore.test.ts
+PASS src/components/proposal-board/demoProposalStore.test.ts
+PASS src/components/portal-work/workServerData.test.ts
+PASS src/components/integrated-search/SearchApiClient.test.ts
+PASS src/components/export-approval/transferServerData.test.ts
+PASS src/components/admin-console/adminConsoleServerData.test.ts
+PASS src/components/credit-manager/creditServerData.test.ts
+PASS src/components/credit-manager/creditPriceStore.test.ts
+PASS src/components/service-catalog/catalogServerData.test.ts
+PASS src/components/project-workspace/projectServerData.test.ts
+PASS src/components/proposal-board/proposalServerData.test.ts
+PASS src/components/portal-work/workProfiles.test.ts
+PASS src/components/my-page/defenseProfileModel.test.ts
+PASS src/components/admin-console/adminUserAccessStore.test.ts
+PASS src/components/environment-settings/portalSettingsServerData.test.ts
+PASS src/components/authz/rolePolicies.test.ts
+PASS src/components/project-workspace/workspaceServerModel.test.ts
+PASS src/components/portal-runtime/portalClientError.test.ts
+PASS src/components/portal-runtime/demoActivity.test.ts
+PASS src/components/my-page/myPageServerData.test.ts
+PASS src/components/integrated-search/searchFiltering.test.ts
+PASS src/components/common/portalDate.test.ts
+
+Test Suites: 45 passed, 45 total
+Tests:       267 passed, 267 total
+Snapshots:   0 total
+Time:        6.213 s, estimated 8 s
+Ran all test suites.

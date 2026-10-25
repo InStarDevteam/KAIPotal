@@ -1,0 +1,41 @@
+후보ID,기능명,방향,canonical_API_제안,adapter,계약버전,책임,검증상태,근거/비고
+PAI-001,통합 로그인/SSO,양방향,Keycloak OIDC(Authorization Code+PKCE),Keycloak,미확정,포털+플랫폼,blocked_external,표준 OIDC flow 전제·최종 IdP URL/realm/client 미확정(Setup Guide §4-8)
+PAI-002,Guest 갱신,-,폐기,-,-,-,retired_dev_only,운영 대상 제외·개발 전용으로 기록
+PAI-003,RBAC 조회,응답,GET /api/portal/v1/me,Portal BFF,미확정,포털,planned,서버 principal·scope·policy version 반환(P1)
+PAI-004,AI 작업환경 조회,응답,GET /api/portal/v1/workspaces?type=ai,AiPlatform,미확정,플랫폼,blocked_external,AI 플랫폼 API 명세 부재
+PAI-005,데이터 작업환경 조회,응답,GET /api/portal/v1/workspaces?type=data,DataPlatform,미확정,플랫폼,blocked_external,데이터 플랫폼 API 명세 부재
+PAI-006,프로젝트 생성/수정/삭제,양방향,/api/portal/v1/projects,Portal BFF + Cmp,미확정,포털,planned,포털 workflow와 CMP 실자원 경계 구분 필요
+PAI-007,크레딧/사용량,응답,GET /api/portal/v1/credits/accounts·/usage,Portal BFF + Cmp,미확정,양방향,planned,단위·집계주기·확정 여부 계약 미확정(원천 정산 책임 확정 필요)
+PAI-008,통합 카탈로그 검색,응답,POST /api/portal/v1/search,Portal BFF(OpenSearch),미확정,포털,planned,PORTAL-CATALOG-001과 통합 추적
+PAI-009,AI 모델/버전,응답,GET /api/portal/v1/assets?type=model,AiPlatform,미확정,플랫폼,blocked_external,원본 모델 ID/version/visibility 계약 부재
+PAI-010,반출 승인,양방향,/api/portal/v1/transfers·/approval-requests,Portal BFF + ExportSecurity,미확정,포털,planned,approval와 검사/전송 분리
+PAI-011,K-RMF 증적 동기화,양방향,/api/portal/v1/krmf/evidence,KrmfAssessment,미확정,양방향,blocked_external,파일/metadata/hash/receipt 계약·평가기관 연계 미확정
+PAI-012,감사 수집/조회,양방향,POST /api/portal/v1/audit/search,Portal BFF,미확정,포털,planned,event 계약과 read API 분리
+PAI-013,공지/이벤트,양방향,/api/portal/v1/announcements,Portal BFF,미확정,포털,planned,발행 권한·대상 scope·중복 제거
+PAI-014,아이디어 제안,양방향,/api/portal/v1/posts,Portal BFF,미확정,포털,planned,실제 게시판 CRUD
+PAI-015,tenant·쿼터·위임,양방향,/api/portal/v1/tenants·/quota,Portal BFF,미확정,포털,planned,조회와 변경 method/권한 분리
+PAI-016,프로필/활동,응답,GET /api/portal/v1/me·/me/activity,Portal BFF,미확정,포털,planned,본인·관리범위/마스킹
+PAI-017,환경설정,양방향,/api/portal/v1/settings,Portal BFF,미확정,포털,planned,version·검증·적용상태
+PAI-018,AI 성과 파일 전송,양방향,/api/portal/v1/files·/transfers,ExportSecurity,미확정,플랫폼,blocked_external,검사·승인·version/hash·수신확인 경로 미확정
+PAI-019,데이터 성과 파일 전송,양방향,/api/portal/v1/files·/transfers,ExportSecurity,미확정,플랫폼,blocked_external,classification·목적·수신확인 경로 미확정
+PAI-020,대시보드 집계,응답,GET /api/portal/v1/dashboard,Portal BFF,미확정,포털,planned,원천별 scope/asOf/partial
+PORTAL-AI-ENV-001,AI 작업환경 생성,양방향,POST /api/portal/v1/workspace-requests,AiPlatform,미확정,양방향,blocked_external,승인/예약/원천 job/보상 계약 부재
+PORTAL-DATA-ENV-001,데이터 작업환경 생성,양방향,POST /api/portal/v1/workspace-requests,DataPlatform,미확정,양방향,blocked_external,도구/데이터 scope·원천 job 계약 부재
+PORTAL-CATALOG-001,통합 카탈로그 검색,응답,POST /api/portal/v1/search,Portal BFF(OpenSearch),미확정,포털,planned,서버 ACL·색인 projection(P4)
+PORTAL-CATALOG-002,Docker/PyPI 탐색,응답,GET /api/portal/v1/assets?type=docker_image|pypi_package,ArtifactRegistry,미확정,플랫폼,blocked_external,registry별 버전·digest·라이선스 계약 부재
+PORTAL-CATALOG-003,서비스/도구 조회·선택,양방향,/api/portal/v1/catalog·/requests,Portal BFF,미확정,포털,planned,project context·실제 신청
+PORTAL-WORKSPACE-001,환경 신청·승인,양방향,/api/portal/v1/workspace-requests·/approval-requests,Portal BFF,미확정,포털,planned,포털 프로젝트와 환경 개념 분리
+PORTAL-WORKSPACE-002,멤버/RBAC 동기화,양방향,/api/portal/v1/projects/{id}/members,Portal BFF + AiPlatform/DataPlatform,미확정,양방향,blocked_external,grant/revoke·원천 확인·회수 지연 계약 부재
+PORTAL-WORKSPACE-003,GPU/CPU 사용량,응답,GET /api/portal/v1/usage,Cmp,미확정,플랫폼,blocked_external,수집 간격·단위·누락/추정·usage event 계약 부재
+PORTAL-CREDIT-001,크레딧 사용이력,응답,GET /api/portal/v1/credits/entries,Portal BFF,미확정,포털,planned,원장 대사·중복 차감 방지(원천 event ID)
+PORTAL-PILOT-001,실증 프로젝트 등록/상태,양방향,/api/portal/v1/pilot-projects,Portal BFF,미확정,포털,planned,기존 실증 및 추가 후보 보존
+PORTAL-PILOT-002,실증 KPI/결과,응답,GET /api/portal/v1/pilot-results,Portal BFF + Pilot,미확정,양방향,blocked_external,목표/실측·기준시각·원본 결과 계약 부재
+PORTAL-PILOT-003,합성데이터 생성,양방향,POST /api/portal/v1/pilot-jobs,DataPlatform,미확정,플랫폼,blocked_external,job·scenario·dataset version 계약 부재
+PORTAL-PILOT-004,시뮬레이터 실행,양방향,POST /api/portal/v1/pilot-jobs,ExternalData,미확정,플랫폼,blocked_external,scenario/run/result/cancel capability 계약 부재
+PORTAL-PILOT-005,외부 원시데이터 수집,양방향,POST /api/portal/v1/pilot-jobs,ExternalData,미확정,플랫폼,blocked_external,DIMS/군수/외부체계 확정 연계만·수신확인
+PORTAL-PILOT-006,품질·계보,응답,GET /api/portal/v1/pilot-results,OpenMetadata/DataPlatform,미확정,플랫폼,blocked_external,dataset/version/quality/lineage 계약 부재
+PORTAL-KRMF-001,통제 이행현황,응답,GET /api/portal/v1/krmf/controls,Portal BFF,미확정,포털,planned,기준판·적용범위·상태 정의(기준 자료 미확정)
+PORTAL-KRMF-002,증적/후속조치,양방향,/api/portal/v1/krmf/evidence·/findings,Portal BFF,미확정,포털,planned,승인본 version·담당·기한
+PORTAL-KRMF-003,변경영향/재평가,양방향,/api/portal/v1/krmf/change-impacts,Portal BFF,미확정,포털,planned,변경대상·영향·결정·증거
+# 참고: 38건 전부 계약버전 미확정. 원천 플랫폼 OpenAPI/샌드박스 확보가 검증상태 상향의 전제(Setup Guide §4-12)
+# fixture request/response·timeout/retry·실패 사례는 adapter 구현 시점에 동반 작성 예정

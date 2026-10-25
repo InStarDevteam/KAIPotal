@@ -1,0 +1,12 @@
+{
+  "origin": "http://localhost:3000",
+  "checks": [
+    "four desktop designs retain four platforms and direct work navigation",
+    "home work action directly opens personal landing, not a dialog",
+    "project filter and selected-project deep link work",
+    "six effective roles receive their own landing and authorized directory",
+    "refresh and search use existing workflows",
+    "mobile layouts have no horizontal overflow and keep all actions"
+  ],
+  "errors": []
+}
